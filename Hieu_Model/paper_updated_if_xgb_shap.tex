@@ -1,0 +1,418 @@
+% =====================================================================
+%  KHUNG SUON BAI BAO -- Springer LNCS
+%  De tai: Phat hien gian lan trong thi lap trinh bang tin hieu hanh vi
+%  Ban cap nhat: them phan du lieu, IF + XGBoost + SHAP, ket qua PasteTrace
+% =====================================================================
+\documentclass[runningheads]{llncs}
+
+\usepackage[T5]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{multirow}
+\usepackage{xcolor}
+\renewcommand\UrlFont{\color{blue}\rmfamily}
+
+\begin{document}
+
+\title{Phát hiện gian lận trong kỳ thi lập trình dựa trên tín hiệu hành vi:\\
+So sánh học máy cổ điển giải thích được với mô hình chuỗi học sâu}
+
+\titlerunning{Phát hiện gian lận thi lập trình bằng tín hiệu hành vi}
+
+\author{Cao Minh Hiếu \and Lê Quốc Việt \and [Bảo] \and [Thành viên khác]}
+\authorrunning{C. M. Hiếu et al.}
+
+\institute{Trường Đại học FPT, TP. Hồ Chí Minh, Việt Nam\\
+\email{[email nhóm]}}
+
+\maketitle
+
+% =====================================================================
+\begin{abstract}
+Gian lận trong các kỳ thi lập trình ngày càng khó phát hiện nếu chỉ dựa trên mã nguồn cuối cùng, đặc biệt khi sinh viên có thể sao chép từ Internet hoặc dùng công cụ sinh mã. Nghiên cứu này khảo sát hướng phát hiện dựa trên \emph{quá trình tạo mã}: các thao tác gõ, dán, cắt, chỉnh sửa và nhịp làm bài trong IDE. Chúng tôi đề xuất một pipeline học máy nhẹ và giải thích được, kết hợp Isolation Forest, XGBoost và SHAP, để tạo điểm rủi ro kèm lý do hỗ trợ giảng viên xem xét. Nghiên cứu sử dụng hai nguồn dữ liệu: một bộ PasteTrace được tái cấu trúc về định dạng hành vi thống nhất, và một bộ dữ liệu chính sẽ được thu thập tại Trường Đại học FPT bằng IDE cấu hình lại từ PasteTrace. Kết quả sơ bộ trên PasteTrace cho thấy pipeline đạt F1 = 0.897 trên 16 phiên gốc và F1 = 0.875 trên 19 phiên đã chuẩn hóa đầy đủ. Phân tích SHAP chỉ ra các tín hiệu nổi bật gồm độ dài thao tác gõ lớn nhất, số lượng sự kiện, độ dài thao tác dán lớn nhất và tín hiệu dán từ cùng máy. Các kết quả này được xem như kiểm chứng phụ do dữ liệu PasteTrace nhỏ và mất cân bằng; kết luận chính sẽ dựa trên bộ dữ liệu thu thập mới và so sánh trực tiếp với mô hình chuỗi Mamba.
+
+\keywords{Phát hiện gian lận \and Phân tích hành vi lập trình \and
+Học máy giải thích được \and Isolation Forest \and XGBoost \and SHAP.}
+\end{abstract}
+
+% =====================================================================
+\section{Giới thiệu}
+\label{sec:intro}
+
+Gian lận trong các kỳ thi lập trình đe dọa trực tiếp chất lượng đào tạo:
+sinh viên thiếu nền tảng do gian lận sẽ gặp khó khăn ở các môn chuyên ngành
+về sau. Các công cụ phát hiện truyền thống như so khớp mã nguồn, ví dụ
+MOSS~\cite{moss}, chủ yếu phát hiện các bài nộp giống nhau. Cách tiếp cận này
+khó xử lý những trường hợp sao chép từ nguồn đơn lẻ trên Internet, dùng công cụ
+sinh mã, hoặc chỉnh sửa đủ nhiều để mã cuối cùng không còn giống rõ rệt.
+
+Một hướng thay thế là phân tích \emph{quá trình tạo ra mã nguồn} thay vì chỉ
+xét sản phẩm cuối: cách sinh viên gõ, dán, cắt, chỉnh sửa và nộp bài. Tín hiệu
+gian lận thường nằm trong hành vi này chứ không chỉ nằm trong đoạn mã hoàn
+chỉnh. Hai bài nộp có mã cuối tương tự vẫn có thể khác nhau hoàn toàn về cách
+hình thành: một bài được phát triển dần qua nhiều thao tác nhỏ, bài khác được
+dán gần như nguyên khối trong thời gian ngắn.
+
+Nghiên cứu này khảo sát câu hỏi thực tiễn: trên dữ liệu hành vi của kỳ thi lập
+trình, một pipeline học máy \emph{cổ điển, nhẹ và giải thích được} có đủ tốt để
+hỗ trợ phát hiện gian lận không, khi so với một mô hình chuỗi học sâu hiện đại?
+Hệ thống được thiết kế để tạo ra \emph{điểm rủi ro} kèm lời giải thích nhằm hỗ
+trợ giảng viên xem lại, không tự động kết luận sinh viên gian lận.
+
+Đóng góp chính của bài báo gồm:
+\begin{itemize}
+\item Một định dạng dữ liệu hành vi thống nhất cho hai nguồn dữ liệu: PasteTrace
+được tái cấu trúc và dữ liệu thu thập mới bằng IDE cấu hình lại.
+\item Một pipeline phát hiện rủi ro cổ điển, giải thích được, kết hợp
+Isolation Forest, XGBoost và SHAP trên đặc trưng hành vi lập trình.
+\item Kết quả sơ bộ trên PasteTrace và kế hoạch so sánh có hệ thống giữa
+pipeline nhẹ này với mô hình chuỗi Mamba trên cùng dữ liệu, cùng cách chia fold.
+\item Phân tích các tín hiệu hành vi đóng góp nhiều nhất vào điểm rủi ro và
+các trường hợp có nguy cơ báo nhầm sinh viên trung thực.
+\end{itemize}
+
+% =====================================================================
+\section{Câu hỏi nghiên cứu}
+\label{sec:rq}
+
+\begin{description}
+\item[\textbf{RQ1 (Hiệu quả và chi phí).}] Pipeline học máy cổ điển nhẹ
+(Isolation Forest + XGBoost + SHAP) trên tín hiệu hành vi có phát hiện gian lận
+hiệu quả tương đương mô hình chuỗi học sâu (Mamba) không, với chi phí thấp hơn
+và khả năng giải thích tốt hơn?
+
+\item[\textbf{RQ2 (Tín hiệu quan trọng).}] Trong các nhóm tín hiệu hành vi
+(gõ phím, sự kiện dán, hoạt động chỉnh sửa/cắt, nhịp thời gian), nhóm nào đóng
+góp nhiều nhất vào điểm rủi ro?
+
+\item[\textbf{RQ3 (Công bằng).}] Nhóm tín hiệu nào có nguy cơ cao nhất gây báo
+nhầm đối với sinh viên trung thực, đặc biệt là sinh viên có năng lực tốt, gõ
+nhanh, mã gọn hoặc ít chỉnh sửa?
+\end{description}
+
+% =====================================================================
+\section{Công trình liên quan}
+\label{sec:related}
+
+\subsection{Phát hiện dựa trên sản phẩm cuối}
+Các công cụ so khớp mã nguồn như MOSS~\cite{moss} phát hiện tương đồng giữa
+các bài nộp và là chuẩn phổ biến trong phát hiện đạo văn mã. Hạn chế cốt lõi là
+chúng nhìn vào sản phẩm cuối, trong khi tín hiệu gian lận có thể nằm ở quá trình
+tạo mã. Các mô hình đọc mã nguồn cuối cùng, chẳng hạn các mô hình biểu diễn mã,
+cũng gặp giới hạn tương tự nếu mục tiêu là phân biệt một bài được tự viết với
+một bài được dán hoặc sao chép từ nguồn ngoài nhưng sau đó chỉnh sửa.
+
+\subsection{Phát hiện dựa trên hành vi và log quá trình}
+Hướng phân tích hành vi khai thác log thao tác trong môi trường lập trình.
+PasteTrace~\cite{pastetrace} theo dõi hoạt động dán trong IDE và dùng các tín
+hiệu nguồn dán để hỗ trợ phát hiện gian lận. Các hướng khác dùng keystroke
+dynamics, mất focus, lịch sử chỉnh sửa hoặc ảnh chụp màn hình trong thi trực
+tuyến. Nhìn chung, các hệ thống này thường thuộc một trong hai nhóm: dựa trên
+luật dễ hiểu nhưng kém linh hoạt, hoặc dựa trên học sâu cần nhiều dữ liệu hơn và
+khó giải thích quyết định cho giảng viên.
+
+\subsection{Khoảng trống nghiên cứu}
+Khoảng trống của bài báo này nằm ở việc kết hợp phát hiện bất thường cổ điển,
+phân loại có giám sát và giải thích mô hình trên dữ liệu hành vi nhỏ. Thay vì
+chỉ dùng luật hoặc chỉ dùng mô hình học sâu, chúng tôi khảo sát một pipeline nhẹ
+có thể chạy trên dữ liệu dạng bảng, cho kết quả có thể giải thích ở mức từng
+phiên làm bài.
+
+% =====================================================================
+\section{Phương pháp}
+\label{sec:method}
+
+\subsection{Tổng quan}
+Chúng tôi so sánh hai hướng tiếp cận trên cùng dữ liệu hành vi: một pipeline
+học máy cổ điển giải thích được và một mô hình chuỗi học sâu. Nhánh thứ nhất
+chuyển log hành vi thành vector đặc trưng phiên, chạy Isolation Forest để sinh
+điểm bất thường, đưa điểm này cùng các đặc trưng hành vi vào XGBoost, sau đó
+dùng SHAP để giải thích dự đoán. Nhánh thứ hai dùng Mamba để đọc chuỗi sự kiện
+theo thời gian. Cả hai nhánh dùng cùng tập phiên, cùng nhãn và cùng cách chia
+dữ liệu.
+
+\subsection{Chuẩn hóa dữ liệu hành vi}
+Mỗi phiên được lưu dưới dạng JSON độc lập gồm \texttt{session\_id},
+\texttt{source}, và danh sách \texttt{events}. Mỗi sự kiện có thời điểm tương
+đối \texttt{t}, loại thao tác \texttt{type} trong các nhóm \texttt{type},
+\texttt{paste}, \texttt{cut}, \texttt{other}, nội dung thao tác \texttt{text},
+và nguồn dán \texttt{paste\_source} nếu là sự kiện dán. Nhãn được lưu riêng
+trong \texttt{labels.csv} để tránh rò rỉ nhãn vào phần đọc dữ liệu.
+
+Cách chuẩn hóa này cho phép hai nguồn dữ liệu khác nhau được xử lý bằng cùng
+một pipeline: dữ liệu PasteTrace đã tái cấu trúc và dữ liệu thu mới từ IDE cấu
+hình lại. Mã nguồn cuối cùng không được đưa vào mô hình; mô hình chỉ dùng tín
+hiệu hành vi.
+
+\subsection{Trích xuất đặc trưng hành vi}
+Từ log thao tác của mỗi phiên, chúng tôi trích một vector đặc trưng số ở cấp
+phiên. Các nhóm đặc trưng gồm:
+\begin{itemize}
+\item Quy mô phiên: số sự kiện, thời lượng, số thao tác gõ, dán, cắt và khác.
+\item Nội dung thao tác: số ký tự gõ, số ký tự dán, số ký tự cắt, tổng ký tự
+hành vi.
+\item Tín hiệu dán: tỷ lệ ký tự dán, số lần dán, độ dài cú dán lớn nhất, độ
+dài dán trung bình/trung vị.
+\item Nguồn dán: số lần và số ký tự dán từ \texttt{own}, \texttt{external},
+\texttt{same\_machine}, \texttt{unknown}. Nguồn \texttt{same\_machine} được
+giữ riêng vì mơ hồ, không tự động gộp vào dán hợp lệ hay dán từ ngoài.
+\item Tín hiệu thời gian: khoảng nghỉ trung bình, trung vị, lớn nhất, số khoảng
+nghỉ dài hơn 30 giây và 120 giây.
+\end{itemize}
+
+\subsection{Mô hình A: Isolation Forest + XGBoost + SHAP}
+Isolation Forest~\cite{isoforest} là mô hình phát hiện bất thường không giám
+sát. Ý tưởng chính là các điểm bất thường thường dễ bị cô lập hơn trong không
+gian đặc trưng: chúng cần ít phép chia ngẫu nhiên hơn để tách khỏi phần còn lại
+của dữ liệu. Trong nghiên cứu này, Isolation Forest không trực tiếp kết luận
+gian lận mà sinh ra một điểm bất thường cho mỗi phiên.
+
+XGBoost~\cite{xgboost} là mô hình boosting dựa trên cây quyết định, phù hợp với
+dữ liệu dạng bảng, xử lý được quan hệ phi tuyến và tương tác giữa các đặc
+trưng. Điểm bất thường từ Isolation Forest được bổ sung như một đặc trưng đầu
+vào cho XGBoost. Cách kết hợp này tận dụng hai nguồn tín hiệu: cấu trúc bất
+thường không cần nhãn và thông tin phân biệt từ nhãn gian lận/trung thực.
+
+SHAP~\cite{shap} được dùng sau huấn luyện để giải thích dự đoán của XGBoost.
+SHAP gán cho mỗi đặc trưng một mức đóng góp vào dự đoán của từng phiên, từ đó
+cho phép xếp hạng đặc trưng quan trọng toàn cục và giải thích từng trường hợp
+cụ thể. Chúng tôi chọn SHAP vì kết quả có thể diễn giải theo hướng: đặc trưng
+nào làm tăng hoặc giảm điểm rủi ro, thay vì chỉ trả về một nhãn dự đoán.
+
+Ba thành phần này được kết hợp vì chúng đóng vai trò khác nhau. Isolation Forest
+phù hợp khi dữ liệu nhỏ và có thể có mẫu bất thường chưa được gán nhãn đầy đủ.
+XGBoost mạnh trên đặc trưng dạng bảng và thường ổn định hơn mạng sâu trong bối
+cảnh dữ liệu nhỏ. SHAP bổ sung khả năng giải thích để hệ thống phù hợp với mục
+tiêu hỗ trợ giảng viên, không phải thay thế quyết định của con người.
+
+\subsection{Mô hình B: mô hình chuỗi học sâu (Mamba)}
+Mamba~\cite{mamba} được dùng như hướng mô hình hóa chuỗi sự kiện thô theo thời
+gian. Khác với mô hình A, đầu vào của Mamba không phải vector đặc trưng tổng hợp
+ở cấp phiên mà là chuỗi sự kiện đã mã hóa. Phần này sẽ được hoàn thiện khi nhóm
+chạy xong nhánh Mamba, bao gồm cách mã hóa sự kiện, chiều embedding, số lớp,
+số tham số và thiết lập huấn luyện.
+
+\subsection{Thiết lập đánh giá}
+Do quy mô dữ liệu nhỏ, chúng tôi dùng kiểm định chéo Leave-One-Out (LOO): mỗi
+phiên lần lượt được giữ làm tập kiểm thử, phần còn lại làm tập huấn luyện. Trong
+mỗi fold, việc chuẩn hóa đặc trưng, huấn luyện Isolation Forest và huấn luyện
+XGBoost chỉ dùng dữ liệu huấn luyện để tránh rò rỉ dữ liệu. Với XGBoost, lớp
+thiểu số trong tập huấn luyện được lấy mẫu lại để giảm ảnh hưởng của mất cân
+bằng nhãn. Các độ đo gồm Precision, Recall, F1, AUC và ma trận nhầm lẫn.
+
+% =====================================================================
+\section{Dữ liệu}
+\label{sec:data}
+
+Nghiên cứu sử dụng hai nguồn dữ liệu chính với vai trò khác nhau.
+
+\subsection{Bộ PasteTrace đã tái cấu trúc}
+Nguồn thứ nhất là dữ liệu công khai từ PasteTrace, được nhóm tái cấu trúc về
+một schema hành vi thống nhất. Tập đầy đủ sau chuẩn hóa gồm 19 phiên: 16 phiên
+gian lận và 3 phiên trung thực. Trong đó, 16 phiên gốc được đánh dấu riêng để
+tái lập các thí nghiệm theo tập cũ, gồm 14 phiên gian lận và 2 phiên trung
+thực. Ba phiên bổ sung gồm một phiên \texttt{111/B} thuộc nhóm trung thực nhưng
+có đặc điểm ranh giới do sao chép hợp lệ giữa các tab OOP, và hai phiên tách từ
+\texttt{211/O} thuộc nhóm gian lận.
+
+Dữ liệu này đóng vai trò kiểm chứng phụ. Do quy mô rất nhỏ và mất cân bằng, kết
+quả trên PasteTrace không được dùng để kết luận tổng quát, mà dùng để kiểm tra
+pipeline, kiểm tra quy trình chuẩn hóa và minh họa khả năng giải thích bằng
+SHAP.
+
+\subsection{Bộ dữ liệu chính thu thập tại FPT}
+Nguồn thứ hai là dữ liệu chính do nhóm thu thập. Nhóm cấu hình lại IDE từ
+PasteTrace và đưa cho sinh viên Trường Đại học FPT làm bài trong môi trường có
+ghi log hành vi. Sau khi sinh viên hoàn thành, mỗi phiên dự kiến gồm mã nguồn
+cuối cùng và file \texttt{meta.json}. Trong nghiên cứu này, mã nguồn cuối chỉ
+dùng cho lưu trữ, đối chiếu thủ công hoặc các phân tích phụ; pipeline IF +
+XGBoost + SHAP chỉ dùng \texttt{meta.json} sau khi chuyển về schema hành vi
+thống nhất.
+
+Người tham gia sẽ được tổ chức theo các kịch bản đã định trước, ví dụ trung
+thực, sao chép và dán trực tiếp, hoặc sao chép bằng cách gõ lại. Nhãn được xác
+định từ kịch bản/thiết kế thu thập thay vì suy ra từ chính hành vi, nhằm tránh
+vòng lặp tự xác nhận. Khi thu thập xong, bộ này sẽ là dữ liệu chính để so sánh
+pipeline IF + XGBoost + SHAP với mô hình Mamba.
+
+\begin{table}[t]
+\caption{Tóm tắt hai nguồn dữ liệu trong nghiên cứu.}
+\label{tab:data-summary}
+\centering
+\begin{tabular}{lccc}
+\toprule
+Nguồn dữ liệu & Vai trò & Số phiên & Phân bố nhãn \\
+\midrule
+PasteTrace gốc đã chuẩn hóa & Kiểm chứng phụ & 16 & 14 gian lận / 2 trung thực \\
+PasteTrace đầy đủ đã chuẩn hóa & Kiểm chứng phụ mở rộng & 19 & 16 gian lận / 3 trung thực \\
+FPT IDE cấu hình lại & Bộ chính & [điền sau] & [điền sau] \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% =====================================================================
+\section{Kết quả}
+\label{sec:results}
+
+\subsection{Kết quả trên bộ dữ liệu chính}
+Bộ dữ liệu chính đang trong quá trình thu thập. Bảng~\ref{tab:main} giữ cấu
+trúc đánh giá dự kiến để điền sau khi cả hai nhánh IF + XGBoost + SHAP và Mamba
+chạy trên cùng các fold.
+
+\begin{table}[t]
+\caption{So sánh hai mô hình trên bộ dữ liệu chính.}
+\label{tab:main}
+\centering
+\begin{tabular}{lccccc}
+\toprule
+Mô hình & Precision & Recall & F1 & AUC & Chi phí \\
+\midrule
+Đường cơ sở dựa trên luật & -- & -- & -- & -- & -- \\
+A: IF + XGBoost + SHAP & -- & -- & -- & -- & -- \\
+B: Mamba & -- & -- & -- & -- & -- \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Kiểm chứng phụ trên PasteTrace}
+Bảng~\ref{tab:pastetrace} trình bày kết quả sơ bộ của pipeline IF + XGBoost +
+SHAP trên hai biến thể PasteTrace. Với 16 phiên gốc, pipeline đạt Precision =
+0.867, Recall = 0.929, F1 = 0.897 và AUC = 0.714. Khi dùng toàn bộ 19 phiên đã
+chuẩn hóa, F1 đạt 0.875 và AUC đạt 0.833. Kết quả này cho thấy pipeline đã chạy
+được trên dữ liệu hành vi chuẩn hóa và tạo ra đầu ra định lượng có thể so sánh.
+Tuy nhiên, do số phiên trung thực rất ít, các chỉ số cần được diễn giải thận
+trọng.
+
+\begin{table}[t]
+\caption{Kết quả sơ bộ của IF + XGBoost + SHAP trên PasteTrace.}
+\label{tab:pastetrace}
+\centering
+\begin{tabular}{lccccc}
+\toprule
+Tập dữ liệu & Số phiên & Precision & Recall & F1 & AUC \\
+\midrule
+PasteTrace gốc đã chuẩn hóa & 16 & 0.867 & 0.929 & 0.897 & 0.714 \\
+PasteTrace đầy đủ đã chuẩn hóa & 19 & 0.875 & 0.875 & 0.875 & 0.833 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Phân tích SHAP trên PasteTrace}
+Trên tập 16 phiên gốc, các đặc trưng có giá trị SHAP trung bình tuyệt đối cao
+nhất gồm \texttt{max\_type\_chars}, \texttt{event\_count},
+\texttt{max\_paste\_chars}, \texttt{paste\_same\_machine\_count},
+\texttt{duration\_sec} và \texttt{paste\_external\_chars}. Trên tập 19 phiên,
+hai đặc trưng nổi bật nhất vẫn là \texttt{max\_type\_chars} và
+\texttt{event\_count}, tiếp theo là \texttt{other\_event\_count},
+\texttt{type\_event\_count}, \texttt{duration\_sec} và
+\texttt{paste\_external\_chars}.
+
+Kết quả này gợi ý rằng mô hình không chỉ dựa vào tỷ lệ dán, mà còn khai thác
+cấu trúc tổng thể của phiên: độ dài thao tác gõ lớn nhất, số lượng sự kiện và
+thời lượng làm bài. Đây là điểm cần phân tích kỹ trong bộ dữ liệu chính, vì
+những đặc trưng liên quan đến tốc độ hoặc độ gọn của thao tác có thể gây báo
+nhầm đối với sinh viên thành thạo.
+
+\subsection{Phân tích lỗi và công bằng}
+Trên tập 16 phiên gốc, mô hình báo nhầm hai phiên trung thực là gian lận và bỏ
+sót một phiên gian lận. Hai false positive là \texttt{111/E} và \texttt{211/N};
+false negative là \texttt{211/E}. Trên tập 19 phiên, mô hình dự đoán đúng một
+phiên trung thực nhưng vẫn báo nhầm hai phiên trung thực và bỏ sót hai phiên
+gian lận. Các lỗi này cho thấy bài toán không chỉ là phát hiện dán từ ngoài:
+những phiên có hành vi hợp lệ nhưng nhiều thao tác sao chép nội bộ, hoặc có
+nhịp làm bài khác thường, vẫn có thể bị đánh điểm rủi ro cao.
+
+Với bộ dữ liệu chính, chúng tôi sẽ phân tích sâu các false positive theo nhóm
+sinh viên và nhóm đặc trưng để đánh giá rủi ro bất công. Đặc biệt, các đặc
+trưng như \texttt{max\_type\_chars}, số sự kiện thấp hoặc thời lượng ngắn cần
+được xem xét cẩn thận vì có thể phản ánh năng lực lập trình tốt thay vì gian
+lận.
+
+% =====================================================================
+\section{Thảo luận}
+\label{sec:discussion}
+
+Kết quả sơ bộ củng cố lựa chọn dùng pipeline cổ điển giải thích được như một
+đường cơ sở mạnh cho bài toán dữ liệu nhỏ. Isolation Forest cung cấp tín hiệu
+bất thường không phụ thuộc hoàn toàn vào nhãn; XGBoost học quan hệ phi tuyến
+giữa các đặc trưng hành vi; SHAP biến dự đoán thành bằng chứng có thể kiểm tra.
+Sự kết hợp này phù hợp với bối cảnh giáo dục, nơi quyết định cuối cùng cần con
+người xem xét và hệ thống phải trình bày được lý do.
+
+Tuy nhiên, PasteTrace chưa đủ để kết luận mô hình nào tốt hơn. Tập này quá nhỏ,
+mất cân bằng và có một số ca ranh giới như \texttt{same\_machine} hoặc sao chép
+hợp lệ giữa các tab. Vì vậy, vai trò chính của PasteTrace trong bài là kiểm
+chứng pipeline và minh họa phân tích SHAP. Bộ dữ liệu FPT mới sẽ quan trọng hơn
+để trả lời RQ1, đặc biệt khi có nhiều kiểu hành vi hơn và các kịch bản gian lận
+tinh vi hơn.
+
+Mô hình chuỗi Mamba có thể có lợi thế nếu tín hiệu nằm ở thứ tự thao tác chi
+tiết, ví dụ một chuỗi chuyển đổi giữa gõ, dán, cắt và sửa mà đặc trưng tổng hợp
+không giữ lại được. Ngược lại, nếu dữ liệu nhỏ và tín hiệu chủ yếu nằm ở các
+thống kê cấp phiên, pipeline IF + XGBoost + SHAP có thể là lựa chọn thực dụng
+hơn nhờ chi phí thấp và khả năng giải thích tốt.
+
+% =====================================================================
+\section{Giới hạn}
+\label{sec:limitations}
+
+Giới hạn đầu tiên là tập kiểm chứng PasteTrace rất nhỏ và mất cân bằng. Với chỉ
+2 hoặc 3 phiên trung thực tùy biến thể dữ liệu, một vài dự đoán sai có thể làm
+thay đổi mạnh Precision, F1 và AUC. Vì vậy, kết quả trên PasteTrace chỉ nên
+được xem là sơ bộ.
+
+Giới hạn thứ hai là đặc trưng hành vi có thể phản ánh cả gian lận lẫn phong
+cách lập trình cá nhân. Sinh viên giỏi có thể gõ nhanh, ít sửa, hoặc dùng lại
+mã hợp lệ từ bài trước; các hành vi này có thể giống một phần với tín hiệu rủi
+ro. Do đó, bài báo không đề xuất dùng mô hình để tự động kết luận gian lận, mà
+chỉ dùng như công cụ hỗ trợ rà soát.
+
+Giới hạn thứ ba là phần Mamba và bộ dữ liệu chính chưa hoàn tất trong bản hiện
+tại. Các kết luận cuối cùng về so sánh mô hình cần chờ kết quả trên cùng bộ dữ
+liệu chính và cùng chiến lược chia fold.
+
+% =====================================================================
+\section{Kết luận}
+\label{sec:conclusion}
+
+Bài báo đề xuất hướng phát hiện rủi ro gian lận trong thi lập trình dựa trên
+tín hiệu hành vi thay vì mã nguồn cuối cùng. Pipeline IF + XGBoost + SHAP cho
+phép kết hợp phát hiện bất thường, phân loại có giám sát và giải thích dự đoán
+trong một hệ thống nhẹ. Kết quả sơ bộ trên PasteTrace cho thấy pipeline chạy ổn
+trên dữ liệu đã chuẩn hóa và tạo được các tín hiệu giải thích hữu ích. Bước tiếp
+theo là hoàn tất thu thập dữ liệu chính tại FPT, chạy cùng pipeline trên dữ
+liệu mới, và so sánh trực tiếp với mô hình chuỗi Mamba.
+
+% =====================================================================
+\begin{thebibliography}{8}
+
+\bibitem{moss}
+Schleimer, S., Wilkerson, D.S., Aiken, A.: Winnowing: Local algorithms for
+document fingerprinting. In: Proc. ACM SIGMOD (2003)
+
+\bibitem{pastetrace}
+[Tác giả PasteTrace]: PasteTrace: Real-time plagiarism tracking via IDE
+activity analysis. [Nơi công bố, năm -- kiểm tra lại]
+
+\bibitem{isoforest}
+Liu, F.T., Ting, K.M., Zhou, Z.-H.: Isolation forest. In: Proc. IEEE ICDM
+(2008)
+
+\bibitem{xgboost}
+Chen, T., Guestrin, C.: XGBoost: A scalable tree boosting system. In: Proc.
+ACM KDD (2016)
+
+\bibitem{shap}
+Lundberg, S.M., Lee, S.-I.: A unified approach to interpreting model
+predictions. In: Proc. NeurIPS (2017)
+
+\bibitem{mamba}
+Gu, A., Dao, T.: Mamba: Linear-time sequence modeling with selective state
+spaces. arXiv (2023) [kiểm tra lại phiên bản trích dẫn]
+
+\end{thebibliography}
+
+\end{document}

@@ -1,0 +1,2727 @@
+{
+  "session_id": "tasktracker_java_max_digit_max_digit_53285_1705533775_1292233787305.176_fec8c81f154d4a436ee9d893aa383c57e89745f7",
+  "source": "tasktracker_sigcse2021",
+  "metadata": {
+    "language": "java",
+    "task": "max_digit",
+    "task_status": "SOLVED",
+    "final_score": 0.25,
+    "weak_label": 0,
+    "label_reason": "low-risk trace",
+    "source_file": "data\\raw\\tasktracker\\extracted\\data_google_drive_anonymized (SIGSCE 2020)\\java\\max_digit\\max_digit_53285_1705533775_1292233787305.176_fec8c81f154d4a436ee9d893aa383c57e89745f7.csv"
+  },
+  "events": [
+    {
+      "t": 0.05,
+      "type": "type",
+      "text": "i",
+      "paste_source": null
+    },
+    {
+      "t": 0.474,
+      "type": "type",
+      "text": "ma",
+      "paste_source": null
+    },
+    {
+      "t": 0.474,
+      "type": "type",
+      "text": "n_v1",
+      "paste_source": null
+    },
+    {
+      "t": 0.748,
+      "type": "cut",
+      "text": "ma",
+      "paste_source": null
+    },
+    {
+      "t": 0.748,
+      "type": "cut",
+      "text": "_v1",
+      "paste_source": null
+    },
+    {
+      "t": 0.748,
+      "type": "type",
+      "text": "t",
+      "paste_source": null
+    },
+    {
+      "t": 0.749,
+      "type": "type",
+      "text": "[",
+      "paste_source": null
+    },
+    {
+      "t": 1.466,
+      "type": "type",
+      "text": "]",
+      "paste_source": null
+    },
+    {
+      "t": 1.712,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 1.836,
+      "type": "type",
+      "text": "main_v3",
+      "paste_source": null
+    },
+    {
+      "t": 2.407,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 2.504,
+      "type": "type",
+      "text": "=",
+      "paste_source": null
+    },
+    {
+      "t": 2.818,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 2.932,
+      "type": "type",
+      "text": "n",
+      "paste_source": null
+    },
+    {
+      "t": 3.009,
+      "type": "type",
+      "text": "e",
+      "paste_source": null
+    },
+    {
+      "t": 3.107,
+      "type": "type",
+      "text": "w",
+      "paste_source": null
+    },
+    {
+      "t": 3.32,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 3.396,
+      "type": "type",
+      "text": "i",
+      "paste_source": null
+    },
+    {
+      "t": 3.532,
+      "type": "type",
+      "text": "ma",
+      "paste_source": null
+    },
+    {
+      "t": 3.532,
+      "type": "type",
+      "text": "n_v1",
+      "paste_source": null
+    },
+    {
+      "t": 3.842,
+      "type": "cut",
+      "text": "ma",
+      "paste_source": null
+    },
+    {
+      "t": 3.842,
+      "type": "cut",
+      "text": "_v1",
+      "paste_source": null
+    },
+    {
+      "t": 3.842,
+      "type": "type",
+      "text": "t",
+      "paste_source": null
+    },
+    {
+      "t": 3.847,
+      "type": "type",
+      "text": "[",
+      "paste_source": null
+    },
+    {
+      "t": 4.508,
+      "type": "type",
+      "text": "]",
+      "paste_source": null
+    },
+    {
+      "t": 4.585,
+      "type": "type",
+      "text": "1",
+      "paste_source": null
+    },
+    {
+      "t": 5.17,
+      "type": "type",
+      "text": "0",
+      "paste_source": null
+    },
+    {
+      "t": 5.924,
+      "type": "type",
+      "text": ";",
+      "paste_source": null
+    },
+    {
+      "t": 5.926,
+      "type": "type",
+      "text": "        \n",
+      "paste_source": null
+    },
+    {
+      "t": 9.186,
+      "type": "type",
+      "text": "f",
+      "paste_source": null
+    },
+    {
+      "t": 9.342,
+      "type": "type",
+      "text": "o",
+      "paste_source": null
+    },
+    {
+      "t": 9.722,
+      "type": "type",
+      "text": "r",
+      "paste_source": null
+    },
+    {
+      "t": 10.524,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 10.528,
+      "type": "type",
+      "text": "(",
+      "paste_source": null
+    },
+    {
+      "t": 10.994,
+      "type": "type",
+      "text": ")",
+      "paste_source": null
+    },
+    {
+      "t": 11.147,
+      "type": "type",
+      "text": "c",
+      "paste_source": null
+    },
+    {
+      "t": 11.711,
+      "type": "type",
+      "text": "h",
+      "paste_source": null
+    },
+    {
+      "t": 12.461,
+      "type": "type",
+      "text": "ar",
+      "paste_source": null
+    },
+    {
+      "t": 13.101,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 13.317,
+      "type": "type",
+      "text": "main_v1",
+      "paste_source": null
+    },
+    {
+      "t": 13.752,
+      "type": "cut",
+      "text": "v",
+      "paste_source": null
+    },
+    {
+      "t": 13.752,
+      "type": "type",
+      "text": "p",
+      "paste_source": null
+    },
+    {
+      "t": 13.752,
+      "type": "type",
+      "text": " :",
+      "paste_source": null
+    },
+    {
+      "t": 15.184,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 15.372,
+      "type": "type",
+      "text": "main_v2",
+      "paste_source": null
+    },
+    {
+      "t": 16.059,
+      "type": "type",
+      "text": ".",
+      "paste_source": null
+    },
+    {
+      "t": 16.067,
+      "type": "type",
+      "text": "charAt",
+      "paste_source": null
+    },
+    {
+      "t": 16.069,
+      "type": "type",
+      "text": "(",
+      "paste_source": null
+    },
+    {
+      "t": 16.069,
+      "type": "cut",
+      "text": "Action:EditorBackSpace",
+      "paste_source": null
+    },
+    {
+      "t": 16.433,
+      "type": "type",
+      "text": ")",
+      "paste_source": null
+    },
+    {
+      "t": 16.435,
+      "type": "cut",
+      "text": "(",
+      "paste_source": null
+    },
+    {
+      "t": 16.435,
+      "type": "cut",
+      "text": "Action:EditorBackSpace",
+      "paste_source": null
+    },
+    {
+      "t": 16.566,
+      "type": "cut",
+      "text": ")",
+      "paste_source": null
+    },
+    {
+      "t": 16.566,
+      "type": "cut",
+      "text": "Action:EditorBackSpace",
+      "paste_source": null
+    },
+    {
+      "t": 16.673,
+      "type": "cut",
+      "text": "t",
+      "paste_source": null
+    },
+    {
+      "t": 16.673,
+      "type": "cut",
+      "text": "Action:EditorBackSpace",
+      "paste_source": null
+    },
+    {
+      "t": 16.787,
+      "type": "cut",
+      "text": "A",
+      "paste_source": null
+    },
+    {
+      "t": 16.787,
+      "type": "cut",
+      "text": "Action:EditorBackSpace",
+      "paste_source": null
+    },
+    {
+      "t": 16.905,
+      "type": "cut",
+      "text": "r",
+      "paste_source": null
+    },
+    {
+      "t": 16.905,
+      "type": "cut",
+      "text": "Action:EditorBackSpace",
+      "paste_source": null
+    },
+    {
+      "t": 17.004,
+      "type": "cut",
+      "text": "a",
+      "paste_source": null
+    },
+    {
+      "t": 17.004,
+      "type": "cut",
+      "text": "Action:EditorBackSpace",
+      "paste_source": null
+    },
+    {
+      "t": 17.117,
+      "type": "cut",
+      "text": "h",
+      "paste_source": null
+    },
+    {
+      "t": 18.005,
+      "type": "cut",
+      "text": "c",
+      "paste_source": null
+    },
+    {
+      "t": 18.463,
+      "type": "type",
+      "text": "t",
+      "paste_source": null
+    },
+    {
+      "t": 18.471,
+      "type": "type",
+      "text": "oCharArray",
+      "paste_source": null
+    },
+    {
+      "t": 18.472,
+      "type": "type",
+      "text": "(",
+      "paste_source": null
+    },
+    {
+      "t": 19.505,
+      "type": "type",
+      "text": ")",
+      "paste_source": null
+    },
+    {
+      "t": 19.679,
+      "type": "type",
+      "text": "{",
+      "paste_source": null
+    },
+    {
+      "t": 19.68,
+      "type": "type",
+      "text": "}\n",
+      "paste_source": null
+    },
+    {
+      "t": 19.686,
+      "type": "type",
+      "text": "\n",
+      "paste_source": null
+    },
+    {
+      "t": 19.688,
+      "type": "type",
+      "text": "        ",
+      "paste_source": null
+    },
+    {
+      "t": 19.69,
+      "type": "cut",
+      "text": "\n",
+      "paste_source": null
+    },
+    {
+      "t": 19.692,
+      "type": "type",
+      "text": "\n        ",
+      "paste_source": null
+    },
+    {
+      "t": 21.203,
+      "type": "type",
+      "text": "    ",
+      "paste_source": null
+    },
+    {
+      "t": 21.32,
+      "type": "type",
+      "text": "main_p1",
+      "paste_source": null
+    },
+    {
+      "t": 21.439,
+      "type": "cut",
+      "text": "mai",
+      "paste_source": null
+    },
+    {
+      "t": 21.439,
+      "type": "type",
+      "text": "c",
+      "paste_source": null
+    },
+    {
+      "t": 21.439,
+      "type": "cut",
+      "text": "_p1",
+      "paste_source": null
+    },
+    {
+      "t": 21.878,
+      "type": "cut",
+      "text": "c",
+      "paste_source": null
+    },
+    {
+      "t": 21.878,
+      "type": "type",
+      "text": "mai",
+      "paste_source": null
+    },
+    {
+      "t": 21.878,
+      "type": "type",
+      "text": "_v3",
+      "paste_source": null
+    },
+    {
+      "t": 21.882,
+      "type": "type",
+      "text": "[",
+      "paste_source": null
+    },
+    {
+      "t": 23.948,
+      "type": "type",
+      "text": "]",
+      "paste_source": null
+    },
+    {
+      "t": 24.162,
+      "type": "type",
+      "text": "I",
+      "paste_source": null
+    },
+    {
+      "t": 24.422,
+      "type": "type",
+      "text": "n",
+      "paste_source": null
+    },
+    {
+      "t": 25.073,
+      "type": "type",
+      "text": "t",
+      "paste_source": null
+    },
+    {
+      "t": 25.079,
+      "type": "type",
+      "text": "eger",
+      "paste_source": null
+    },
+    {
+      "t": 26.418,
+      "type": "type",
+      "text": ".",
+      "paste_source": null
+    },
+    {
+      "t": 26.98,
+      "type": "type",
+      "text": "p",
+      "paste_source": null
+    },
+    {
+      "t": 26.988,
+      "type": "type",
+      "text": "arseInt",
+      "paste_source": null
+    },
+    {
+      "t": 26.989,
+      "type": "type",
+      "text": "(",
+      "paste_source": null
+    },
+    {
+      "t": 28.237,
+      "type": "type",
+      "text": ")",
+      "paste_source": null
+    },
+    {
+      "t": 28.655,
+      "type": "type",
+      "text": "S",
+      "paste_source": null
+    },
+    {
+      "t": 29.067,
+      "type": "type",
+      "text": "t",
+      "paste_source": null
+    },
+    {
+      "t": 29.082,
+      "type": "type",
+      "text": "ringBuilder",
+      "paste_source": null
+    },
+    {
+      "t": 29.082,
+      "type": "cut",
+      "text": "Action:EditorBackSpace",
+      "paste_source": null
+    },
+    {
+      "t": 29.576,
+      "type": "cut",
+      "text": "Action:EditorBackSpace",
+      "paste_source": null
+    },
+    {
+      "t": 30.019,
+      "type": "cut",
+      "text": "r",
+      "paste_source": null
+    },
+    {
+      "t": 30.019,
+      "type": "cut",
+      "text": "Action:EditorBackSpace",
+      "paste_source": null
+    },
+    {
+      "t": 30.077,
+      "type": "cut",
+      "text": "e",
+      "paste_source": null
+    },
+    {
+      "t": 30.077,
+      "type": "cut",
+      "text": "Action:EditorBackSpace",
+      "paste_source": null
+    },
+    {
+      "t": 30.085,
+      "type": "cut",
+      "text": "d",
+      "paste_source": null
+    },
+    {
+      "t": 30.085,
+      "type": "cut",
+      "text": "Action:EditorBackSpace",
+      "paste_source": null
+    },
+    {
+      "t": 30.156,
+      "type": "cut",
+      "text": "l",
+      "paste_source": null
+    },
+    {
+      "t": 30.156,
+      "type": "cut",
+      "text": "Action:EditorBackSpace",
+      "paste_source": null
+    },
+    {
+      "t": 30.25,
+      "type": "cut",
+      "text": "i",
+      "paste_source": null
+    },
+    {
+      "t": 30.25,
+      "type": "cut",
+      "text": "Action:EditorBackSpace",
+      "paste_source": null
+    },
+    {
+      "t": 30.252,
+      "type": "cut",
+      "text": "u",
+      "paste_source": null
+    },
+    {
+      "t": 30.252,
+      "type": "cut",
+      "text": "Action:EditorBackSpace",
+      "paste_source": null
+    },
+    {
+      "t": 30.255,
+      "type": "cut",
+      "text": "B",
+      "paste_source": null
+    },
+    {
+      "t": 30.255,
+      "type": "cut",
+      "text": "Action:EditorBackSpace",
+      "paste_source": null
+    },
+    {
+      "t": 30.333,
+      "type": "cut",
+      "text": "g",
+      "paste_source": null
+    },
+    {
+      "t": 30.333,
+      "type": "cut",
+      "text": "Action:EditorBackSpace",
+      "paste_source": null
+    },
+    {
+      "t": 30.488,
+      "type": "cut",
+      "text": "n",
+      "paste_source": null
+    },
+    {
+      "t": 31.637,
+      "type": "cut",
+      "text": "i",
+      "paste_source": null
+    },
+    {
+      "t": 31.723,
+      "type": "type",
+      "text": "i",
+      "paste_source": null
+    },
+    {
+      "t": 32.017,
+      "type": "type",
+      "text": "n",
+      "paste_source": null
+    },
+    {
+      "t": 32.299,
+      "type": "type",
+      "text": "g",
+      "paste_source": null
+    },
+    {
+      "t": 33.634,
+      "type": "type",
+      "text": ".",
+      "paste_source": null
+    },
+    {
+      "t": 33.645,
+      "type": "type",
+      "text": "valueOf",
+      "paste_source": null
+    },
+    {
+      "t": 33.651,
+      "type": "type",
+      "text": "(",
+      "paste_source": null
+    },
+    {
+      "t": 36.247,
+      "type": "type",
+      "text": ")",
+      "paste_source": null
+    },
+    {
+      "t": 38.002,
+      "type": "type",
+      "text": "main_p1",
+      "paste_source": null
+    },
+    {
+      "t": 38.09,
+      "type": "type",
+      "text": "-",
+      "paste_source": null
+    },
+    {
+      "t": 39.393,
+      "type": "type",
+      "text": "1",
+      "paste_source": null
+    },
+    {
+      "t": 39.504,
+      "type": "type",
+      "text": "+",
+      "paste_source": null
+    },
+    {
+      "t": 39.743,
+      "type": "type",
+      "text": "+",
+      "paste_source": null
+    },
+    {
+      "t": 42.1,
+      "type": "type",
+      "text": ";",
+      "paste_source": null
+    },
+    {
+      "t": 42.101,
+      "type": "type",
+      "text": "        \n",
+      "paste_source": null
+    },
+    {
+      "t": 43.419,
+      "type": "type",
+      "text": "i",
+      "paste_source": null
+    },
+    {
+      "t": 43.448,
+      "type": "type",
+      "text": "ma",
+      "paste_source": null
+    },
+    {
+      "t": 43.448,
+      "type": "type",
+      "text": "n_v1",
+      "paste_source": null
+    },
+    {
+      "t": 43.582,
+      "type": "cut",
+      "text": "ma",
+      "paste_source": null
+    },
+    {
+      "t": 43.582,
+      "type": "cut",
+      "text": "_v1",
+      "paste_source": null
+    },
+    {
+      "t": 43.582,
+      "type": "type",
+      "text": "t",
+      "paste_source": null
+    },
+    {
+      "t": 44.22,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 44.399,
+      "type": "type",
+      "text": "main_v4",
+      "paste_source": null
+    },
+    {
+      "t": 45.745,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 45.864,
+      "type": "type",
+      "text": "=",
+      "paste_source": null
+    },
+    {
+      "t": 46.696,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 47.025,
+      "type": "type",
+      "text": "1",
+      "paste_source": null
+    },
+    {
+      "t": 47.207,
+      "type": "type",
+      "text": "0",
+      "paste_source": null
+    },
+    {
+      "t": 47.207,
+      "type": "cut",
+      "text": "Action:EditorBackSpace",
+      "paste_source": null
+    },
+    {
+      "t": 47.735,
+      "type": "type",
+      "text": "0",
+      "paste_source": null
+    },
+    {
+      "t": 47.735,
+      "type": "cut",
+      "text": "Action:EditorBackSpace",
+      "paste_source": null
+    },
+    {
+      "t": 47.863,
+      "type": "cut",
+      "text": "0",
+      "paste_source": null
+    },
+    {
+      "t": 48.25,
+      "type": "cut",
+      "text": "0",
+      "paste_source": null
+    },
+    {
+      "t": 48.702,
+      "type": "type",
+      "text": "1",
+      "paste_source": null
+    },
+    {
+      "t": 48.982,
+      "type": "type",
+      "text": ";",
+      "paste_source": null
+    },
+    {
+      "t": 48.984,
+      "type": "type",
+      "text": "        \n",
+      "paste_source": null
+    },
+    {
+      "t": 49.865,
+      "type": "type",
+      "text": "f",
+      "paste_source": null
+    },
+    {
+      "t": 50.014,
+      "type": "type",
+      "text": "o",
+      "paste_source": null
+    },
+    {
+      "t": 50.213,
+      "type": "type",
+      "text": "r",
+      "paste_source": null
+    },
+    {
+      "t": 50.717,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 50.721,
+      "type": "type",
+      "text": "(",
+      "paste_source": null
+    },
+    {
+      "t": 51.057,
+      "type": "type",
+      "text": ")",
+      "paste_source": null
+    },
+    {
+      "t": 51.136,
+      "type": "type",
+      "text": "i",
+      "paste_source": null
+    },
+    {
+      "t": 51.155,
+      "type": "type",
+      "text": "ma",
+      "paste_source": null
+    },
+    {
+      "t": 51.155,
+      "type": "type",
+      "text": "n_v1",
+      "paste_source": null
+    },
+    {
+      "t": 51.263,
+      "type": "cut",
+      "text": "ma",
+      "paste_source": null
+    },
+    {
+      "t": 51.263,
+      "type": "cut",
+      "text": "_v1",
+      "paste_source": null
+    },
+    {
+      "t": 51.263,
+      "type": "type",
+      "text": "t",
+      "paste_source": null
+    },
+    {
+      "t": 51.432,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 51.54,
+      "type": "type",
+      "text": "main_v1",
+      "paste_source": null
+    },
+    {
+      "t": 52.219,
+      "type": "cut",
+      "text": "v",
+      "paste_source": null
+    },
+    {
+      "t": 52.219,
+      "type": "type",
+      "text": "p",
+      "paste_source": null
+    },
+    {
+      "t": 52.219,
+      "type": "type",
+      "text": " :",
+      "paste_source": null
+    },
+    {
+      "t": 52.987,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 53.086,
+      "type": "type",
+      "text": "c",
+      "paste_source": null
+    },
+    {
+      "t": 53.233,
+      "type": "type",
+      "text": "n",
+      "paste_source": null
+    },
+    {
+      "t": 53.964,
+      "type": "cut",
+      "text": "c",
+      "paste_source": null
+    },
+    {
+      "t": 53.964,
+      "type": "type",
+      "text": "mai",
+      "paste_source": null
+    },
+    {
+      "t": 53.964,
+      "type": "type",
+      "text": "_v3",
+      "paste_source": null
+    },
+    {
+      "t": 54.143,
+      "type": "type",
+      "text": "{",
+      "paste_source": null
+    },
+    {
+      "t": 54.145,
+      "type": "type",
+      "text": "}\n",
+      "paste_source": null
+    },
+    {
+      "t": 54.151,
+      "type": "type",
+      "text": "\n",
+      "paste_source": null
+    },
+    {
+      "t": 54.154,
+      "type": "type",
+      "text": "        ",
+      "paste_source": null
+    },
+    {
+      "t": 54.156,
+      "type": "cut",
+      "text": "\n",
+      "paste_source": null
+    },
+    {
+      "t": 54.158,
+      "type": "type",
+      "text": "\n        ",
+      "paste_source": null
+    },
+    {
+      "t": 54.158,
+      "type": "cut",
+      "text": "Action:EditorBackSpace",
+      "paste_source": null
+    },
+    {
+      "t": 60.756,
+      "type": "type",
+      "text": "    ",
+      "paste_source": null
+    },
+    {
+      "t": 60.756,
+      "type": "cut",
+      "text": "Action:EditorBackSpace",
+      "paste_source": null
+    },
+    {
+      "t": 60.919,
+      "type": "cut",
+      "text": "1",
+      "paste_source": null
+    },
+    {
+      "t": 61.39,
+      "type": "cut",
+      "text": "1",
+      "paste_source": null
+    },
+    {
+      "t": 61.457,
+      "type": "type",
+      "text": "-",
+      "paste_source": null
+    },
+    {
+      "t": 61.457,
+      "type": "cut",
+      "text": "Action:EditorBackSpace",
+      "paste_source": null
+    },
+    {
+      "t": 62.314,
+      "type": "type",
+      "text": "q",
+      "paste_source": null
+    },
+    {
+      "t": 62.379,
+      "type": "cut",
+      "text": "q",
+      "paste_source": null
+    },
+    {
+      "t": 65.173,
+      "type": "type",
+      "text": "1",
+      "paste_source": null
+    },
+    {
+      "t": 65.347,
+      "type": "type",
+      "text": "m",
+      "paste_source": null
+    },
+    {
+      "t": 66.489,
+      "type": "type",
+      "text": "a",
+      "paste_source": null
+    },
+    {
+      "t": 66.77,
+      "type": "type",
+      "text": "in_v4",
+      "paste_source": null
+    },
+    {
+      "t": 66.909,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 66.998,
+      "type": "type",
+      "text": "=",
+      "paste_source": null
+    },
+    {
+      "t": 67.582,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 67.849,
+      "type": "type",
+      "text": "M",
+      "paste_source": null
+    },
+    {
+      "t": 68.153,
+      "type": "type",
+      "text": "a",
+      "paste_source": null
+    },
+    {
+      "t": 68.162,
+      "type": "type",
+      "text": "th",
+      "paste_source": null
+    },
+    {
+      "t": 69.131,
+      "type": "type",
+      "text": ".",
+      "paste_source": null
+    },
+    {
+      "t": 69.139,
+      "type": "type",
+      "text": "max",
+      "paste_source": null
+    },
+    {
+      "t": 69.14,
+      "type": "type",
+      "text": "(",
+      "paste_source": null
+    },
+    {
+      "t": 75.388,
+      "type": "type",
+      "text": ")",
+      "paste_source": null
+    },
+    {
+      "t": 75.565,
+      "type": "type",
+      "text": "m",
+      "paste_source": null
+    },
+    {
+      "t": 75.821,
+      "type": "type",
+      "text": "a",
+      "paste_source": null
+    },
+    {
+      "t": 76.068,
+      "type": "type",
+      "text": "in_v4",
+      "paste_source": null
+    },
+    {
+      "t": 76.106,
+      "type": "type",
+      "text": ",",
+      "paste_source": null
+    },
+    {
+      "t": 77.42,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 78.437,
+      "type": "type",
+      "text": "main_p1",
+      "paste_source": null
+    },
+    {
+      "t": 78.437,
+      "type": "cut",
+      "text": "Action:EditorDeleteLine",
+      "paste_source": null
+    },
+    {
+      "t": 85.956,
+      "type": "type",
+      "text": ";",
+      "paste_source": null
+    },
+    {
+      "t": 85.956,
+      "type": "cut",
+      "text": "Action:EditorBackSpace",
+      "paste_source": null
+    },
+    {
+      "t": 89.632,
+      "type": "cut",
+      "text": "    main_v4 = Math.max(main_v4, main_p1);\n        ",
+      "paste_source": null
+    },
+    {
+      "t": 89.632,
+      "type": "cut",
+      "text": "Action:EditorBackSpace",
+      "paste_source": null
+    },
+    {
+      "t": 89.767,
+      "type": "cut",
+      "text": "mai",
+      "paste_source": null
+    },
+    {
+      "t": 89.767,
+      "type": "type",
+      "text": "c",
+      "paste_source": null
+    },
+    {
+      "t": 89.767,
+      "type": "cut",
+      "text": "_v3",
+      "paste_source": null
+    },
+    {
+      "t": 89.767,
+      "type": "cut",
+      "text": "Action:EditorBackSpace",
+      "paste_source": null
+    },
+    {
+      "t": 89.894,
+      "type": "cut",
+      "text": "n",
+      "paste_source": null
+    },
+    {
+      "t": 89.894,
+      "type": "cut",
+      "text": "Action:EditorBackSpace",
+      "paste_source": null
+    },
+    {
+      "t": 89.997,
+      "type": "cut",
+      "text": "c",
+      "paste_source": null
+    },
+    {
+      "t": 89.997,
+      "type": "cut",
+      "text": "Action:EditorBackSpace",
+      "paste_source": null
+    },
+    {
+      "t": 90.105,
+      "type": "cut",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 90.788,
+      "type": "cut",
+      "text": "p",
+      "paste_source": null
+    },
+    {
+      "t": 90.788,
+      "type": "type",
+      "text": "v",
+      "paste_source": null
+    },
+    {
+      "t": 90.788,
+      "type": "cut",
+      "text": " :",
+      "paste_source": null
+    },
+    {
+      "t": 90.963,
+      "type": "type",
+      "text": " =",
+      "paste_source": null
+    },
+    {
+      "t": 91.111,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 91.307,
+      "type": "type",
+      "text": "0",
+      "paste_source": null
+    },
+    {
+      "t": 91.456,
+      "type": "type",
+      "text": ";",
+      "paste_source": null
+    },
+    {
+      "t": 91.567,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 91.68,
+      "type": "type",
+      "text": "I",
+      "paste_source": null
+    },
+    {
+      "t": 91.838,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 92.012,
+      "type": "type",
+      "text": "<",
+      "paste_source": null
+    },
+    {
+      "t": 92.012,
+      "type": "cut",
+      "text": "Action:EditorBackSpace",
+      "paste_source": null
+    },
+    {
+      "t": 92.631,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 92.631,
+      "type": "cut",
+      "text": "Action:EditorBackSpace",
+      "paste_source": null
+    },
+    {
+      "t": 92.744,
+      "type": "cut",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 92.744,
+      "type": "cut",
+      "text": "Action:EditorBackSpace",
+      "paste_source": null
+    },
+    {
+      "t": 92.855,
+      "type": "cut",
+      "text": "<",
+      "paste_source": null
+    },
+    {
+      "t": 92.855,
+      "type": "cut",
+      "text": "Action:EditorBackSpace",
+      "paste_source": null
+    },
+    {
+      "t": 93.242,
+      "type": "cut",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 93.566,
+      "type": "cut",
+      "text": "I",
+      "paste_source": null
+    },
+    {
+      "t": 94.124,
+      "type": "type",
+      "text": "I",
+      "paste_source": null
+    },
+    {
+      "t": 94.13,
+      "type": "type",
+      "text": "'",
+      "paste_source": null
+    },
+    {
+      "t": 94.145,
+      "type": "type",
+      "text": "'",
+      "paste_source": null
+    },
+    {
+      "t": 94.145,
+      "type": "cut",
+      "text": "Action:EditorBackSpace",
+      "paste_source": null
+    },
+    {
+      "t": 94.606,
+      "type": "type",
+      "text": ";",
+      "paste_source": null
+    },
+    {
+      "t": 94.606,
+      "type": "cut",
+      "text": "Action:EditorBackSpace",
+      "paste_source": null
+    },
+    {
+      "t": 94.724,
+      "type": "cut",
+      "text": ";",
+      "paste_source": null
+    },
+    {
+      "t": 94.726,
+      "type": "cut",
+      "text": "'",
+      "paste_source": null
+    },
+    {
+      "t": 94.726,
+      "type": "cut",
+      "text": "Action:EditorBackSpace",
+      "paste_source": null
+    },
+    {
+      "t": 94.826,
+      "type": "cut",
+      "text": "'",
+      "paste_source": null
+    },
+    {
+      "t": 95.837,
+      "type": "cut",
+      "text": "I",
+      "paste_source": null
+    },
+    {
+      "t": 96.902,
+      "type": "type",
+      "text": "main_v1",
+      "paste_source": null
+    },
+    {
+      "t": 97.321,
+      "type": "type",
+      "text": " <",
+      "paste_source": null
+    },
+    {
+      "t": 98.789,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 99.104,
+      "type": "type",
+      "text": "1",
+      "paste_source": null
+    },
+    {
+      "t": 99.111,
+      "type": "type",
+      "text": "0",
+      "paste_source": null
+    },
+    {
+      "t": 99.291,
+      "type": "type",
+      "text": ";",
+      "paste_source": null
+    },
+    {
+      "t": 99.831,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 99.966,
+      "type": "type",
+      "text": "+",
+      "paste_source": null
+    },
+    {
+      "t": 100.235,
+      "type": "type",
+      "text": "+",
+      "paste_source": null
+    },
+    {
+      "t": 102.989,
+      "type": "type",
+      "text": "main_v1",
+      "paste_source": null
+    },
+    {
+      "t": 102.992,
+      "type": "type",
+      "text": "\n        ",
+      "paste_source": null
+    },
+    {
+      "t": 110.695,
+      "type": "type",
+      "text": "    ",
+      "paste_source": null
+    },
+    {
+      "t": 110.697,
+      "type": "type",
+      "text": "\n        ",
+      "paste_source": null
+    },
+    {
+      "t": 111.276,
+      "type": "type",
+      "text": "m",
+      "paste_source": null
+    },
+    {
+      "t": 112.76,
+      "type": "type",
+      "text": "a",
+      "paste_source": null
+    },
+    {
+      "t": 112.769,
+      "type": "type",
+      "text": "in_v4",
+      "paste_source": null
+    },
+    {
+      "t": 112.769,
+      "type": "cut",
+      "text": "Action:EditorBackSpace",
+      "paste_source": null
+    },
+    {
+      "t": 113.59,
+      "type": "cut",
+      "text": "Action:EditorBackSpace",
+      "paste_source": null
+    },
+    {
+      "t": 113.718,
+      "type": "cut",
+      "text": "in_v4",
+      "paste_source": null
+    },
+    {
+      "t": 113.718,
+      "type": "cut",
+      "text": "Action:EditorBackSpace",
+      "paste_source": null
+    },
+    {
+      "t": 113.832,
+      "type": "cut",
+      "text": "a",
+      "paste_source": null
+    },
+    {
+      "t": 114.457,
+      "type": "cut",
+      "text": "m",
+      "paste_source": null
+    },
+    {
+      "t": 114.513,
+      "type": "type",
+      "text": "i",
+      "paste_source": null
+    },
+    {
+      "t": 114.565,
+      "type": "type",
+      "text": "ma",
+      "paste_source": null
+    },
+    {
+      "t": 114.565,
+      "type": "type",
+      "text": "n_v1",
+      "paste_source": null
+    },
+    {
+      "t": 114.711,
+      "type": "cut",
+      "text": "ma",
+      "paste_source": null
+    },
+    {
+      "t": 114.711,
+      "type": "cut",
+      "text": "_v1",
+      "paste_source": null
+    },
+    {
+      "t": 114.711,
+      "type": "type",
+      "text": "t",
+      "paste_source": null
+    },
+    {
+      "t": 115.301,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 115.676,
+      "type": "type",
+      "text": "main_v5",
+      "paste_source": null
+    },
+    {
+      "t": 117.872,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 118.018,
+      "type": "type",
+      "text": "=",
+      "paste_source": null
+    },
+    {
+      "t": 118.486,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 118.723,
+      "type": "type",
+      "text": "0",
+      "paste_source": null
+    },
+    {
+      "t": 120.343,
+      "type": "type",
+      "text": ";",
+      "paste_source": null
+    },
+    {
+      "t": 120.433,
+      "type": "type",
+      "text": "main_v1",
+      "paste_source": null
+    },
+    {
+      "t": 120.574,
+      "type": "cut",
+      "text": "ma",
+      "paste_source": null
+    },
+    {
+      "t": 120.574,
+      "type": "cut",
+      "text": "n_v1",
+      "paste_source": null
+    },
+    {
+      "t": 120.574,
+      "type": "type",
+      "text": "f",
+      "paste_source": null
+    },
+    {
+      "t": 121.081,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 121.085,
+      "type": "type",
+      "text": "(",
+      "paste_source": null
+    },
+    {
+      "t": 121.817,
+      "type": "type",
+      "text": ")",
+      "paste_source": null
+    },
+    {
+      "t": 121.938,
+      "type": "type",
+      "text": "m",
+      "paste_source": null
+    },
+    {
+      "t": 122.035,
+      "type": "type",
+      "text": "a",
+      "paste_source": null
+    },
+    {
+      "t": 122.455,
+      "type": "type",
+      "text": "in_v4",
+      "paste_source": null
+    },
+    {
+      "t": 122.859,
+      "type": "type",
+      "text": " >",
+      "paste_source": null
+    },
+    {
+      "t": 124.989,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 125.086,
+      "type": "type",
+      "text": "c",
+      "paste_source": null
+    },
+    {
+      "t": 125.248,
+      "type": "type",
+      "text": "n",
+      "paste_source": null
+    },
+    {
+      "t": 125.868,
+      "type": "cut",
+      "text": "c",
+      "paste_source": null
+    },
+    {
+      "t": 125.868,
+      "type": "type",
+      "text": "mai",
+      "paste_source": null
+    },
+    {
+      "t": 125.868,
+      "type": "type",
+      "text": "_v3",
+      "paste_source": null
+    },
+    {
+      "t": 125.872,
+      "type": "type",
+      "text": "[",
+      "paste_source": null
+    },
+    {
+      "t": 125.958,
+      "type": "type",
+      "text": "]",
+      "paste_source": null
+    },
+    {
+      "t": 128.966,
+      "type": "type",
+      "text": "main_v1",
+      "paste_source": null
+    },
+    {
+      "t": 129.194,
+      "type": "type",
+      "text": "{",
+      "paste_source": null
+    },
+    {
+      "t": 129.195,
+      "type": "type",
+      "text": "}\n",
+      "paste_source": null
+    },
+    {
+      "t": 129.2,
+      "type": "type",
+      "text": "\n",
+      "paste_source": null
+    },
+    {
+      "t": 129.202,
+      "type": "type",
+      "text": "            ",
+      "paste_source": null
+    },
+    {
+      "t": 129.203,
+      "type": "cut",
+      "text": "\n",
+      "paste_source": null
+    },
+    {
+      "t": 129.205,
+      "type": "type",
+      "text": "\n            ",
+      "paste_source": null
+    },
+    {
+      "t": 129.916,
+      "type": "type",
+      "text": "    ",
+      "paste_source": null
+    },
+    {
+      "t": 130.049,
+      "type": "type",
+      "text": "m",
+      "paste_source": null
+    },
+    {
+      "t": 130.151,
+      "type": "type",
+      "text": "a",
+      "paste_source": null
+    },
+    {
+      "t": 130.747,
+      "type": "type",
+      "text": "in_v4",
+      "paste_source": null
+    },
+    {
+      "t": 130.898,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 131.081,
+      "type": "type",
+      "text": "=",
+      "paste_source": null
+    },
+    {
+      "t": 131.365,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 131.476,
+      "type": "type",
+      "text": "c",
+      "paste_source": null
+    },
+    {
+      "t": 131.607,
+      "type": "type",
+      "text": "n",
+      "paste_source": null
+    },
+    {
+      "t": 132.366,
+      "type": "cut",
+      "text": "c",
+      "paste_source": null
+    },
+    {
+      "t": 132.366,
+      "type": "type",
+      "text": "mai",
+      "paste_source": null
+    },
+    {
+      "t": 132.366,
+      "type": "type",
+      "text": "_v3",
+      "paste_source": null
+    },
+    {
+      "t": 132.369,
+      "type": "type",
+      "text": "[",
+      "paste_source": null
+    },
+    {
+      "t": 132.446,
+      "type": "type",
+      "text": "]",
+      "paste_source": null
+    },
+    {
+      "t": 133.487,
+      "type": "type",
+      "text": "main_v1",
+      "paste_source": null
+    },
+    {
+      "t": 134.683,
+      "type": "type",
+      "text": ";",
+      "paste_source": null
+    },
+    {
+      "t": 134.686,
+      "type": "type",
+      "text": "    \n            ",
+      "paste_source": null
+    },
+    {
+      "t": 136.891,
+      "type": "type",
+      "text": "m",
+      "paste_source": null
+    },
+    {
+      "t": 136.898,
+      "type": "type",
+      "text": "ain_v5",
+      "paste_source": null
+    },
+    {
+      "t": 137.469,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 137.606,
+      "type": "type",
+      "text": "=",
+      "paste_source": null
+    },
+    {
+      "t": 138.575,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 138.847,
+      "type": "type",
+      "text": "main_v1",
+      "paste_source": null
+    },
+    {
+      "t": 141.872,
+      "type": "type",
+      "text": ";",
+      "paste_source": null
+    },
+    {
+      "t": 141.875,
+      "type": "type",
+      "text": "        \n",
+      "paste_source": null
+    },
+    {
+      "t": 142.768,
+      "type": "type",
+      "text": "S",
+      "paste_source": null
+    },
+    {
+      "t": 142.777,
+      "type": "type",
+      "text": "ystem",
+      "paste_source": null
+    },
+    {
+      "t": 143.261,
+      "type": "type",
+      "text": ".",
+      "paste_source": null
+    },
+    {
+      "t": 143.268,
+      "type": "type",
+      "text": "out",
+      "paste_source": null
+    },
+    {
+      "t": 143.782,
+      "type": "type",
+      "text": ".",
+      "paste_source": null
+    },
+    {
+      "t": 143.79,
+      "type": "type",
+      "text": "print",
+      "paste_source": null
+    },
+    {
+      "t": 143.791,
+      "type": "type",
+      "text": "(",
+      "paste_source": null
+    },
+    {
+      "t": 143.795,
+      "type": "type",
+      "text": ")",
+      "paste_source": null
+    },
+    {
+      "t": 145.318,
+      "type": "type",
+      "text": ";",
+      "paste_source": null
+    },
+    {
+      "t": 146.988,
+      "type": "type",
+      "text": "m",
+      "paste_source": null
+    },
+    {
+      "t": 146.996,
+      "type": "type",
+      "text": "ain_v5",
+      "paste_source": null
+    },
+    {
+      "t": 147.68,
+      "type": "type",
+      "text": " +",
+      "paste_source": null
+    },
+    {
+      "t": 147.68,
+      "type": "cut",
+      "text": "Action:EditorBackSpace",
+      "paste_source": null
+    },
+    {
+      "t": 181.67,
+      "type": "type",
+      "text": "1",
+      "paste_source": null
+    },
+    {
+      "t": 181.67,
+      "type": "cut",
+      "text": "Action:EditorBackSpace",
+      "paste_source": null
+    },
+    {
+      "t": 182.342,
+      "type": "cut",
+      "text": "int main_v4 = -1;\n        int main_v5 = 0;\n        for (int main_v1 = 0; main_v1 < 10; ++main_v1){\n            if (main_v4 > main_v3[main_v1]){\n                main_v4 = main_v3[main_v1];\n                main_v5 = main_v1;\n            }\n        }",
+      "paste_source": null
+    },
+    {
+      "t": 182.342,
+      "type": "type",
+      "text": "x",
+      "paste_source": null
+    },
+    {
+      "t": 182.342,
+      "type": "cut",
+      "text": "n_v5 ",
+      "paste_source": null
+    },
+    {
+      "t": 182.345,
+      "type": "cut",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 182.345,
+      "type": "cut",
+      "text": "Action:EditorDeleteLine",
+      "paste_source": null
+    },
+    {
+      "t": 186.012,
+      "type": "cut",
+      "text": "\n       ",
+      "paste_source": null
+    },
+    {
+      "t": 186.012,
+      "type": "cut",
+      "text": "Action:EditorDelete",
+      "paste_source": null
+    },
+    {
+      "t": 188.182,
+      "type": "cut",
+      "text": "int[] main_v3 = new int[10];\n        ",
+      "paste_source": null
+    },
+    {
+      "t": 188.182,
+      "type": "cut",
+      "text": "mai",
+      "paste_source": null
+    },
+    {
+      "t": 188.182,
+      "type": "type",
+      "text": "c",
+      "paste_source": null
+    },
+    {
+      "t": 188.182,
+      "type": "cut",
+      "text": "_v3",
+      "paste_source": null
+    },
+    {
+      "t": 188.182,
+      "type": "type",
+      "text": "t",
+      "paste_source": null
+    },
+    {
+      "t": 188.182,
+      "type": "cut",
+      "text": "Action:EditorDelete",
+      "paste_source": null
+    },
+    {
+      "t": 188.326,
+      "type": "cut",
+      "text": "c",
+      "paste_source": null
+    },
+    {
+      "t": 188.326,
+      "type": "cut",
+      "text": "Action:EditorDelete",
+      "paste_source": null
+    },
+    {
+      "t": 188.466,
+      "type": "cut",
+      "text": "n",
+      "paste_source": null
+    },
+    {
+      "t": 188.466,
+      "type": "cut",
+      "text": "Action:EditorDelete",
+      "paste_source": null
+    },
+    {
+      "t": 188.689,
+      "type": "cut",
+      "text": "t",
+      "paste_source": null
+    },
+    {
+      "t": 189.475,
+      "type": "cut",
+      "text": "[",
+      "paste_source": null
+    },
+    {
+      "t": 189.606,
+      "type": "type",
+      "text": "m",
+      "paste_source": null
+    },
+    {
+      "t": 189.682,
+      "type": "type",
+      "text": "a",
+      "paste_source": null
+    },
+    {
+      "t": 189.682,
+      "type": "cut",
+      "text": "Action:EditorBackSpace",
+      "paste_source": null
+    },
+    {
+      "t": 189.986,
+      "type": "type",
+      "text": "z",
+      "paste_source": null
+    },
+    {
+      "t": 190.108,
+      "type": "cut",
+      "text": "z",
+      "paste_source": null
+    },
+    {
+      "t": 191.247,
+      "type": "type",
+      "text": "x",
+      "paste_source": null
+    },
+    {
+      "t": 191.367,
+      "type": "cut",
+      "text": "I",
+      "paste_source": null
+    },
+    {
+      "t": 191.367,
+      "type": "type",
+      "text": " mai",
+      "paste_source": null
+    },
+    {
+      "t": 191.367,
+      "type": "cut",
+      "text": "teger",
+      "paste_source": null
+    },
+    {
+      "t": 191.367,
+      "type": "type",
+      "text": "_v1",
+      "paste_source": null
+    },
+    {
+      "t": 191.467,
+      "type": "cut",
+      "text": "mai",
+      "paste_source": null
+    },
+    {
+      "t": 191.467,
+      "type": "type",
+      "text": "=I",
+      "paste_source": null
+    },
+    {
+      "t": 191.467,
+      "type": "cut",
+      "text": "_v1",
+      "paste_source": null
+    },
+    {
+      "t": 191.467,
+      "type": "type",
+      "text": "teger",
+      "paste_source": null
+    },
+    {
+      "t": 192.043,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 192.767,
+      "type": "type",
+      "text": "M",
+      "paste_source": null
+    },
+    {
+      "t": 192.78,
+      "type": "type",
+      "text": "ath",
+      "paste_source": null
+    },
+    {
+      "t": 192.789,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 193.103,
+      "type": "cut",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 194.549,
+      "type": "type",
+      "text": ".",
+      "paste_source": null
+    },
+    {
+      "t": 194.557,
+      "type": "type",
+      "text": "max",
+      "paste_source": null
+    },
+    {
+      "t": 194.559,
+      "type": "type",
+      "text": "(",
+      "paste_source": null
+    },
+    {
+      "t": 194.559,
+      "type": "cut",
+      "text": "Action:EditorDelete",
+      "paste_source": null
+    },
+    {
+      "t": 196.767,
+      "type": "type",
+      "text": ")",
+      "paste_source": null
+    },
+    {
+      "t": 197.503,
+      "type": "cut",
+      "text": ")",
+      "paste_source": null
+    },
+    {
+      "t": 197.686,
+      "type": "type",
+      "text": "m",
+      "paste_source": null
+    },
+    {
+      "t": 197.886,
+      "type": "type",
+      "text": "a",
+      "paste_source": null
+    },
+    {
+      "t": 198.611,
+      "type": "type",
+      "text": "x",
+      "paste_source": null
+    },
+    {
+      "t": 198.678,
+      "type": "type",
+      "text": ",",
+      "paste_source": null
+    },
+    {
+      "t": 198.678,
+      "type": "cut",
+      "text": "Action:EditorDelete",
+      "paste_source": null
+    },
+    {
+      "t": 201.133,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 201.133,
+      "type": "cut",
+      "text": "Action:EditorDelete",
+      "paste_source": null
+    },
+    {
+      "t": 201.294,
+      "type": "cut",
+      "text": "]",
+      "paste_source": null
+    },
+    {
+      "t": 201.294,
+      "type": "cut",
+      "text": "Action:EditorDelete",
+      "paste_source": null
+    },
+    {
+      "t": 201.417,
+      "type": "cut",
+      "text": "+",
+      "paste_source": null
+    },
+    {
+      "t": 202.041,
+      "type": "cut",
+      "text": "+",
+      "paste_source": null
+    },
+    {
+      "t": 202.041,
+      "type": "cut",
+      "text": "Action:EditorBackSpace",
+      "paste_source": null
+    },
+    {
+      "t": 203.713,
+      "type": "type",
+      "text": ")",
+      "paste_source": null
+    },
+    {
+      "t": 203.713,
+      "type": "cut",
+      "text": "Action:EditorBackSpace",
+      "paste_source": null
+    },
+    {
+      "t": 203.815,
+      "type": "cut",
+      "text": "1",
+      "paste_source": null
+    },
+    {
+      "t": 206.882,
+      "type": "cut",
+      "text": "-",
+      "paste_source": null
+    },
+    {
+      "t": 206.886,
+      "type": "type",
+      "text": "\n        ",
+      "paste_source": null
+    },
+    {
+      "t": 206.91,
+      "type": "type",
+      "text": "\n        ",
+      "paste_source": null
+    },
+    {
+      "t": 207.402,
+      "type": "type",
+      "text": "i",
+      "paste_source": null
+    },
+    {
+      "t": 207.489,
+      "type": "cut",
+      "text": "        ",
+      "paste_source": null
+    },
+    {
+      "t": 207.489,
+      "type": "type",
+      "text": "ma",
+      "paste_source": null
+    },
+    {
+      "t": 207.489,
+      "type": "type",
+      "text": "n_v1",
+      "paste_source": null
+    },
+    {
+      "t": 207.663,
+      "type": "type",
+      "text": "        ",
+      "paste_source": null
+    },
+    {
+      "t": 207.663,
+      "type": "cut",
+      "text": "ma",
+      "paste_source": null
+    },
+    {
+      "t": 207.663,
+      "type": "cut",
+      "text": "_v1",
+      "paste_source": null
+    },
+    {
+      "t": 207.663,
+      "type": "type",
+      "text": "t",
+      "paste_source": null
+    },
+    {
+      "t": 208.965,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 209.273,
+      "type": "type",
+      "text": "main_v3",
+      "paste_source": null
+    },
+    {
+      "t": 209.615,
+      "type": "cut",
+      "text": "x",
+      "paste_source": null
+    },
+    {
+      "t": 209.615,
+      "type": "type",
+      "text": "in_v3",
+      "paste_source": null
+    },
+    {
+      "t": 209.615,
+      "type": "cut",
+      "text": "x",
+      "paste_source": null
+    },
+    {
+      "t": 209.615,
+      "type": "type",
+      "text": "in_v3",
+      "paste_source": null
+    },
+    {
+      "t": 209.779,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 209.877,
+      "type": "type",
+      "text": "=",
+      "paste_source": null
+    },
+    {
+      "t": 210.23,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 210.311,
+      "type": "type",
+      "text": "-",
+      "paste_source": null
+    },
+    {
+      "t": 210.473,
+      "type": "type",
+      "text": "1",
+      "paste_source": null
+    },
+    {
+      "t": 210.473,
+      "type": "cut",
+      "text": "Action:EditorBackSpace",
+      "paste_source": null
+    },
+    {
+      "t": 211.625,
+      "type": "type",
+      "text": ";",
+      "paste_source": null
+    },
+    {
+      "t": 211.626,
+      "type": "cut",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 211.626,
+      "type": "cut",
+      "text": "Action:EditorBackSpace",
+      "paste_source": null
+    },
+    {
+      "t": 215.022,
+      "type": "cut",
+      "text": "\n       ",
+      "paste_source": null
+    },
+    {
+      "t": 215.022,
+      "type": "cut",
+      "text": "Action:EditorDelete",
+      "paste_source": null
+    },
+    {
+      "t": 216.243,
+      "type": "cut",
+      "text": "x",
+      "paste_source": null
+    },
+    {
+      "t": 216.243,
+      "type": "type",
+      "text": "n_v3 ",
+      "paste_source": null
+    },
+    {
+      "t": 216.243,
+      "type": "cut",
+      "text": "Action:EditorDelete",
+      "paste_source": null
+    },
+    {
+      "t": 216.377,
+      "type": "cut",
+      "text": "in_v3 +",
+      "paste_source": null
+    },
+    {
+      "t": 216.377,
+      "type": "type",
+      "text": "x",
+      "paste_source": null
+    },
+    {
+      "t": 216.377,
+      "type": "other",
+      "text": "CompilationFinished:0",
+      "paste_source": null
+    },
+    {
+      "t": 216.377,
+      "type": "other",
+      "text": "Action:Run",
+      "paste_source": null
+    },
+    {
+      "t": 216.377,
+      "type": "other",
+      "text": "CompilationFinished:0",
+      "paste_source": null
+    },
+    {
+      "t": 255.532,
+      "type": "cut",
+      "text": "x1",
+      "paste_source": null
+    },
+    {
+      "t": 255.532,
+      "type": "type",
+      "text": "in_v3",
+      "paste_source": null
+    }
+  ]
+}

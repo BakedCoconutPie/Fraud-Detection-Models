@@ -1,0 +1,67 @@
+{
+ "session_id": "211/C",
+ "source": "pastetrace_sp2023",
+ "label": 1,
+ "events": [
+  {
+   "t": 0.0,
+   "type": "paste",
+   "text": "import java.awt.Color;\n\npublic class Mandelbrot {\n\n    // return number of iterations to check if c = a + ib is in Mandelbrot set\n    public static int mand(Complex z0, int max) {\n        Complex z = z0;\n        for (int t = 0; t < max; t++) {\n            if (z.abs() > 2.0) return t;\n            z = z.times(z).plus(z0);\n        }\n        return max;\n    }\n\n    public static void main(String[] args)  {\n        double xc   = Double.parseDouble(args[0]);\n        double yc   = Double.parseDouble(args[1]);\n        double size = Double.parseDouble(args[2]);\n\n        int n   = 512;   // create n-by-n image\n        int max = 255;   // maximum number of iterations\n\n        Picture picture = new Picture(n, n);\n        for (int i = 0; i < n; i++) {\n            for (int j = 0; j < n; j++) {\n                double x0 = xc - size/2 + size*i/n;\n                double y0 = yc - size/2 + size*j/n;\n                Complex z0 = new Complex(x0, y0);\n                int gray = max - mand(z0, max);\n                Color color = new Color(gray, gray, gray);\n                picture.set(i, n-1-j, color);\n            }\n        }\n        picture.show();\n    }\n}",
+   "paste_source": "external"
+  },
+  {
+   "t": 14.2,
+   "type": "type",
+   "text": "thing",
+   "paste_source": null
+  },
+  {
+   "t": 18.4,
+   "type": "type",
+   "text": "thing",
+   "paste_source": null
+  },
+  {
+   "t": 161.8,
+   "type": "paste",
+   "text": "for (int row = 0; row < height; row++) {\n    for (int col = 0; col < width; col++) {\n        double c_re = (col - width/2.0)*4.0/width;\n        double c_im = (row - height/2.0)*4.0/width;\n        double x = 0, y = 0;\n        int iteration = 0;\n        while (x*x+y*y <= 4 && iteration < max) {\n            double x_new = x*x - y*y + c_re;\n            y = 2*x*y + c_im;\n            x = x_new;\n            iteration++;\n        }\n        if (iteration < max) putpixel(col, row, white);\n        else putpixel(col, row, black);\n    }\n}",
+   "paste_source": "external"
+  },
+  {
+   "t": 216.8,
+   "type": "paste",
+   "text": "import java.awt.Color;\n\npublic class Mandelbrot {\n\n    // return number of iterations to check if c = a + ib is in Mandelbrot set\n    public static int mand(Complex z0, int max) {\n        Complex z = z0;\n        for (int t = 0; t < max; t++) {\n            if (z.abs() > 2.0) return t;\n            z = z.times(z).plus(z0);\n        }\n        return max;\n    }\n\n    public static void main(String[] args)  {\n        double xc   = Double.parseDouble(args[0]);\n        double yc   = Double.parseDouble(args[1]);\n        double size = Double.parseDouble(args[2]);\n\n        int n   = 512;   // create n-by-n image\n        int max = 255;   // maximum number of iterations\n\n        Picture picture = new Picture(n, n);\n        for (int i = 0; i < n; i++) {\n            for (int j = 0; j < n; j++) {\n                double x0 = xc - size/2 + size*i/n;\n                double y0 = yc - size/2 + size*j/n;\n                Complex z0 = new Complex(x0, y0);\n                int gray = max - mand(z0, max);\n                Color color = new Color(gray, gray, gray);\n                picture.set(i, n-1-j, color);\n            }\n        }\n        picture.show();\n    }\n}",
+   "paste_source": "external"
+  },
+  {
+   "t": 716.7,
+   "type": "paste",
+   "text": "import java.awt.Color;\nimport java.awt.Graphics;\nimport java.awt.image.BufferedImage;\nimport javax.swing.JFrame;\n\npublic class MandelbrotSet extends JFrame {\n\n    private final int MAX_ITER = 1000;\n    private final double ZOOM = 150;\n    private BufferedImage image;\n\n    public MandelbrotSet() {\n        super(\"Mandelbrot Set\");\n        setBounds(100, 100, 800, 600);\n        setResizable(false);\n        setDefaultCloseOperation(EXIT_ON_CLOSE);\n        image = new BufferedImage(getWidth(), getHeight(), BufferedImage.TYPE_INT_RGB);\n        int[] colors = new int[MAX_ITER];\n        for (int i = 0; i < MAX_ITER; i++) {\n            colors[i] = Color.HSBtoRGB(i/256f, 1, i/(i+8f));\n        }\n        for (int y = 0; y < getHeight(); y++) {\n            for (int x = 0; x < getWidth(); x++) {\n                double zx = 0;\n                double zy = 0;\n                double cX = (x - 400) / ZOOM;\n                double cY = (y - 300) / ZOOM;\n                int iter = MAX_ITER;\n                while (zx*zx + zy*zy < 4 && iter > 0) {\n                    double tmp = zx*zx - zy*zy + cX;\n                    zy = 2.0*zx*zy + cY;\n                    zx = tmp;\n                    iter--;\n                }\n                image.setRGB(x, y, iter == 0 ? 0 : colors[iter % MAX_ITER]);\n            }\n        }\n    }\n\n    @Override\n    public void paint(Graphics g) {\n        g.drawImage(image, 0, 0, this);\n    }\n\n    public static void main(String[] args) {\n        MandelbrotSet mandelbrot = new MandelbrotSet();\n        mandelbrot.setVisible(true);\n    }\n\n}",
+   "paste_source": "external"
+  },
+  {
+   "t": 817.2,
+   "type": "type",
+   "text": "\n\n// i found this while google",
+   "paste_source": null
+  },
+  {
+   "t": 824.4,
+   "type": "type",
+   "text": "\\bing ho",
+   "paste_source": null
+  },
+  {
+   "t": 825.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 826.8,
+   "type": "type",
+   "text": "\\bmandelbrot set code for java",
+   "paste_source": null
+  }
+ ]
+}

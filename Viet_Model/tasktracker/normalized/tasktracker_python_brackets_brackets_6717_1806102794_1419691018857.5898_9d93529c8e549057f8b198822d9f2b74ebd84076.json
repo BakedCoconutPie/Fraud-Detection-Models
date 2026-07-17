@@ -1,0 +1,75 @@
+{
+  "session_id": "tasktracker_python_brackets_brackets_6717_1806102794_1419691018857.5898_9d93529c8e549057f8b198822d9f2b74ebd84076",
+  "source": "tasktracker_sigcse2021",
+  "metadata": {
+    "language": "python",
+    "task": "brackets",
+    "task_status": "",
+    "final_score": 0.0,
+    "weak_label": 0,
+    "label_reason": "low-risk trace",
+    "source_file": "data\\raw\\tasktracker\\extracted\\data_google_drive_anonymized (SIGSCE 2020)\\python\\brackets\\brackets_6717_1806102794_1419691018857.5898_9d93529c8e549057f8b198822d9f2b74ebd84076.csv"
+  },
+  "events": [
+    {
+      "t": 634.705,
+      "type": "type",
+      "text": "v2 = ",
+      "paste_source": null
+    },
+    {
+      "t": 634.705,
+      "type": "paste",
+      "text": "v3 = len(v2)\n\nv4 = v3 / 2 - 1\nv5 = 0\nwhile v5 < v4:\n    print(v2[v5], end='')\n    print('(', end='')\n    v5 = v5 + 1",
+      "paste_source": "unknown"
+    },
+    {
+      "t": 634.705,
+      "type": "paste",
+      "text": "v2[v5], end='')\nv5 = v5 + 1\nif v3 % 2 == 1:\n    print(')', end='')\nwhi",
+      "paste_source": "unknown"
+    },
+    {
+      "t": 634.705,
+      "type": "type",
+      "text": "e v5 < v3 - 1:\n    pr",
+      "paste_source": null
+    },
+    {
+      "t": 634.705,
+      "type": "cut",
+      "text": "s",
+      "paste_source": null
+    },
+    {
+      "t": 634.705,
+      "type": "type",
+      "text": "n",
+      "paste_source": null
+    },
+    {
+      "t": 634.705,
+      "type": "type",
+      "text": "(v2",
+      "paste_source": null
+    },
+    {
+      "t": 634.705,
+      "type": "cut",
+      "text": "0",
+      "paste_source": null
+    },
+    {
+      "t": 634.705,
+      "type": "paste",
+      "text": "v5], end='')\n    print(')', end='')\n    v5 = v5 + 1\nprint(v2[v5",
+      "paste_source": "unknown"
+    },
+    {
+      "t": 634.705,
+      "type": "cut",
+      "text": "\n",
+      "paste_source": null
+    }
+  ]
+}

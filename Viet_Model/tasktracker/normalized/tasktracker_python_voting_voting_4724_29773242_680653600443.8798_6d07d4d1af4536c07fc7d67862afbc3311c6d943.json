@@ -1,0 +1,2187 @@
+{
+  "session_id": "tasktracker_python_voting_voting_4724_29773242_680653600443.8798_6d07d4d1af4536c07fc7d67862afbc3311c6d943",
+  "source": "tasktracker_sigcse2021",
+  "metadata": {
+    "language": "python",
+    "task": "voting",
+    "task_status": "SOLVED",
+    "final_score": 0.16666666666666666,
+    "weak_label": 0,
+    "label_reason": "large code insertion",
+    "source_file": "data\\raw\\tasktracker\\extracted\\data_google_drive_anonymized (SIGSCE 2020)\\python\\voting\\voting_4724_29773242_680653600443.8798_6d07d4d1af4536c07fc7d67862afbc3311c6d943.csv"
+  },
+  "events": [
+    {
+      "t": 0.133,
+      "type": "type",
+      "text": "d",
+      "paste_source": null
+    },
+    {
+      "t": 0.37,
+      "type": "type",
+      "text": "e",
+      "paste_source": null
+    },
+    {
+      "t": 1.019,
+      "type": "type",
+      "text": "f",
+      "paste_source": null
+    },
+    {
+      "t": 9.141,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 9.259,
+      "type": "type",
+      "text": "f1",
+      "paste_source": null
+    },
+    {
+      "t": 11.666,
+      "type": "type",
+      "text": "(",
+      "paste_source": null
+    },
+    {
+      "t": 85.456,
+      "type": "type",
+      "text": ")",
+      "paste_source": null
+    },
+    {
+      "t": 85.792,
+      "type": "type",
+      "text": "f1_p1",
+      "paste_source": null
+    },
+    {
+      "t": 85.93,
+      "type": "type",
+      "text": ", ",
+      "paste_source": null
+    },
+    {
+      "t": 86.128,
+      "type": "type",
+      "text": "f1_p2",
+      "paste_source": null
+    },
+    {
+      "t": 86.832,
+      "type": "type",
+      "text": ", ",
+      "paste_source": null
+    },
+    {
+      "t": 86.969,
+      "type": "cut",
+      "text": ", ",
+      "paste_source": null
+    },
+    {
+      "t": 87.688,
+      "type": "cut",
+      "text": "f1_p2",
+      "paste_source": null
+    },
+    {
+      "t": 88.193,
+      "type": "type",
+      "text": "f1_p2",
+      "paste_source": null
+    },
+    {
+      "t": 88.254,
+      "type": "type",
+      "text": ", ",
+      "paste_source": null
+    },
+    {
+      "t": 90.991,
+      "type": "type",
+      "text": "f1_p3",
+      "paste_source": null
+    },
+    {
+      "t": 91.48,
+      "type": "type",
+      "text": ":",
+      "paste_source": null
+    },
+    {
+      "t": 91.495,
+      "type": "type",
+      "text": "\n",
+      "paste_source": null
+    },
+    {
+      "t": 92.887,
+      "type": "type",
+      "text": "    ",
+      "paste_source": null
+    },
+    {
+      "t": 92.887,
+      "type": "cut",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 93.3,
+      "type": "cut",
+      "text": "   ",
+      "paste_source": null
+    },
+    {
+      "t": 94.217,
+      "type": "cut",
+      "text": "\n",
+      "paste_source": null
+    },
+    {
+      "t": 94.217,
+      "type": "type",
+      "text": "\n",
+      "paste_source": null
+    },
+    {
+      "t": 123.301,
+      "type": "type",
+      "text": "    ",
+      "paste_source": null
+    },
+    {
+      "t": 124.341,
+      "type": "type",
+      "text": "s",
+      "paste_source": null
+    },
+    {
+      "t": 125.304,
+      "type": "cut",
+      "text": "s",
+      "paste_source": null
+    },
+    {
+      "t": 125.304,
+      "type": "type",
+      "text": "f1_v1=",
+      "paste_source": null
+    },
+    {
+      "t": 125.808,
+      "type": "type",
+      "text": "f1_p1",
+      "paste_source": null
+    },
+    {
+      "t": 126.649,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 126.649,
+      "type": "type",
+      "text": " +",
+      "paste_source": null
+    },
+    {
+      "t": 127.598,
+      "type": "type",
+      "text": " f1_p2",
+      "paste_source": null
+    },
+    {
+      "t": 128.072,
+      "type": "type",
+      "text": " +",
+      "paste_source": null
+    },
+    {
+      "t": 128.546,
+      "type": "type",
+      "text": " f1_p3",
+      "paste_source": null
+    },
+    {
+      "t": 130.442,
+      "type": "type",
+      "text": "\n    ",
+      "paste_source": null
+    },
+    {
+      "t": 130.518,
+      "type": "type",
+      "text": "i",
+      "paste_source": null
+    },
+    {
+      "t": 132.047,
+      "type": "type",
+      "text": "f",
+      "paste_source": null
+    },
+    {
+      "t": 136.375,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 137.628,
+      "type": "type",
+      "text": "f1_v1",
+      "paste_source": null
+    },
+    {
+      "t": 138.332,
+      "type": "type",
+      "text": ">",
+      "paste_source": null
+    },
+    {
+      "t": 147.491,
+      "type": "type",
+      "text": "=",
+      "paste_source": null
+    },
+    {
+      "t": 153.057,
+      "type": "type",
+      "text": "2",
+      "paste_source": null
+    },
+    {
+      "t": 153.348,
+      "type": "type",
+      "text": ":",
+      "paste_source": null
+    },
+    {
+      "t": 153.348,
+      "type": "type",
+      "text": "\n    ",
+      "paste_source": null
+    },
+    {
+      "t": 154.479,
+      "type": "type",
+      "text": "    ",
+      "paste_source": null
+    },
+    {
+      "t": 154.632,
+      "type": "type",
+      "text": "r",
+      "paste_source": null
+    },
+    {
+      "t": 155.03,
+      "type": "type",
+      "text": "e",
+      "paste_source": null
+    },
+    {
+      "t": 155.274,
+      "type": "type",
+      "text": "t",
+      "paste_source": null
+    },
+    {
+      "t": 155.458,
+      "type": "type",
+      "text": "u",
+      "paste_source": null
+    },
+    {
+      "t": 155.672,
+      "type": "type",
+      "text": "r",
+      "paste_source": null
+    },
+    {
+      "t": 156.65,
+      "type": "type",
+      "text": "n",
+      "paste_source": null
+    },
+    {
+      "t": 159.663,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 202.585,
+      "type": "type",
+      "text": "t",
+      "paste_source": null
+    },
+    {
+      "t": 203.869,
+      "type": "type",
+      "text": "r",
+      "paste_source": null
+    },
+    {
+      "t": 204.236,
+      "type": "type",
+      "text": "u",
+      "paste_source": null
+    },
+    {
+      "t": 205.704,
+      "type": "type",
+      "text": "e",
+      "paste_source": null
+    },
+    {
+      "t": 205.704,
+      "type": "type",
+      "text": "\n        ",
+      "paste_source": null
+    },
+    {
+      "t": 211.683,
+      "type": "cut",
+      "text": "    ",
+      "paste_source": null
+    },
+    {
+      "t": 211.943,
+      "type": "type",
+      "text": "e",
+      "paste_source": null
+    },
+    {
+      "t": 212.096,
+      "type": "type",
+      "text": "l",
+      "paste_source": null
+    },
+    {
+      "t": 212.279,
+      "type": "type",
+      "text": "s",
+      "paste_source": null
+    },
+    {
+      "t": 212.967,
+      "type": "type",
+      "text": "e",
+      "paste_source": null
+    },
+    {
+      "t": 213.273,
+      "type": "type",
+      "text": ":",
+      "paste_source": null
+    },
+    {
+      "t": 213.273,
+      "type": "type",
+      "text": "\n    ",
+      "paste_source": null
+    },
+    {
+      "t": 214.038,
+      "type": "type",
+      "text": "    ",
+      "paste_source": null
+    },
+    {
+      "t": 214.236,
+      "type": "type",
+      "text": "r",
+      "paste_source": null
+    },
+    {
+      "t": 214.481,
+      "type": "type",
+      "text": "e",
+      "paste_source": null
+    },
+    {
+      "t": 214.817,
+      "type": "type",
+      "text": "t",
+      "paste_source": null
+    },
+    {
+      "t": 214.924,
+      "type": "type",
+      "text": "u",
+      "paste_source": null
+    },
+    {
+      "t": 215.138,
+      "type": "type",
+      "text": "r",
+      "paste_source": null
+    },
+    {
+      "t": 215.49,
+      "type": "type",
+      "text": "n",
+      "paste_source": null
+    },
+    {
+      "t": 216.27,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 216.622,
+      "type": "type",
+      "text": "f",
+      "paste_source": null
+    },
+    {
+      "t": 217.325,
+      "type": "type",
+      "text": "a",
+      "paste_source": null
+    },
+    {
+      "t": 217.493,
+      "type": "type",
+      "text": "l",
+      "paste_source": null
+    },
+    {
+      "t": 217.799,
+      "type": "type",
+      "text": "s",
+      "paste_source": null
+    },
+    {
+      "t": 219.022,
+      "type": "type",
+      "text": "e",
+      "paste_source": null
+    },
+    {
+      "t": 219.022,
+      "type": "type",
+      "text": "\n        ",
+      "paste_source": null
+    },
+    {
+      "t": 219.833,
+      "type": "cut",
+      "text": "    ",
+      "paste_source": null
+    },
+    {
+      "t": 219.833,
+      "type": "cut",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 251.348,
+      "type": "cut",
+      "text": "   ",
+      "paste_source": null
+    },
+    {
+      "t": 251.699,
+      "type": "type",
+      "text": "p",
+      "paste_source": null
+    },
+    {
+      "t": 252.296,
+      "type": "type",
+      "text": "r",
+      "paste_source": null
+    },
+    {
+      "t": 252.51,
+      "type": "type",
+      "text": "i",
+      "paste_source": null
+    },
+    {
+      "t": 252.724,
+      "type": "type",
+      "text": "n",
+      "paste_source": null
+    },
+    {
+      "t": 255.048,
+      "type": "type",
+      "text": "t",
+      "paste_source": null
+    },
+    {
+      "t": 256.745,
+      "type": "cut",
+      "text": "t",
+      "paste_source": null
+    },
+    {
+      "t": 258.978,
+      "type": "type",
+      "text": "T",
+      "paste_source": null
+    },
+    {
+      "t": 259.375,
+      "type": "cut",
+      "text": "f",
+      "paste_source": null
+    },
+    {
+      "t": 261.562,
+      "type": "type",
+      "text": "F",
+      "paste_source": null
+    },
+    {
+      "t": 261.562,
+      "type": "type",
+      "text": "(",
+      "paste_source": null
+    },
+    {
+      "t": 276.608,
+      "type": "type",
+      "text": ")",
+      "paste_source": null
+    },
+    {
+      "t": 276.608,
+      "type": "type",
+      "text": "        \n",
+      "paste_source": null
+    },
+    {
+      "t": 277.052,
+      "type": "cut",
+      "text": "    ",
+      "paste_source": null
+    },
+    {
+      "t": 277.052,
+      "type": "cut",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 278.229,
+      "type": "cut",
+      "text": "   ",
+      "paste_source": null
+    },
+    {
+      "t": 279.192,
+      "type": "type",
+      "text": "x",
+      "paste_source": null
+    },
+    {
+      "t": 280.309,
+      "type": "cut",
+      "text": "x",
+      "paste_source": null
+    },
+    {
+      "t": 280.309,
+      "type": "type",
+      "text": "v1=",
+      "paste_source": null
+    },
+    {
+      "t": 280.813,
+      "type": "type",
+      "text": "i",
+      "paste_source": null
+    },
+    {
+      "t": 281.089,
+      "type": "type",
+      "text": "n",
+      "paste_source": null
+    },
+    {
+      "t": 281.471,
+      "type": "type",
+      "text": "t",
+      "paste_source": null
+    },
+    {
+      "t": 281.486,
+      "type": "type",
+      "text": "(",
+      "paste_source": null
+    },
+    {
+      "t": 282.128,
+      "type": "type",
+      "text": ")",
+      "paste_source": null
+    },
+    {
+      "t": 282.342,
+      "type": "type",
+      "text": "i",
+      "paste_source": null
+    },
+    {
+      "t": 282.709,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 282.709,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 282.709,
+      "type": "type",
+      "text": "n",
+      "paste_source": null
+    },
+    {
+      "t": 282.985,
+      "type": "cut",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 282.985,
+      "type": "cut",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 282.985,
+      "type": "type",
+      "text": "p",
+      "paste_source": null
+    },
+    {
+      "t": 283.153,
+      "type": "type",
+      "text": "u",
+      "paste_source": null
+    },
+    {
+      "t": 283.459,
+      "type": "type",
+      "text": "t",
+      "paste_source": null
+    },
+    {
+      "t": 283.459,
+      "type": "type",
+      "text": "(",
+      "paste_source": null
+    },
+    {
+      "t": 292.389,
+      "type": "type",
+      "text": ")",
+      "paste_source": null
+    },
+    {
+      "t": 293.306,
+      "type": "type",
+      "text": "\n",
+      "paste_source": null
+    },
+    {
+      "t": 293.841,
+      "type": "type",
+      "text": "y",
+      "paste_source": null
+    },
+    {
+      "t": 294.805,
+      "type": "cut",
+      "text": "y",
+      "paste_source": null
+    },
+    {
+      "t": 294.805,
+      "type": "type",
+      "text": "v2=",
+      "paste_source": null
+    },
+    {
+      "t": 295.003,
+      "type": "type",
+      "text": "i",
+      "paste_source": null
+    },
+    {
+      "t": 295.202,
+      "type": "type",
+      "text": "n",
+      "paste_source": null
+    },
+    {
+      "t": 295.539,
+      "type": "type",
+      "text": "t",
+      "paste_source": null
+    },
+    {
+      "t": 295.539,
+      "type": "type",
+      "text": "(",
+      "paste_source": null
+    },
+    {
+      "t": 296.288,
+      "type": "type",
+      "text": ")",
+      "paste_source": null
+    },
+    {
+      "t": 296.532,
+      "type": "type",
+      "text": "i",
+      "paste_source": null
+    },
+    {
+      "t": 296.899,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 296.899,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 296.899,
+      "type": "type",
+      "text": "n",
+      "paste_source": null
+    },
+    {
+      "t": 297.205,
+      "type": "cut",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 297.205,
+      "type": "cut",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 297.205,
+      "type": "type",
+      "text": "p",
+      "paste_source": null
+    },
+    {
+      "t": 297.419,
+      "type": "type",
+      "text": "u",
+      "paste_source": null
+    },
+    {
+      "t": 297.71,
+      "type": "type",
+      "text": "t",
+      "paste_source": null
+    },
+    {
+      "t": 297.71,
+      "type": "type",
+      "text": "(",
+      "paste_source": null
+    },
+    {
+      "t": 298.826,
+      "type": "type",
+      "text": ")",
+      "paste_source": null
+    },
+    {
+      "t": 299.147,
+      "type": "type",
+      "text": "\n",
+      "paste_source": null
+    },
+    {
+      "t": 299.82,
+      "type": "cut",
+      "text": "\n",
+      "paste_source": null
+    },
+    {
+      "t": 300.569,
+      "type": "type",
+      "text": "\n",
+      "paste_source": null
+    },
+    {
+      "t": 300.569,
+      "type": "type",
+      "text": "z",
+      "paste_source": null
+    },
+    {
+      "t": 301.288,
+      "type": "type",
+      "text": "x",
+      "paste_source": null
+    },
+    {
+      "t": 301.487,
+      "type": "cut",
+      "text": "x",
+      "paste_source": null
+    },
+    {
+      "t": 302.068,
+      "type": "cut",
+      "text": "z",
+      "paste_source": null
+    },
+    {
+      "t": 302.557,
+      "type": "type",
+      "text": "z",
+      "paste_source": null
+    },
+    {
+      "t": 303.291,
+      "type": "cut",
+      "text": "z",
+      "paste_source": null
+    },
+    {
+      "t": 303.291,
+      "type": "type",
+      "text": "v3=",
+      "paste_source": null
+    },
+    {
+      "t": 303.505,
+      "type": "type",
+      "text": "i",
+      "paste_source": null
+    },
+    {
+      "t": 303.689,
+      "type": "type",
+      "text": "n",
+      "paste_source": null
+    },
+    {
+      "t": 304.209,
+      "type": "type",
+      "text": "t",
+      "paste_source": null
+    },
+    {
+      "t": 304.209,
+      "type": "type",
+      "text": "(",
+      "paste_source": null
+    },
+    {
+      "t": 304.897,
+      "type": "type",
+      "text": ")",
+      "paste_source": null
+    },
+    {
+      "t": 305.126,
+      "type": "type",
+      "text": "i",
+      "paste_source": null
+    },
+    {
+      "t": 305.508,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 305.508,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 305.508,
+      "type": "type",
+      "text": "n",
+      "paste_source": null
+    },
+    {
+      "t": 305.784,
+      "type": "cut",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 305.784,
+      "type": "cut",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 305.784,
+      "type": "type",
+      "text": "p",
+      "paste_source": null
+    },
+    {
+      "t": 305.906,
+      "type": "type",
+      "text": "u",
+      "paste_source": null
+    },
+    {
+      "t": 306.839,
+      "type": "type",
+      "text": "t",
+      "paste_source": null
+    },
+    {
+      "t": 306.839,
+      "type": "type",
+      "text": "(",
+      "paste_source": null
+    },
+    {
+      "t": 310.325,
+      "type": "type",
+      "text": ")",
+      "paste_source": null
+    },
+    {
+      "t": 310.661,
+      "type": "type",
+      "text": "v",
+      "paste_source": null
+    },
+    {
+      "t": 311.441,
+      "type": "type",
+      "text": "e",
+      "paste_source": null
+    },
+    {
+      "t": 312.772,
+      "type": "type",
+      "text": "s",
+      "paste_source": null
+    },
+    {
+      "t": 313.169,
+      "type": "cut",
+      "text": "s",
+      "paste_source": null
+    },
+    {
+      "t": 313.475,
+      "type": "type",
+      "text": "r",
+      "paste_source": null
+    },
+    {
+      "t": 313.765,
+      "type": "type",
+      "text": "s",
+      "paste_source": null
+    },
+    {
+      "t": 313.949,
+      "type": "type",
+      "text": "u",
+      "paste_source": null
+    },
+    {
+      "t": 315.31,
+      "type": "cut",
+      "text": "versu",
+      "paste_source": null
+    },
+    {
+      "t": 315.31,
+      "type": "type",
+      "text": "f1",
+      "paste_source": null
+    },
+    {
+      "t": 315.31,
+      "type": "type",
+      "text": "(",
+      "paste_source": null
+    },
+    {
+      "t": 316.793,
+      "type": "type",
+      "text": ")",
+      "paste_source": null
+    },
+    {
+      "t": 317.145,
+      "type": "type",
+      "text": "v1",
+      "paste_source": null
+    },
+    {
+      "t": 317.925,
+      "type": "type",
+      "text": ", ",
+      "paste_source": null
+    },
+    {
+      "t": 318.062,
+      "type": "type",
+      "text": "v2",
+      "paste_source": null
+    },
+    {
+      "t": 318.628,
+      "type": "type",
+      "text": ", ",
+      "paste_source": null
+    },
+    {
+      "t": 361.842,
+      "type": "type",
+      "text": "v3",
+      "paste_source": null
+    },
+    {
+      "t": 361.965,
+      "type": "cut",
+      "text": "e",
+      "paste_source": null
+    },
+    {
+      "t": 362.12,
+      "type": "cut",
+      "text": "s",
+      "paste_source": null
+    },
+    {
+      "t": 362.244,
+      "type": "cut",
+      "text": "l",
+      "paste_source": null
+    },
+    {
+      "t": 362.616,
+      "type": "cut",
+      "text": "a",
+      "paste_source": null
+    },
+    {
+      "t": 364.102,
+      "type": "cut",
+      "text": "F",
+      "paste_source": null
+    },
+    {
+      "t": 365.82,
+      "type": "type",
+      "text": "0",
+      "paste_source": null
+    },
+    {
+      "t": 365.944,
+      "type": "cut",
+      "text": "e",
+      "paste_source": null
+    },
+    {
+      "t": 366.083,
+      "type": "cut",
+      "text": "u",
+      "paste_source": null
+    },
+    {
+      "t": 366.393,
+      "type": "cut",
+      "text": "r",
+      "paste_source": null
+    },
+    {
+      "t": 366.578,
+      "type": "cut",
+      "text": "T",
+      "paste_source": null
+    },
+    {
+      "t": 401.965,
+      "type": "type",
+      "text": "1",
+      "paste_source": null
+    },
+    {
+      "t": 401.965,
+      "type": "paste",
+      "text": "def f2(f2_p1, f2_p2, f2_p3):\n    f2_v1= f2_p1 + f2_p2 + f2_p3\n    if f2_v1>=2:\n        return 1\n    else:\n        return 0\nv1=int(input())\nv2=int(input())\nv3=int(input())\nprint(f2(v1, v2, v3))",
+      "paste_source": "unknown"
+    },
+    {
+      "t": 404.349,
+      "type": "cut",
+      "text": "def f2(f2_p1, f2_p2, f2_p3):\n    f2_v1= f2_p1 + f2_p2 + f2_p3\n    if f2_v1>=2:\n        return 1\n    else:\n        return 0\nv1=int(input())\nv2=int(input())\nv3=int(input())\nprint(f2(v1, v2, v3))",
+      "paste_source": null
+    },
+    {
+      "t": 410.959,
+      "type": "cut",
+      "text": "def f1(f1_p1, f1_p2, f1_p3):\n    f1_v1= f1_p1 + f1_p2 + f1_p3\n    if f1_v1>=2:\n        return 1\n    else:\n        return 0\nv1=int(input())\nv2=int(input())\nv3=int(input())\nprint(f1(v1, v2, v3))",
+      "paste_source": null
+    },
+    {
+      "t": 436.33,
+      "type": "type",
+      "text": "x",
+      "paste_source": null
+    },
+    {
+      "t": 448.993,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 449.566,
+      "type": "cut",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 449.984,
+      "type": "cut",
+      "text": "x",
+      "paste_source": null
+    },
+    {
+      "t": 449.984,
+      "type": "type",
+      "text": "v1=",
+      "paste_source": null
+    },
+    {
+      "t": 450.185,
+      "type": "type",
+      "text": "i",
+      "paste_source": null
+    },
+    {
+      "t": 450.355,
+      "type": "type",
+      "text": "n",
+      "paste_source": null
+    },
+    {
+      "t": 450.866,
+      "type": "type",
+      "text": "t",
+      "paste_source": null
+    },
+    {
+      "t": 450.866,
+      "type": "type",
+      "text": "(",
+      "paste_source": null
+    },
+    {
+      "t": 451.547,
+      "type": "type",
+      "text": ")",
+      "paste_source": null
+    },
+    {
+      "t": 451.779,
+      "type": "type",
+      "text": "i",
+      "paste_source": null
+    },
+    {
+      "t": 452.135,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 452.135,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 452.135,
+      "type": "type",
+      "text": "n",
+      "paste_source": null
+    },
+    {
+      "t": 452.414,
+      "type": "cut",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 452.414,
+      "type": "cut",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 452.414,
+      "type": "type",
+      "text": "p",
+      "paste_source": null
+    },
+    {
+      "t": 452.708,
+      "type": "type",
+      "text": "u",
+      "paste_source": null
+    },
+    {
+      "t": 453.358,
+      "type": "type",
+      "text": "s",
+      "paste_source": null
+    },
+    {
+      "t": 453.529,
+      "type": "cut",
+      "text": "s",
+      "paste_source": null
+    },
+    {
+      "t": 454.241,
+      "type": "type",
+      "text": "t",
+      "paste_source": null
+    },
+    {
+      "t": 454.241,
+      "type": "type",
+      "text": "(",
+      "paste_source": null
+    },
+    {
+      "t": 455.216,
+      "type": "type",
+      "text": ")",
+      "paste_source": null
+    },
+    {
+      "t": 459.302,
+      "type": "type",
+      "text": "\n",
+      "paste_source": null
+    },
+    {
+      "t": 460.046,
+      "type": "type",
+      "text": "\n",
+      "paste_source": null
+    },
+    {
+      "t": 460.448,
+      "type": "type",
+      "text": "v1=int(input())",
+      "paste_source": null
+    },
+    {
+      "t": 460.959,
+      "type": "type",
+      "text": "\n",
+      "paste_source": null
+    },
+    {
+      "t": 463.002,
+      "type": "type",
+      "text": "v1=int(input())",
+      "paste_source": null
+    },
+    {
+      "t": 463.157,
+      "type": "cut",
+      "text": "v1",
+      "paste_source": null
+    },
+    {
+      "t": 466.593,
+      "type": "type",
+      "text": "v2",
+      "paste_source": null
+    },
+    {
+      "t": 467.491,
+      "type": "cut",
+      "text": "v1",
+      "paste_source": null
+    },
+    {
+      "t": 469.318,
+      "type": "cut",
+      "text": "=int(input())\n",
+      "paste_source": null
+    },
+    {
+      "t": 469.318,
+      "type": "type",
+      "text": "v3=int(input())\n",
+      "paste_source": null
+    },
+    {
+      "t": 475.417,
+      "type": "type",
+      "text": "\n",
+      "paste_source": null
+    },
+    {
+      "t": 475.959,
+      "type": "type",
+      "text": "s",
+      "paste_source": null
+    },
+    {
+      "t": 476.903,
+      "type": "cut",
+      "text": "s",
+      "paste_source": null
+    },
+    {
+      "t": 476.903,
+      "type": "type",
+      "text": "v4=",
+      "paste_source": null
+    },
+    {
+      "t": 477.476,
+      "type": "type",
+      "text": "v1",
+      "paste_source": null
+    },
+    {
+      "t": 479.163,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 479.163,
+      "type": "type",
+      "text": " +",
+      "paste_source": null
+    },
+    {
+      "t": 479.767,
+      "type": "type",
+      "text": " v2",
+      "paste_source": null
+    },
+    {
+      "t": 480.293,
+      "type": "type",
+      "text": " +",
+      "paste_source": null
+    },
+    {
+      "t": 480.804,
+      "type": "type",
+      "text": " v3",
+      "paste_source": null
+    },
+    {
+      "t": 482.801,
+      "type": "type",
+      "text": "\n",
+      "paste_source": null
+    },
+    {
+      "t": 482.956,
+      "type": "type",
+      "text": "i",
+      "paste_source": null
+    },
+    {
+      "t": 483.312,
+      "type": "type",
+      "text": "f",
+      "paste_source": null
+    },
+    {
+      "t": 484.364,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 485.185,
+      "type": "type",
+      "text": "v4",
+      "paste_source": null
+    },
+    {
+      "t": 485.68,
+      "type": "type",
+      "text": ">",
+      "paste_source": null
+    },
+    {
+      "t": 502.816,
+      "type": "type",
+      "text": "=",
+      "paste_source": null
+    },
+    {
+      "t": 511.624,
+      "type": "type",
+      "text": "2",
+      "paste_source": null
+    },
+    {
+      "t": 512.011,
+      "type": "type",
+      "text": ":",
+      "paste_source": null
+    },
+    {
+      "t": 512.011,
+      "type": "type",
+      "text": "\n",
+      "paste_source": null
+    },
+    {
+      "t": 512.646,
+      "type": "type",
+      "text": "    ",
+      "paste_source": null
+    },
+    {
+      "t": 512.646,
+      "type": "cut",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 515.154,
+      "type": "cut",
+      "text": "   ",
+      "paste_source": null
+    },
+    {
+      "t": 517.445,
+      "type": "cut",
+      "text": "\n",
+      "paste_source": null
+    },
+    {
+      "t": 524.008,
+      "type": "type",
+      "text": "    ",
+      "paste_source": null
+    },
+    {
+      "t": 524.271,
+      "type": "type",
+      "text": "p",
+      "paste_source": null
+    },
+    {
+      "t": 524.457,
+      "type": "type",
+      "text": "r",
+      "paste_source": null
+    },
+    {
+      "t": 524.689,
+      "type": "type",
+      "text": "i",
+      "paste_source": null
+    },
+    {
+      "t": 524.828,
+      "type": "type",
+      "text": "n",
+      "paste_source": null
+    },
+    {
+      "t": 525.866,
+      "type": "type",
+      "text": "t",
+      "paste_source": null
+    },
+    {
+      "t": 525.866,
+      "type": "type",
+      "text": "(",
+      "paste_source": null
+    },
+    {
+      "t": 529.085,
+      "type": "type",
+      "text": ")",
+      "paste_source": null
+    },
+    {
+      "t": 529.983,
+      "type": "type",
+      "text": "1",
+      "paste_source": null
+    },
+    {
+      "t": 530.51,
+      "type": "type",
+      "text": "\n    ",
+      "paste_source": null
+    },
+    {
+      "t": 530.51,
+      "type": "cut",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 531.609,
+      "type": "cut",
+      "text": "   ",
+      "paste_source": null
+    },
+    {
+      "t": 531.825,
+      "type": "type",
+      "text": "e",
+      "paste_source": null
+    },
+    {
+      "t": 531.949,
+      "type": "type",
+      "text": "l",
+      "paste_source": null
+    },
+    {
+      "t": 532.166,
+      "type": "type",
+      "text": "s",
+      "paste_source": null
+    },
+    {
+      "t": 532.955,
+      "type": "type",
+      "text": "e",
+      "paste_source": null
+    },
+    {
+      "t": 533.265,
+      "type": "type",
+      "text": ":",
+      "paste_source": null
+    },
+    {
+      "t": 533.28,
+      "type": "type",
+      "text": "\n",
+      "paste_source": null
+    },
+    {
+      "t": 533.977,
+      "type": "type",
+      "text": "    ",
+      "paste_source": null
+    },
+    {
+      "t": 534.147,
+      "type": "type",
+      "text": "p",
+      "paste_source": null
+    },
+    {
+      "t": 534.349,
+      "type": "type",
+      "text": "r",
+      "paste_source": null
+    },
+    {
+      "t": 534.565,
+      "type": "type",
+      "text": "i",
+      "paste_source": null
+    },
+    {
+      "t": 534.705,
+      "type": "type",
+      "text": "n",
+      "paste_source": null
+    },
+    {
+      "t": 535.092,
+      "type": "type",
+      "text": "t",
+      "paste_source": null
+    },
+    {
+      "t": 535.092,
+      "type": "type",
+      "text": "(",
+      "paste_source": null
+    },
+    {
+      "t": 538.776,
+      "type": "type",
+      "text": ")",
+      "paste_source": null
+    },
+    {
+      "t": 590.556,
+      "type": "type",
+      "text": "0",
+      "paste_source": null
+    },
+    {
+      "t": 591.577,
+      "type": "type",
+      "text": "\n",
+      "paste_source": null
+    },
+    {
+      "t": 591.577,
+      "type": "cut",
+      "text": "int(input())\nv2=int(input())\nv3=int(input())\nv4=",
+      "paste_source": null
+    },
+    {
+      "t": 591.577,
+      "type": "cut",
+      "text": "v1",
+      "paste_source": null
+    },
+    {
+      "t": 591.577,
+      "type": "type",
+      "text": "x",
+      "paste_source": null
+    },
+    {
+      "t": 591.577,
+      "type": "cut",
+      "text": "v2",
+      "paste_source": null
+    },
+    {
+      "t": 591.577,
+      "type": "type",
+      "text": "y",
+      "paste_source": null
+    },
+    {
+      "t": 591.577,
+      "type": "cut",
+      "text": "v3",
+      "paste_source": null
+    },
+    {
+      "t": 591.577,
+      "type": "type",
+      "text": "z",
+      "paste_source": null
+    },
+    {
+      "t": 591.577,
+      "type": "cut",
+      "text": "4",
+      "paste_source": null
+    },
+    {
+      "t": 591.577,
+      "type": "type",
+      "text": "1",
+      "paste_source": null
+    },
+    {
+      "t": 595.896,
+      "type": "type",
+      "text": "A",
+      "paste_source": null
+    },
+    {
+      "t": 596.469,
+      "type": "cut",
+      "text": "x ",
+      "paste_source": null
+    },
+    {
+      "t": 596.469,
+      "type": "cut",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 597.212,
+      "type": "type",
+      "text": "A ",
+      "paste_source": null
+    },
+    {
+      "t": 597.212,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 597.289,
+      "type": "cut",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 597.289,
+      "type": "cut",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 597.289,
+      "type": "type",
+      "text": "[",
+      "paste_source": null
+    },
+    {
+      "t": 597.289,
+      "type": "cut",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 598.497,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 598.497,
+      "type": "type",
+      "text": "] ",
+      "paste_source": null
+    },
+    {
+      "t": 598.497,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 612.32,
+      "type": "type",
+      "text": "0",
+      "paste_source": null
+    },
+    {
+      "t": 614.348,
+      "type": "cut",
+      "text": "y",
+      "paste_source": null
+    },
+    {
+      "t": 614.348,
+      "type": "type",
+      "text": "A[0]",
+      "paste_source": null
+    },
+    {
+      "t": 616.02,
+      "type": "cut",
+      "text": "z",
+      "paste_source": null
+    },
+    {
+      "t": 616.02,
+      "type": "type",
+      "text": "A[0]",
+      "paste_source": null
+    },
+    {
+      "t": 616.175,
+      "type": "cut",
+      "text": "0",
+      "paste_source": null
+    },
+    {
+      "t": 618.032,
+      "type": "type",
+      "text": "2",
+      "paste_source": null
+    },
+    {
+      "t": 618.172,
+      "type": "cut",
+      "text": "0",
+      "paste_source": null
+    },
+    {
+      "t": 620.602,
+      "type": "type",
+      "text": "1",
+      "paste_source": null
+    },
+    {
+      "t": 621.701,
+      "type": "cut",
+      "text": "A\n",
+      "paste_source": null
+    },
+    {
+      "t": 621.701,
+      "type": "type",
+      "text": "\nv2=",
+      "paste_source": null
+    },
+    {
+      "t": 621.701,
+      "type": "cut",
+      "text": "A",
+      "paste_source": null
+    },
+    {
+      "t": 621.701,
+      "type": "type",
+      "text": "v1",
+      "paste_source": null
+    },
+    {
+      "t": 621.701,
+      "type": "cut",
+      "text": "A",
+      "paste_source": null
+    },
+    {
+      "t": 621.701,
+      "type": "type",
+      "text": "v1",
+      "paste_source": null
+    },
+    {
+      "t": 621.701,
+      "type": "cut",
+      "text": "A",
+      "paste_source": null
+    },
+    {
+      "t": 621.701,
+      "type": "type",
+      "text": "v1",
+      "paste_source": null
+    },
+    {
+      "t": 621.701,
+      "type": "cut",
+      "text": "1",
+      "paste_source": null
+    },
+    {
+      "t": 621.701,
+      "type": "type",
+      "text": "2",
+      "paste_source": null
+    },
+    {
+      "t": 621.701,
+      "type": "type",
+      "text": "[",
+      "paste_source": null
+    },
+    {
+      "t": 622.816,
+      "type": "type",
+      "text": "]",
+      "paste_source": null
+    },
+    {
+      "t": 623.094,
+      "type": "type",
+      "text": "i",
+      "paste_source": null
+    },
+    {
+      "t": 623.326,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 623.326,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 623.326,
+      "type": "type",
+      "text": "n",
+      "paste_source": null
+    },
+    {
+      "t": 623.698,
+      "type": "cut",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 623.698,
+      "type": "cut",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 623.698,
+      "type": "type",
+      "text": "t",
+      "paste_source": null
+    },
+    {
+      "t": 623.698,
+      "type": "type",
+      "text": "(",
+      "paste_source": null
+    },
+    {
+      "t": 624.456,
+      "type": "type",
+      "text": ")",
+      "paste_source": null
+    },
+    {
+      "t": 625.71,
+      "type": "type",
+      "text": "i",
+      "paste_source": null
+    },
+    {
+      "t": 625.881,
+      "type": "type",
+      "text": "f",
+      "paste_source": null
+    },
+    {
+      "t": 626.438,
+      "type": "type",
+      "text": "p",
+      "paste_source": null
+    },
+    {
+      "t": 627.305,
+      "type": "cut",
+      "text": "p",
+      "paste_source": null
+    },
+    {
+      "t": 627.491,
+      "type": "type",
+      "text": "o",
+      "paste_source": null
+    },
+    {
+      "t": 628.063,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 628.063,
+      "type": "type",
+      "text": "r",
+      "paste_source": null
+    },
+    {
+      "t": 628.45,
+      "type": "cut",
+      "text": "i",
+      "paste_source": null
+    },
+    {
+      "t": 628.45,
+      "type": "type",
+      "text": "v2",
+      "paste_source": null
+    },
+    {
+      "t": 628.45,
+      "type": "type",
+      "text": " v2",
+      "paste_source": null
+    },
+    {
+      "t": 628.45,
+      "type": "cut",
+      "text": "2",
+      "paste_source": null
+    },
+    {
+      "t": 628.45,
+      "type": "type",
+      "text": "3",
+      "paste_source": null
+    },
+    {
+      "t": 628.45,
+      "type": "cut",
+      "text": "2",
+      "paste_source": null
+    },
+    {
+      "t": 628.45,
+      "type": "type",
+      "text": "3",
+      "paste_source": null
+    },
+    {
+      "t": 628.853,
+      "type": "type",
+      "text": " v2",
+      "paste_source": null
+    },
+    {
+      "t": 628.992,
+      "type": "cut",
+      "text": "v2",
+      "paste_source": null
+    },
+    {
+      "t": 628.992,
+      "type": "type",
+      "text": "in",
+      "paste_source": null
+    },
+    {
+      "t": 631.252,
+      "type": "type",
+      "text": " v2",
+      "paste_source": null
+    },
+    {
+      "t": 631.655,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 631.655,
+      "type": "cut",
+      "text": "v2",
+      "paste_source": null
+    },
+    {
+      "t": 631.655,
+      "type": "type",
+      "text": "in",
+      "paste_source": null
+    },
+    {
+      "t": 631.933,
+      "type": "cut",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 631.933,
+      "type": "type",
+      "text": "p",
+      "paste_source": null
+    },
+    {
+      "t": 632.274,
+      "type": "type",
+      "text": "u",
+      "paste_source": null
+    },
+    {
+      "t": 632.738,
+      "type": "type",
+      "text": "t",
+      "paste_source": null
+    },
+    {
+      "t": 632.738,
+      "type": "type",
+      "text": "(",
+      "paste_source": null
+    },
+    {
+      "t": 635.138,
+      "type": "type",
+      "text": ")",
+      "paste_source": null
+    },
+    {
+      "t": 635.54,
+      "type": "type",
+      "text": ".",
+      "paste_source": null
+    },
+    {
+      "t": 635.772,
+      "type": "type",
+      "text": "v3",
+      "paste_source": null
+    },
+    {
+      "t": 636.159,
+      "type": "cut",
+      "text": "v3",
+      "paste_source": null
+    },
+    {
+      "t": 636.159,
+      "type": "type",
+      "text": "sp",
+      "paste_source": null
+    },
+    {
+      "t": 636.376,
+      "type": "type",
+      "text": "l",
+      "paste_source": null
+    },
+    {
+      "t": 636.686,
+      "type": "type",
+      "text": "i",
+      "paste_source": null
+    },
+    {
+      "t": 637.088,
+      "type": "type",
+      "text": "t",
+      "paste_source": null
+    },
+    {
+      "t": 637.088,
+      "type": "type",
+      "text": "(",
+      "paste_source": null
+    },
+    {
+      "t": 690.544,
+      "type": "type",
+      "text": ")",
+      "paste_source": null
+    }
+  ]
+}

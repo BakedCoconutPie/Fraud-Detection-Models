@@ -1,0 +1,39 @@
+{
+  "session_id": "tasktracker_java_voting_voting_50193_205653921_761894199394.1117_78fd5cf950e325e2002e45fee05570ff970c9bd9",
+  "source": "tasktracker_sigcse2021",
+  "metadata": {
+    "language": "java",
+    "task": "voting",
+    "task_status": "",
+    "final_score": -1.0,
+    "weak_label": 0,
+    "label_reason": "low-risk trace",
+    "source_file": "data\\raw\\tasktracker\\extracted\\data_google_drive_anonymized (SIGSCE 2020)\\java\\voting\\voting_50193_205653921_761894199394.1117_78fd5cf950e325e2002e45fee05570ff970c9bd9.csv"
+  },
+  "events": [
+    {
+      "t": 4.093,
+      "type": "type",
+      "text": " = main_v1.nextInt();\n        int ",
+      "paste_source": null
+    },
+    {
+      "t": 4.093,
+      "type": "cut",
+      "text": "nt main_v4 = main_v1.nextInt();\n        i",
+      "paste_source": null
+    },
+    {
+      "t": 4.093,
+      "type": "type",
+      "text": "x+ ",
+      "paste_source": null
+    },
+    {
+      "t": 4.093,
+      "type": "cut",
+      "text": " + main_v4",
+      "paste_source": null
+    }
+  ]
+}

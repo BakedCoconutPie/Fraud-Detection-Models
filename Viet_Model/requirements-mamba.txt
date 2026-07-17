@@ -1,0 +1,29 @@
+# ============================================================
+# Mamba model — GPU (NVIDIA CUDA) bắt buộc
+# ============================================================
+#
+# SETUP TRÊN MÁY LOCAL (có GPU NVIDIA):
+#   1. Cài PyTorch với CUDA (chọn version phù hợp CUDA trên máy):
+#      pip install torch --index-url https://download.pytorch.org/whl/cu121
+#   2. Cài phần còn lại:
+#      pip install -r requirements-mamba.txt
+#
+# SETUP TRÊN GOOGLE COLAB (khuyến nghị nếu không có GPU):
+#   1. Vào Runtime → Change runtime type → T4 GPU
+#   2. Mở notebooks/mamba_colab.ipynb
+#   3. Chạy từng cell theo thứ tự
+#   (PyTorch + CUDA đã có sẵn trên Colab, chỉ cần cài mamba-ssm)
+#
+# LƯU Ý: mamba-ssm KHÔNG có bản CPU.
+#         Chạy trên CPU sẽ báo lỗi ImportError.
+# ============================================================
+
+# IMPORTANT: install this file with --no-build-isolation so pip reuses the
+# CUDA-enabled PyTorch already provided by the Kaggle/Colab kernel.
+mamba-ssm
+causal-conv1d
+scikit-learn
+numpy
+pandas
+streamlit
+plotly

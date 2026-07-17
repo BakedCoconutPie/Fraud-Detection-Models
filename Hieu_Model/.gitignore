@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Local data
+data/raw/
+data/private/
+data/fpt/
+*.zip
+*.7z
+
+# Large or regenerated outputs
+outputs/**/.matplotlib/
+outputs/**/*.pkl
+outputs/**/*.joblib
+outputs/**/*.model
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# LaTeX generated files
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc

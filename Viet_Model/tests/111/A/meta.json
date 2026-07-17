@@ -1,0 +1,259 @@
+{
+ "session_id": "111/A",
+ "source": "pastetrace_sp2023",
+ "label": 1,
+ "events": [
+  {
+   "t": 0.0,
+   "type": "paste",
+   "text": "float shape1X, shape1Y, shape1SpeedX, shape1SpeedY, shape1Size;\n  float shape2X, shape2Y, shape2SpeedX, shape2SpeedY, shape2Size;\n  float shape3X, shape3Y, shape3SpeedX, shape3SpeedY, shape3Size;\n  \n  // Define the boundaries of the screen\n  float minX, minY, maxX, maxY;\n  \n  public void settings() {\n    size(800, 600);\n  }\n  \n  public void setup() {\n    \n    // Initialize the shapes\n    shape1X = random(width);\n    shape1Y = random(height);\n    shape1SpeedX = random(2, 5);\n    shape1SpeedY = random(2, 5);\n    shape1Size = random(20, 50);\n    \n    shape2X = random(width);\n    shape2Y = random(height);\n    shape2SpeedX = random(2, 5);\n    shape2SpeedY = random(2, 5);\n    shape2Size = random(20, 50);\n    \n    shape3X = random(width);\n    shape3Y = random(height);\n    shape3SpeedX = random(2, 5);\n    shape3SpeedY = random(2, 5);\n    shape3Size = random(20, 50);\n    \n    // Set the boundaries of the screen\n    minX = 0;\n    minY = 0;\n    maxX = width;\n    maxY = height;\n  }\n  \n  public void draw() {\n    \n    // Clear the screen\n    background(255);\n    \n    // Move and draw the first shape\n    shape1X += shape1SpeedX;\n    shape1Y += shape1SpeedY;\n    fill(255, 0, 0);\n    ellipse(shape1X, shape1Y, shape1Size, shape1Size);\n    \n    // Move and draw the second shape\n    shape2X += shape2SpeedX;\n    shape2Y += shape2SpeedY;\n    fill(0, 255, 0);\n    rect(shape2X, shape2Y, shape2Size, shape2Size);\n    \n    // Move and draw the third shape\n    shape3X += shape3SpeedX;\n    shape3Y += shape3SpeedY;\n    fill(0, 0, 255);\n    triangle(shape3X, shape3Y, shape3X - shape3Size/2, shape3Y + shape3Size, shape3X + shape3Size/2, shape3Y + shape3Size);\n    \n    // Check for collisions with the screen boundaries and bounce the shapes off them\n    if (shape1X < minX || shape1X > maxX) {\n      shape1SpeedX *= -1;\n    }\n    if (shape1Y < minY || shape1Y > maxY) {\n      shape1SpeedY *= -1;\n    }\n    \n    if (shape2X < minX || shape2X > maxX - shape2Size) {\n      shape2SpeedX *= -1;\n    }\n    if (shape2Y < minY || shape2Y > maxY - shape2Size) {\n      shape2SpeedY *= -1;\n    }",
+   "paste_source": "external"
+  },
+  {
+   "t": 13.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 17.5,
+   "type": "type",
+   "text": "    }",
+   "paste_source": null
+  },
+  {
+   "t": 23.9,
+   "type": "type",
+   "text": "}",
+   "paste_source": null
+  },
+  {
+   "t": 429.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 439.3,
+   "type": "cut",
+   "text": " if (shape2Y < minY || shape2Y > maxY - shape2Size) {\n      shape2SpeedY *= -1;",
+   "paste_source": null
+  },
+  {
+   "t": 442.2,
+   "type": "type",
+   "text": "\n    ",
+   "paste_source": null
+  },
+  {
+   "t": 443.3,
+   "type": "paste",
+   "text": " if (shape2Y < minY || shape2Y > maxY - shape2Size) {\n      shape2SpeedY *= -1;",
+   "paste_source": "own"
+  },
+  {
+   "t": 457.0,
+   "type": "type",
+   "text": "\\b3",
+   "paste_source": null
+  },
+  {
+   "t": 462.3,
+   "type": "type",
+   "text": "\\bX",
+   "paste_source": null
+  },
+  {
+   "t": 470.0,
+   "type": "type",
+   "text": "\\\\\b[2087-2165]",
+   "paste_source": null
+  },
+  {
+   "t": 477.1,
+   "type": "cut",
+   "text": "if (shape2X < minX || shape2X > maxX - shape2Size) {\n      shape2SpeedX *= -1;\n    }\n    if (shape2Y < minY || shape2Y > maxY - shape2Size) {\n      shape2SpeedY *= -1;",
+   "paste_source": null
+  },
+  {
+   "t": 479.2,
+   "type": "paste",
+   "text": "if (shape2X < minX || shape2X > maxX - shape2Size) {\n      shape2SpeedX *= -1;\n    }\n    if (shape2Y < minY || shape2Y > maxY - shape2Size) {\n      shape2SpeedY *= -1;",
+   "paste_source": "own"
+  },
+  {
+   "t": 484.4,
+   "type": "type",
+   "text": "\\b3",
+   "paste_source": null
+  },
+  {
+   "t": 489.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 489.7,
+   "type": "type",
+   "text": "\\b3",
+   "paste_source": null
+  },
+  {
+   "t": 492.9,
+   "type": "type",
+   "text": "\\b3",
+   "paste_source": null
+  },
+  {
+   "t": 495.5,
+   "type": "type",
+   "text": "\\b3",
+   "paste_source": null
+  },
+  {
+   "t": 497.9,
+   "type": "type",
+   "text": "\\b3",
+   "paste_source": null
+  },
+  {
+   "t": 500.6,
+   "type": "type",
+   "text": "\\b3",
+   "paste_source": null
+  },
+  {
+   "t": 503.6,
+   "type": "type",
+   "text": "\\b3",
+   "paste_source": null
+  },
+  {
+   "t": 506.1,
+   "type": "type",
+   "text": "\\b3",
+   "paste_source": null
+  },
+  {
+   "t": 512.1,
+   "type": "type",
+   "text": "\n      ",
+   "paste_source": null
+  },
+  {
+   "t": 513.7,
+   "type": "type",
+   "text": "    }}",
+   "paste_source": null
+  },
+  {
+   "t": 525.5,
+   "type": "type",
+   "text": "3",
+   "paste_source": null
+  },
+  {
+   "t": 527.0,
+   "type": "type",
+   "text": "\\be",
+   "paste_source": null
+  },
+  {
+   "t": 612.3,
+   "type": "cut",
+   "text": "float shape1X, shape1Y, shape1SpeedX, shape1SpeedY, shape1Size;\n  float shape2X, shape2Y, shape2SpeedX, shape2SpeedY, shape2Size;\n  float shape3X, shape3Y, shape3SpeedX, shape3SpeedY, shape3Size;\n  \n  // Define the boundaries of the screen\n  float minX, minY, maxX, maxY;\n  \n  public void settings() {\n    size(800, 600);\n  }\n  \n  public void setup() {\n    \n    // Initialize the shapes\n    shape1X = random(width);\n    shape1Y = random(height);\n    shape1SpeedX = random(2, 5);\n    shape1SpeedY = random(2, 5);\n    shape1Size = random(20, 50);\n    \n    shape2X = random(width);\n    shape2Y = random(height);\n    shape2SpeedX = random(2, 5);\n    shape2SpeedY = random(2, 5);\n    shape2Size = random(20, 50);\n    \n    shape3X = random(width);\n    shape3Y = random(height);\n    shape3SpeedX = random(2, 5);\n    shape3SpeedY = random(2, 5);\n    shape3Size = random(20, 50);\n    \n    // Set the boundaries of the screen\n    minX = 0;\n    minY = 0;\n    maxX = width;\n    maxY = height;\n  }\n  \n  public void draw() {\n    \n    // Clear the screen\n    background(255);\n    \n    // Move and draw the first shape\n    shape1X += shape1SpeedX;\n    shape1Y += shape1SpeedY;\n    fill(255, 0, 0);\n    ellipse(shape1X, shape1Y, shape1Size, shape1Size);\n    \n    // Move and draw the second shape\n    shape2X += shape2SpeedX;\n    shape2Y += shape2SpeedY;\n    fill(0, 255, 0);\n    rect(shape2X, shape2Y, shape2Size, shape2Size);\n    \n    // Move and draw the third shape\n    shape3X += shape3SpeedX;\n    shape3Y += shape3SpeedY;\n    fill(0, 0, 255);\n    triangle(shape3X, shape3Y, shape3X - shape3Size/2, shape3Y + shape3Size, shape3X + shape3Size/2, shape3Y + shape3Size);\n    \n    // Check for collisions with the screen boundaries and bounce the shapes off them\n    if (shape1X < minX || shape1X > maxX) {\n      shape1SpeedX *= -1;\n    }\n    if (shape1Y < minY || shape1Y > maxY) {\n      shape1SpeedY *= -1;\n    }\n    \n    if (shape2X < minX || shape2X > maxX - shape2Size) {\n      shape2SpeedX *= -1;\n    }\n    if (shape2Y < minY || shape2Y > maxY - shape2Size) {\n      shape2SpeedY *= -1;\n    }\n     if (shape3X < minX || shape3X > maxX - shape3Size) {\n      shape3SpeedX *= -1;\n    }\n    if (shape3Y < minY || shape3Y > maxY - shape3Size) {\n      shape3SpeedY *= -1;\n    }}",
+   "paste_source": null
+  },
+  {
+   "t": 1099.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1102.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1103.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1105.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1111.2,
+   "type": "type",
+   "text": "\n\n",
+   "paste_source": null
+  },
+  {
+   "t": 1113.6,
+   "type": "type",
+   "text": "//list of ",
+   "paste_source": null
+  },
+  {
+   "t": 1245.9,
+   "type": "type",
+   "text": "shapes ",
+   "paste_source": null
+  },
+  {
+   "t": 1262.7,
+   "type": "type",
+   "text": "\\b:",
+   "paste_source": null
+  },
+  {
+   "t": 1270.5,
+   "type": "type",
+   "text": "\\b with ",
+   "paste_source": null
+  },
+  {
+   "t": 1277.0,
+   "type": "type",
+   "text": "associated variable ",
+   "paste_source": null
+  },
+  {
+   "t": 1282.0,
+   "type": "type",
+   "text": "\\bs for speed",
+   "paste_source": null
+  },
+  {
+   "t": 1287.1,
+   "type": "type",
+   "text": " and size.",
+   "paste_source": null
+  },
+  {
+   "t": 1292.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1294.5,
+   "type": "type",
+   "text": "\n",
+   "paste_source": null
+  },
+  {
+   "t": 1313.7,
+   "type": "cut",
+   "text": "//list of shapes with associated variables for speed and size\n\nfloat shape1X, shape1Y, shape1SpeedX, shape1SpeedY, shape1Size;\nfloat shape2X, shape2Y, shape2SpeedX, shape2SpeedY, shape2Size;\nfloat shape3X, shape3Y, shape3SpeedX, shape3SpeedY, shape3Size;\n  \n  // Define the boundaries of the screen\n  float minX, minY, maxX, maxY;\n  \n  public void settings() {\n    size(800, 600);\n  }\n  \n  public void setup() {\n    \n    // Initialize the shapes\n    shape1X = random(width);\n    shape1Y = random(height);\n    shape1SpeedX = random(2, 5);\n    shape1SpeedY = random(2, 5);\n    shape1Size = random(20, 50);\n    \n    shape2X = random(width);\n    shape2Y = random(height);\n    shape2SpeedX = random(2, 5);\n    shape2SpeedY = random(2, 5);\n    shape2Size = random(20, 50);\n    \n    shape3X = random(width);\n    shape3Y = random(height);\n    shape3SpeedX = random(2, 5);\n    shape3SpeedY = random(2, 5);\n    shape3Size = random(20, 50);\n    \n    // Set the boundaries of the screen\n    minX = 0;\n    minY = 0;\n    maxX = width;\n    maxY = height;\n  }\n  \n  public void draw() {\n    \n    // Clear the screen\n    background(255);\n    \n    // Move and draw the first shape\n    shape1X += shape1SpeedX;\n    shape1Y += shape1SpeedY;\n    fill(255, 0, 0);\n    ellipse(shape1X, shape1Y, shape1Size, shape1Size);\n    \n    // Move and draw the second shape\n    shape2X += shape2SpeedX;\n    shape2Y += shape2SpeedY;\n    fill(0, 255, 0);\n    rect(shape2X, shape2Y, shape2Size, shape2Size);\n    \n    // Move and draw the third shape\n    shape3X += shape3SpeedX;\n    shape3Y += shape3SpeedY;\n    fill(0, 0, 255);\n    triangle(shape3X, shape3Y, shape3X - shape3Size/2, shape3Y + shape3Size, shape3X + shape3Size/2, shape3Y + shape3Size);\n    \n    // Check for collisions with the screen boundaries and bounce the shapes off them\n    if (shape1X < minX || shape1X > maxX) {\n      shape1SpeedX *= -1;\n    }\n    if (shape1Y < minY || shape1Y > maxY) {\n      shape1SpeedY *= -1;\n    }\n    \n    if (shape2X < minX || shape2X > maxX - shape2Size) {\n      shape2SpeedX *= -1;\n    }\n    if (shape2Y < minY || shape2Y > maxY - shape2Size) {\n      shape2SpeedY *= -1;\n    }\n     if (shape3X < minX || shape3X > maxX - shape3Size) {\n      shape3SpeedX *= -1;\n    }\n    if (shape3Y < minY || shape3Y > maxY - shape3Size) {\n      shape3SpeedY *= -1;\n    }}",
+   "paste_source": null
+  }
+ ]
+}

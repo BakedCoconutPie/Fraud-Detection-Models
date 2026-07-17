@@ -1,0 +1,2887 @@
+{
+ "session_id": "211/O_StudentFractalAssign",
+ "source": "pastetrace_sp2023",
+ "label": 1,
+ "events": [
+  {
+   "t": 0.0,
+   "type": "paste",
+   "text": "import java.awt.Color;\nimport java.awt.Graphics;\nimport java.awt.image.BufferedImage;\nimport javax.swing.JFrame;\nimport javax.swing.JPanel;\n\npublic class MandelbrotFractal extends JPanel {\n    \n    private static final int WIDTH = 800;\n    private static final int HEIGHT = 600;\n    private static final int MAX_ITERATIONS = 1000;\n    private static final double X_MIN = -2.5;\n    private static final double X_MAX = 1.5;\n    private static final double Y_MIN = -1.5;\n    private static final double Y_MAX = 1.5;\n    \n    private BufferedImage image;\n    \n    public MandelbrotFractal() {\n        super();\n        this.image = new BufferedImage(WIDTH, HEIGHT, BufferedImage.TYPE_INT_RGB);\n        this.setPreferredSize(new java.awt.Dimension(WIDTH, HEIGHT));\n        drawFractal();\n    }\n    \n    private void drawFractal() {\n        double pixelWidth = (X_MAX - X_MIN) / WIDTH;\n        double pixelHeight = (Y_MAX - Y_MIN) / HEIGHT;\n        for (int x = 0; x < WIDTH; x++) {\n            for (int y = 0; y < HEIGHT; y++) {\n                double cx = X_MIN + x * pixelWidth;\n                double cy = Y_MIN + y * pixelHeight;\n                int color = getColor(cx, cy);\n                image.setRGB(x, y, color);\n            }\n        }\n    }\n    \n    private int getColor(double cx, double cy) {\n        double zx = 0;\n        double zy = 0;\n        int i;\n        for (i = 0; i < MAX_ITERATIONS; i++) {\n            double zxNew = zx * zx - zy * zy + cx;\n            double zyNew = 2 * zx * zy + cy;\n            zx = zxNew;\n            zy = zyNew;\n            if (zx * zx + zy * zy > 4) {\n                break;\n            }\n        }\n        if (i == MAX_ITERATIONS) {\n            return Color.BLACK.getRGB();\n        } else {\n            float hue = (float) i / MAX_ITERATIONS;\n            return Color.getHSBColor(hue, 1, 1).getRGB();\n        }\n    }\n    \n    @Override\n    protected void paintComponent(Graphics g) {\n        super.paintComponent(g);\n        g.drawImage(image, 0, 0, null);\n    }\n    \n    public static void main(String[] args) {\n        JFrame frame = new JFrame(\"Mandelbrot Fractal\");\n        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);\n        frame.setContentPane(new MandelbrotFractal());\n        frame.pack();\n        frame.setVisible(true);\n    }\n}",
+   "paste_source": "external"
+  },
+  {
+   "t": 149.7,
+   "type": "paste",
+   "text": "for each pixel (Px, Py) on the screen do\n    x0 := scaled x coordinate of pixel (scaled to lie in the Mandelbrot X scale (-2.00, 0.47))\n    y0 := scaled y coordinate of pixel (scaled to lie in the Mandelbrot Y scale (-1.12, 1.12))\n    x := 0.0\n    y := 0.0\n    iteration := 0\n    max_iteration := 1000\n    while (x*x + y*y ≤ 2*2 AND iteration < max_iteration) do\n        xtemp := x*x - y*y + x0\n        y := 2*x*y + y0\n        x := xtemp\n        iteration := iteration + 1\n    \n    color := palette[iteration]\n    plot(Px, Py, color)",
+   "paste_source": "external"
+  },
+  {
+   "t": 199.2,
+   "type": "type",
+   "text": "\n",
+   "paste_source": null
+  },
+  {
+   "t": 202.7,
+   "type": "type",
+   "text": "void setup(){",
+   "paste_source": null
+  },
+  {
+   "t": 212.4,
+   "type": "type",
+   "text": "\n    ",
+   "paste_source": null
+  },
+  {
+   "t": 212.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 213.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 213.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 213.7,
+   "type": "type",
+   "text": "\\b\\\\b[548-548]}",
+   "paste_source": null
+  },
+  {
+   "t": 245.5,
+   "type": "type",
+   "text": "\n    ",
+   "paste_source": null
+  },
+  {
+   "t": 246.5,
+   "type": "paste",
+   "text": "color pink = color(255, 102, 204);\nloadPixels();\nfor (int i = 0; i < (width*height/2)-width/2; i++) {\n  pixels[i] = pink;\n}\nupdatePixels();",
+   "paste_source": "external"
+  },
+  {
+   "t": 279.9,
+   "type": "type",
+   "text": "    ",
+   "paste_source": null
+  },
+  {
+   "t": 281.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 281.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 281.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 281.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 282.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 290.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 290.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 290.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 290.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 291.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 291.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 291.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 300.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 300.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 300.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 300.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 300.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 300.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 301.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 301.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 301.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 301.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 301.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 301.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 301.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 301.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 301.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 301.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 309.8,
+   "type": "type",
+   "text": "\\\\b[14-664]",
+   "paste_source": null
+  },
+  {
+   "t": 310.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 310.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 310.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 310.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 310.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 310.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 311.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 311.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 311.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 311.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 311.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 311.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 311.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 311.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 311.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 311.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 337.8,
+   "type": "paste",
+   "text": "for each pixel (Px, Py) on the screen do\n    x0 := scaled x coordinate of pixel (scaled to lie in the Mandelbrot X scale (-2.00, 0.47))\n    y0 := scaled y coordinate of pixel (scaled to lie in the Mandelbrot Y scale (-1.12, 1.12))\n    x := 0.0\n    y := 0.0\n    iteration := 0\n    max_iteration := 1000\n    while (x*x + y*y ≤ 2*2 AND iteration < max_iteration) do\n        xtemp := x*x - y*y + x0\n        y := 2*x*y + y0\n        x := xtemp\n        iteration := iteration + 1\n    \n    color := palette[iteration]\n    plot(Px, Py, color)",
+   "paste_source": "external"
+  },
+  {
+   "t": 341.3,
+   "type": "cut",
+   "text": "for each pixel (Px, Py) on the screen do\n    x0 := scaled x coordinate of pixel (scaled to lie in the Mandelbrot X scale (-2.00, 0.47))\n    y0 := scaled y coordinate of pixel (scaled to lie in the Mandelbrot Y scale (-1.12, 1.12))\n    x := 0.0\n    y := 0.0\n    iteration := 0\n    max_iteration := 1000\n    while (x*x + y*y ≤ 2*2 AND iteration < max_iteration) do\n        xtemp := x*x - y*y + x0\n        y := 2*x*y + y0\n        x := xtemp\n        iteration := iteration + 1\n    \n    color := palette[iteration]\n    plot(Px, Py, color)",
+   "paste_source": null
+  },
+  {
+   "t": 385.9,
+   "type": "paste",
+   "text": "for (int py = 0; py < screenHeight; py++) {\n    for (int px = 0; px < screenWidth; px++) {\n        double x0 = scaledXCoordinate(px, screenWidth, -2.00, 0.47);\n        double y0 = scaledYCoordinate(py, screenHeight, -1.12, 1.12);\n        double x = 0.0;\n        double y = 0.0;\n        int iteration = 0;\n        int max_iteration = 1000;\n        while (x*x + y*y <= 2*2 && iteration < max_iteration) {\n            double xtemp = x*x - y*y + x0;\n            y = 2*x*y + y0;\n            x = xtemp;\n            iteration++;\n        }\n        Color color = palette[iteration];\n        plot(px, py, color);\n    }\n}",
+   "paste_source": "external"
+  },
+  {
+   "t": 400.3,
+   "type": "type",
+   "text": "\n",
+   "paste_source": null
+  },
+  {
+   "t": 403.1,
+   "type": "type",
+   "text": "sc",
+   "paste_source": null
+  },
+  {
+   "t": 406.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 406.3,
+   "type": "type",
+   "text": "\\bint screenWidth, screenHeight",
+   "paste_source": null
+  },
+  {
+   "t": 419.9,
+   "type": "type",
+   "text": ", scl",
+   "paste_source": null
+  },
+  {
+   "t": 421.8,
+   "type": "type",
+   "text": "\\baled ",
+   "paste_source": null
+  },
+  {
+   "t": 423.3,
+   "type": "type",
+   "text": "\\bXCoordinate, scaledYCoordinate, ",
+   "paste_source": null
+  },
+  {
+   "t": 442.0,
+   "type": "type",
+   "text": "palette, plot;",
+   "paste_source": null
+  },
+  {
+   "t": 1208.7,
+   "type": "paste",
+   "text": "size(640, 360);\nnoLoop();\nbackground(255);\n\n// Establish a range of values on the complex plane\n// A different range will allow us to \"zoom\" in or out on the fractal\n\n// It all starts with the width, try higher or lower values\nfloat w = 4;\nfloat h = (w * height) / width;\n\n// Start at negative half the width and height\nfloat xmin = -w/2;\nfloat ymin = -h/2;\n\n// Make sure we can write to the pixels[] array.\n// Only need to do this once since we don't do any other drawing.\nloadPixels();\n\n// Maximum number of iterations for each point on the complex plane\nint maxiterations = 100;\n\n// x goes from xmin to xmax\nfloat xmax = xmin + w;\n// y goes from ymin to ymax\nfloat ymax = ymin + h;\n\n// Calculate amount we increment x,y for each pixel\nfloat dx = (xmax - xmin) / (width);\nfloat dy = (ymax - ymin) / (height);\n\n// Start y\nfloat y = ymin;\nfor (int j = 0; j < height; j++) {\n  // Start x\n  float x = xmin;\n  for (int i = 0; i < width; i++) {\n\n    // Now we test, as we iterate z = z^2 + c does z tend towards infinity?\n    float a = x;\n    float b = y;\n    int n = 0;\n    float max = 4.0;  // Infinity in our finite world is simple, let's just consider it 4\n    float absOld = 0.0;\n    float convergeNumber = maxiterations; // this will change if the while loop breaks due to non-convergence\n    while (n < maxiterations) {\n      // We suppose z = a+ib\n      float aa = a * a;\n      float bb = b * b;\n      float abs = sqrt(aa + bb);\n      if (abs > max) { // |z| = sqrt(a^2+b^2)\n        // Now measure how much we exceeded the maximum: \n        float diffToLast = (float) (abs - absOld);\n        float diffToMax  = (float) (max - absOld);\n        convergeNumber = n + diffToMax/diffToLast;\n        break;  // Bail\n      }\n      float twoab = 2.0 * a * b;\n      a = aa - bb + x; // this operation corresponds to z -> z^2+c where z=a+ib c=(x,y)\n      b = twoab + y;\n      n++;\n      absOld = abs;\n    }\n\n    // We color each pixel based on how long it takes to get to infinity\n    // If we never got there, let's pick the color black\n    if (n == maxiterations) {\n      pixels[i+j*width] = color(0);\n    } else {\n      // Gosh, we could make fancy colors here if we wanted\n      float norm = map(convergeNumber, 0, maxiterations, 0, 1);\n      pixels[i+j*width] = color(map(sqrt(norm), 0, 1, 0, 255));\n    }\n    x += dx;\n  }\n  y += dy;\n}\nupdatePixels();",
+   "paste_source": "own"
+  },
+  {
+   "t": 1220.1,
+   "type": "type",
+   "text": "\\b7",
+   "paste_source": null
+  },
+  {
+   "t": 1232.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1232.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1233.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1236.9,
+   "type": "type",
+   "text": "777",
+   "paste_source": null
+  },
+  {
+   "t": 1238.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1239.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1239.1,
+   "type": "type",
+   "text": "\\b444",
+   "paste_source": null
+  },
+  {
+   "t": 1243.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1243.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1243.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1247.6,
+   "type": "type",
+   "text": "255",
+   "paste_source": null
+  },
+  {
+   "t": 1257.3,
+   "type": "type",
+   "text": "\\b3",
+   "paste_source": null
+  },
+  {
+   "t": 1261.0,
+   "type": "type",
+   "text": "\\b2",
+   "paste_source": null
+  },
+  {
+   "t": 1264.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1264.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1264.6,
+   "type": "type",
+   "text": "\\b200",
+   "paste_source": null
+  },
+  {
+   "t": 1266.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1267.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1267.9,
+   "type": "type",
+   "text": "\\b350",
+   "paste_source": null
+  },
+  {
+   "t": 1303.0,
+   "type": "type",
+   "text": "\\b730",
+   "paste_source": null
+  },
+  {
+   "t": 1309.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1309.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1310.0,
+   "type": "type",
+   "text": "\\b1",
+   "paste_source": null
+  },
+  {
+   "t": 1314.7,
+   "type": "type",
+   "text": "\\b2",
+   "paste_source": null
+  },
+  {
+   "t": 1321.0,
+   "type": "type",
+   "text": "\\b6",
+   "paste_source": null
+  },
+  {
+   "t": 1327.8,
+   "type": "type",
+   "text": "\\b5",
+   "paste_source": null
+  },
+  {
+   "t": 1333.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1334.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1334.1,
+   "type": "type",
+   "text": "\\b123312",
+   "paste_source": null
+  },
+  {
+   "t": 1338.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1338.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1339.1,
+   "type": "type",
+   "text": "\\b2342134",
+   "paste_source": null
+  },
+  {
+   "t": 1343.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1343.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1345.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1345.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1345.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1350.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1353.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1357.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1357.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1357.6,
+   "type": "type",
+   "text": "\\b777",
+   "paste_source": null
+  },
+  {
+   "t": 1360.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1361.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1361.2,
+   "type": "type",
+   "text": "\\b777",
+   "paste_source": null
+  },
+  {
+   "t": 1448.5,
+   "type": "paste",
+   "text": "for (int py = 0; py < screenHeight; py++) {\n    for (int px = 0; px < screenWidth; px++) {\n        double x0 = scaledXCoordinate(px, screenWidth, -2.00, 0.47);\n        double y0 = scaledYCoordinate(py, screenHeight, -1.12, 1.12);\n        double x = 0.0;\n        double y = 0.0;\n        int iteration = 0;\n        int max_iteration = 1000;\n        while (x*x + y*y <= 2*2 && iteration < max_iteration) {\n            double xtemp = x*x - y*y + x0;\n            y = 2*x*y + y0;\n            x = xtemp;\n            iteration++;\n        }\n        Color color = palette[iteration];\n        plot(px, py, color);\n    }\n}\nNote: You will need to define screenWidth, screenHeight, scaledXCoordinate, scaledYCoordinate, palette, plot methods according to your specific implementation.\n\n\n\n\n\nUser\nGet the LinkedList at that tableIndex example code java\nChatGPT\nAssuming that you have a hash table implemented using an array of LinkedLists, you can get the LinkedList at a specific index in the array as follows:\n\nless\nCopy code\nLinkedList<Integer> hashTable[] = new LinkedList[10]; // Example hash table array\nint tableIndex = 5; // Index of the LinkedList to retrieve\n\nLinkedList<Integer> list = hashTable[tableIndex];\nIn the above code, hashTable is the array of LinkedLists, where each LinkedList holds a list of values that hash to the same index in the array. tableIndex is the index of the LinkedList you want to retrieve.\n\nBy accessing hashTable[tableIndex], you retrieve the LinkedList at the specified index. You can then assign this LinkedList to a new variable list of type LinkedList<Integer>.\n\n\n\n\n\nUser\nhow to code a fractal \nChatGPT\nFractals are complex geometric shapes that can be generated through recursive mathematical equations. There are many different types of fractals, each with its own unique properties and generating equations.\n\nHere is a simple example of how to code a fractal called the Sierpinski triangle in Java using recursion:\n\nscss\nCopy code\nimport java.awt.*;\nimport javax.swing.*;\n\npublic class SierpinskiTriangle extends JPanel {\n\n    private int level; // level of recursion\n\n    public SierpinskiTriangle(int level) {\n        this.level = level;\n        setPreferredSize(new Dimension(600, 600));\n    }\n\n    @Override\n    protected void paintComponent(Graphics g) {\n        super.paintComponent(g);\n\n        int height = getHeight();\n        int width = getWidth();\n        int triangleHeight = (int) (height * 0.8);\n        int triangleWidth = (int) (triangleHeight * Math.sqrt(3) / 2);\n\n        int x = (width - triangleWidth) / 2;\n        int y = (height - triangleHeight) / 2;\n\n        drawSierpinskiTriangle(g, level, x, y, triangleWidth, triangleHeight);\n    }\n\n    private void drawSierpinskiTriangle(Graphics g, int level, int x, int y, int width, int height) {\n        if (level == 0) {\n            int[] xPoints = {x, x + width / 2, x + width};\n            int[] yPoints = {y + height, y, y + height};\n            g.drawPolygon(xPoints, yPoints, 3);\n        } else {\n            int newWidth = width / 2;\n            int newHeight = height / 2;\n\n            drawSierpinskiTriangle(g, level - 1, x, y, newWidth, newHeight);\n            drawSierpinskiTriangle(g, level - 1, x + newWidth, y, newWidth, newHeight);\n            drawSierpinskiTriangle(g, level - 1, x + newWidth / 2, y + newHeight, newWidth, newHeight);\n        }\n    }\n\n    public static void main(String[] args) {\n        int level = 5;\n        SierpinskiTriangle triangle = new SierpinskiTriangle(level);\n\n        JFrame frame = new JFrame(\"Sierpinski Triangle\");\n        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);\n        frame.getContentPane().add(triangle);\n        frame.pack();\n        frame.setLocationRelativeTo(null);\n        frame.setVisible(true);\n    }\n}",
+   "paste_source": "external"
+  },
+  {
+   "t": 1471.0,
+   "type": "paste",
+   "text": "/** \n * Pentigree L-System \n * by Geraldine Sarmiento. \n * \n * This code was based on Patrick Dwyer's L-System class. \n */\n \n\nPentigreeLSystem ps;\n\nvoid setup() {\n  size(640, 360);\n  ps = new PentigreeLSystem();\n  ps.simulate(3);\n}\n\nvoid draw() {\n  background(0);\n  ps.render();\n}",
+   "paste_source": "own"
+  },
+  {
+   "t": 1473.9,
+   "type": "paste",
+   "text": "/** \n * Pentigree L-System \n * by Geraldine Sarmiento. \n * \n * This code was based on Patrick Dwyer's L-System class. \n */\n \n\nPentigreeLSystem ps;\n\nvoid setup() {\n  size(640, 360);\n  ps = new PentigreeLSystem();\n  ps.simulate(3);\n}\n\nvoid draw() {\n  background(0);\n  ps.render();\n}",
+   "paste_source": "own"
+  },
+  {
+   "t": 1525.9,
+   "type": "type",
+   "text": "\\\\b[0-280]",
+   "paste_source": null
+  },
+  {
+   "t": 1587.8,
+   "type": "type",
+   "text": "si",
+   "paste_source": null
+  },
+  {
+   "t": 1588.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1588.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1591.0,
+   "type": "type",
+   "text": "// An",
+   "paste_source": null
+  },
+  {
+   "t": 1593.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1593.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1594.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1594.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1594.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1598.1,
+   "type": "type",
+   "text": "/* ",
+   "paste_source": null
+  },
+  {
+   "t": 1599.5,
+   "type": "type",
+   "text": "\\b* a",
+   "paste_source": null
+  },
+  {
+   "t": 1601.9,
+   "type": "type",
+   "text": "\\bStudent ",
+   "paste_source": null
+  },
+  {
+   "t": 1603.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1604.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1604.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1604.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1604.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1604.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1604.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1604.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1604.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1604.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1604.3,
+   "type": "type",
+   "text": "\\b**/ student\nskdnkenf",
+   "paste_source": null
+  },
+  {
+   "t": 1610.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1610.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1610.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1610.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1610.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1610.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1610.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1610.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1610.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1610.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1610.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1610.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1610.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1610.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1611.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1611.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1611.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1611.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1611.1,
+   "type": "type",
+   "text": "\\b// Student Name\n// ",
+   "paste_source": null
+  },
+  {
+   "t": 1619.3,
+   "type": "type",
+   "text": "5/ 4/ ",
+   "paste_source": null
+  },
+  {
+   "t": 1621.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1621.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1621.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1622.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1622.2,
+   "type": "type",
+   "text": "\\b/4/2023\n// Fract",
+   "paste_source": null
+  },
+  {
+   "t": 1633.9,
+   "type": "type",
+   "text": "al Assignment ",
+   "paste_source": null
+  },
+  {
+   "t": 1637.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1975.2,
+   "type": "type",
+   "text": "\n\n",
+   "paste_source": null
+  },
+  {
+   "t": 1977.3,
+   "type": "paste",
+   "text": "/**\n * Recursive Tree\n * by Daniel Shiffman.  \n * \n * Renders a simple tree-like structure via recursion. \n * The branching angle is calculated as a function of \n * the horizontal mouse location. Move the mouse left\n * and right to change the angle.\n */\n \nfloat theta;   \n\nvoid setup() {\n  size(640, 360);\n}\n\nvoid draw() {\n  background(0);\n  frameRate(30);\n  stroke(255);\n  // Let's pick an angle 0 to 90 degrees based on the mouse position\n  float a = (mouseX / (float) width) * 90f;\n  // Convert it to radians\n  theta = radians(a);\n  // Start the tree from the bottom of the screen\n  translate(width/2,height);\n  // Draw a line 120 pixels\n  line(0,0,0,-120);\n  // Move to the end of that line\n  translate(0,-120);\n  // Start the recursive branching!\n  branch(120);\n\n}\n\nvoid branch(float h) {\n  // Each branch will be 2/3rds the size of the previous one\n  h *= 0.66;\n  \n  // All recursive functions must have an exit condition!!!!\n  // Here, ours is when the length of the branch is 2 pixels or less\n  if (h > 2) {\n    pushMatrix();    // Save the current state of transformation (i.e. where are we now)\n    rotate(theta);   // Rotate by theta\n    line(0, 0, 0, -h);  // Draw the branch\n    translate(0, -h); // Move to the end of the branch\n    branch(h);       // Ok, now call myself to draw two new branches!!\n    popMatrix();     // Whenever we get back here, we \"pop\" in order to restore the previous matrix state\n    \n    // Repeat the same thing, only branch off to the \"left\" this time!\n    pushMatrix();\n    rotate(-theta);\n    line(0, 0, 0, -h);\n    translate(0, -h);\n    branch(h);\n    popMatrix();\n  }\n}",
+   "paste_source": "own"
+  },
+  {
+   "t": 3202.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3202.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3202.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3207.2,
+   "type": "type",
+   "text": "7000",
+   "paste_source": null
+  },
+  {
+   "t": 3208.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3208.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3208.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3208.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3212.2,
+   "type": "type",
+   "text": "800",
+   "paste_source": null
+  },
+  {
+   "t": 3220.3,
+   "type": "type",
+   "text": "\\\\b[352-355]800",
+   "paste_source": null
+  },
+  {
+   "t": 3241.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3242.0,
+   "type": "paste",
+   "text": "255",
+   "paste_source": "unknown"
+  },
+  {
+   "t": 3252.4,
+   "type": "type",
+   "text": ",",
+   "paste_source": null
+  },
+  {
+   "t": 3253.2,
+   "type": "paste",
+   "text": "173",
+   "paste_source": "unknown"
+  },
+  {
+   "t": 3255.8,
+   "type": "type",
+   "text": " ",
+   "paste_source": null
+  },
+  {
+   "t": 3261.9,
+   "type": "type",
+   "text": ", ",
+   "paste_source": null
+  },
+  {
+   "t": 3262.9,
+   "type": "paste",
+   "text": "251",
+   "paste_source": "unknown"
+  },
+  {
+   "t": 3288.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3288.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3288.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3289.0,
+   "type": "paste",
+   "text": "142",
+   "paste_source": "unknown"
+  },
+  {
+   "t": 3293.7,
+   "type": "type",
+   "text": ", ",
+   "paste_source": null
+  },
+  {
+   "t": 3294.1,
+   "type": "paste",
+   "text": "92",
+   "paste_source": "unknown"
+  },
+  {
+   "t": 3298.9,
+   "type": "type",
+   "text": ", ",
+   "paste_source": null
+  },
+  {
+   "t": 3299.2,
+   "type": "paste",
+   "text": "139",
+   "paste_source": "unknown"
+  },
+  {
+   "t": 3300.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3302.0,
+   "type": "type",
+   "text": " ",
+   "paste_source": null
+  },
+  {
+   "t": 3303.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3303.9,
+   "type": "type",
+   "text": "\\b60",
+   "paste_source": null
+  },
+  {
+   "t": 3356.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3356.6,
+   "type": "type",
+   "text": "\\b180",
+   "paste_source": null
+  },
+  {
+   "t": 3377.9,
+   "type": "type",
+   "text": "\\\\b[52-305]",
+   "paste_source": null
+  },
+  {
+   "t": 3378.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3379.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3379.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3379.8,
+   "type": "type",
+   "text": "\\b\n",
+   "paste_source": null
+  },
+  {
+   "t": 3398.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3398.2,
+   "type": "type",
+   "text": "\\b00",
+   "paste_source": null
+  },
+  {
+   "t": 3400.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3401.1,
+   "type": "type",
+   "text": "\\b00",
+   "paste_source": null
+  },
+  {
+   "t": 3413.9,
+   "type": "type",
+   "text": "\\b100",
+   "paste_source": null
+  },
+  {
+   "t": 3419.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3420.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3420.3,
+   "type": "type",
+   "text": "\\b0",
+   "paste_source": null
+  },
+  {
+   "t": 3422.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3422.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3422.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3423.5,
+   "type": "type",
+   "text": "\\b200",
+   "paste_source": null
+  },
+  {
+   "t": 3431.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3432.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3432.1,
+   "type": "type",
+   "text": "\\b-100",
+   "paste_source": null
+  },
+  {
+   "t": 3444.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3444.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3446.0,
+   "type": "type",
+   "text": "\\b150",
+   "paste_source": null
+  },
+  {
+   "t": 3454.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3454.8,
+   "type": "type",
+   "text": "\\b20",
+   "paste_source": null
+  },
+  {
+   "t": 3488.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3488.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3488.9,
+   "type": "type",
+   "text": "\\b150",
+   "paste_source": null
+  },
+  {
+   "t": 3497.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3497.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3497.5,
+   "type": "type",
+   "text": "\\b2",
+   "paste_source": null
+  },
+  {
+   "t": 3499.2,
+   "type": "type",
+   "text": "\\b500",
+   "paste_source": null
+  },
+  {
+   "t": 3505.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3505.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3505.4,
+   "type": "type",
+   "text": "\\b250",
+   "paste_source": null
+  },
+  {
+   "t": 3530.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3530.7,
+   "type": "type",
+   "text": "\\b52",
+   "paste_source": null
+  },
+  {
+   "t": 3539.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3540.1,
+   "type": "type",
+   "text": "\\b71",
+   "paste_source": null
+  },
+  {
+   "t": 3551.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3552.0,
+   "type": "type",
+   "text": "\\b333",
+   "paste_source": null
+  },
+  {
+   "t": 3559.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3559.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3559.8,
+   "type": "type",
+   "text": "\\b77",
+   "paste_source": null
+  },
+  {
+   "t": 3571.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3572.0,
+   "type": "type",
+   "text": "\\b69",
+   "paste_source": null
+  },
+  {
+   "t": 3587.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3587.9,
+   "type": "type",
+   "text": "\\b00",
+   "paste_source": null
+  },
+  {
+   "t": 3596.1,
+   "type": "type",
+   "text": "\\\\b[433-458]",
+   "paste_source": null
+  },
+  {
+   "t": 3596.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3596.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3596.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3598.6,
+   "type": "type",
+   "text": "\\\\b[451-484]",
+   "paste_source": null
+  },
+  {
+   "t": 3598.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3600.3,
+   "type": "type",
+   "text": "\\\\b[473-507]",
+   "paste_source": null
+  },
+  {
+   "t": 3600.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3600.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3602.7,
+   "type": "type",
+   "text": "\\\\b[353-401]",
+   "paste_source": null
+  },
+  {
+   "t": 3602.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3603.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3604.2,
+   "type": "type",
+   "text": "\\\\b[303-329]",
+   "paste_source": null
+  },
+  {
+   "t": 3604.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3605.9,
+   "type": "type",
+   "text": "\\\\b[189-257]",
+   "paste_source": null
+  },
+  {
+   "t": 3606.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3608.5,
+   "type": "type",
+   "text": "\\\\b[368-428]",
+   "paste_source": null
+  },
+  {
+   "t": 3608.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3610.9,
+   "type": "type",
+   "text": "\\\\b[384-509]",
+   "paste_source": null
+  },
+  {
+   "t": 3611.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3614.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3614.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3614.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3614.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3614.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3614.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3615.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3619.1,
+   "type": "type",
+   "text": "\\\\b[714-799]",
+   "paste_source": null
+  },
+  {
+   "t": 3620.4,
+   "type": "type",
+   "text": "\\\\b[643-693]",
+   "paste_source": null
+  },
+  {
+   "t": 3621.8,
+   "type": "type",
+   "text": "\\\\b[590-622]",
+   "paste_source": null
+  },
+  {
+   "t": 3623.3,
+   "type": "type",
+   "text": "\\\\b[549-567]",
+   "paste_source": null
+  },
+  {
+   "t": 3624.4,
+   "type": "type",
+   "text": "\\\\b[506-524]",
+   "paste_source": null
+  },
+  {
+   "t": 3626.3,
+   "type": "type",
+   "text": "\\\\b[417-484]",
+   "paste_source": null
+  },
+  {
+   "t": 3732.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3732.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3733.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3733.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3737.2,
+   "type": "type",
+   "text": "ellipse",
+   "paste_source": null
+  },
+  {
+   "t": 3742.6,
+   "type": "type",
+   "text": "=",
+   "paste_source": null
+  },
+  {
+   "t": 3742.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3743.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3743.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3743.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3743.4,
+   "type": "type",
+   "text": "\\belipse",
+   "paste_source": null
+  },
+  {
+   "t": 3750.3,
+   "type": "type",
+   "text": "l",
+   "paste_source": null
+  },
+  {
+   "t": 3859.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3859.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3859.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3859.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3860.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3860.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3860.3,
+   "type": "type",
+   "text": "\\bline",
+   "paste_source": null
+  },
+  {
+   "t": 3865.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3865.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3866.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3866.2,
+   "type": "type",
+   "text": "\\bellipse",
+   "paste_source": null
+  },
+  {
+   "t": 3870.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3870.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3871.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3871.1,
+   "type": "type",
+   "text": "\\bellipse",
+   "paste_source": null
+  },
+  {
+   "t": 3888.6,
+   "type": "type",
+   "text": "//",
+   "paste_source": null
+  },
+  {
+   "t": 3893.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3893.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3896.9,
+   "type": "type",
+   "text": "?8==",
+   "paste_source": null
+  },
+  {
+   "t": 3899.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3899.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3899.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3899.5,
+   "type": "type",
+   "text": "\\b?",
+   "paste_source": null
+  },
+  {
+   "t": 3901.4,
+   "type": "type",
+   "text": "\\b/**",
+   "paste_source": null
+  },
+  {
+   "t": 3908.3,
+   "type": "type",
+   "text": "?**",
+   "paste_source": null
+  },
+  {
+   "t": 3910.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3910.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3910.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3911.7,
+   "type": "type",
+   "text": "\n    ",
+   "paste_source": null
+  },
+  {
+   "t": 3914.1,
+   "type": "type",
+   "text": "**/",
+   "paste_source": null
+  },
+  {
+   "t": 3920.2,
+   "type": "cut",
+   "text": "**/",
+   "paste_source": null
+  },
+  {
+   "t": 3920.8,
+   "type": "type",
+   "text": "\\\\b[737-740]\\",
+   "paste_source": null
+  },
+  {
+   "t": 3921.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3956.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3965.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3965.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3966.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3966.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3966.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3966.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3966.7,
+   "type": "type",
+   "text": "\\bbox",
+   "paste_source": null
+  },
+  {
+   "t": 3970.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3970.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3970.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3970.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3971.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3971.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3971.5,
+   "type": "type",
+   "text": "\\bbox",
+   "paste_source": null
+  },
+  {
+   "t": 3975.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3975.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3975.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3976.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4057.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4057.8,
+   "type": "type",
+   "text": "\\b30",
+   "paste_source": null
+  },
+  {
+   "t": 4115.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4115.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4116.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4116.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4116.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4116.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4116.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4117.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4117.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4117.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4128.5,
+   "type": "type",
+   "text": "scale",
+   "paste_source": null
+  },
+  {
+   "t": 4141.7,
+   "type": "type",
+   "text": "//",
+   "paste_source": null
+  },
+  {
+   "t": 4158.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4158.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4169.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4169.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4170.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4170.2,
+   "type": "type",
+   "text": "\\bapply",
+   "paste_source": null
+  },
+  {
+   "t": 4175.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4176.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4176.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4176.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4176.9,
+   "type": "type",
+   "text": "\\bpop",
+   "paste_source": null
+  },
+  {
+   "t": 4197.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4197.8,
+   "type": "type",
+   "text": "\\bush",
+   "paste_source": null
+  },
+  {
+   "t": 4300.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4300.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4300.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4301.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4301.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4301.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4301.5,
+   "type": "type",
+   "text": "\\barc",
+   "paste_source": null
+  },
+  {
+   "t": 4322.2,
+   "type": "type",
+   "text": " 0, 0,",
+   "paste_source": null
+  },
+  {
+   "t": 4332.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4332.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4332.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4332.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4332.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4332.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4333.4,
+   "type": "type",
+   "text": "\\barc",
+   "paste_source": null
+  },
+  {
+   "t": 4336.6,
+   "type": "type",
+   "text": "0, 0, ",
+   "paste_source": null
+  },
+  {
+   "t": 4356.9,
+   "type": "type",
+   "text": "===",
+   "paste_source": null
+  },
+  {
+   "t": 4358.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4358.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4358.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4358.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4358.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4358.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4359.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4401.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4401.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4401.9,
+   "type": "type",
+   "text": "\\b444",
+   "paste_source": null
+  },
+  {
+   "t": 4417.8,
+   "type": "type",
+   "text": "\\\\b[304-307]",
+   "paste_source": null
+  },
+  {
+   "t": 4418.2,
+   "type": "type",
+   "text": "\\b0",
+   "paste_source": null
+  },
+  {
+   "t": 4426.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4427.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4428.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4428.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4428.4,
+   "type": "type",
+   "text": "\\b0,0",
+   "paste_source": null
+  },
+  {
+   "t": 4439.6,
+   "type": "type",
+   "text": "\\b6",
+   "paste_source": null
+  },
+  {
+   "t": 4447.8,
+   "type": "type",
+   "text": "\\b1",
+   "paste_source": null
+  },
+  {
+   "t": 4456.2,
+   "type": "type",
+   "text": "\\b2",
+   "paste_source": null
+  },
+  {
+   "t": 4460.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4460.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4460.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4461.0,
+   "type": "type",
+   "text": "\\b0",
+   "paste_source": null
+  },
+  {
+   "t": 4467.1,
+   "type": "type",
+   "text": "\\b-500",
+   "paste_source": null
+  },
+  {
+   "t": 4474.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4474.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4475.6,
+   "type": "type",
+   "text": "\\b300",
+   "paste_source": null
+  },
+  {
+   "t": 4927.0,
+   "type": "type",
+   "text": "\n//",
+   "paste_source": null
+  },
+  {
+   "t": 4945.2,
+   "type": "type",
+   "text": " ",
+   "paste_source": null
+  },
+  {
+   "t": 4947.3,
+   "type": "type",
+   "text": "I was ",
+   "paste_source": null
+  },
+  {
+   "t": 4948.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4948.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4948.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4949.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4949.2,
+   "type": "type",
+   "text": "\\b did this assignment through looking at t",
+   "paste_source": null
+  },
+  {
+   "t": 4956.5,
+   "type": "type",
+   "text": "\\bvarious examples given in the IDE ",
+   "paste_source": null
+  },
+  {
+   "t": 4963.9,
+   "type": "type",
+   "text": "\\b\n// I was interested in ",
+   "paste_source": null
+  },
+  {
+   "t": 4973.3,
+   "type": "type",
+   "text": "user interaction so I go",
+   "paste_source": null
+  },
+  {
+   "t": 4979.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4979.8,
+   "type": "type",
+   "text": "\\bgot the code t",
+   "paste_source": null
+  },
+  {
+   "t": 4982.3,
+   "type": "type",
+   "text": "\\bfrom an example that tracks your mouse location\n// I all",
+   "paste_source": null
+  },
+  {
+   "t": 4996.0,
+   "type": "type",
+   "text": "\\bso played with ",
+   "paste_source": null
+  },
+  {
+   "t": 4999.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4999.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4999.3,
+   "type": "type",
+   "text": "\\bth ",
+   "paste_source": null
+  },
+  {
+   "t": 5001.1,
+   "type": "type",
+   "text": "\\b various c",
+   "paste_source": null
+  },
+  {
+   "t": 5005.1,
+   "type": "type",
+   "text": "\\bshapes",
+   "paste_source": null
+  },
+  {
+   "t": 5007.3,
+   "type": "type",
+   "text": "\\b outputs and ",
+   "paste_source": null
+  },
+  {
+   "t": 5014.8,
+   "type": "type",
+   "text": "translations adn",
+   "paste_source": null
+  },
+  {
+   "t": 5017.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 5017.8,
+   "type": "type",
+   "text": "\\bnd got a ",
+   "paste_source": null
+  },
+  {
+   "t": 5020.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 5020.9,
+   "type": "type",
+   "text": "\\bto a ",
+   "paste_source": null
+  },
+  {
+   "t": 5027.3,
+   "type": "type",
+   "text": "\\bn acceptaboe,",
+   "paste_source": null
+  },
+  {
+   "t": 5030.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 5030.5,
+   "type": "type",
+   "text": "\\ble ",
+   "paste_source": null
+  },
+  {
+   "t": 5031.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 5031.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 5031.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 5032.0,
+   "type": "type",
+   "text": "\\ble point. ",
+   "paste_source": null
+  },
+  {
+   "t": 5034.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 5034.1,
+   "type": "type",
+   "text": "\\b\n\n",
+   "paste_source": null
+  },
+  {
+   "t": 5035.7,
+   "type": "type",
+   "text": "\\b//\n// this was really fun and would p",
+   "paste_source": null
+  },
+  {
+   "t": 5043.5,
+   "type": "type",
+   "text": "\\bprobably use this IDE ",
+   "paste_source": null
+  },
+  {
+   "t": 5049.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 5050.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 5050.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 5050.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 5050.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 5050.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 5050.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 5050.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 5050.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 5050.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 5050.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 5050.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 5050.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 5050.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 5050.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 5050.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 5050.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 5050.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 5050.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 5050.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 5050.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 5051.2,
+   "type": "type",
+   "text": "\\blike to learn more about ",
+   "paste_source": null
+  },
+  {
+   "t": 5058.7,
+   "type": "type",
+   "text": "sketching in the future. ",
+   "paste_source": null
+  },
+  {
+   "t": 5064.0,
+   "type": "type",
+   "text": "\n//",
+   "paste_source": null
+  }
+ ]
+}

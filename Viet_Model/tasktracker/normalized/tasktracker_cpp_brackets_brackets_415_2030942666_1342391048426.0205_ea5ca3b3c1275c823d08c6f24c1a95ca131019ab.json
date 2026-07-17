@@ -1,0 +1,321 @@
+{
+  "session_id": "tasktracker_cpp_brackets_brackets_415_2030942666_1342391048426.0205_ea5ca3b3c1275c823d08c6f24c1a95ca131019ab",
+  "source": "tasktracker_sigcse2021",
+  "metadata": {
+    "language": "cpp",
+    "task": "brackets",
+    "task_status": "SOLVED",
+    "final_score": 0.25,
+    "weak_label": 1,
+    "label_reason": "explicit paste action; large code insertion; large pasted/inferred-paste volume",
+    "source_file": "data\\raw\\tasktracker\\extracted\\data_google_drive_anonymized (SIGSCE 2020)\\cpp\\brackets\\brackets_415_2030942666_1342391048426.0205_ea5ca3b3c1275c823d08c6f24c1a95ca131019ab.csv"
+  },
+  "events": [
+    {
+      "t": 0.09,
+      "type": "type",
+      "text": "\n",
+      "paste_source": null
+    },
+    {
+      "t": 3.18,
+      "type": "type",
+      "text": "#",
+      "paste_source": null
+    },
+    {
+      "t": 11.365,
+      "type": "type",
+      "text": "include <math.h>",
+      "paste_source": null
+    },
+    {
+      "t": 11.366,
+      "type": "type",
+      "text": "\n",
+      "paste_source": null
+    },
+    {
+      "t": 12.856,
+      "type": "type",
+      "text": "#",
+      "paste_source": null
+    },
+    {
+      "t": 19.575,
+      "type": "type",
+      "text": "include <string>",
+      "paste_source": null
+    },
+    {
+      "t": 19.577,
+      "type": "type",
+      "text": "\n",
+      "paste_source": null
+    },
+    {
+      "t": 21.628,
+      "type": "type",
+      "text": "#",
+      "paste_source": null
+    },
+    {
+      "t": 30.02,
+      "type": "type",
+      "text": "include <algorithm>",
+      "paste_source": null
+    },
+    {
+      "t": 30.023,
+      "type": "type",
+      "text": "\n",
+      "paste_source": null
+    },
+    {
+      "t": 42.547,
+      "type": "type",
+      "text": "using namespace std;",
+      "paste_source": null
+    },
+    {
+      "t": 42.547,
+      "type": "cut",
+      "text": "Action:EditorBackSpace",
+      "paste_source": null
+    },
+    {
+      "t": 44.56,
+      "type": "cut",
+      "text": ":cout << \"Hello, World!\" << std::endl;",
+      "paste_source": null
+    },
+    {
+      "t": 44.56,
+      "type": "cut",
+      "text": "Action:EditorBackSpace",
+      "paste_source": null
+    },
+    {
+      "t": 45.969,
+      "type": "cut",
+      "text": "std:",
+      "paste_source": null
+    },
+    {
+      "t": 46.631,
+      "type": "type",
+      "text": "s:",
+      "paste_source": null
+    },
+    {
+      "t": 46.631,
+      "type": "cut",
+      "text": "Action:EditorBackSpace",
+      "paste_source": null
+    },
+    {
+      "t": 47.68,
+      "type": "cut",
+      "text": "s:",
+      "paste_source": null
+    },
+    {
+      "t": 50.748,
+      "type": "type",
+      "text": "string d_6414370376350317282;",
+      "paste_source": null
+    },
+    {
+      "t": 50.751,
+      "type": "type",
+      "text": "\n    ",
+      "paste_source": null
+    },
+    {
+      "t": 57.968,
+      "type": "type",
+      "text": "cin >> d_6414370376350317282;",
+      "paste_source": null
+    },
+    {
+      "t": 57.97,
+      "type": "type",
+      "text": "\n    ",
+      "paste_source": null
+    },
+    {
+      "t": 702.13,
+      "type": "paste",
+      "text": "int d_6253375586064260614;\n    if (d_6414370376350317282.size()%2==0){\n        for (d_6253375586064260614=0; d_6253375586064260614<d_6414370376350317282.size(); d_6253375586064260614++){\n        cout << d_6414370376350317282[d_6253375586064260614];\n            if (d_6253375586064260614<d_6414370376350317282.size()/2) {\n                cout << '(';\n            }\n            if (d_6253375586064260614>d_6414370376350317282.size()/2) {\n                cout << ')';\n            }\n        }\n    }\n\n    if (d_6414370376350317282.size()%2==1){\n        for (d_6253375586064260614=0; d_6253375586064260614<d_6414370376350317282.size(); d_6253375586064260614++){\n            cout << d_6414370376350317282[d_6253375586064260614];\n            if (d_6253375586064260614==d_6414370376350317282.size()-1){\n            \tbreak;\n\t\t\t}\n            if (d_6253375586064260614<d_6414370376350317282.size()/2) {\n                cout << '(';\n            }\n            if (d_6253375586064260614>=d_6414370376350317282.size()/2) {\n                cout << ')';\n            }\n        }\n    }\n    ",
+      "paste_source": "unknown"
+    },
+    {
+      "t": 702.134,
+      "type": "paste",
+      "text": "    ",
+      "paste_source": "unknown"
+    },
+    {
+      "t": 702.138,
+      "type": "cut",
+      "text": "\t",
+      "paste_source": null
+    },
+    {
+      "t": 702.138,
+      "type": "paste",
+      "text": "    ",
+      "paste_source": "unknown"
+    },
+    {
+      "t": 702.139,
+      "type": "cut",
+      "text": "\t\t\t",
+      "paste_source": null
+    },
+    {
+      "t": 702.139,
+      "type": "paste",
+      "text": "            ",
+      "paste_source": "unknown"
+    },
+    {
+      "t": 702.139,
+      "type": "other",
+      "text": "Action:EditorPaste",
+      "paste_source": null
+    },
+    {
+      "t": 829.313,
+      "type": "cut",
+      "text": "    ",
+      "paste_source": null
+    },
+    {
+      "t": 829.343,
+      "type": "cut",
+      "text": "    ",
+      "paste_source": null
+    },
+    {
+      "t": 829.343,
+      "type": "paste",
+      "text": "\n        if (d_6253375586064260614==d_6414370376350317282.size()-1){\n            \tbreak;\n\t\t\t}",
+      "paste_source": "unknown"
+    },
+    {
+      "t": 829.343,
+      "type": "type",
+      "text": "-1",
+      "paste_source": null
+    },
+    {
+      "t": 829.343,
+      "type": "type",
+      "text": "-1",
+      "paste_source": null
+    },
+    {
+      "t": 829.343,
+      "type": "cut",
+      "text": "    ",
+      "paste_source": null
+    },
+    {
+      "t": 829.343,
+      "type": "type",
+      "text": "\t",
+      "paste_source": null
+    },
+    {
+      "t": 829.343,
+      "type": "cut",
+      "text": "            ",
+      "paste_source": null
+    },
+    {
+      "t": 829.343,
+      "type": "type",
+      "text": "\t\t\t",
+      "paste_source": null
+    },
+    {
+      "t": 829.343,
+      "type": "type",
+      "text": "    ",
+      "paste_source": null
+    },
+    {
+      "t": 829.345,
+      "type": "type",
+      "text": "    ",
+      "paste_source": null
+    },
+    {
+      "t": 829.346,
+      "type": "type",
+      "text": "    ",
+      "paste_source": null
+    },
+    {
+      "t": 829.347,
+      "type": "cut",
+      "text": "\t",
+      "paste_source": null
+    },
+    {
+      "t": 829.347,
+      "type": "type",
+      "text": "    ",
+      "paste_source": null
+    },
+    {
+      "t": 829.347,
+      "type": "cut",
+      "text": "\t\t\t",
+      "paste_source": null
+    },
+    {
+      "t": 829.347,
+      "type": "type",
+      "text": "            ",
+      "paste_source": null
+    },
+    {
+      "t": 829.348,
+      "type": "cut",
+      "text": "\t",
+      "paste_source": null
+    },
+    {
+      "t": 829.348,
+      "type": "type",
+      "text": "    ",
+      "paste_source": null
+    },
+    {
+      "t": 829.349,
+      "type": "cut",
+      "text": "\t\t\t",
+      "paste_source": null
+    },
+    {
+      "t": 829.349,
+      "type": "type",
+      "text": "            ",
+      "paste_source": null
+    },
+    {
+      "t": 910.245,
+      "type": "cut",
+      "text": "    ",
+      "paste_source": null
+    },
+    {
+      "t": 910.246,
+      "type": "cut",
+      "text": "Action:EditorBackSpace",
+      "paste_source": null
+    }
+  ]
+}

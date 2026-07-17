@@ -1,0 +1,117 @@
+{
+  "session_id": "tasktracker_cpp_max_3_max_3_6007_601516113_1434084295547.0525_c5979f68e401d08c3e057cb6206469a7a11a8fd9",
+  "source": "tasktracker_sigcse2021",
+  "metadata": {
+    "language": "cpp",
+    "task": "max_3",
+    "task_status": "SOLVED",
+    "final_score": 0.2708333333333333,
+    "weak_label": 0,
+    "label_reason": "low-risk trace",
+    "source_file": "data\\raw\\tasktracker\\extracted\\data_google_drive_anonymized (SIGSCE 2020)\\cpp\\max_3\\max_3_6007_601516113_1434084295547.0525_c5979f68e401d08c3e057cb6206469a7a11a8fd9.csv"
+  },
+  "events": [
+    {
+      "t": 3.894,
+      "type": "type",
+      "text": "int a, b, c;",
+      "paste_source": null
+    },
+    {
+      "t": 3.898,
+      "type": "type",
+      "text": "\n    ",
+      "paste_source": null
+    },
+    {
+      "t": 8.367,
+      "type": "type",
+      "text": "\n",
+      "paste_source": null
+    },
+    {
+      "t": 10.531,
+      "type": "type",
+      "text": "#",
+      "paste_source": null
+    },
+    {
+      "t": 14.39,
+      "type": "type",
+      "text": "include <cmath>",
+      "paste_source": null
+    },
+    {
+      "t": 32.626,
+      "type": "cut",
+      "text": "a",
+      "paste_source": null
+    },
+    {
+      "t": 32.626,
+      "type": "type",
+      "text": "d_4993892634952068459",
+      "paste_source": null
+    },
+    {
+      "t": 32.626,
+      "type": "cut",
+      "text": "b",
+      "paste_source": null
+    },
+    {
+      "t": 32.626,
+      "type": "type",
+      "text": "d_10838281452030117757",
+      "paste_source": null
+    },
+    {
+      "t": 32.626,
+      "type": "cut",
+      "text": "c",
+      "paste_source": null
+    },
+    {
+      "t": 32.626,
+      "type": "type",
+      "text": "d_10959529184379665549",
+      "paste_source": null
+    },
+    {
+      "t": 32.626,
+      "type": "paste",
+      "text": "cout << max(d_4993892634952068459, max(d_10838281452030117757, d_10959529184379665549)) << endl;",
+      "paste_source": "unknown"
+    },
+    {
+      "t": 32.63,
+      "type": "type",
+      "text": "\n    ",
+      "paste_source": null
+    },
+    {
+      "t": 37.552,
+      "type": "type",
+      "text": "\n    ",
+      "paste_source": null
+    },
+    {
+      "t": 44.088,
+      "type": "paste",
+      "text": "cin >> d_4993892634952068459 >> d_10838281452030117757 >> d_10959529184379665549;",
+      "paste_source": "unknown"
+    },
+    {
+      "t": 44.09,
+      "type": "cut",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 122.622,
+      "type": "cut",
+      "text": "\n   ",
+      "paste_source": null
+    }
+  ]
+}

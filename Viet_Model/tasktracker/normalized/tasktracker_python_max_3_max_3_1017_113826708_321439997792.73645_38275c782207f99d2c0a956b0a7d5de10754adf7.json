@@ -1,0 +1,963 @@
+{
+  "session_id": "tasktracker_python_max_3_max_3_1017_113826708_321439997792.73645_38275c782207f99d2c0a956b0a7d5de10754adf7",
+  "source": "tasktracker_sigcse2021",
+  "metadata": {
+    "language": "python",
+    "task": "max_3",
+    "task_status": "SOLVED",
+    "final_score": 0.16666666666666666,
+    "weak_label": 0,
+    "label_reason": "low-risk trace",
+    "source_file": "data\\raw\\tasktracker\\extracted\\data_google_drive_anonymized (SIGSCE 2020)\\python\\max_3\\max_3_1017_113826708_321439997792.73645_38275c782207f99d2c0a956b0a7d5de10754adf7.csv"
+  },
+  "events": [
+    {
+      "t": 0.213,
+      "type": "type",
+      "text": "a",
+      "paste_source": null
+    },
+    {
+      "t": 0.238,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 0.336,
+      "type": "cut",
+      "text": "a",
+      "paste_source": null
+    },
+    {
+      "t": 0.336,
+      "type": "type",
+      "text": "v1",
+      "paste_source": null
+    },
+    {
+      "t": 0.336,
+      "type": "type",
+      "text": "=",
+      "paste_source": null
+    },
+    {
+      "t": 0.473,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 0.568,
+      "type": "type",
+      "text": "i",
+      "paste_source": null
+    },
+    {
+      "t": 0.712,
+      "type": "type",
+      "text": "n",
+      "paste_source": null
+    },
+    {
+      "t": 0.712,
+      "type": "cut",
+      "text": "Action:EditorBackSpace",
+      "paste_source": null
+    },
+    {
+      "t": 1.095,
+      "type": "type",
+      "text": "t",
+      "paste_source": null
+    },
+    {
+      "t": 1.226,
+      "type": "cut",
+      "text": "t",
+      "paste_source": null
+    },
+    {
+      "t": 1.226,
+      "type": "cut",
+      "text": "Action:EditorBackSpace",
+      "paste_source": null
+    },
+    {
+      "t": 1.226,
+      "type": "cut",
+      "text": "Action:EditorBackSpace",
+      "paste_source": null
+    },
+    {
+      "t": 1.345,
+      "type": "cut",
+      "text": "n",
+      "paste_source": null
+    },
+    {
+      "t": 1.345,
+      "type": "cut",
+      "text": "Action:EditorBackSpace",
+      "paste_source": null
+    },
+    {
+      "t": 1.484,
+      "type": "cut",
+      "text": "i",
+      "paste_source": null
+    },
+    {
+      "t": 1.484,
+      "type": "cut",
+      "text": "Action:EditorBackSpace",
+      "paste_source": null
+    },
+    {
+      "t": 1.625,
+      "type": "cut",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 1.625,
+      "type": "cut",
+      "text": "Action:EditorBackSpace",
+      "paste_source": null
+    },
+    {
+      "t": 1.764,
+      "type": "cut",
+      "text": "v1",
+      "paste_source": null
+    },
+    {
+      "t": 1.764,
+      "type": "type",
+      "text": "a",
+      "paste_source": null
+    },
+    {
+      "t": 1.764,
+      "type": "cut",
+      "text": "=",
+      "paste_source": null
+    },
+    {
+      "t": 1.764,
+      "type": "cut",
+      "text": "Action:EditorBackSpace",
+      "paste_source": null
+    },
+    {
+      "t": 1.881,
+      "type": "cut",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 3.557,
+      "type": "cut",
+      "text": "a",
+      "paste_source": null
+    },
+    {
+      "t": 3.729,
+      "type": "type",
+      "text": "a",
+      "paste_source": null
+    },
+    {
+      "t": 3.737,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 3.899,
+      "type": "cut",
+      "text": "a",
+      "paste_source": null
+    },
+    {
+      "t": 3.899,
+      "type": "type",
+      "text": "v1",
+      "paste_source": null
+    },
+    {
+      "t": 3.899,
+      "type": "type",
+      "text": "=",
+      "paste_source": null
+    },
+    {
+      "t": 4.015,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 4.172,
+      "type": "type",
+      "text": "i",
+      "paste_source": null
+    },
+    {
+      "t": 4.252,
+      "type": "type",
+      "text": "n",
+      "paste_source": null
+    },
+    {
+      "t": 4.475,
+      "type": "type",
+      "text": "t",
+      "paste_source": null
+    },
+    {
+      "t": 4.478,
+      "type": "type",
+      "text": "(",
+      "paste_source": null
+    },
+    {
+      "t": 4.754,
+      "type": "type",
+      "text": ")",
+      "paste_source": null
+    },
+    {
+      "t": 4.818,
+      "type": "type",
+      "text": "i",
+      "paste_source": null
+    },
+    {
+      "t": 4.959,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 4.959,
+      "type": "type",
+      "text": "n",
+      "paste_source": null
+    },
+    {
+      "t": 5.01,
+      "type": "cut",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 5.01,
+      "type": "type",
+      "text": "t",
+      "paste_source": null
+    },
+    {
+      "t": 5.06,
+      "type": "type",
+      "text": "p",
+      "paste_source": null
+    },
+    {
+      "t": 5.154,
+      "type": "type",
+      "text": "u",
+      "paste_source": null
+    },
+    {
+      "t": 5.154,
+      "type": "cut",
+      "text": "Action:EditorBackSpace",
+      "paste_source": null
+    },
+    {
+      "t": 5.588,
+      "type": "type",
+      "text": "t",
+      "paste_source": null
+    },
+    {
+      "t": 5.588,
+      "type": "cut",
+      "text": "Action:EditorBackSpace",
+      "paste_source": null
+    },
+    {
+      "t": 5.714,
+      "type": "cut",
+      "text": "t",
+      "paste_source": null
+    },
+    {
+      "t": 5.714,
+      "type": "cut",
+      "text": "Action:EditorBackSpace",
+      "paste_source": null
+    },
+    {
+      "t": 5.857,
+      "type": "cut",
+      "text": "u",
+      "paste_source": null
+    },
+    {
+      "t": 5.857,
+      "type": "cut",
+      "text": "Action:EditorBackSpace",
+      "paste_source": null
+    },
+    {
+      "t": 6.007,
+      "type": "cut",
+      "text": "p",
+      "paste_source": null
+    },
+    {
+      "t": 6.26,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 6.26,
+      "type": "cut",
+      "text": "t",
+      "paste_source": null
+    },
+    {
+      "t": 6.375,
+      "type": "cut",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 6.375,
+      "type": "type",
+      "text": "p",
+      "paste_source": null
+    },
+    {
+      "t": 6.411,
+      "type": "type",
+      "text": "u",
+      "paste_source": null
+    },
+    {
+      "t": 6.535,
+      "type": "type",
+      "text": "t",
+      "paste_source": null
+    },
+    {
+      "t": 6.538,
+      "type": "type",
+      "text": "(",
+      "paste_source": null
+    },
+    {
+      "t": 7.203,
+      "type": "type",
+      "text": ")",
+      "paste_source": null
+    },
+    {
+      "t": 7.206,
+      "type": "type",
+      "text": "\n",
+      "paste_source": null
+    },
+    {
+      "t": 7.605,
+      "type": "type",
+      "text": "b",
+      "paste_source": null
+    },
+    {
+      "t": 7.701,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 7.787,
+      "type": "cut",
+      "text": "b",
+      "paste_source": null
+    },
+    {
+      "t": 7.787,
+      "type": "type",
+      "text": "v2",
+      "paste_source": null
+    },
+    {
+      "t": 7.787,
+      "type": "type",
+      "text": "=",
+      "paste_source": null
+    },
+    {
+      "t": 8.219,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 8.288,
+      "type": "type",
+      "text": "i",
+      "paste_source": null
+    },
+    {
+      "t": 8.355,
+      "type": "type",
+      "text": "n",
+      "paste_source": null
+    },
+    {
+      "t": 8.713,
+      "type": "type",
+      "text": "t",
+      "paste_source": null
+    },
+    {
+      "t": 8.714,
+      "type": "type",
+      "text": "(",
+      "paste_source": null
+    },
+    {
+      "t": 8.947,
+      "type": "type",
+      "text": ")",
+      "paste_source": null
+    },
+    {
+      "t": 9.017,
+      "type": "type",
+      "text": "i",
+      "paste_source": null
+    },
+    {
+      "t": 9.175,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 9.175,
+      "type": "type",
+      "text": "n",
+      "paste_source": null
+    },
+    {
+      "t": 9.237,
+      "type": "cut",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 9.237,
+      "type": "type",
+      "text": "p",
+      "paste_source": null
+    },
+    {
+      "t": 9.274,
+      "type": "type",
+      "text": "u",
+      "paste_source": null
+    },
+    {
+      "t": 9.471,
+      "type": "type",
+      "text": "t",
+      "paste_source": null
+    },
+    {
+      "t": 9.473,
+      "type": "type",
+      "text": "(",
+      "paste_source": null
+    },
+    {
+      "t": 10.308,
+      "type": "type",
+      "text": ")",
+      "paste_source": null
+    },
+    {
+      "t": 10.313,
+      "type": "type",
+      "text": "\n",
+      "paste_source": null
+    },
+    {
+      "t": 11.337,
+      "type": "type",
+      "text": "c",
+      "paste_source": null
+    },
+    {
+      "t": 11.431,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 11.541,
+      "type": "cut",
+      "text": "c",
+      "paste_source": null
+    },
+    {
+      "t": 11.541,
+      "type": "type",
+      "text": "v3",
+      "paste_source": null
+    },
+    {
+      "t": 11.541,
+      "type": "type",
+      "text": "=",
+      "paste_source": null
+    },
+    {
+      "t": 11.666,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 11.756,
+      "type": "type",
+      "text": "i",
+      "paste_source": null
+    },
+    {
+      "t": 11.798,
+      "type": "type",
+      "text": "n",
+      "paste_source": null
+    },
+    {
+      "t": 12.089,
+      "type": "type",
+      "text": "t",
+      "paste_source": null
+    },
+    {
+      "t": 12.092,
+      "type": "type",
+      "text": "(",
+      "paste_source": null
+    },
+    {
+      "t": 12.519,
+      "type": "type",
+      "text": ")",
+      "paste_source": null
+    },
+    {
+      "t": 12.626,
+      "type": "type",
+      "text": "i",
+      "paste_source": null
+    },
+    {
+      "t": 12.755,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 12.755,
+      "type": "type",
+      "text": "n",
+      "paste_source": null
+    },
+    {
+      "t": 12.817,
+      "type": "cut",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 12.817,
+      "type": "type",
+      "text": "p",
+      "paste_source": null
+    },
+    {
+      "t": 12.871,
+      "type": "type",
+      "text": "u",
+      "paste_source": null
+    },
+    {
+      "t": 13.058,
+      "type": "type",
+      "text": "t",
+      "paste_source": null
+    },
+    {
+      "t": 13.06,
+      "type": "type",
+      "text": "(",
+      "paste_source": null
+    },
+    {
+      "t": 14.288,
+      "type": "type",
+      "text": ")",
+      "paste_source": null
+    },
+    {
+      "t": 14.292,
+      "type": "type",
+      "text": "\n",
+      "paste_source": null
+    },
+    {
+      "t": 15.473,
+      "type": "type",
+      "text": "\n",
+      "paste_source": null
+    },
+    {
+      "t": 15.61,
+      "type": "type",
+      "text": "p",
+      "paste_source": null
+    },
+    {
+      "t": 15.701,
+      "type": "type",
+      "text": "r",
+      "paste_source": null
+    },
+    {
+      "t": 15.758,
+      "type": "type",
+      "text": "i",
+      "paste_source": null
+    },
+    {
+      "t": 15.825,
+      "type": "type",
+      "text": "n",
+      "paste_source": null
+    },
+    {
+      "t": 16.529,
+      "type": "type",
+      "text": "t",
+      "paste_source": null
+    },
+    {
+      "t": 16.529,
+      "type": "cut",
+      "text": "Action:EditorBackSpace",
+      "paste_source": null
+    },
+    {
+      "t": 17.071,
+      "type": "type",
+      "text": "9",
+      "paste_source": null
+    },
+    {
+      "t": 17.298,
+      "type": "cut",
+      "text": "9",
+      "paste_source": null
+    },
+    {
+      "t": 17.3,
+      "type": "type",
+      "text": "(",
+      "paste_source": null
+    },
+    {
+      "t": 17.612,
+      "type": "type",
+      "text": ")",
+      "paste_source": null
+    },
+    {
+      "t": 17.612,
+      "type": "cut",
+      "text": "Action:EditorBackSpace",
+      "paste_source": null
+    },
+    {
+      "t": 17.952,
+      "type": "type",
+      "text": "v1",
+      "paste_source": null
+    },
+    {
+      "t": 18.162,
+      "type": "cut",
+      "text": "v1",
+      "paste_source": null
+    },
+    {
+      "t": 18.176,
+      "type": "type",
+      "text": "v1",
+      "paste_source": null
+    },
+    {
+      "t": 18.33,
+      "type": "cut",
+      "text": "v1",
+      "paste_source": null
+    },
+    {
+      "t": 18.33,
+      "type": "type",
+      "text": "am",
+      "paste_source": null
+    },
+    {
+      "t": 18.33,
+      "type": "cut",
+      "text": "Action:EditorBackSpace",
+      "paste_source": null
+    },
+    {
+      "t": 18.763,
+      "type": "type",
+      "text": "x",
+      "paste_source": null
+    },
+    {
+      "t": 18.763,
+      "type": "cut",
+      "text": "Action:EditorBackSpace",
+      "paste_source": null
+    },
+    {
+      "t": 19.027,
+      "type": "cut",
+      "text": "x",
+      "paste_source": null
+    },
+    {
+      "t": 19.027,
+      "type": "cut",
+      "text": "Action:EditorBackSpace",
+      "paste_source": null
+    },
+    {
+      "t": 19.451,
+      "type": "cut",
+      "text": "am",
+      "paste_source": null
+    },
+    {
+      "t": 19.451,
+      "type": "type",
+      "text": "v1",
+      "paste_source": null
+    },
+    {
+      "t": 19.66,
+      "type": "cut",
+      "text": "v1",
+      "paste_source": null
+    },
+    {
+      "t": 19.736,
+      "type": "type",
+      "text": "m",
+      "paste_source": null
+    },
+    {
+      "t": 19.871,
+      "type": "type",
+      "text": "a",
+      "paste_source": null
+    },
+    {
+      "t": 20.011,
+      "type": "type",
+      "text": "x",
+      "paste_source": null
+    },
+    {
+      "t": 20.279,
+      "type": "type",
+      "text": "8",
+      "paste_source": null
+    },
+    {
+      "t": 20.279,
+      "type": "cut",
+      "text": "Action:EditorBackSpace",
+      "paste_source": null
+    },
+    {
+      "t": 20.617,
+      "type": "type",
+      "text": "a",
+      "paste_source": null
+    },
+    {
+      "t": 20.617,
+      "type": "cut",
+      "text": "Action:EditorBackSpace",
+      "paste_source": null
+    },
+    {
+      "t": 20.741,
+      "type": "cut",
+      "text": "a",
+      "paste_source": null
+    },
+    {
+      "t": 20.971,
+      "type": "cut",
+      "text": "8",
+      "paste_source": null
+    },
+    {
+      "t": 20.974,
+      "type": "type",
+      "text": "(",
+      "paste_source": null
+    },
+    {
+      "t": 22.748,
+      "type": "type",
+      "text": ")",
+      "paste_source": null
+    },
+    {
+      "t": 22.748,
+      "type": "other",
+      "text": "Action:Run",
+      "paste_source": null
+    },
+    {
+      "t": 22.748,
+      "type": "other",
+      "text": "Action:Run",
+      "paste_source": null
+    },
+    {
+      "t": 22.748,
+      "type": "other",
+      "text": "Action:Run",
+      "paste_source": null
+    },
+    {
+      "t": 22.748,
+      "type": "other",
+      "text": "Action:Run",
+      "paste_source": null
+    },
+    {
+      "t": 27.869,
+      "type": "type",
+      "text": "v1",
+      "paste_source": null
+    },
+    {
+      "t": 27.94,
+      "type": "type",
+      "text": ", ",
+      "paste_source": null
+    },
+    {
+      "t": 28.188,
+      "type": "type",
+      "text": "v2",
+      "paste_source": null
+    },
+    {
+      "t": 28.252,
+      "type": "type",
+      "text": ", ",
+      "paste_source": null
+    },
+    {
+      "t": 28.325,
+      "type": "other",
+      "text": "Action:Run",
+      "paste_source": null
+    },
+    {
+      "t": 28.325,
+      "type": "other",
+      "text": "Action:Run",
+      "paste_source": null
+    },
+    {
+      "t": 28.325,
+      "type": "other",
+      "text": "Action:Run",
+      "paste_source": null
+    },
+    {
+      "t": 28.325,
+      "type": "other",
+      "text": "Action:Run",
+      "paste_source": null
+    },
+    {
+      "t": 28.325,
+      "type": "other",
+      "text": "Action:Run",
+      "paste_source": null
+    },
+    {
+      "t": 28.325,
+      "type": "other",
+      "text": "Action:Run",
+      "paste_source": null
+    },
+    {
+      "t": 28.325,
+      "type": "other",
+      "text": "Action:Run",
+      "paste_source": null
+    },
+    {
+      "t": 55.567,
+      "type": "type",
+      "text": "v3",
+      "paste_source": null
+    },
+    {
+      "t": 55.569,
+      "type": "other",
+      "text": "Action:Run",
+      "paste_source": null
+    },
+    {
+      "t": 55.569,
+      "type": "other",
+      "text": "Action:Run",
+      "paste_source": null
+    },
+    {
+      "t": 55.569,
+      "type": "other",
+      "text": "Action:Run",
+      "paste_source": null
+    },
+    {
+      "t": 55.569,
+      "type": "cut",
+      "text": "Action:EditorBackSpace",
+      "paste_source": null
+    }
+  ]
+}

@@ -1,0 +1,241 @@
+{
+ "session_id": "211/P",
+ "source": "pastetrace_sp2023",
+ "label": 1,
+ "events": [
+  {
+   "t": 0.0,
+   "type": "paste",
+   "text": "/**\n * The Mandelbrot Set\n * by Daniel Shiffman.  \n * (slight modification by l8l)\n *\n * Simple rendering of the Mandelbrot set.\n */\n\nsize(640, 360);\nnoLoop();\nbackground(255);\n\n// Establish a range of values on the complex plane\n// A different range will allow us to \"zoom\" in or out on the fractal\n\n// It all starts with the width, try higher or lower values\nfloat w = 4;\nfloat h = (w * height) / width;\n\n// Start at negative half the width and height\nfloat xmin = -w/2;\nfloat ymin = -h/2;\n\n// Make sure we can write to the pixels[] array.\n// Only need to do this once since we don't do any other drawing.\nloadPixels();\n\n// Maximum number of iterations for each point on the complex plane\nint maxiterations = 100;\n\n// x goes from xmin to xmax\nfloat xmax = xmin + w;\n// y goes from ymin to ymax\nfloat ymax = ymin + h;\n\n// Calculate amount we increment x,y for each pixel\nfloat dx = (xmax - xmin) / (width);\nfloat dy = (ymax - ymin) / (height);\n\n// Start y\nfloat y = ymin;\nfor (int j = 0; j < height; j++) {\n  // Start x\n  float x = xmin;\n  for (int i = 0; i < width; i++) {\n\n    // Now we test, as we iterate z = z^2 + c does z tend towards infinity?\n    float a = x;\n    float b = y;\n    int n = 0;\n    float max = 4.0;  // Infinity in our finite world is simple, let's just consider it 4\n    float absOld = 0.0;\n    float convergeNumber = maxiterations; // this will change if the while loop breaks due to non-convergence\n    while (n < maxiterations) {\n      // We suppose z = a+ib\n      float aa = a * a;\n      float bb = b * b;\n      float abs = sqrt(aa + bb);\n      if (abs > max) { // |z| = sqrt(a^2+b^2)\n        // Now measure how much we exceeded the maximum: \n        float diffToLast = (float) (abs - absOld);\n        float diffToMax  = (float) (max - absOld);\n        convergeNumber = n + diffToMax/diffToLast;\n        break;  // Bail\n      }\n      float twoab = 2.0 * a * b;\n      a = aa - bb + x; // this operation corresponds to z -> z^2+c where z=a+ib c=(x,y)\n      b = twoab + y;\n      n++;\n      absOld = abs;\n    }\n\n    // We color each pixel based on how long it takes to get to infinity\n    // If we never got there, let's pick the color black\n    if (n == maxiterations) {\n      pixels[i+j*width] = color(0);\n    } else {\n      // Gosh, we could make fancy colors here if we wanted\n      float norm = map(convergeNumber, 0, maxiterations, 0, 1);\n      pixels[i+j*width] = color(map(sqrt(norm), 0, 1, 0, 255));\n    }\n    x += dx;\n  }\n  y += dy;\n}\nupdatePixels();",
+   "paste_source": "external"
+  },
+  {
+   "t": 89.1,
+   "type": "type",
+   "text": "\n",
+   "paste_source": null
+  },
+  {
+   "t": 91.4,
+   "type": "type",
+   "text": " * I complete ",
+   "paste_source": null
+  },
+  {
+   "t": 97.3,
+   "type": "type",
+   "text": "\\bd the assigne",
+   "paste_source": null
+  },
+  {
+   "t": 100.8,
+   "type": "type",
+   "text": "looked p",
+   "paste_source": null
+  },
+  {
+   "t": 101.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 102.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 102.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 102.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 102.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 102.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 102.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 102.8,
+   "type": "type",
+   "text": "\\bGoogled ",
+   "paste_source": null
+  },
+  {
+   "t": 128.3,
+   "type": "type",
+   "text": "\"na=",
+   "paste_source": null
+  },
+  {
+   "t": 130.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 130.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 130.4,
+   "type": "type",
+   "text": "\\bmandelbrot set in processing\" and clicked on the ",
+   "paste_source": null
+  },
+  {
+   "t": 140.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 140.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 140.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 140.6,
+   "type": "type",
+   "text": "\\ba link form the ",
+   "paste_source": null
+  },
+  {
+   "t": 142.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 142.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 142.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 142.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 143.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 143.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 143.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 144.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 148.8,
+   "type": "type",
+   "text": "rom the \n ",
+   "paste_source": null
+  },
+  {
+   "t": 153.6,
+   "type": "type",
+   "text": "p",
+   "paste_source": null
+  },
+  {
+   "t": 154.0,
+   "type": "type",
+   "text": "\\b* Proeces",
+   "paste_source": null
+  },
+  {
+   "t": 157.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 158.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 158.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 158.3,
+   "type": "type",
+   "text": "\\bcessing ",
+   "paste_source": null
+  },
+  {
+   "t": 189.7,
+   "type": "type",
+   "text": "website and copied te ",
+   "paste_source": null
+  },
+  {
+   "t": 192.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 193.0,
+   "type": "type",
+   "text": "\\bhe code.\n * ",
+   "paste_source": null
+  }
+ ]
+}

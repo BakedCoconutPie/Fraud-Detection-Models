@@ -1,0 +1,159 @@
+{
+  "session_id": "tasktracker_python_max_3_max_3_261263_1653232206_235383674921.56827_6c8338a5540db9e87ec3a477bd1ee3795d1d279c",
+  "source": "tasktracker_sigcse2021",
+  "metadata": {
+    "language": "python",
+    "task": "max_3",
+    "task_status": "SOLVED",
+    "final_score": 0.16666666666666666,
+    "weak_label": 0,
+    "label_reason": "large code insertion",
+    "source_file": "data\\raw\\tasktracker\\extracted\\data_google_drive_anonymized (SIGSCE 2020)\\python\\max_3\\max_3_261263_1653232206_235383674921.56827_6c8338a5540db9e87ec3a477bd1ee3795d1d279c.csv"
+  },
+  "events": [
+    {
+      "t": 7.593,
+      "type": "paste",
+      "text": "v1 = int(input())\nv2 = int(input())\nv3 = int(input())\n\nv4 = (v1 + v2 + v3) / 2\nv5 = (v4 * (v4 - v1) * (v4 - v2) * (v4 - v3)) ** 0.5\nprint (v5)",
+      "paste_source": "unknown"
+    },
+    {
+      "t": 8.171,
+      "type": "cut",
+      "text": "v4 = (v1 + v2 + v3) / 2\nv5 = (v4 * (v4 - v1) * (v4 - v2) * (v4 - v3)) ** 0.5",
+      "paste_source": null
+    },
+    {
+      "t": 8.171,
+      "type": "cut",
+      "text": "v5",
+      "paste_source": null
+    },
+    {
+      "t": 8.171,
+      "type": "type",
+      "text": "s",
+      "paste_source": null
+    },
+    {
+      "t": 43.477,
+      "type": "cut",
+      "text": "\n",
+      "paste_source": null
+    },
+    {
+      "t": 43.518,
+      "type": "type",
+      "text": "ÃÂ¼",
+      "paste_source": null
+    },
+    {
+      "t": 43.872,
+      "type": "type",
+      "text": "ÃÂ´",
+      "paste_source": null
+    },
+    {
+      "t": 45.288,
+      "type": "type",
+      "text": "ÃÂ·",
+      "paste_source": null
+    },
+    {
+      "t": 45.424,
+      "type": "cut",
+      "text": "ÃÂ·",
+      "paste_source": null
+    },
+    {
+      "t": 45.601,
+      "type": "cut",
+      "text": "ÃÂ´",
+      "paste_source": null
+    },
+    {
+      "t": 47.353,
+      "type": "cut",
+      "text": "ÃÂ¼",
+      "paste_source": null
+    },
+    {
+      "t": 47.742,
+      "type": "type",
+      "text": "v1",
+      "paste_source": null
+    },
+    {
+      "t": 49.834,
+      "type": "cut",
+      "text": "v1",
+      "paste_source": null
+    },
+    {
+      "t": 49.834,
+      "type": "type",
+      "text": "ax",
+      "paste_source": null
+    },
+    {
+      "t": 59.665,
+      "type": "type",
+      "text": "m",
+      "paste_source": null
+    },
+    {
+      "t": 60.179,
+      "type": "cut",
+      "text": "s",
+      "paste_source": null
+    },
+    {
+      "t": 60.876,
+      "type": "type",
+      "text": "v1",
+      "paste_source": null
+    },
+    {
+      "t": 61.674,
+      "type": "type",
+      "text": ", ",
+      "paste_source": null
+    },
+    {
+      "t": 63.021,
+      "type": "type",
+      "text": "v2",
+      "paste_source": null
+    },
+    {
+      "t": 63.245,
+      "type": "type",
+      "text": ", ",
+      "paste_source": null
+    },
+    {
+      "t": 69.311,
+      "type": "type",
+      "text": "v3",
+      "paste_source": null
+    },
+    {
+      "t": 73.168,
+      "type": "type",
+      "text": "(",
+      "paste_source": null
+    },
+    {
+      "t": 76.661,
+      "type": "type",
+      "text": ")",
+      "paste_source": null
+    },
+    {
+      "t": 125.254,
+      "type": "cut",
+      "text": " ",
+      "paste_source": null
+    }
+  ]
+}

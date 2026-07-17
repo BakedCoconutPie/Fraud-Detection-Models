@@ -1,0 +1,219 @@
+{
+  "session_id": "tasktracker_cpp_pies_pies_6007_601516113_1434084295547.0525_c5979f68e401d08c3e057cb6206469a7a11a8fd9",
+  "source": "tasktracker_sigcse2021",
+  "metadata": {
+    "language": "cpp",
+    "task": "pies",
+    "task_status": "SOLVED",
+    "final_score": 0.16666666666666666,
+    "weak_label": 0,
+    "label_reason": "low-risk trace",
+    "source_file": "data\\raw\\tasktracker\\extracted\\data_google_drive_anonymized (SIGSCE 2020)\\cpp\\pies\\pies_6007_601516113_1434084295547.0525_c5979f68e401d08c3e057cb6206469a7a11a8fd9.csv"
+  },
+  "events": [
+    {
+      "t": 1.062,
+      "type": "type",
+      "text": "    ",
+      "paste_source": null
+    },
+    {
+      "t": 5.227,
+      "type": "type",
+      "text": "int a, b, n;",
+      "paste_source": null
+    },
+    {
+      "t": 5.255,
+      "type": "type",
+      "text": "\n    ",
+      "paste_source": null
+    },
+    {
+      "t": 9.715,
+      "type": "cut",
+      "text": "a",
+      "paste_source": null
+    },
+    {
+      "t": 9.715,
+      "type": "type",
+      "text": "d_4993892634952068459",
+      "paste_source": null
+    },
+    {
+      "t": 9.715,
+      "type": "cut",
+      "text": "b",
+      "paste_source": null
+    },
+    {
+      "t": 9.715,
+      "type": "type",
+      "text": "d_10838281452030117757",
+      "paste_source": null
+    },
+    {
+      "t": 9.715,
+      "type": "cut",
+      "text": "n",
+      "paste_source": null
+    },
+    {
+      "t": 9.715,
+      "type": "type",
+      "text": "d_9826907452181669771",
+      "paste_source": null
+    },
+    {
+      "t": 9.715,
+      "type": "paste",
+      "text": "cin >> d_4993892634952068459 >> d_10838281452030117757 >> d_9826907452181669771;",
+      "paste_source": "unknown"
+    },
+    {
+      "t": 9.723,
+      "type": "type",
+      "text": "\n    ",
+      "paste_source": null
+    },
+    {
+      "t": 41.979,
+      "type": "type",
+      "text": "int r, k;",
+      "paste_source": null
+    },
+    {
+      "t": 41.985,
+      "type": "type",
+      "text": "\n    ",
+      "paste_source": null
+    },
+    {
+      "t": 67.65,
+      "type": "cut",
+      "text": "r",
+      "paste_source": null
+    },
+    {
+      "t": 67.65,
+      "type": "type",
+      "text": "d_14518329498511883088",
+      "paste_source": null
+    },
+    {
+      "t": 67.65,
+      "type": "type",
+      "text": "d_14518329498511883088 = d_4993892634952068459 * d_9826907452181669771;",
+      "paste_source": null
+    },
+    {
+      "t": 67.655,
+      "type": "type",
+      "text": "\n    ",
+      "paste_source": null
+    },
+    {
+      "t": 74.746,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 77.74,
+      "type": "type",
+      "text": "+ d_10838281452030117757",
+      "paste_source": null
+    },
+    {
+      "t": 77.906,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 80.199,
+      "type": "type",
+      "text": "* d_9826907452181669771",
+      "paste_source": null
+    },
+    {
+      "t": 82.421,
+      "type": "type",
+      "text": "(",
+      "paste_source": null
+    },
+    {
+      "t": 82.421,
+      "type": "type",
+      "text": ")",
+      "paste_source": null
+    },
+    {
+      "t": 83.27,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 83.8,
+      "type": "type",
+      "text": "% 1",
+      "paste_source": null
+    },
+    {
+      "t": 83.933,
+      "type": "type",
+      "text": "0",
+      "paste_source": null
+    },
+    {
+      "t": 85.358,
+      "type": "type",
+      "text": "0",
+      "paste_source": null
+    },
+    {
+      "t": 85.364,
+      "type": "type",
+      "text": "\n    ",
+      "paste_source": null
+    },
+    {
+      "t": 106.916,
+      "type": "cut",
+      "text": "k",
+      "paste_source": null
+    },
+    {
+      "t": 106.916,
+      "type": "type",
+      "text": "d_515652794354703053",
+      "paste_source": null
+    },
+    {
+      "t": 106.916,
+      "type": "type",
+      "text": "d_515652794354703053 = (d_10838281452030117757 * d_9826907452181669771) % 100;",
+      "paste_source": null
+    },
+    {
+      "t": 143.214,
+      "type": "type",
+      "text": "cout << d_14518329498511883088 << \" \" << d_515652794354703053 << endl;",
+      "paste_source": null
+    },
+    {
+      "t": 194.797,
+      "type": "cut",
+      "text": "%",
+      "paste_source": null
+    },
+    {
+      "t": 194.797,
+      "type": "type",
+      "text": "/",
+      "paste_source": null
+    }
+  ]
+}

@@ -1,0 +1,457 @@
+{
+ "session_id": "211/L",
+ "source": "pastetrace_sp2023",
+ "label": 1,
+ "events": [
+  {
+   "t": 0.0,
+   "type": "type",
+   "text": "void setr",
+   "paste_source": null
+  },
+  {
+   "t": 2.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 2.7,
+   "type": "type",
+   "text": "\\btup(){\n    size(500,500",
+   "paste_source": null
+  },
+  {
+   "t": 16.9,
+   "type": "type",
+   "text": ");\n    ",
+   "paste_source": null
+  },
+  {
+   "t": 18.5,
+   "type": "type",
+   "text": "\\\\b[33-37]}\n\n",
+   "paste_source": null
+  },
+  {
+   "t": 24.2,
+   "type": "type",
+   "text": "void draw()",
+   "paste_source": null
+  },
+  {
+   "t": 31.4,
+   "type": "type",
+   "text": "{\n    ",
+   "paste_source": null
+  },
+  {
+   "t": 32.7,
+   "type": "type",
+   "text": "\\\\b[49-53]}",
+   "paste_source": null
+  },
+  {
+   "t": 59.5,
+   "type": "type",
+   "text": "\n    ",
+   "paste_source": null
+  },
+  {
+   "t": 61.6,
+   "type": "type",
+   "text": "background(",
+   "paste_source": null
+  },
+  {
+   "t": 67.9,
+   "type": "type",
+   "text": "255,0,0",
+   "paste_source": null
+  },
+  {
+   "t": 75.5,
+   "type": "type",
+   "text": ")",
+   "paste_source": null
+  },
+  {
+   "t": 77.9,
+   "type": "type",
+   "text": ";",
+   "paste_source": null
+  },
+  {
+   "t": 364.7,
+   "type": "paste",
+   "text": "import java.awt.*;\nimport javax.swing.*;\n\npublic class RainDisplay extends JPanel {\n    private static final int WIDTH = 800;\n    private static final int HEIGHT = 600;\n    private static final int NUM_RAINDROPS = 100;\n\n    private Raindrop[] raindrops;\n\n    public RainDisplay() {\n        setPreferredSize(new Dimension(WIDTH, HEIGHT));\n        setBackground(Color.BLACK);\n        raindrops = new Raindrop[NUM_RAINDROPS];\n        for (int i = 0; i < NUM_RAINDROPS; i++) {\n            raindrops[i] = new Raindrop();\n        }\n    }\n\n    @Override\n    protected void paintComponent(Graphics g) {\n        super.paintComponent(g);\n        Graphics2D g2d = (Graphics2D) g;\n\n        for (Raindrop raindrop : raindrops) {\n            raindrop.update();\n            g2d.setColor(Color.WHITE);\n            g2d.fillOval(raindrop.x, raindrop.y, 2, 10);\n        }\n\n        repaint();\n    }\n\n    private class Raindrop {\n        private int x;\n        private int y;\n        private double speed;\n\n        public Raindrop() {\n            this.x = (int) (Math.random() * WIDTH);\n            this.y = (int) (Math.random() * HEIGHT);\n            this.speed = Math.random() * 5 + 1;\n        }\n\n        public void update() {\n            y += speed;\n            if (y > HEIGHT) {\n                y = 0;\n                x = (int) (Math.random() * WIDTH);\n            }\n        }\n    }\n\n    public static void main(String[] args) {\n        JFrame frame = new JFrame(\"Rain Animation\");\n        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);\n        frame.getContentPane().add(new RainDisplay());\n        frame.pack();\n        frame.setLocationRelativeTo(null);\n        frame.setVisible(true);\n    }\n}",
+   "paste_source": "external"
+  },
+  {
+   "t": 405.4,
+   "type": "type",
+   "text": "\\\\b[1407-1447]",
+   "paste_source": null
+  },
+  {
+   "t": 406.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 420.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 432.8,
+   "type": "type",
+   "text": "\\\\b[1407-1680]",
+   "paste_source": null
+  },
+  {
+   "t": 439.2,
+   "type": "type",
+   "text": "}",
+   "paste_source": null
+  },
+  {
+   "t": 694.3,
+   "type": "paste",
+   "text": "import java.awt.*;\nimport javax.swing.*;\n\npublic class RainDisplay extends JPanel {\n    private static final int WIDTH = 800;\n    private static final int HEIGHT = 600;\n    private static final int NUM_RAINDROPS = 100;\n\n    private Raindrop[] raindrops;\n\n    public RainDisplay() {\n        setPreferredSize(new Dimension(WIDTH, HEIGHT));\n        setBackground(Color.BLACK);\n        raindrops = new Raindrop[NUM_RAINDROPS];\n        for (int i = 0; i < NUM_RAINDROPS; i++) {\n            raindrops[i] = new Raindrop();\n        }\n    }\n\n    @Override\n    protected void paintComponent(Graphics g) {\n        super.paintComponent(g);\n        Graphics2D g2d = (Graphics2D) g;\n\n        for (Raindrop raindrop : raindrops) {\n            raindrop.update();\n            g2d.setColor(Color.WHITE);\n            g2d.fillOval(raindrop.x, raindrop.y, 2, 10);\n        }\n\n        repaint();\n    }\n\n    private class Raindrop {\n        private int x;\n        private int y;\n        private double speed;\n\n        public Raindrop() {\n            this.x = (int) (Math.random() * WIDTH);\n            this.y = (int) (Math.random() * HEIGHT);\n            this.speed = Math.random() * 5 + 1;\n        }\n\n        public void update() {\n            y += speed;\n            if (y > HEIGHT) {\n                y = 0;\n                x = (int) (Math.random() * WIDTH);\n            }\n        }\n    }",
+   "paste_source": "external"
+  },
+  {
+   "t": 700.4,
+   "type": "type",
+   "text": "\n",
+   "paste_source": null
+  },
+  {
+   "t": 708.5,
+   "type": "type",
+   "text": "\n    ",
+   "paste_source": null
+  },
+  {
+   "t": 709.2,
+   "type": "type",
+   "text": "\\\\b[1402-1406]}",
+   "paste_source": null
+  },
+  {
+   "t": 982.4,
+   "type": "paste",
+   "text": "import java.awt.*;\nimport javax.swing.*;\n\n/**\n * A simple Java program to display a rain animation.\n */\npublic class RainDisplay extends JPanel {\n    private static final int WIDTH = 800;\n    private static final int HEIGHT = 600;\n    private static final int NUM_RAINDROPS = 100;\n\n    private Raindrop[] raindrops;\n\n    /**\n     * Constructs a RainDisplay panel.\n     */\n    public RainDisplay() {\n        setPreferredSize(new Dimension(WIDTH, HEIGHT));\n        setBackground(Color.BLACK);\n        raindrops = new Raindrop[NUM_RAINDROPS];\n        for (int i = 0; i < NUM_RAINDROPS; i++) {\n            raindrops[i] = new Raindrop();\n        }\n    }\n\n    @Override\n    protected void paintComponent(Graphics g) {\n        super.paintComponent(g);\n        Graphics2D g2d = (Graphics2D) g;\n\n        for (Raindrop raindrop : raindrops) {\n            raindrop.update();\n            g2d.setColor(Color.WHITE);\n            g2d.fillOval(raindrop.x, raindrop.y, 2, 10);\n        }\n\n        repaint();\n    }\n\n    private class Raindrop {\n        private int x;\n        private int y;\n        private double speed;\n\n        /**\n         * Constructs a Raindrop object.\n         * Initializes the position and speed of the raindrop randomly.\n         */\n        public Raindrop() {\n            this.x = (int) (Math.random() * WIDTH);\n            this.y = (int) (Math.random() * HEIGHT);\n            this.speed = Math.random() * 5 + 1;\n        }\n\n        /**\n         * Updates the position of the raindrop based on its speed.\n         * If the raindrop reaches the bottom of the screen, it resets to the top.\n         */\n        public void update() {\n            y += speed;\n            if (y > HEIGHT) {\n                y = 0;\n                x = (int) (Math.random() * WIDTH);\n            }\n        }\n    }\n\n    /**\n     * The entry point of the program.\n     * Creates a JFrame and adds the RainDisplay panel to it.\n     * Sets up the JFrame and makes it visible.\n     *\n     * @param args the command line arguments\n     */\n    public static void main(String[] args) {\n        JFrame frame = new JFrame(\"Rain Animation\");\n        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);\n        frame.getContentPane().add(new RainDisplay());\n        frame.pack();\n        frame.setLocationRelativeTo(null);\n        frame.setVisible(true);\n    }\n}",
+   "paste_source": "external"
+  },
+  {
+   "t": 1142.0,
+   "type": "paste",
+   "text": "java\nCopy code\nvoid setup() {\n  size(800, 600, P3D);  // Create a P3D canvas with dimensions 800x600\n}\n\nvoid draw() {\n  background(255);  // Set the background color to white\n  \n  lights();  // Enable lighting\n  \n  translate(width / 2, height / 2, 0);  // Move the coordinate system to the center of the canvas\n  \n  fill(0, 0, 255);  // Set the fill color to blue\n  \n  sphere(100);  // Draw a sphere with a radius of 100\n}",
+   "paste_source": "external"
+  },
+  {
+   "t": 1147.7,
+   "type": "type",
+   "text": "\\\\b[0-118]",
+   "paste_source": null
+  },
+  {
+   "t": 1154.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1200.9,
+   "type": "paste",
+   "text": "float angle = 0;\nfloat rotationSpeed = 0.02;\n\nvoid setup() {\n  size(800, 600, P3D);  // Create a P3D canvas with dimensions 800x600\n}\n\nvoid draw() {\n  background(255);  // Set the background color to white\n  \n  lights();  // Enable lighting\n  \n  translate(width / 2, height / 2, 0);  // Move the coordinate system to the center of the canvas\n  \n  rotateX(angle);  // Rotate around the x-axis\n  rotateY(angle);  // Rotate around the y-axis\n  \n  fill(255, 0, 0);  // Set the fill color to red\n  \n  torus(150, 50);  // Draw a torus with a radius of 150 and a tube radius of 50\n  \n  angle += rotationSpeed;  // Update the rotation angle\n}",
+   "paste_source": "external"
+  },
+  {
+   "t": 1244.0,
+   "type": "type",
+   "text": "draw",
+   "paste_source": null
+  },
+  {
+   "t": 1277.9,
+   "type": "type",
+   "text": "\\\\b[0-638]",
+   "paste_source": null
+  },
+  {
+   "t": 1279.0,
+   "type": "paste",
+   "text": "float angle = 0;\nfloat rotationSpeed = 0.02;\n\nvoid setup() {\n  size(800, 600, P3D);  // Create a P3D canvas with dimensions 800x600\n}\n\nvoid draw() {\n  background(255);  // Set the background color to white\n  \n  lights();  // Enable lighting\n  \n  translate(width / 2, height / 2, 0);  // Move the coordinate system to the center of the canvas\n  \n  rotateX(angle);  // Rotate around the x-axis\n  rotateY(angle);  // Rotate around the y-axis\n  \n  fill(255, 0, 0);  // Set the fill color to red\n  \n  drawTorus(150, 50);  // Draw a torus with a radius of 150 and a tube radius of 50\n  \n  angle += rotationSpeed;  // Update the rotation angle\n}\n\nvoid drawTorus(float radius, float tubeRadius) {\n  int numVertices = 60;  // Number of vertices around the torus\n  \n  for (int i = 0; i < numVertices; i++) {\n    float theta = map(i, 0, numVertices, 0, TWO_PI);  // Angle around the torus\n    \n    beginShape(QUAD_STRIP);\n    for (int j = 0; j <= numVertices; j++) {\n      float phi = map(j, 0, numVertices, 0, TWO_PI);  // Angle along the tube\n      \n      float x = (radius + tubeRadius * cos(phi)) * cos(theta);\n      float y = (radius + tubeRadius * cos(phi)) * sin(theta);\n      float z = tubeRadius * sin(phi);\n      \n      vertex(x, y, z);\n      \n      x = (radius + tubeRadius * cos(phi)) * cos(theta + 0.1);\n      y = (radius + tubeRadius * cos(phi)) * sin(theta + 0.1);\n      z = tubeRadius * sin(phi);\n      \n      vertex(x, y, z);\n    }\n    endShape();\n  }\n}",
+   "paste_source": "external"
+  },
+  {
+   "t": 1308.3,
+   "type": "type",
+   "text": "\\\\b[84-131]",
+   "paste_source": null
+  },
+  {
+   "t": 1308.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1310.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1317.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1317.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1318.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1321.7,
+   "type": "type",
+   "text": "\\\\b[173-188]",
+   "paste_source": null
+  },
+  {
+   "t": 1323.1,
+   "type": "type",
+   "text": "ting",
+   "paste_source": null
+  },
+  {
+   "t": 1327.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1327.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1327.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1327.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1329.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1329.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1330.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1334.5,
+   "type": "type",
+   "text": "\\\\b[214-271]",
+   "paste_source": null
+  },
+  {
+   "t": 1334.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1337.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1337.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1338.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1341.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1341.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1341.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1349.9,
+   "type": "type",
+   "text": "\\\\b[326-356]",
+   "paste_source": null
+  },
+  {
+   "t": 1351.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1351.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1352.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1353.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1353.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1354.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1356.8,
+   "type": "type",
+   "text": "\\\\b[437-466]",
+   "paste_source": null
+  },
+  {
+   "t": 1427.0,
+   "type": "type",
+   "text": "\\\\b[0-1260]",
+   "paste_source": null
+  },
+  {
+   "t": 1464.6,
+   "type": "paste",
+   "text": "class Torus {\n  float x, y, z;\n  float radius, tubeRadius;\n  float rotationSpeed;\n  \n  Torus(float x, float y, float z, float radius, float tubeRadius, float rotationSpeed) {\n    this.x = x;\n    this.y = y;\n    this.z = z;\n    this.radius = radius;\n    this.tubeRadius = tubeRadius;\n    this.rotationSpeed = rotationSpeed;\n  }\n  \n  void update() {\n    y += 1;  // Move the torus down the screen\n    rotateX(rotationSpeed);  // Rotate around the x-axis\n    rotateY(rotationSpeed);  // Rotate around the y-axis\n  }\n  \n  void display() {\n    pushMatrix();\n    translate(x, y, z);\n    fill(255, 0, 0);  // Set the fill color to red\n    drawTorus(radius, tubeRadius);\n    popMatrix();\n  }\n}\n\nArrayList<Torus> toruses;\nint numToruses = 100;\n\nvoid setup() {\n  size(800, 600, P3D);  // Create a P3D canvas with dimensions 800x600\n  \n  toruses = new ArrayList<Torus>();\n  \n  for (int i = 0; i < numToruses; i++) {\n    float x = random(width);\n    float y = random(-height, 0);\n    float z = random(-200, 200);\n    float radius = random(50, 150);\n    float tubeRadius = random(10, 50);\n    float rotationSpeed = random(0.01, 0.05);\n    \n    Torus torus = new Torus(x, y, z, radius, tubeRadius, rotationSpeed);\n    toruses.add(torus);\n  }\n}\n\nvoid draw() {\n  background(255);  // Set the background color to white\n  \n  lights();  // Enable lighting\n  \n  for (Torus torus : toruses) {\n    torus.update();\n    torus.display();\n    \n    // Reset torus position if it goes below the screen\n    if (torus.y > height) {\n      torus.y = random(-height, 0);\n    }\n  }\n}\n\nvoid drawTorus(float radius, float tubeRadius) {\n  int numVertices = 60;  // Number of vertices around the torus\n  \n  for (int i = 0; i < numVertices; i++) {\n    float theta = map(i, 0, numVertices, 0, TWO_PI);  // Angle around the torus\n    \n    beginShape(QUAD_STRIP);\n    for (int j = 0; j <= numVertices; j++) {\n      float phi = map(j, 0, numVertices, 0, TWO_PI);  // Angle along the tube\n      \n      float x = (radius + tubeRadius * cos(phi)) * cos(theta);\n      float y = (radius + tubeRadius * cos(phi)) * sin(theta);\n      float z = tubeRadius * sin(phi);\n      \n      vertex(x, y, z);\n      \n      x = (radius + tubeRadius * cos(phi)) * cos(theta + 0.1);\n      y = (radius + tubeRadius * cos(phi)) * sin(theta + 0.1);\n      z = tubeRadius * sin(phi);\n      \n      vertex(x, y, z);\n    }\n    endShape();\n  }\n}",
+   "paste_source": "external"
+  },
+  {
+   "t": 1502.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1561.5,
+   "type": "type",
+   "text": "\\\\b[774-820]",
+   "paste_source": null
+  },
+  {
+   "t": 1569.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1570.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1570.2,
+   "type": "type",
+   "text": "\\b180",
+   "paste_source": null
+  },
+  {
+   "t": 1588.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1588.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1588.6,
+   "type": "type",
+   "text": "\\b0,0,",
+   "paste_source": null
+  },
+  {
+   "t": 1594.2,
+   "type": "type",
+   "text": "200",
+   "paste_source": null
+  },
+  {
+   "t": 1607.4,
+   "type": "type",
+   "text": "\\\\b[1222-1258]",
+   "paste_source": null
+  },
+  {
+   "t": 1610.4,
+   "type": "type",
+   "text": "\\\\b[1238-1257]",
+   "paste_source": null
+  }
+ ]
+}

@@ -1,0 +1,13 @@
+{
+ "session_id": "111/F",
+ "source": "pastetrace_sp2023",
+ "label": 1,
+ "events": [
+  {
+   "t": 0.0,
+   "type": "paste",
+   "text": "ArrayList<Shape> shapes;\nvoid setup(){\n  size(800,800);\n  shapes=new ArrayList<Shape>();\n}\n\nvoid draw(){\n  background(255);\n  for (Shape shape : shapes){\n    shape.update();\n    shape.draw();\n  }\n}\n\nvoid mouseClicked(){\n  switch((int)random(3)){\n    case 0:\n      shapes.add(new Circle(mouseX,mouseY, random(10,100))); \n      break;\n    case 1:\n      shapes.add(new Square(mouseX,mouseY, random(10,100))); \n      break;\n    case 2:\n      shapes.add(new Triangle(mouseX,mouseY, random(10,100))); \n      break;\n  }\n}\n\nabstract class Shape{\n  float x;\n  float y;\n  float vx;\n  float vy;\n  color c;\n  Shape(float ix, float iy){\n    x=ix;\n    y=iy;\n    vx=random(-100,100)/10.0;\n    vy=random(-100,100)/10.0;\n    c=color(random(255),random(255),random(255));\n  }\n  void update(){\n    if(x<0||x>width){\n        vx*=-1;\n    }\n    if(y<0||y>width){\n        vy*=-1;\n    }\n    x+=vx;\n    y+=vy;\n  }\n  abstract void draw();\n}\nclass Circle extends Shape{\n  float size;\n  Circle(float ix, float iy, float isize){\n    super(ix,iy); \n    size=isize;\n  }\n  void draw(){\n    fill(c);\n    circle(x,y,size);\n  }\n}\nclass Square extends Shape{\n  float size;\n  Square(float ix, float iy, float isize){\n    super(ix,iy); \n    size=isize;\n  }\n  void draw(){\n    fill(c);\n    square(x-size/2,y-size/2,size);\n  }\n}\nclass Triangle extends Shape{\n  float size;\n  Triangle(float ix, float iy, float isize){\n    super(ix,iy); \n    size=isize;\n  }\n  void draw(){\n    fill(c);\n    triangle(x-size/2,y,x+size/2,y+size/2,x+size/2,y-size/2);\n  }\n}\n",
+   "paste_source": "external"
+  }
+ ]
+}

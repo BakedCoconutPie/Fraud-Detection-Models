@@ -1,0 +1,27 @@
+{
+  "session_id": "tasktracker_python_zero_zero_4135_25025775_712610511794.8589_9b869ab6d99322a8f28bb7758efc0976c75a5ce9",
+  "source": "tasktracker_sigcse2021",
+  "metadata": {
+    "language": "python",
+    "task": "zero",
+    "task_status": "",
+    "final_score": 0.0,
+    "weak_label": 0,
+    "label_reason": "low-risk trace",
+    "source_file": "data\\raw\\tasktracker\\extracted\\data_google_drive_anonymized (SIGSCE 2020)\\python\\zero\\zero_4135_25025775_712610511794.8589_9b869ab6d99322a8f28bb7758efc0976c75a5ce9.csv"
+  },
+  "events": [
+    {
+      "t": 6.031,
+      "type": "cut",
+      "text": "v1 = int(input())",
+      "paste_source": null
+    },
+    {
+      "t": 6.031,
+      "type": "cut",
+      "text": "v2 = 0\nfor v3 in range (0, v1):\n    v4 = int(input())\n    if v4 == 0:\n        v2 = v2 + 1\nif v2 == 0:\n    print('NO')\nelse:\n    print('YES')\n",
+      "paste_source": null
+    }
+  ]
+}

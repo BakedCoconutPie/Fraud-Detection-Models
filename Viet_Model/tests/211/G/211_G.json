@@ -1,0 +1,505 @@
+{
+ "session_id": "211/G",
+ "source": "pastetrace_sp2023",
+ "label": 1,
+ "events": [
+  {
+   "t": 0.0,
+   "type": "paste",
+   "text": "class KochSnowflake{\n  \n  PVector start;\n  PVector end;\n  ArrayList<KochSnowflake> lines;\n \n  KochSnowflake(PVector a, PVector b) {\n    start = a.get();\n    end = b.get();\n  }\n \n  void display() {\n    stroke(0);\n    line(start.x, start.y, end.x, end.y);\n  }\n\nvoid setup() {\n  size(600, 300);\n  lines = new ArrayList<KochSnowflake>();\n\n  PVector start = new PVector(0, 200);\n  PVector end   = new PVector(width, 200);\n  lines.add(new KochSnowflake(start, end));\n}\nvoid draw() {\n  background(255);\n  for (KochSnowflake l : lines) {\n    l.display();\n  }\n}\n\nvoid generate() {\n  ArrayList next = new ArrayList<KochSnowflake>();\n  for (KochSnowflake l : lines) {\n    \n    PVector a = l.kochA();\n    PVector b = l.kochB();\n    PVector c = l.kochC();\n    PVector d = l.kochD();\n    PVector e = l.kochE();\n\n    next.add(new KochSnowflake(a,b));\n    next.add(new KochSnowflake(b,c));\n    next.add(new KochSnowflake(c,d));\n    next.add(new KochSnowflake(d,e));\n  }\n\n  lines = next;\n}\n\n  PVector kochA() {\n    return start.get();\n  }\n \n PVector kochB() {\n    PVector v = PVector.sub(end, start);\n    v.div(3);\n    v.add(start);\n    return v;\n  }\n  \n   PVector kochC() {\n    PVector a = start.get();\n    PVector v = PVector.sub(end, start);\n    v.div(3);\n    a.add(v);\n    v.rotate(-radians(60));\n    a.add(v);\n \n    return a;\n  }\n\n \n  PVector kochD() {\n    PVector v = PVector.sub(end, start);\n    v.mult(2/3.0);\n    v.add(start);\n    return v;\n  }\n  \n  PVector kochE() {\n    return end.get();\n  }\n\n\n\n\n}",
+   "paste_source": "own"
+  },
+  {
+   "t": 119.2,
+   "type": "cut",
+   "text": "class KochSnowflake{\n  \n  PVector start;\n  PVector end;\n  ArrayList<KochSnowflake> lines;\n \n  KochSnowflake(PVector a, PVector b) {\n    start = a.get();\n    end = b.get();\n  }\n \n  void display() {\n    stroke(0);\n    line(start.x, start.y, end.x, end.y);\n  }\n\nvoid setup() {\n  size(600, 300);\n  lines = new ArrayList<KochSnowflake>();\n\n  PVector start = new PVector(0, 200);\n  PVector end   = new PVector(width, 200);\n  lines.add(new KochSnowflake(start, end));\n}\nvoid draw() {\n  background(255);\n  for (KochSnowflake l : lines) {\n    l.display();\n  }\n}\n\nvoid generate() {\n  ArrayList next = new ArrayList<KochSnowflake>();\n  for (KochSnowflake l : lines) {\n    \n    PVector a = l.kochA();\n    PVector b = l.kochB();\n    PVector c = l.kochC();\n    PVector d = l.kochD();\n    PVector e = l.kochE();\n\n    next.add(new KochSnowflake(a,b));\n    next.add(new KochSnowflake(b,c));\n    next.add(new KochSnowflake(c,d));\n    next.add(new KochSnowflake(d,e));\n  }\n\n  lines = next;\n}\n\n  PVector kochA() {\n    return start.get();\n  }\n \n PVector kochB() {\n    PVector v = PVector.sub(end, start);\n    v.div(3);\n    v.add(start);\n    return v;\n  }\n  \n   PVector kochC() {\n    PVector a = start.get();\n    PVector v = PVector.sub(end, start);\n    v.div(3);\n    a.add(v);\n    v.rotate(-radians(60));\n    a.add(v);\n \n    return a;\n  }\n\n \n  PVector kochD() {\n    PVector v = PVector.sub(end, start);\n    v.mult(2/3.0);\n    v.add(start);\n    return v;\n  }\n  \n  PVector kochE() {\n    return end.get();\n  }\n\n\n\n\n}",
+   "paste_source": null
+  },
+  {
+   "t": 787.0,
+   "type": "paste",
+   "text": "class KochSnowflake {\n  PVector start;\n  PVector end;\n  ArrayList<KochSnowflake> lines;\n\n  KochSnowflake(PVector a, PVector b) {\n    start = a.get();\n    end = b.get();\n  }\n\n  void display() {\n    stroke(0);\n    line(start.x, start.y, end.x, end.y);\n  }\n\n  void setup() {\n    size(600, 300);\n    lines = new ArrayList<KochSnowflake>();\n    PVector start = new PVector(0, 200);\n    PVector end = new PVector(width, 200);\n    lines.add(new KochSnowflake(start, end));\n  }\n\n  void draw() {\n    background(255);\n    for (KochSnowflake l : lines) {\n      l.display();\n    }\n  }\n\n  void generate() {\n    ArrayList<KochSnowflake> next = new ArrayList<KochSnowflake>();\n    for (KochSnowflake l : lines) {\n      PVector a = l.kochA();\n      PVector b = l.kochB();\n      PVector c = l.kochC();\n      PVector d = l.kochD();\n      PVector e = l.kochE();\n\n      next.add(new KochSnowflake(a, b));\n      next.add(new KochSnowflake(b, c));\n      next.add(new KochSnowflake(c, d));\n      next.add(new KochSnowflake(d, e));\n    }\n\n    lines = next;\n  }\n\n  PVector kochA() {\n    return start.get();\n  }\n\n  PVector kochB() {\n    PVector v = PVector.sub(end, start);\n    v.div(3);\n    v.add(start);\n    return v;\n  }\n\n  PVector kochC() {\n    PVector a = start.get();\n    PVector v = PVector.sub(end, start);\n    v.div(3);\n    v.rotate(-radians(60));\n    a.add(v);\n    return a;\n  }\n\n  PVector kochD() {\n    PVector v = PVector.sub(end, start);\n    v.mult(2f/3);\n    v.add(start);\n    return v;\n  }\n\n  PVector kochE() {\n    return end.get();\n  }\n}\n",
+   "paste_source": "external"
+  },
+  {
+   "t": 1790.2,
+   "type": "type",
+   "text": "\n\n\n",
+   "paste_source": null
+  },
+  {
+   "t": 1791.5,
+   "type": "type",
+   "text": "//",
+   "paste_source": null
+  },
+  {
+   "t": 1804.2,
+   "type": "type",
+   "text": "ATtemo",
+   "paste_source": null
+  },
+  {
+   "t": 1805.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1805.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1805.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1805.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1805.5,
+   "type": "type",
+   "text": "\\bttempted to utilize the USB ",
+   "paste_source": null
+  },
+  {
+   "t": 1809.9,
+   "type": "type",
+   "text": "\\bm",
+   "paste_source": null
+  },
+  {
+   "t": 1810.4,
+   "type": "type",
+   "text": "\\b, but ened",
+   "paste_source": null
+  },
+  {
+   "t": 1812.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1812.6,
+   "type": "type",
+   "text": "\\bed",
+   "paste_source": null
+  },
+  {
+   "t": 1813.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1813.2,
+   "type": "type",
+   "text": "\\bded up just downloading the IDE on my personal ",
+   "paste_source": null
+  },
+  {
+   "t": 1818.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1818.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1818.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1818.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1819.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1819.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1819.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1819.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1819.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1819.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1819.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1819.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1820.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1820.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1820.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1820.4,
+   "type": "type",
+   "text": "\\b. In order ot complete this\n",
+   "paste_source": null
+  },
+  {
+   "t": 1845.3,
+   "type": "type",
+   "text": "\\b*",
+   "paste_source": null
+  },
+  {
+   "t": 1849.9,
+   "type": "type",
+   "text": "*/",
+   "paste_source": null
+  },
+  {
+   "t": 1852.3,
+   "type": "type",
+   "text": "\n\n",
+   "paste_source": null
+  },
+  {
+   "t": 1853.5,
+   "type": "type",
+   "text": "/",
+   "paste_source": null
+  },
+  {
+   "t": 1855.2,
+   "type": "type",
+   "text": "/",
+   "paste_source": null
+  },
+  {
+   "t": 1862.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1862.5,
+   "type": "type",
+   "text": "\\bto ",
+   "paste_source": null
+  },
+  {
+   "t": 1863.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1864.3,
+   "type": "type",
+   "text": " assignment ",
+   "paste_source": null
+  },
+  {
+   "t": 1865.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1866.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1866.1,
+   "type": "type",
+   "text": "\\bent, I ha",
+   "paste_source": null
+  },
+  {
+   "t": 1867.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1868.0,
+   "type": "type",
+   "text": "\\bgt ",
+   "paste_source": null
+  },
+  {
+   "t": 1869.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1869.2,
+   "type": "type",
+   "text": "\\bot helped from my peers \n//",
+   "paste_source": null
+  },
+  {
+   "t": 1873.8,
+   "type": "type",
+   "text": "\\bI",
+   "paste_source": null
+  },
+  {
+   "t": 1874.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1876.2,
+   "type": "type",
+   "text": "\\b*I ",
+   "paste_source": null
+  },
+  {
+   "t": 1877.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1877.8,
+   "type": "type",
+   "text": "\\b I h",
+   "paste_source": null
+  },
+  {
+   "t": 1878.9,
+   "type": "type",
+   "text": "\\balso had sere",
+   "paste_source": null
+  },
+  {
+   "t": 1881.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1881.5,
+   "type": "type",
+   "text": "\\bea",
+   "paste_source": null
+  },
+  {
+   "t": 1881.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1882.0,
+   "type": "type",
+   "text": "\\barched up the solutions ",
+   "paste_source": null
+  },
+  {
+   "t": 1898.1,
+   "type": "type",
+   "text": "fro",
+   "paste_source": null
+  },
+  {
+   "t": 1898.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1898.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1898.9,
+   "type": "type",
+   "text": "\\bfrom NatureOfCode.com and CH",
+   "paste_source": null
+  },
+  {
+   "t": 1904.8,
+   "type": "type",
+   "text": "\\bCH",
+   "paste_source": null
+  },
+  {
+   "t": 1905.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1905.5,
+   "type": "type",
+   "text": "\\bHAT GPT ",
+   "paste_source": null
+  },
+  {
+   "t": 1907.1,
+   "type": "type",
+   "text": "\\b\n",
+   "paste_source": null
+  },
+  {
+   "t": 1908.2,
+   "type": "type",
+   "text": "\\b.",
+   "paste_source": null
+  },
+  {
+   "t": 1910.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1910.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1913.0,
+   "type": "type",
+   "text": "\n*",
+   "paste_source": null
+  },
+  {
+   "t": 1916.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1916.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1916.5,
+   "type": "type",
+   "text": "\\b\n",
+   "paste_source": null
+  },
+  {
+   "t": 1918.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1919.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1920.6,
+   "type": "cut",
+   "text": "*/",
+   "paste_source": null
+  },
+  {
+   "t": 1923.0,
+   "type": "paste",
+   "text": "*/",
+   "paste_source": "unknown"
+  },
+  {
+   "t": 1924.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1925.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1925.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 2027.8,
+   "type": "type",
+   "text": "*",
+   "paste_source": null
+  },
+  {
+   "t": 2029.1,
+   "type": "type",
+   "text": "*",
+   "paste_source": null
+  }
+ ]
+}

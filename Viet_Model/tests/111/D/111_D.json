@@ -1,0 +1,445 @@
+{
+ "session_id": "111/D",
+ "source": "pastetrace_sp2023",
+ "label": 1,
+ "events": [
+  {
+   "t": 0.0,
+   "type": "paste",
+   "text": "Color randomColor = new Color(r, g, b);",
+   "paste_source": "external"
+  },
+  {
+   "t": 1.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 2.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 2.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 2.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 2.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 2.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 2.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 2.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 2.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 2.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 2.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 2.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 2.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 2.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 2.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 2.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 2.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 2.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 2.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 2.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 2.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 2.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 2.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 2.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 2.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 2.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 121.0,
+   "type": "paste",
+   "text": "import javax.swing.*;\nimport java.awt.*;\nimport java.awt.event.*;\nimport java.util.Random;\n\npublic class ScreenSaver1 extends JPanel implements ActionListener {\n    private JFrame frame = new JFrame(\"FullSize\");\n    private Rectangle rectangle;\n    Timer t;\n    int x1, y1;\n    boolean full;\n\n    protected void paintComponent(Graphics g) {\n        super.paintComponent(g);\n        int shape;\n        shape = (int)(Math.random() * 4);\n    }\n\n    ScreenSaver1() {\n        t = new Timer(500, this);\n        t.setDelay(500);\n        t.start();\n        // Remove the title bar, min, max, close stuff\n        frame.setUndecorated(true);\n        // Add a Key Listener to the frame\n        frame.addKeyListener(new KeyHandler());\n        // Add this panel object to the frame\n        frame.add(this);\n        // Get the dimensions of the screen\n        rectangle = GraphicsEnvironment.getLocalGraphicsEnvironment()\n        .getDefaultScreenDevice().getDefaultConfiguration().getBounds();\n        // Set the size of the frame to the size of the screen\n        frame.setSize(rectangle.width, rectangle.height);\n        frame.setVisible(true);\n        // Remember that we are currently at full size\n        full = true;\n    }\n\n\n// This method will run when any key is pressed in the window\nclass KeyHandler extends KeyAdapter {\n    public void keyPressed(KeyEvent e) {\n        // Terminate the program.\n        if (e.getKeyChar() == 'x') {\n            System.out.println(\"Exiting\");\n            System.exit(0);\n        }\n        else if (e.getKeyChar() == 'r') {\n            System.out.println(\"Change background color\");\n            setBackground(new Color((int)(Math.random() * 256), (int)(Math.random() * 256), (int)(Math.random() * 256)));\n            repaint();\n        }\n        else if (e.getKeyChar() == 'z') {\n            System.out.println(\"Resizing\");\n            frame.setSize((int)rectangle.getWidth() / 2, (int)rectangle.getHeight());\n        }\n    }\n\n}\n\nprivate void makeLine(Graphics g) {\n    int x = (int)(Math.random() * rectangle.getWidth());\n    int y = (int)(Math.random() * rectangle.getHeight());\n    int x1 = (int)(Math.random() * 100);\n    int y1 = (int)(Math.random() * 100);\n    g.setColor(new Color((int)(Math.random() * 256), (int)(Math.random() * 256), (int)(Math.random() * 256) ));\n    g.drawLine(x, y, x1, y1);\n}\n\nprivate void makeRect(Graphics g) {\n    int x = (int)(Math.random() * rectangle.getWidth());\n    int y = (int)(Math.random() * rectangle.getHeight());\n    int width = (int)(Math.random() * 100);\n    int height = (int)(Math.random() * 100);\n    g.setColor(new Color((int)(Math.random() * 256), (int)(Math.random() * 256), (int)(Math.random() * 256) ));\n    g.drawRect(x, y, width, height);\n}\n\nprivate void makeOval(Graphics g) {\n    int x = (int)(Math.random() * rectangle.getWidth());\n    int y = (int)(Math.random() * rectangle.getHeight());\n    int width = (int)(Math.random() * 100);\n    int height = (int)(Math.random() * 100);\n    g.setColor(new Color((int)(Math.random() * 256), (int)(Math.random() * 256), (int)(Math.random() * 256) ));\n    g.drawOval(x, y, width, height);\n}\n\nprivate void makeRoundRect(Graphics g) {\n    int x = (int)(Math.random() * rectangle.getWidth());\n    int y = (int)(Math.random() * rectangle.getHeight());\n    int width = (int)(Math.random() * 100);\n    int height = (int)(Math.random() * 100);\n    int arcWidth = (int)(Math.random() * width);\n    int arcHeight = (int)(Math.random() * height);\n    g.setColor(new Color((int)(Math.random() * 256), (int)(Math.random() * 256), (int)(Math.random() * 256) ));\n    g.drawRoundRect(x, y, width, height, arcWidth, arcHeight);\n}\n\npublic static void main(String[] args) {\n        ScreenSaver1 obj = new ScreenSaver1();\n    }\n}",
+   "paste_source": "external"
+  },
+  {
+   "t": 126.4,
+   "type": "type",
+   "text": "\\\\\b[1142-1188]",
+   "paste_source": null
+  },
+  {
+   "t": 126.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 127.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 127.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 127.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 128.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 128.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 128.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 128.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 128.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 133.1,
+   "type": "type",
+   "text": "\\\\\b[981-1043]",
+   "paste_source": null
+  },
+  {
+   "t": 133.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 136.5,
+   "type": "type",
+   "text": "\\\\\b[794-837]",
+   "paste_source": null
+  },
+  {
+   "t": 137.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 140.7,
+   "type": "type",
+   "text": "\\\\\b[1197-1230]",
+   "paste_source": null
+  },
+  {
+   "t": 141.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 144.9,
+   "type": "type",
+   "text": "\\\\\b[1056-1117]",
+   "paste_source": null
+  },
+  {
+   "t": 145.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 154.3,
+   "type": "type",
+   "text": "\\\\\b[723-768]",
+   "paste_source": null
+  },
+  {
+   "t": 154.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 159.0,
+   "type": "type",
+   "text": "\\\\\b[632-674]",
+   "paste_source": null
+  },
+  {
+   "t": 159.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 163.3,
+   "type": "type",
+   "text": "\\\\\b[541-595]",
+   "paste_source": null
+  },
+  {
+   "t": 164.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 177.4,
+   "type": "type",
+   "text": "final",
+   "paste_source": null
+  },
+  {
+   "t": 224.8,
+   "type": "paste",
+   "text": "void setup(){\n    size(500,500);\n}\nint y=100;\nint vy=0;\nvoid draw(){\n    background(255,255,255);\n    fill(255,0,0);\n    circle(100,100,20);",
+   "paste_source": "same_machine"
+  },
+  {
+   "t": 227.6,
+   "type": "type",
+   "text": "\n",
+   "paste_source": null
+  },
+  {
+   "t": 240.3,
+   "type": "type",
+   "text": "\\\\\b[187-223]",
+   "paste_source": null
+  },
+  {
+   "t": 240.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 296.5,
+   "type": "type",
+   "text": "\\\\\b[3213-3265]",
+   "paste_source": null
+  },
+  {
+   "t": 299.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 308.5,
+   "type": "type",
+   "text": "\\\\\b[223-237]        ",
+   "paste_source": null
+  }
+ ]
+}

@@ -1,0 +1,37 @@
+{
+ "session_id": "211/A",
+ "source": "pastetrace_sp2023",
+ "label": 1,
+ "events": [
+  {
+   "t": 0.0,
+   "type": "paste",
+   "text": "/*To complete this assignment, I looked up how to code a program that draws fractals\n/I ended up running across some python programs and videos outlining the general \n/structure of creating a fractal program.\n/eventually I came across the processing.org site that had a number of different fractal\n/programs, this is where I got the code for this Penrose Snowflake.\n*/\nPenroseSnowflakeLSystem ps;\n\nvoid setup() {\n  size(500, 500);\n  stroke(255);\n  noFill();\n  ps = new PenroseSnowflakeLSystem();\n  ps.simulate(4);\n}\n\nvoid draw() {\n  background(0);\n  ps.render();\n}",
+   "paste_source": "own"
+  },
+  {
+   "t": 7.4,
+   "type": "type",
+   "text": "\n\n",
+   "paste_source": null
+  },
+  {
+   "t": 8.8,
+   "type": "paste",
+   "text": "class LSystem \n{\n  int steps = 0;\n\n  String axiom;\n  String rule;\n  String production;\n\n  float startLength;\n  float drawLength;\n  float theta;\n\n  int generations;\n\n  LSystem() {\n    axiom = \"F\";\n    rule = \"F+F-F\";\n    startLength = 90.0;\n    theta = radians(120.0);\n    reset();\n  }\n\n  void reset() {\n    production = axiom;\n    drawLength = startLength;\n    generations = 0;\n  }\n\n  int getAge() {\n    return generations;\n  }\n\n  void render() {\n    translate(width/2, height/2);\n    steps += 5;          \n    if (steps > production.length()) {\n      steps = production.length();\n    }\n    for (int i = 0; i < steps; i++) {\n      char step = production.charAt(i);\n      if (step == 'F') {\n        rect(0, 0, -drawLength, -drawLength);\n        noFill();\n        translate(0, -drawLength);\n      } \n      else if (step == '+') {\n        rotate(theta);\n      } \n      else if (step == '-') {\n        rotate(-theta);\n      } \n      else if (step == '[') {\n        pushMatrix();\n      } \n      else if (step == ']') {\n        popMatrix();            \n      }\n    }\n  }\n\n  void simulate(int gen) {\n    while (getAge() < gen) {\n      production = iterate(production, rule);\n    }\n  }\n\n  String iterate(String prod_, String rule_) {\n    drawLength = drawLength * 0.6;\n    generations++;\n    String newProduction = prod_;          \n    newProduction = newProduction.replaceAll(\"F\", rule_);\n    return newProduction;\n  }\n}",
+   "paste_source": "own"
+  },
+  {
+   "t": 14.5,
+   "type": "type",
+   "text": "\n",
+   "paste_source": null
+  },
+  {
+   "t": 16.0,
+   "type": "paste",
+   "text": "class PenroseSnowflakeLSystem extends LSystem {\n\n  String ruleF;\n\n  PenroseSnowflakeLSystem() {\n    axiom = \"F3-F3-F3-F3-F\";\n    ruleF = \"F3-F3-F45-F++F3-F\";\n    startLength = 450.0;\n    theta = radians(18); \n    reset();\n  }\n\n  void useRule(String r_) {\n    rule = r_;\n  }\n\n  void useAxiom(String a_) {\n    axiom = a_;\n  }\n\n  void useLength(float l_) {\n    startLength = l_;\n  }\n\n  void useTheta(float t_) {\n    theta = radians(t_);\n  }\n\n  void reset() {\n    production = axiom;\n    drawLength = startLength;\n    generations = 0;\n  }\n\n  int getAge() {\n    return generations;\n  }\n\n  void render() {\n    translate(width, height);\n    int repeats = 1;\n\n    steps += 3;          \n    if (steps > production.length()) {\n      steps = production.length();\n    }\n\n    for (int i = 0; i < steps; i++) {\n      char step = production.charAt(i);\n      if (step == 'F') {\n        for (int j = 0; j < repeats; j++) {\n          line(0,0,0, -drawLength);\n          translate(0, -drawLength);\n        }\n        repeats = 1;\n      } \n      else if (step == '+') {\n        for (int j = 0; j < repeats; j++) {\n          rotate(theta);\n        }\n        repeats = 1;\n      } \n      else if (step == '-') {\n        for (int j =0; j < repeats; j++) {\n          rotate(-theta);\n        }\n        repeats = 1;\n      } \n      else if (step == '[') {\n        pushMatrix();\n      } \n      else if (step == ']') {\n        popMatrix();\n      } \n      else if ( (step >= 48) && (step <= 57) ) {\n        repeats += step - 48;\n      }\n    }\n  }\n\n\n  String iterate(String prod_, String rule_) {\n    String newProduction = \"\";\n    for (int i = 0; i < prod_.length(); i++) {\n      char step = production.charAt(i);\n      if (step == 'F') {\n        newProduction = newProduction + ruleF;\n      } \n      else {\n        if (step != 'F') {\n          newProduction = newProduction + step;\n        }\n      }\n    }\n    drawLength = drawLength * 0.4;\n    generations++;\n    return newProduction;\n  }\n\n}",
+   "paste_source": "own"
+  }
+ ]
+}

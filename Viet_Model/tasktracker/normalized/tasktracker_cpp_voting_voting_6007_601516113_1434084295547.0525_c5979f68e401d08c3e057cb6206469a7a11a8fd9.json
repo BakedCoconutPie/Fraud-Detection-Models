@@ -1,0 +1,177 @@
+{
+  "session_id": "tasktracker_cpp_voting_voting_6007_601516113_1434084295547.0525_c5979f68e401d08c3e057cb6206469a7a11a8fd9",
+  "source": "tasktracker_sigcse2021",
+  "metadata": {
+    "language": "cpp",
+    "task": "voting",
+    "task_status": "SOLVED",
+    "final_score": 0.16666666666666666,
+    "weak_label": 0,
+    "label_reason": "low-risk trace",
+    "source_file": "data\\raw\\tasktracker\\extracted\\data_google_drive_anonymized (SIGSCE 2020)\\cpp\\voting\\voting_6007_601516113_1434084295547.0525_c5979f68e401d08c3e057cb6206469a7a11a8fd9.csv"
+  },
+  "events": [
+    {
+      "t": 3.687,
+      "type": "type",
+      "text": "bool a, b, c;",
+      "paste_source": null
+    },
+    {
+      "t": 3.69,
+      "type": "type",
+      "text": "\n    ",
+      "paste_source": null
+    },
+    {
+      "t": 9.029,
+      "type": "cut",
+      "text": "a",
+      "paste_source": null
+    },
+    {
+      "t": 9.029,
+      "type": "type",
+      "text": "d_4993892634952068459",
+      "paste_source": null
+    },
+    {
+      "t": 9.029,
+      "type": "cut",
+      "text": "b",
+      "paste_source": null
+    },
+    {
+      "t": 9.029,
+      "type": "type",
+      "text": "d_10838281452030117757",
+      "paste_source": null
+    },
+    {
+      "t": 9.029,
+      "type": "cut",
+      "text": "c",
+      "paste_source": null
+    },
+    {
+      "t": 9.029,
+      "type": "type",
+      "text": "d_10959529184379665549",
+      "paste_source": null
+    },
+    {
+      "t": 9.029,
+      "type": "paste",
+      "text": "cin >> d_4993892634952068459 >> d_10838281452030117757 >> d_10959529184379665549;",
+      "paste_source": "unknown"
+    },
+    {
+      "t": 9.032,
+      "type": "type",
+      "text": "\n    ",
+      "paste_source": null
+    },
+    {
+      "t": 18.739,
+      "type": "cut",
+      "text": "bool d_4993892634952068459, d_10838281452030117757, d_10959529184379665549;\n    cin >> d_4993892634952068459 >> d_10838281452030117757 >> d_10959529184379665549;\n    ",
+      "paste_source": null
+    },
+    {
+      "t": 21.062,
+      "type": "paste",
+      "text": "for (int d_6253375586064260614 = 0; d_6253375586064260614 < 3; ++d_6253375586064260614) {\n        \n    }",
+      "paste_source": "unknown"
+    },
+    {
+      "t": 38.495,
+      "type": "type",
+      "text": "\n",
+      "paste_source": null
+    },
+    {
+      "t": 39.14,
+      "type": "type",
+      "text": "    ",
+      "paste_source": null
+    },
+    {
+      "t": 44.463,
+      "type": "type",
+      "text": "int d_6362745570517087497 = 0;",
+      "paste_source": null
+    },
+    {
+      "t": 44.466,
+      "type": "type",
+      "text": "\n    ",
+      "paste_source": null
+    },
+    {
+      "t": 61.951,
+      "type": "type",
+      "text": "int d_2079489911515203206 = 0;",
+      "paste_source": null
+    },
+    {
+      "t": 63.332,
+      "type": "type",
+      "text": "int d_4993892634952068459;",
+      "paste_source": null
+    },
+    {
+      "t": 63.334,
+      "type": "type",
+      "text": "    \n    ",
+      "paste_source": null
+    },
+    {
+      "t": 66.909,
+      "type": "type",
+      "text": "cin >> d_4993892634952068459;",
+      "paste_source": null
+    },
+    {
+      "t": 66.917,
+      "type": "type",
+      "text": "    \n    ",
+      "paste_source": null
+    },
+    {
+      "t": 91.744,
+      "type": "type",
+      "text": "d_4993892634952068459 ? ++d_6362745570517087497 : ++d_2079489911515203206;",
+      "paste_source": null
+    },
+    {
+      "t": 91.748,
+      "type": "type",
+      "text": "\n    ",
+      "paste_source": null
+    },
+    {
+      "t": 129.271,
+      "type": "type",
+      "text": "cout << (d_6362745570517087497 > d_2079489911515203206 ? 1 : 0) << endl;",
+      "paste_source": null
+    },
+    {
+      "t": 187.007,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 187.759,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 221.304,
+      "type": "type",
+      "text": "!= 0",
+      "paste_source": null
+    }
+  ]
+}

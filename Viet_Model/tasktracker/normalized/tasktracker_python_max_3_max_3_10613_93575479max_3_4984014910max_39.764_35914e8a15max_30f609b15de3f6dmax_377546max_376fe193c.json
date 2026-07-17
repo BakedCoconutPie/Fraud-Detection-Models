@@ -1,0 +1,345 @@
+{
+  "session_id": "tasktracker_python_max_3_max_3_10613_93575479max_3_4984014910max_39.764_35914e8a15max_30f609b15de3f6dmax_377546max_376fe193c",
+  "source": "tasktracker_sigcse2021",
+  "metadata": {
+    "language": "python",
+    "task": "max_3",
+    "task_status": "NOT_SOLVED",
+    "final_score": 0.16666666666666666,
+    "weak_label": 0,
+    "label_reason": "low-risk trace",
+    "source_file": "data\\raw\\tasktracker\\extracted\\data_google_drive_anonymized (SIGSCE 2020)\\python\\max_3\\max_3_10613_93575479max_3_4984014910max_39.764_35914e8a15max_30f609b15de3f6dmax_377546max_376fe193c.csv"
+  },
+  "events": [
+    {
+      "t": 0.355,
+      "type": "type",
+      "text": "a",
+      "paste_source": null
+    },
+    {
+      "t": 0.547,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 1.087,
+      "type": "cut",
+      "text": "a",
+      "paste_source": null
+    },
+    {
+      "t": 1.087,
+      "type": "type",
+      "text": "v1",
+      "paste_source": null
+    },
+    {
+      "t": 1.087,
+      "type": "type",
+      "text": "=",
+      "paste_source": null
+    },
+    {
+      "t": 2.402,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 2.614,
+      "type": "type",
+      "text": "i",
+      "paste_source": null
+    },
+    {
+      "t": 2.828,
+      "type": "type",
+      "text": "n",
+      "paste_source": null
+    },
+    {
+      "t": 3.51,
+      "type": "type",
+      "text": "t",
+      "paste_source": null
+    },
+    {
+      "t": 3.512,
+      "type": "type",
+      "text": "(",
+      "paste_source": null
+    },
+    {
+      "t": 3.995,
+      "type": "type",
+      "text": ")",
+      "paste_source": null
+    },
+    {
+      "t": 4.272,
+      "type": "type",
+      "text": "i",
+      "paste_source": null
+    },
+    {
+      "t": 4.713,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 4.713,
+      "type": "type",
+      "text": "n",
+      "paste_source": null
+    },
+    {
+      "t": 5.308,
+      "type": "cut",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 5.308,
+      "type": "type",
+      "text": "p",
+      "paste_source": null
+    },
+    {
+      "t": 5.508,
+      "type": "type",
+      "text": "u",
+      "paste_source": null
+    },
+    {
+      "t": 6.812,
+      "type": "type",
+      "text": "t",
+      "paste_source": null
+    },
+    {
+      "t": 6.815,
+      "type": "type",
+      "text": "(",
+      "paste_source": null
+    },
+    {
+      "t": 12.97,
+      "type": "type",
+      "text": ")",
+      "paste_source": null
+    },
+    {
+      "t": 12.976,
+      "type": "type",
+      "text": "\n",
+      "paste_source": null
+    },
+    {
+      "t": 14.523,
+      "type": "type",
+      "text": "v1 = int(input())",
+      "paste_source": null
+    },
+    {
+      "t": 14.531,
+      "type": "type",
+      "text": "\n",
+      "paste_source": null
+    },
+    {
+      "t": 18.014,
+      "type": "type",
+      "text": "v1 = int(input())",
+      "paste_source": null
+    },
+    {
+      "t": 18.018,
+      "type": "type",
+      "text": " = int(input())\n",
+      "paste_source": null
+    },
+    {
+      "t": 18.018,
+      "type": "cut",
+      "text": "\nv1 = int(input())",
+      "paste_source": null
+    },
+    {
+      "t": 20.118,
+      "type": "type",
+      "text": "v2",
+      "paste_source": null
+    },
+    {
+      "t": 20.121,
+      "type": "cut",
+      "text": "v1",
+      "paste_source": null
+    },
+    {
+      "t": 22.219,
+      "type": "type",
+      "text": "v3",
+      "paste_source": null
+    },
+    {
+      "t": 22.225,
+      "type": "type",
+      "text": "\n",
+      "paste_source": null
+    },
+    {
+      "t": 25.73,
+      "type": "type",
+      "text": "s",
+      "paste_source": null
+    },
+    {
+      "t": 25.9,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 26.028,
+      "type": "cut",
+      "text": "s",
+      "paste_source": null
+    },
+    {
+      "t": 26.028,
+      "type": "type",
+      "text": "v4",
+      "paste_source": null
+    },
+    {
+      "t": 26.028,
+      "type": "type",
+      "text": "=",
+      "paste_source": null
+    },
+    {
+      "t": 26.892,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 27.088,
+      "type": "type",
+      "text": "m",
+      "paste_source": null
+    },
+    {
+      "t": 27.417,
+      "type": "type",
+      "text": "a",
+      "paste_source": null
+    },
+    {
+      "t": 28.076,
+      "type": "type",
+      "text": "x",
+      "paste_source": null
+    },
+    {
+      "t": 28.079,
+      "type": "type",
+      "text": "(",
+      "paste_source": null
+    },
+    {
+      "t": 29.411,
+      "type": "type",
+      "text": ")",
+      "paste_source": null
+    },
+    {
+      "t": 30.027,
+      "type": "type",
+      "text": "v1",
+      "paste_source": null
+    },
+    {
+      "t": 31.101,
+      "type": "type",
+      "text": ", ",
+      "paste_source": null
+    },
+    {
+      "t": 32.262,
+      "type": "type",
+      "text": "v2",
+      "paste_source": null
+    },
+    {
+      "t": 32.514,
+      "type": "type",
+      "text": ", ",
+      "paste_source": null
+    },
+    {
+      "t": 35.237,
+      "type": "type",
+      "text": "v3",
+      "paste_source": null
+    },
+    {
+      "t": 35.243,
+      "type": "type",
+      "text": "\n",
+      "paste_source": null
+    },
+    {
+      "t": 36.281,
+      "type": "type",
+      "text": "p",
+      "paste_source": null
+    },
+    {
+      "t": 36.464,
+      "type": "type",
+      "text": "r",
+      "paste_source": null
+    },
+    {
+      "t": 36.727,
+      "type": "type",
+      "text": "i",
+      "paste_source": null
+    },
+    {
+      "t": 36.92,
+      "type": "type",
+      "text": "n",
+      "paste_source": null
+    },
+    {
+      "t": 37.543,
+      "type": "type",
+      "text": "t",
+      "paste_source": null
+    },
+    {
+      "t": 37.547,
+      "type": "type",
+      "text": "(",
+      "paste_source": null
+    },
+    {
+      "t": 37.908,
+      "type": "type",
+      "text": ")",
+      "paste_source": null
+    },
+    {
+      "t": 113.974,
+      "type": "type",
+      "text": "v4",
+      "paste_source": null
+    }
+  ]
+}

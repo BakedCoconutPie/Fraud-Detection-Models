@@ -1,0 +1,4963 @@
+{
+ "session_id": "111/E",
+ "source": "pastetrace_sp2023",
+ "label": 0,
+ "events": [
+  {
+   "t": 0.0,
+   "type": "paste",
+   "text": "import java.util.ArrayList;\n\nabstract class Shape {\n    int posx;\n    int posy;\n    int col;\n    float vx = random(-20, 20);\n    float vy = random(-20, 20);\n    int size = int(random(30));\n    \n    abstract void gen();\n    public void update() {\n        posx += vx;\n        posy += vy;\n        \n        //bring vx and vy closer to 0\n        vx = vx / 1.1;\n        vy = vy / 1.1;\n        \n        if (vx <= 1) {\n            vx = 1;\n        }\n        if (vy <= 1) {\n            vy = 1;\n        }\n    }\n    abstract void updraw();\n}\n\nclass Square extends Shape {\n    public void gen() {\n        posx = mouseX;\n        posy = mouseY;\n        size = 20;\n        col = #17181A;\n        square(posx, posy, size);\n    }\n    public void updraw() {\n           fill(col);\n        square(posx, posy, size);\n    }\n}\nclass Circle extends Shape {\n    public void gen() {\n        posx = mouseX;\n        posy = mouseY;\n        size = 20;\n        col = #FFFFFF;\n        circle(posx, posy, size);\n    }\n    public void updraw() {\n        fill(col);\n        circle(posx, posy, size);\n    }\n}\n\nclass Triangle extends Shape {\n    public void gen() {\n        posx = mouseX;\n        posy = mouseY;\n        size = 20;\n        col = #FFFFFF;\n        triangle(posx+size, posy-size, posx-size, posy+size, posx+size, posy+size);\n    }\n    public void updraw() {\n        fill(col);\n        triangle(posx+size, posy-size, posx-size, posy+size, posx+size, posy+size);\n    }\n}\n\nArrayList<Shape> shapes = new ArrayList<Shape>();\n\nvoid setup(){\n    size(500,500);\n}\n\nvoid draw(){\n    background(#FFFFFF);\n    for (int i = 0; i < shapes.size(); i++){\n        shapes.get(i).update();\n        shapes.get(i).updraw();\n    }\n}\n\nvoid mouseClicked() {\n    int seed = int(random(3));\n    Shape x;\n    if (seed == 0) {\n        x = new Triangle();\n    } else if (seed == 1) {\n        x = new Circle();\n    } else {\n        x = new Square();\n    }\n    x.gen();\n    shapes.add(x);\n}",
+   "paste_source": "own"
+  },
+  {
+   "t": 142.8,
+   "type": "type",
+   "text": "\nimport java.lang.Math;",
+   "paste_source": null
+  },
+  {
+   "t": 157.5,
+   "type": "type",
+   "text": "Math.abs(",
+   "paste_source": null
+  },
+  {
+   "t": 160.5,
+   "type": "type",
+   "text": ")",
+   "paste_source": null
+  },
+  {
+   "t": 164.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 164.4,
+   "type": "type",
+   "text": "\\bvc",
+   "paste_source": null
+  },
+  {
+   "t": 165.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 165.1,
+   "type": "type",
+   "text": "\\b x",
+   "paste_source": null
+  },
+  {
+   "t": 166.3,
+   "type": "type",
+   "text": "\\bvx * 1.1",
+   "paste_source": null
+  },
+  {
+   "t": 169.6,
+   "type": "type",
+   "text": "\\bvy * 1.1",
+   "paste_source": null
+  },
+  {
+   "t": 177.0,
+   "type": "type",
+   "text": "\n        //don't let ",
+   "paste_source": null
+  },
+  {
+   "t": 186.0,
+   "type": "type",
+   "text": "vx and vy drop ",
+   "paste_source": null
+  },
+  {
+   "t": 190.7,
+   "type": "type",
+   "text": "to 0",
+   "paste_source": null
+  },
+  {
+   "t": 194.2,
+   "type": "type",
+   "text": "Math.abs(",
+   "paste_source": null
+  },
+  {
+   "t": 197.1,
+   "type": "type",
+   "text": ")",
+   "paste_source": null
+  },
+  {
+   "t": 209.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 212.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 212.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 212.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 212.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 212.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 213.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 213.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 213.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 213.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 218.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 229.3,
+   "type": "type",
+   "text": "000000",
+   "paste_source": null
+  },
+  {
+   "t": 275.9,
+   "type": "type",
+   "text": "5, ",
+   "paste_source": null
+  },
+  {
+   "t": 320.4,
+   "type": "type",
+   "text": "\n        \n        ",
+   "paste_source": null
+  },
+  {
+   "t": 321.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 321.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 321.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 321.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 321.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 321.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 322.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 322.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 322.4,
+   "type": "type",
+   "text": "\\b// d",
+   "paste_source": null
+  },
+  {
+   "t": 325.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 325.2,
+   "type": "type",
+   "text": "\\bdetect edges\n        ",
+   "paste_source": null
+  },
+  {
+   "t": 338.4,
+   "type": "type",
+   "text": "if (poy",
+   "paste_source": null
+  },
+  {
+   "t": 340.6,
+   "type": "type",
+   "text": "\\bsy",
+   "paste_source": null
+  },
+  {
+   "t": 344.1,
+   "type": "type",
+   "text": " > height) {\n            ",
+   "paste_source": null
+  },
+  {
+   "t": 353.2,
+   "type": "type",
+   "text": "posy = height;\n            ",
+   "paste_source": null
+  },
+  {
+   "t": 361.5,
+   "type": "type",
+   "text": "vy += 01",
+   "paste_source": null
+  },
+  {
+   "t": 363.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 363.7,
+   "type": "type",
+   "text": "\\b=1;\n            ",
+   "paste_source": null
+  },
+  {
+   "t": 365.9,
+   "type": "type",
+   "text": "        }\n        ",
+   "paste_source": null
+  },
+  {
+   "t": 373.7,
+   "type": "type",
+   "text": "\\b-",
+   "paste_source": null
+  },
+  {
+   "t": 375.3,
+   "type": "type",
+   "text": "\\b*",
+   "paste_source": null
+  },
+  {
+   "t": 377.6,
+   "type": "type",
+   "text": "\n        u",
+   "paste_source": null
+  },
+  {
+   "t": 378.5,
+   "type": "type",
+   "text": "\\bif (posx ",
+   "paste_source": null
+  },
+  {
+   "t": 384.2,
+   "type": "type",
+   "text": "> we",
+   "paste_source": null
+  },
+  {
+   "t": 385.6,
+   "type": "type",
+   "text": "\\bidght",
+   "paste_source": null
+  },
+  {
+   "t": 386.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 386.6,
+   "type": "type",
+   "text": "\\bth",
+   "paste_source": null
+  },
+  {
+   "t": 387.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 387.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 387.3,
+   "type": "type",
+   "text": "\\bth(",
+   "paste_source": null
+  },
+  {
+   "t": 388.2,
+   "type": "type",
+   "text": "\\b_",
+   "paste_source": null
+  },
+  {
+   "t": 389.0,
+   "type": "type",
+   "text": "\\b) {\n            \n            ",
+   "paste_source": null
+  },
+  {
+   "t": 390.9,
+   "type": "type",
+   "text": "        }",
+   "paste_source": null
+  },
+  {
+   "t": 393.3,
+   "type": "type",
+   "text": "posx = widg",
+   "paste_source": null
+  },
+  {
+   "t": 396.9,
+   "type": "type",
+   "text": "\\bth;\n            ",
+   "paste_source": null
+  },
+  {
+   "t": 400.9,
+   "type": "type",
+   "text": "vx *- ",
+   "paste_source": null
+  },
+  {
+   "t": 403.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 403.4,
+   "type": "type",
+   "text": "\\b= -1;",
+   "paste_source": null
+  },
+  {
+   "t": 409.4,
+   "type": "type",
+   "text": " else if (posy < ",
+   "paste_source": null
+  },
+  {
+   "t": 417.0,
+   "type": "type",
+   "text": "0;",
+   "paste_source": null
+  },
+  {
+   "t": 417.7,
+   "type": "type",
+   "text": "\\b)",
+   "paste_source": null
+  },
+  {
+   "t": 421.3,
+   "type": "type",
+   "text": " {\n            \n            ",
+   "paste_source": null
+  },
+  {
+   "t": 422.2,
+   "type": "type",
+   "text": "        }",
+   "paste_source": null
+  },
+  {
+   "t": 426.3,
+   "type": "type",
+   "text": "posy = 0;\n            vy *= -1;",
+   "paste_source": null
+  },
+  {
+   "t": 435.9,
+   "type": "type",
+   "text": " ek",
+   "paste_source": null
+  },
+  {
+   "t": 436.5,
+   "type": "type",
+   "text": "\\blse if (posx ",
+   "paste_source": null
+  },
+  {
+   "t": 441.1,
+   "type": "type",
+   "text": "< 0) {\n            posx = 0;\n            vx *- ",
+   "paste_source": null
+  },
+  {
+   "t": 448.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 448.7,
+   "type": "type",
+   "text": "\\b= -1;\n            ",
+   "paste_source": null
+  },
+  {
+   "t": 451.1,
+   "type": "type",
+   "text": "        }",
+   "paste_source": null
+  },
+  {
+   "t": 564.9,
+   "type": "type",
+   "text": " in respe",
+   "paste_source": null
+  },
+  {
+   "t": 566.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 567.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 567.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 567.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 567.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 567.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 567.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 567.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 568.0,
+   "type": "type",
+   "text": "\\b\n        // t",
+   "paste_source": null
+  },
+  {
+   "t": 569.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 569.5,
+   "type": "type",
+   "text": "\\btodo: make ",
+   "paste_source": null
+  },
+  {
+   "t": 571.1,
+   "type": "type",
+   "text": "\\bt",
+   "paste_source": null
+  },
+  {
+   "t": 571.4,
+   "type": "type",
+   "text": "\\b this respect size (larger takse longer to slow down)",
+   "paste_source": null
+  },
+  {
+   "t": 581.7,
+   "type": "type",
+   "text": " and momentum",
+   "paste_source": null
+  },
+  {
+   "t": 585.5,
+   "type": "type",
+   "text": "\n        ",
+   "paste_source": null
+  },
+  {
+   "t": 983.4,
+   "type": "type",
+   "text": "\n        \n        ",
+   "paste_source": null
+  },
+  {
+   "t": 988.9,
+   "type": "type",
+   "text": "slowval = ",
+   "paste_source": null
+  },
+  {
+   "t": 991.3,
+   "type": "type",
+   "text": "int slowval = ",
+   "paste_source": null
+  },
+  {
+   "t": 995.2,
+   "type": "type",
+   "text": ";;",
+   "paste_source": null
+  },
+  {
+   "t": 995.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 997.9,
+   "type": "type",
+   "text": "d",
+   "paste_source": null
+  },
+  {
+   "t": 999.9,
+   "type": "type",
+   "text": "\\b1`",
+   "paste_source": null
+  },
+  {
+   "t": 1000.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1003.8,
+   "type": "type",
+   "text": "\\bsize",
+   "paste_source": null
+  },
+  {
+   "t": 1018.1,
+   "type": "type",
+   "text": "50",
+   "paste_source": null
+  },
+  {
+   "t": 1019.8,
+   "type": "type",
+   "text": "\\b10",
+   "paste_source": null
+  },
+  {
+   "t": 1024.6,
+   "type": "type",
+   "text": " / 10",
+   "paste_source": null
+  },
+  {
+   "t": 1028.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1028.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1028.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1028.7,
+   "type": "type",
+   "text": "\\bfloat ",
+   "paste_source": null
+  },
+  {
+   "t": 1042.6,
+   "type": "type",
+   "text": "0",
+   "paste_source": null
+  },
+  {
+   "t": 1059.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1093.3,
+   "type": "type",
+   "text": "0",
+   "paste_source": null
+  },
+  {
+   "t": 1111.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1111.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1111.7,
+   "type": "type",
+   "text": "\\b500",
+   "paste_source": null
+  },
+  {
+   "t": 1128.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1128.1,
+   "type": "type",
+   "text": "\\b10",
+   "paste_source": null
+  },
+  {
+   "t": 1152.1,
+   "type": "type",
+   "text": "(",
+   "paste_source": null
+  },
+  {
+   "t": 1153.9,
+   "type": "type",
+   "text": " - slowval)",
+   "paste_source": null
+  },
+  {
+   "t": 1157.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1158.7,
+   "type": "type",
+   "text": ";",
+   "paste_source": null
+  },
+  {
+   "t": 1160.9,
+   "type": "type",
+   "text": "(",
+   "paste_source": null
+  },
+  {
+   "t": 1162.6,
+   "type": "type",
+   "text": " - slwo",
+   "paste_source": null
+  },
+  {
+   "t": 1163.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1163.8,
+   "type": "type",
+   "text": "\\bowval)",
+   "paste_source": null
+  },
+  {
+   "t": 1175.5,
+   "type": "type",
+   "text": "\n    final int ",
+   "paste_source": null
+  },
+  {
+   "t": 1183.6,
+   "type": "type",
+   "text": "SLOW = 510;",
+   "paste_source": null
+  },
+  {
+   "t": 1191.5,
+   "type": "type",
+   "text": "SLOW",
+   "paste_source": null
+  },
+  {
+   "t": 1264.4,
+   "type": "type",
+   "text": "\\b05",
+   "paste_source": null
+  },
+  {
+   "t": 1267.5,
+   "type": "type",
+   "text": "\\b05",
+   "paste_source": null
+  },
+  {
+   "t": 1294.0,
+   "type": "type",
+   "text": "\\b10",
+   "paste_source": null
+  },
+  {
+   "t": 1445.7,
+   "type": "type",
+   "text": " = random(#000000, #FFFFFF)",
+   "paste_source": null
+  },
+  {
+   "t": 1464.1,
+   "type": "type",
+   "text": "int",
+   "paste_source": null
+  },
+  {
+   "t": 1467.0,
+   "type": "type",
+   "text": "(",
+   "paste_source": null
+  },
+  {
+   "t": 1469.8,
+   "type": "type",
+   "text": ")",
+   "paste_source": null
+  },
+  {
+   "t": 1477.4,
+   "type": "type",
+   "text": "//",
+   "paste_source": null
+  },
+  {
+   "t": 1479.4,
+   "type": "type",
+   "text": "//",
+   "paste_source": null
+  },
+  {
+   "t": 1481.9,
+   "type": "type",
+   "text": "//",
+   "paste_source": null
+  },
+  {
+   "t": 1563.6,
+   "type": "other",
+   "text": "        //detect edges\n        if (posy > height) {\n            posy = height;\n            vy *= -1;\n        } else if (posy < 0) {\n            posy = 0;\n            vy *= -1;\n        }\n        if (posx > width) {\n            posx = width;\n            vx *= -1;\n        } else if (posx < 0) {\n            posx = 0;\n            vx *= -1;\n        }",
+   "paste_source": null
+  },
+  {
+   "t": 1563.6,
+   "type": "other",
+   "text": "",
+   "paste_source": null
+  },
+  {
+   "t": 1564.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1565.7,
+   "type": "type",
+   "text": "\n        \n        ",
+   "paste_source": null
+  },
+  {
+   "t": 1566.3,
+   "type": "paste",
+   "text": "        //detect edges\n        if (posy > height) {\n            posy = height;\n            vy *= -1;\n        } else if (posy < 0) {\n            posy = 0;\n            vy *= -1;\n        }\n        if (posx > width) {\n            posx = width;\n            vx *= -1;\n        } else if (posx < 0) {\n            posx = 0;\n            vx *= -1;\n        }",
+   "paste_source": "own"
+  },
+  {
+   "t": 1570.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1570.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1570.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1570.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1570.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1571.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1571.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1571.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1711.4,
+   "type": "type",
+   "text": "\n    ",
+   "paste_source": null
+  },
+  {
+   "t": 1715.5,
+   "type": "type",
+   "text": "float rot = ",
+   "paste_source": null
+  },
+  {
+   "t": 1718.6,
+   "type": "type",
+   "text": "int(",
+   "paste_source": null
+  },
+  {
+   "t": 1719.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1720.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1720.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1720.3,
+   "type": "type",
+   "text": "\\brandom(360)",
+   "paste_source": null
+  },
+  {
+   "t": 1723.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1724.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1724.2,
+   "type": "type",
+   "text": "\\b49",
+   "paste_source": null
+  },
+  {
+   "t": 1724.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1724.8,
+   "type": "type",
+   "text": "\\b59);",
+   "paste_source": null
+  },
+  {
+   "t": 1752.4,
+   "type": "type",
+   "text": "\n        rotate()';",
+   "paste_source": null
+  },
+  {
+   "t": 1756.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1756.7,
+   "type": "type",
+   "text": "\\b;",
+   "paste_source": null
+  },
+  {
+   "t": 1821.6,
+   "type": "type",
+   "text": "\\\\\b[275-304]",
+   "paste_source": null
+  },
+  {
+   "t": 1822.1,
+   "type": "type",
+   "text": "\\b\n",
+   "paste_source": null
+  },
+  {
+   "t": 2049.5,
+   "type": "type",
+   "text": "-random(int)",
+   "paste_source": null
+  },
+  {
+   "t": 2053.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 2054.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 2055.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 2059.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 2059.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 2059.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 2059.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 2059.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 2059.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 2060.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 2060.3,
+   "type": "type",
+   "text": "\\b+random",
+   "paste_source": null
+  },
+  {
+   "t": 2064.8,
+   "type": "type",
+   "text": "()",
+   "paste_source": null
+  },
+  {
+   "t": 2077.4,
+   "type": "type",
+   "text": "-10",
+   "paste_source": null
+  },
+  {
+   "t": 2079.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 2080.0,
+   "type": "type",
+   "text": "\\b20,20",
+   "paste_source": null
+  },
+  {
+   "t": 2087.4,
+   "type": "cut",
+   "text": "+random(-20,20)",
+   "paste_source": null
+  },
+  {
+   "t": 2089.7,
+   "type": "paste",
+   "text": "+random(-20,20)",
+   "paste_source": "same_machine"
+  },
+  {
+   "t": 2091.4,
+   "type": "paste",
+   "text": "+random(-20,20)",
+   "paste_source": "same_machine"
+  },
+  {
+   "t": 2092.7,
+   "type": "paste",
+   "text": "+random(-20,20)",
+   "paste_source": "same_machine"
+  },
+  {
+   "t": 2094.1,
+   "type": "paste",
+   "text": "+random(-20,20)",
+   "paste_source": "same_machine"
+  },
+  {
+   "t": 2095.4,
+   "type": "paste",
+   "text": "+random(-20,20)",
+   "paste_source": "same_machine"
+  },
+  {
+   "t": 2281.5,
+   "type": "type",
+   "text": "\n\n\n",
+   "paste_source": null
+  },
+  {
+   "t": 2283.6,
+   "type": "type",
+   "text": "/* */",
+   "paste_source": null
+  },
+  {
+   "t": 2286.7,
+   "type": "type",
+   "text": "\n\n\n",
+   "paste_source": null
+  },
+  {
+   "t": 2425.5,
+   "type": "type",
+   "text": "int(",
+   "paste_source": null
+  },
+  {
+   "t": 2429.0,
+   "type": "type",
+   "text": ")",
+   "paste_source": null
+  },
+  {
+   "t": 2431.2,
+   "type": "type",
+   "text": "int(",
+   "paste_source": null
+  },
+  {
+   "t": 2433.8,
+   "type": "type",
+   "text": ")",
+   "paste_source": null
+  },
+  {
+   "t": 2436.0,
+   "type": "type",
+   "text": "int(",
+   "paste_source": null
+  },
+  {
+   "t": 2438.9,
+   "type": "type",
+   "text": ")",
+   "paste_source": null
+  },
+  {
+   "t": 2441.0,
+   "type": "type",
+   "text": "int(",
+   "paste_source": null
+  },
+  {
+   "t": 2443.7,
+   "type": "type",
+   "text": ")",
+   "paste_source": null
+  },
+  {
+   "t": 2446.1,
+   "type": "type",
+   "text": "int(",
+   "paste_source": null
+  },
+  {
+   "t": 2448.4,
+   "type": "type",
+   "text": ")",
+   "paste_source": null
+  },
+  {
+   "t": 2450.3,
+   "type": "type",
+   "text": "int(",
+   "paste_source": null
+  },
+  {
+   "t": 2477.4,
+   "type": "type",
+   "text": "\n    \n    ",
+   "paste_source": null
+  },
+  {
+   "t": 2485.7,
+   "type": "type",
+   "text": "ind",
+   "paste_source": null
+  },
+  {
+   "t": 2486.3,
+   "type": "type",
+   "text": "\\bt ",
+   "paste_source": null
+  },
+  {
+   "t": 2489.6,
+   "type": "type",
+   "text": "randint1 = random(-20,20);",
+   "paste_source": null
+  },
+  {
+   "t": 2499.0,
+   "type": "type",
+   "text": "int(",
+   "paste_source": null
+  },
+  {
+   "t": 2502.1,
+   "type": "type",
+   "text": ")",
+   "paste_source": null
+  },
+  {
+   "t": 2505.5,
+   "type": "cut",
+   "text": "int randint1 = int(random(-20,20));",
+   "paste_source": null
+  },
+  {
+   "t": 2507.2,
+   "type": "type",
+   "text": "\n    ",
+   "paste_source": null
+  },
+  {
+   "t": 2507.4,
+   "type": "paste",
+   "text": "int randint1 = int(random(-20,20));",
+   "paste_source": "same_machine"
+  },
+  {
+   "t": 2509.3,
+   "type": "type",
+   "text": "\\b2",
+   "paste_source": null
+  },
+  {
+   "t": 2510.9,
+   "type": "type",
+   "text": "\n    ",
+   "paste_source": null
+  },
+  {
+   "t": 2511.2,
+   "type": "paste",
+   "text": "int randint1 = int(random(-20,20));",
+   "paste_source": "same_machine"
+  },
+  {
+   "t": 2513.6,
+   "type": "type",
+   "text": "\\b3",
+   "paste_source": null
+  },
+  {
+   "t": 2521.4,
+   "type": "type",
+   "text": "randint1",
+   "paste_source": null
+  },
+  {
+   "t": 2526.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 2526.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 2527.0,
+   "type": "type",
+   "text": "\\brandint1",
+   "paste_source": null
+  },
+  {
+   "t": 2531.5,
+   "type": "type",
+   "text": "randint2",
+   "paste_source": null
+  },
+  {
+   "t": 2536.1,
+   "type": "type",
+   "text": "randint2",
+   "paste_source": null
+  },
+  {
+   "t": 2540.7,
+   "type": "type",
+   "text": "rad",
+   "paste_source": null
+  },
+  {
+   "t": 2541.3,
+   "type": "type",
+   "text": "\\bndint3",
+   "paste_source": null
+  },
+  {
+   "t": 2548.6,
+   "type": "type",
+   "text": "randint3",
+   "paste_source": null
+  },
+  {
+   "t": 2554.7,
+   "type": "type",
+   "text": ")",
+   "paste_source": null
+  },
+  {
+   "t": 2557.9,
+   "type": "cut",
+   "text": "        triangle(posx+size+randint1, posy-size+randint1, posx-size+randint2, posy+size+randint2, posx+size+randint3, posy+size+randint3);\n",
+   "paste_source": null
+  },
+  {
+   "t": 2559.2,
+   "type": "paste",
+   "text": "        triangle(posx+size+randint1, posy-size+randint1, posx-size+randint2, posy+size+randint2, posx+size+randint3, posy+size+randint3);\n",
+   "paste_source": "own"
+  },
+  {
+   "t": 2582.9,
+   "type": "type",
+   "text": "\n    //",
+   "paste_source": null
+  },
+  {
+   "t": 2585.7,
+   "type": "type",
+   "text": "randomiz",
+   "paste_source": null
+  },
+  {
+   "t": 2587.9,
+   "type": "type",
+   "text": "used to randomize the train",
+   "paste_source": null
+  },
+  {
+   "t": 2590.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 2591.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 2591.1,
+   "type": "type",
+   "text": "\\biangle points and make them all look in",
+   "paste_source": null
+  },
+  {
+   "t": 2595.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 2595.5,
+   "type": "type",
+   "text": "\\bunique",
+   "paste_source": null
+  },
+  {
+   "t": 2690.3,
+   "type": "type",
+   "text": "\n    int rot = int(random(359);",
+   "paste_source": null
+  },
+  {
+   "t": 2702.2,
+   "type": "type",
+   "text": "g",
+   "paste_source": null
+  },
+  {
+   "t": 2702.6,
+   "type": "type",
+   "text": "\\bfloat",
+   "paste_source": null
+  },
+  {
+   "t": 2736.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 2737.1,
+   "type": "type",
+   "text": "\\brotatae(rot",
+   "paste_source": null
+  },
+  {
+   "t": 2983.9,
+   "type": "type",
+   "text": "Quad",
+   "paste_source": null
+  },
+  {
+   "t": 2988.8,
+   "type": "type",
+   "text": "quad",
+   "paste_source": null
+  },
+  {
+   "t": 3000.6,
+   "type": "other",
+   "text": "    //used to randomize the triangle points and make them all look unique\n    int randint1 = int(random(-20,20));\n    int randint2 = int(random(-20,20));\n    int randint3 = int(random(-20,20));",
+   "paste_source": null
+  },
+  {
+   "t": 3000.6,
+   "type": "other",
+   "text": "",
+   "paste_source": null
+  },
+  {
+   "t": 3001.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3003.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3003.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3003.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3003.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3004.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3006.9,
+   "type": "type",
+   "text": "\n    \n    ",
+   "paste_source": null
+  },
+  {
+   "t": 3007.4,
+   "type": "paste",
+   "text": "    //used to randomize the triangle points and make them all look unique\n    int randint1 = int(random(-20,20));\n    int randint2 = int(random(-20,20));\n    int randint3 = int(random(-20,20));",
+   "paste_source": "own"
+  },
+  {
+   "t": 3009.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3009.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3009.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3010.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3011.7,
+   "type": "type",
+   "text": "\\\\\b[398-401]",
+   "paste_source": null
+  },
+  {
+   "t": 3012.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3013.4,
+   "type": "type",
+   "text": " / quad",
+   "paste_source": null
+  },
+  {
+   "t": 3015.8,
+   "type": "type",
+   "text": "\n    int randint4 = n",
+   "paste_source": null
+  },
+  {
+   "t": 3019.0,
+   "type": "type",
+   "text": "\\bint(random(-20,20));",
+   "paste_source": null
+  },
+  {
+   "t": 3024.3,
+   "type": "type",
+   "text": "\\b;",
+   "paste_source": null
+  },
+  {
+   "t": 3027.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3027.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3028.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3028.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3028.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3028.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3028.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3028.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3028.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3028.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3028.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3028.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3028.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3262.7,
+   "type": "other",
+   "text": "    abstract void gen();",
+   "paste_source": null
+  },
+  {
+   "t": 3262.7,
+   "type": "other",
+   "text": "",
+   "paste_source": null
+  },
+  {
+   "t": 3263.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3264.5,
+   "type": "type",
+   "text": "\n    ",
+   "paste_source": null
+  },
+  {
+   "t": 3264.8,
+   "type": "paste",
+   "text": "    abstract void gen();",
+   "paste_source": "same_machine"
+  },
+  {
+   "t": 3267.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3268.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3268.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3268.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3277.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3277.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3277.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3277.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3277.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3277.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3277.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3277.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3277.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3277.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3278.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3278.3,
+   "type": "type",
+   "text": "\\btrying to make t",
+   "paste_source": null
+  },
+  {
+   "t": 3283.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3284.1,
+   "type": "type",
+   "text": "\\bes",
+   "paste_source": null
+  },
+  {
+   "t": 3285.2,
+   "type": "type",
+   "text": "shapes ",
+   "paste_source": null
+  },
+  {
+   "t": 3286.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3392.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3398.0,
+   "type": "type",
+   "text": "\n(I'll be providing this cl",
+   "paste_source": null
+  },
+  {
+   "t": 3401.6,
+   "type": "type",
+   "text": "\\bode to classmates to try and p",
+   "paste_source": null
+  },
+  {
+   "t": 3408.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3408.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3408.5,
+   "type": "type",
+   "text": "\\b)",
+   "paste_source": null
+  },
+  {
+   "t": 3438.0,
+   "type": "type",
+   "text": " ",
+   "paste_source": null
+  },
+  {
+   "t": 3439.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3441.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3442.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3442.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3442.7,
+   "type": "type",
+   "text": "\\bbelow 1",
+   "paste_source": null
+  },
+  {
+   "t": 3455.6,
+   "type": "type",
+   "text": "\\b05",
+   "paste_source": null
+  },
+  {
+   "t": 3457.7,
+   "type": "type",
+   "text": "\\b05",
+   "paste_source": null
+  },
+  {
+   "t": 22893.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 22893.3,
+   "type": "type",
+   "text": "\\b5",
+   "paste_source": null
+  },
+  {
+   "t": 22894.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 22894.9,
+   "type": "type",
+   "text": "\\b4",
+   "paste_source": null
+  },
+  {
+   "t": 22895.8,
+   "type": "type",
+   "text": "\\b5",
+   "paste_source": null
+  },
+  {
+   "t": 22897.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 22897.1,
+   "type": "type",
+   "text": "\\b5",
+   "paste_source": null
+  },
+  {
+   "t": 22898.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 22898.5,
+   "type": "type",
+   "text": "\\b5",
+   "paste_source": null
+  },
+  {
+   "t": 22901.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 22901.6,
+   "type": "type",
+   "text": "\\b5",
+   "paste_source": null
+  },
+  {
+   "t": 22902.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 22902.9,
+   "type": "type",
+   "text": "\\b4",
+   "paste_source": null
+  },
+  {
+   "t": 22903.9,
+   "type": "type",
+   "text": "\\b5",
+   "paste_source": null
+  },
+  {
+   "t": 22969.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 23455.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 23562.9,
+   "type": "type",
+   "text": "    ",
+   "paste_source": null
+  },
+  {
+   "t": 23564.9,
+   "type": "type",
+   "text": "    ",
+   "paste_source": null
+  },
+  {
+   "t": 23566.9,
+   "type": "type",
+   "text": "    ",
+   "paste_source": null
+  },
+  {
+   "t": 23614.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 23698.8,
+   "type": "type",
+   "text": "**********=",
+   "paste_source": null
+  },
+  {
+   "t": 23700.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 23700.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 23700.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 23700.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 23700.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 23701.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 23701.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 23701.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 23701.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 23701.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 23701.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 23723.9,
+   "type": "type",
+   "text": "\\b****",
+   "paste_source": null
+  },
+  {
+   "t": 23726.7,
+   "type": "type",
+   "text": "\\b****",
+   "paste_source": null
+  },
+  {
+   "t": 23729.1,
+   "type": "type",
+   "text": "\\b****",
+   "paste_source": null
+  },
+  {
+   "t": 23734.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 23735.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 23735.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 23735.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 23737.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 23737.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 23737.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 23738.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 23740.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 23740.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 23740.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 23740.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 23744.8,
+   "type": "type",
+   "text": "****",
+   "paste_source": null
+  },
+  {
+   "t": 23747.1,
+   "type": "type",
+   "text": "****",
+   "paste_source": null
+  },
+  {
+   "t": 23749.4,
+   "type": "type",
+   "text": "****",
+   "paste_source": null
+  },
+  {
+   "t": 23752.9,
+   "type": "type",
+   "text": "0",
+   "paste_source": null
+  },
+  {
+   "t": 23753.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 23783.3,
+   "type": "type",
+   "text": "    *",
+   "paste_source": null
+  },
+  {
+   "t": 23786.2,
+   "type": "type",
+   "text": "    *",
+   "paste_source": null
+  },
+  {
+   "t": 23788.7,
+   "type": "type",
+   "text": "    *",
+   "paste_source": null
+  },
+  {
+   "t": 23795.8,
+   "type": "type",
+   "text": "}",
+   "paste_source": null
+  },
+  {
+   "t": 23796.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 23797.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 23798.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 23799.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 23888.3,
+   "type": "type",
+   "text": "\n    ",
+   "paste_source": null
+  },
+  {
+   "t": 23916.9,
+   "type": "type",
+   "text": "\\\\\b[184-188]",
+   "paste_source": null
+  },
+  {
+   "t": 23917.2,
+   "type": "type",
+   "text": "\\b\n    \n    \n    ",
+   "paste_source": null
+  },
+  {
+   "t": 23920.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 23921.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 23921.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 23921.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 23921.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 23921.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 23924.6,
+   "type": "type",
+   "text": "\n    ",
+   "paste_source": null
+  },
+  {
+   "t": 23926.3,
+   "type": "type",
+   "text": "\n    ",
+   "paste_source": null
+  },
+  {
+   "t": 23995.4,
+   "type": "type",
+   "text": "                                                ",
+   "paste_source": null
+  },
+  {
+   "t": 23998.3,
+   "type": "type",
+   "text": "\n",
+   "paste_source": null
+  },
+  {
+   "t": 24006.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 24008.9,
+   "type": "type",
+   "text": ")=",
+   "paste_source": null
+  },
+  {
+   "t": 24009.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 24009.9,
+   "type": "type",
+   "text": "\\b\\\\\b[3007-3007]}",
+   "paste_source": null
+  },
+  {
+   "t": 24043.6,
+   "type": "type",
+   "text": "                                                                                                        ",
+   "paste_source": null
+  },
+  {
+   "t": 24054.5,
+   "type": "type",
+   "text": "                        ",
+   "paste_source": null
+  },
+  {
+   "t": 24067.7,
+   "type": "type",
+   "text": "    ",
+   "paste_source": null
+  },
+  {
+   "t": 24154.4,
+   "type": "type",
+   "text": "\n",
+   "paste_source": null
+  },
+  {
+   "t": 24168.7,
+   "type": "type",
+   "text": "                                                                                                                                                ",
+   "paste_source": null
+  },
+  {
+   "t": 24228.5,
+   "type": "type",
+   "text": "\\\\\b[3042-3078]",
+   "paste_source": null
+  },
+  {
+   "t": 24280.1,
+   "type": "type",
+   "text": "\\b                                                                                                                                    \n",
+   "paste_source": null
+  },
+  {
+   "t": 24863.8,
+   "type": "cut",
+   "text": "triangle(posx+randint1, posy-size+randint1, posx-size+randint2, posy+size+randint2, posx+size+randint3, posy+size+randint3);",
+   "paste_source": null
+  },
+  {
+   "t": 24864.0,
+   "type": "cut",
+   "text": "triangle(posx+randint1, posy-size+randint1, posx-size+randint2, posy+size+randint2, posx+size+randint3, posy+size+randint3);",
+   "paste_source": null
+  },
+  {
+   "t": 25509.5,
+   "type": "type",
+   "text": "\\\\\b[46-49]",
+   "paste_source": null
+  },
+  {
+   "t": 25509.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 25513.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 25514.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 25514.8,
+   "type": "type",
+   "text": "\\bve provided",
+   "paste_source": null
+  },
+  {
+   "t": 25660.9,
+   "type": "type",
+   "text": "\n    background(#000000);",
+   "paste_source": null
+  },
+  {
+   "t": 25709.1,
+   "type": "type",
+   "text": "\\\\\b[2801-2825]",
+   "paste_source": null
+  },
+  {
+   "t": 25709.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 25731.3,
+   "type": "type",
+   "text": "\\\\\b[376-405]",
+   "paste_source": null
+  },
+  {
+   "t": 25731.7,
+   "type": "type",
+   "text": "\\b\n",
+   "paste_source": null
+  },
+  {
+   "t": 25733.6,
+   "type": "type",
+   "text": "\n    \n    ",
+   "paste_source": null
+  },
+  {
+   "t": 25734.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 25734.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 25734.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 25734.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 25734.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 25734.9,
+   "type": "type",
+   "text": "\\b    \n   //this v",
+   "paste_source": null
+  },
+  {
+   "t": 25737.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 25738.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 25738.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 25738.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 25738.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 25738.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 25738.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 25739.0,
+   "type": "type",
+   "text": "\\b    ..",
+   "paste_source": null
+  },
+  {
+   "t": 25740.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 25740.2,
+   "type": "type",
+   "text": "\\b//this const is used to ",
+   "paste_source": null
+  },
+  {
+   "t": 25748.0,
+   "type": "type",
+   "text": "divi",
+   "paste_source": null
+  },
+  {
+   "t": 25750.2,
+   "type": "type",
+   "text": "as the denominator ",
+   "paste_source": null
+  },
+  {
+   "t": 25757.7,
+   "type": "type",
+   "text": "divisor ",
+   "paste_source": null
+  },
+  {
+   "t": 25760.7,
+   "type": "type",
+   "text": "with size to ",
+   "paste_source": null
+  },
+  {
+   "t": 25767.2,
+   "type": "type",
+   "text": "alter tge ",
+   "paste_source": null
+  },
+  {
+   "t": 25769.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 25769.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 25769.4,
+   "type": "type",
+   "text": "\\bhe ",
+   "paste_source": null
+  },
+  {
+   "t": 25773.9,
+   "type": "type",
+   "text": "impact f",
+   "paste_source": null
+  },
+  {
+   "t": 25774.8,
+   "type": "type",
+   "text": "\\bof the ",
+   "paste_source": null
+  },
+  {
+   "t": 25792.5,
+   "type": "type",
+   "text": "velocity",
+   "paste_source": null
+  },
+  {
+   "t": 25795.1,
+   "type": "type",
+   "text": "rate of velocity ",
+   "paste_source": null
+  },
+  {
+   "t": 25803.9,
+   "type": "type",
+   "text": "with ",
+   "paste_source": null
+  },
+  {
+   "t": 25805.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 25805.8,
+   "type": "type",
+   "text": "\\b.",
+   "paste_source": null
+  },
+  {
+   "t": 25807.0,
+   "type": "type",
+   "text": "\\b in respects to hi",
+   "paste_source": null
+  },
+  {
+   "t": 25810.3,
+   "type": "type",
+   "text": "\\bow large an object",
+   "paste_source": null
+  },
+  {
+   "t": 25814.9,
+   "type": "type",
+   "text": "\\b shape is (i.e. larger shapes sou",
+   "paste_source": null
+  },
+  {
+   "t": 25820.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 25820.6,
+   "type": "type",
+   "text": "\\bhould take longer to ",
+   "paste_source": null
+  },
+  {
+   "t": 25825.6,
+   "type": "type",
+   "text": "slow down).",
+   "paste_source": null
+  },
+  {
+   "t": 25839.8,
+   "type": "type",
+   "text": "\\b2",
+   "paste_source": null
+  },
+  {
+   "t": 25841.7,
+   "type": "type",
+   "text": "\\b2",
+   "paste_source": null
+  },
+  {
+   "t": 25889.1,
+   "type": "other",
+   "text": "    float vx = random(-20, 20);\n    float vy = random(-20, 20);",
+   "paste_source": null
+  },
+  {
+   "t": 25889.1,
+   "type": "other",
+   "text": "",
+   "paste_source": null
+  },
+  {
+   "t": 25889.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 25891.1,
+   "type": "type",
+   "text": "\n    ",
+   "paste_source": null
+  },
+  {
+   "t": 25891.5,
+   "type": "paste",
+   "text": "    float vx = random(-20, 20);\n    float vy = random(-20, 20);",
+   "paste_source": "same_machine"
+  },
+  {
+   "t": 25894.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 25894.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 25895.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 25895.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 25903.7,
+   "type": "type",
+   "text": " * ",
+   "paste_source": null
+  },
+  {
+   "t": 25907.5,
+   "type": "type",
+   "text": "size/",
+   "paste_source": null
+  },
+  {
+   "t": 25910.2,
+   "type": "type",
+   "text": "*",
+   "paste_source": null
+  },
+  {
+   "t": 25910.6,
+   "type": "type",
+   "text": "\\b(",
+   "paste_source": null
+  },
+  {
+   "t": 25920.8,
+   "type": "type",
+   "text": "10)",
+   "paste_source": null
+  },
+  {
+   "t": 25948.1,
+   "type": "type",
+   "text": "100/size",
+   "paste_source": null
+  },
+  {
+   "t": 25960.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 25960.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 25960.9,
+   "type": "type",
+   "text": "\\b50",
+   "paste_source": null
+  },
+  {
+   "t": 25965.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 25965.4,
+   "type": "type",
+   "text": "\\b20",
+   "paste_source": null
+  },
+  {
+   "t": 25973.0,
+   "type": "type",
+   "text": "\\b5",
+   "paste_source": null
+  },
+  {
+   "t": 25976.5,
+   "type": "type",
+   "text": "\\b5",
+   "paste_source": null
+  },
+  {
+   "t": 25978.4,
+   "type": "type",
+   "text": "\\b5",
+   "paste_source": null
+  },
+  {
+   "t": 25979.5,
+   "type": "type",
+   "text": "\\b5",
+   "paste_source": null
+  },
+  {
+   "t": 25986.1,
+   "type": "cut",
+   "text": " * (20/size)",
+   "paste_source": null
+  },
+  {
+   "t": 25987.6,
+   "type": "paste",
+   "text": " * (20/size)",
+   "paste_source": "same_machine"
+  },
+  {
+   "t": 25992.6,
+   "type": "other",
+   "text": "       //this const is used as the divisor with size to alter the rate of velocity in respects to how large a shape is (i.e. larger shapes should take longer to slow down).\n    final int SLOW = 1010;",
+   "paste_source": null
+  },
+  {
+   "t": 25992.6,
+   "type": "other",
+   "text": "",
+   "paste_source": null
+  },
+  {
+   "t": 25993.8,
+   "type": "type",
+   "text": "\n    ",
+   "paste_source": null
+  },
+  {
+   "t": 25994.2,
+   "type": "paste",
+   "text": "       //this const is used as the divisor with size to alter the rate of velocity in respects to how large a shape is (i.e. larger shapes should take longer to slow down).\n    final int SLOW = 1010;",
+   "paste_source": "own"
+  },
+  {
+   "t": 25997.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 25997.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 25998.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 26023.6,
+   "type": "type",
+   "text": "\n    .. ",
+   "paste_source": null
+  },
+  {
+   "t": 26024.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 26024.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 26024.6,
+   "type": "type",
+   "text": "\\b///",
+   "paste_source": null
+  },
+  {
+   "t": 26025.3,
+   "type": "type",
+   "text": "\\b t",
+   "paste_source": null
+  },
+  {
+   "t": 26025.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 26025.8,
+   "type": "type",
+   "text": "\\bthis const is used to determine the initial velocity of a shape (smaller",
+   "paste_source": null
+  },
+  {
+   "t": 26035.0,
+   "type": "type",
+   "text": "\\b(i.e. ",
+   "paste_source": null
+  },
+  {
+   "t": 26039.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 26039.9,
+   "type": "type",
+   "text": "\\bin respects to how large it is (ie.",
+   "paste_source": null
+  },
+  {
+   "t": 26044.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 26044.1,
+   "type": "type",
+   "text": "\\b.e. smalle r",
+   "paste_source": null
+  },
+  {
+   "t": 26046.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 26046.7,
+   "type": "type",
+   "text": "\\br shapes should come out faster).",
+   "paste_source": null
+  },
+  {
+   "t": 26052.1,
+   "type": "type",
+   "text": "\n    ",
+   "paste_source": null
+  },
+  {
+   "t": 26056.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 26056.2,
+   "type": "type",
+   "text": "\\bFAST",
+   "paste_source": null
+  },
+  {
+   "t": 26058.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 26058.3,
+   "type": "type",
+   "text": "\\bFAST",
+   "paste_source": null
+  },
+  {
+   "t": 26069.3,
+   "type": "type",
+   "text": "2500",
+   "paste_source": null
+  },
+  {
+   "t": 26121.1,
+   "type": "type",
+   "text": "float(",
+   "paste_source": null
+  },
+  {
+   "t": 26123.1,
+   "type": "type",
+   "text": ")",
+   "paste_source": null
+  },
+  {
+   "t": 26125.7,
+   "type": "type",
+   "text": "float(",
+   "paste_source": null
+  },
+  {
+   "t": 26127.4,
+   "type": "type",
+   "text": ")",
+   "paste_source": null
+  },
+  {
+   "t": 26244.0,
+   "type": "type",
+   "text": "\\b1",
+   "paste_source": null
+  },
+  {
+   "t": 26522.5,
+   "type": "type",
+   "text": "\n        translate(posx, posy)\n        rotate(",
+   "paste_source": null
+  },
+  {
+   "t": 26530.2,
+   "type": "type",
+   "text": "40);",
+   "paste_source": null
+  },
+  {
+   "t": 26536.8,
+   "type": "other",
+   "text": "        translate(posx, posy)\n        rotate(40);",
+   "paste_source": null
+  },
+  {
+   "t": 26536.9,
+   "type": "other",
+   "text": "",
+   "paste_source": null
+  },
+  {
+   "t": 26537.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 26541.5,
+   "type": "type",
+   "text": "\\",
+   "paste_source": null
+  },
+  {
+   "t": 26542.0,
+   "type": "type",
+   "text": "\\b\n       ",
+   "paste_source": null
+  },
+  {
+   "t": 26542.5,
+   "type": "paste",
+   "text": "        translate(posx, posy)\n        rotate(40);",
+   "paste_source": "same_machine"
+  },
+  {
+   "t": 26545.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 26546.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 26546.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 26546.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 26546.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 26546.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 26547.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 26555.0,
+   "type": "type",
+   "text": ";",
+   "paste_source": null
+  },
+  {
+   "t": 26576.4,
+   "type": "type",
+   "text": "\\\\\b[1945-1995]",
+   "paste_source": null
+  },
+  {
+   "t": 26576.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 26606.5,
+   "type": "type",
+   "text": "\\b-",
+   "paste_source": null
+  },
+  {
+   "t": 26613.9,
+   "type": "type",
+   "text": "\\b10",
+   "paste_source": null
+  },
+  {
+   "t": 26615.2,
+   "type": "type",
+   "text": "\\b10",
+   "paste_source": null
+  },
+  {
+   "t": 26617.2,
+   "type": "type",
+   "text": "\\b10",
+   "paste_source": null
+  },
+  {
+   "t": 26618.9,
+   "type": "type",
+   "text": "\\b10",
+   "paste_source": null
+  },
+  {
+   "t": 26620.9,
+   "type": "type",
+   "text": "\\b10",
+   "paste_source": null
+  },
+  {
+   "t": 26622.1,
+   "type": "type",
+   "text": "\\b10",
+   "paste_source": null
+  },
+  {
+   "t": 26712.4,
+   "type": "type",
+   "text": "\nI",
+   "paste_source": null
+  },
+  {
+   "t": 26713.4,
+   "type": "type",
+   "text": "\\b    I us",
+   "paste_source": null
+  },
+  {
+   "t": 26714.3,
+   "type": "type",
+   "text": "\\btilized ",
+   "paste_source": null
+  },
+  {
+   "t": 26715.8,
+   "type": "paste",
+   "text": "https://processing.org/reference/",
+   "paste_source": "external"
+  },
+  {
+   "t": 26719.5,
+   "type": "type",
+   "text": "\\\\\b[36-55]",
+   "paste_source": null
+  },
+  {
+   "t": 26720.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 26721.5,
+   "type": "type",
+   "text": " fpr ",
+   "paste_source": null
+  },
+  {
+   "t": 26722.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 26722.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 26722.6,
+   "type": "type",
+   "text": "\\bor information.",
+   "paste_source": null
+  },
+  {
+   "t": 26859.1,
+   "type": "type",
+   "text": "\n\n",
+   "paste_source": null
+  },
+  {
+   "t": 26861.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 26861.1,
+   "type": "type",
+   "text": "\\b\n//arraylist of shapes to iterate over in draw*(",
+   "paste_source": null
+  },
+  {
+   "t": 26870.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 26870.9,
+   "type": "type",
+   "text": "\\b()",
+   "paste_source": null
+  },
+  {
+   "t": 26879.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 26880.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 26880.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 26880.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 26880.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 26884.3,
+   "type": "type",
+   "text": "//update function is used to ",
+   "paste_source": null
+  },
+  {
+   "t": 26892.4,
+   "type": "type",
+   "text": "determine ",
+   "paste_source": null
+  },
+  {
+   "t": 26904.9,
+   "type": "type",
+   "text": "do the math and ",
+   "paste_source": null
+  },
+  {
+   "t": 26912.5,
+   "type": "type",
+   "text": "on va",
+   "paste_source": null
+  },
+  {
+   "t": 26913.2,
+   "type": "type",
+   "text": "\\belocity and edge te",
+   "paste_source": null
+  },
+  {
+   "t": 26915.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 26916.0,
+   "type": "type",
+   "text": "\\bdetectino.",
+   "paste_source": null
+  },
+  {
+   "t": 26917.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 26917.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 26917.7,
+   "type": "type",
+   "text": "\\bon. The actual da",
+   "paste_source": null
+  },
+  {
+   "t": 26920.0,
+   "type": "type",
+   "text": "\\brawing of the shape is ",
+   "paste_source": null
+  },
+  {
+   "t": 26923.8,
+   "type": "type",
+   "text": "left to each ",
+   "paste_source": null
+  },
+  {
+   "t": 26927.1,
+   "type": "type",
+   "text": "subclass",
+   "paste_source": null
+  },
+  {
+   "t": 26929.8,
+   "type": "type",
+   "text": "'s ud",
+   "paste_source": null
+  },
+  {
+   "t": 26931.5,
+   "type": "type",
+   "text": "\\bpdraw function.",
+   "paste_source": null
+  },
+  {
+   "t": 26937.4,
+   "type": "type",
+   "text": "and color ",
+   "paste_source": null
+  },
+  {
+   "t": 26959.5,
+   "type": "other",
+   "text": "           fill(col);",
+   "paste_source": null
+  },
+  {
+   "t": 26959.5,
+   "type": "other",
+   "text": "",
+   "paste_source": null
+  },
+  {
+   "t": 26960.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 26963.6,
+   "type": "type",
+   "text": "//",
+   "paste_source": null
+  },
+  {
+   "t": 26966.1,
+   "type": "type",
+   "text": "//",
+   "paste_source": null
+  },
+  {
+   "t": 26969.5,
+   "type": "paste",
+   "text": "           fill(col);",
+   "paste_source": "same_machine"
+  },
+  {
+   "t": 26971.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 26971.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 26971.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 26971.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 26971.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 26971.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 26971.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 26972.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 27003.8,
+   "type": "type",
+   "text": "\\",
+   "paste_source": null
+  },
+  {
+   "t": 27004.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 27004.2,
+   "type": "type",
+   "text": "\\b of",
+   "paste_source": null
+  },
+  {
+   "t": 27015.3,
+   "type": "type",
+   "text": "\n    //draw shape after updating",
+   "paste_source": null
+  },
+  {
+   "t": 27018.8,
+   "type": "type",
+   "text": "\n    //",
+   "paste_source": null
+  },
+  {
+   "t": 27022.2,
+   "type": "type",
+   "text": "initial generation function",
+   "paste_source": null
+  },
+  {
+   "t": 27031.8,
+   "type": "type",
+   "text": " used to make the ",
+   "paste_source": null
+  },
+  {
+   "t": 27041.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 27045.5,
+   "type": "type",
+   "text": "\\\\\b[2096-2120]",
+   "paste_source": null
+  },
+  {
+   "t": 27045.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 27047.8,
+   "type": "type",
+   "text": "\\\\\b[2304-2328]",
+   "paste_source": null
+  },
+  {
+   "t": 27048.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 27056.5,
+   "type": "type",
+   "text": "\\\\\b[2735-2759]",
+   "paste_source": null
+  },
+  {
+   "t": 27056.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 27058.3,
+   "type": "type",
+   "text": "\\\\\b[2901-2921]",
+   "paste_source": null
+  },
+  {
+   "t": 27058.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 27059.5,
+   "type": "type",
+   "text": "\\\\\b[2371-2391]",
+   "paste_source": null
+  },
+  {
+   "t": 27059.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 27102.7,
+   "type": "other",
+   "text": "    background(#FFFFFF);",
+   "paste_source": null
+  },
+  {
+   "t": 27102.7,
+   "type": "other",
+   "text": "",
+   "paste_source": null
+  },
+  {
+   "t": 27102.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 27150.0,
+   "type": "type",
+   "text": " Makin ",
+   "paste_source": null
+  },
+  {
+   "t": 27152.1,
+   "type": "type",
+   "text": "\\bg it smaller may result in larger shapes speedin ",
+   "paste_source": null
+  },
+  {
+   "t": 27159.3,
+   "type": "type",
+   "text": "\\bg up instead of slowing doqn",
+   "paste_source": null
+  },
+  {
+   "t": 27162.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 27162.4,
+   "type": "type",
+   "text": "\\bwn.",
+   "paste_source": null
+  },
+  {
+   "t": 27166.8,
+   "type": "type",
+   "text": "000",
+   "paste_source": null
+  },
+  {
+   "t": 27268.6,
+   "type": "type",
+   "text": "100",
+   "paste_source": null
+  },
+  {
+   "t": 27349.9,
+   "type": "type",
+   "text": "float",
+   "paste_source": null
+  },
+  {
+   "t": 27357.6,
+   "type": "type",
+   "text": "float",
+   "paste_source": null
+  },
+  {
+   "t": 27365.7,
+   "type": "type",
+   "text": "float(",
+   "paste_source": null
+  },
+  {
+   "t": 27367.4,
+   "type": "type",
+   "text": ")",
+   "paste_source": null
+  },
+  {
+   "t": 27377.3,
+   "type": "type",
+   "text": "2501",
+   "paste_source": null
+  },
+  {
+   "t": 27425.3,
+   "type": "type",
+   "text": "3000",
+   "paste_source": null
+  },
+  {
+   "t": 27458.7,
+   "type": "type",
+   "text": "\\b5",
+   "paste_source": null
+  },
+  {
+   "t": 27459.5,
+   "type": "type",
+   "text": "\\b5",
+   "paste_source": null
+  },
+  {
+   "t": 27474.0,
+   "type": "type",
+   "text": "1001",
+   "paste_source": null
+  },
+  {
+   "t": 27525.6,
+   "type": "type",
+   "text": ", bouncing causes a slight loss in momentum",
+   "paste_source": null
+  },
+  {
+   "t": 27540.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 27542.2,
+   "type": "type",
+   "text": "vy * ",
+   "paste_source": null
+  },
+  {
+   "t": 27544.6,
+   "type": "type",
+   "text": ")",
+   "paste_source": null
+  },
+  {
+   "t": 27546.0,
+   "type": "type",
+   "text": "(",
+   "paste_source": null
+  },
+  {
+   "t": 27547.7,
+   "type": "type",
+   "text": "/1.1",
+   "paste_source": null
+  },
+  {
+   "t": 27549.7,
+   "type": "type",
+   "text": "\\b5",
+   "paste_source": null
+  },
+  {
+   "t": 27550.1,
+   "type": "type",
+   "text": "\\b0.5",
+   "paste_source": null
+  },
+  {
+   "t": 27550.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 27550.7,
+   "type": "type",
+   "text": "\\b5",
+   "paste_source": null
+  },
+  {
+   "t": 27566.1,
+   "type": "type",
+   "text": "\n    ./",
+   "paste_source": null
+  },
+  {
+   "t": 27566.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 27567.1,
+   "type": "type",
+   "text": "\\b//ths co",
+   "paste_source": null
+  },
+  {
+   "t": 27568.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 27568.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 27568.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 27568.9,
+   "type": "type",
+   "text": "\\bis const is ",
+   "paste_source": null
+  },
+  {
+   "t": 27571.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 27571.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 27571.9,
+   "type": "type",
+   "text": "\\bdetermines the rate at which the ",
+   "paste_source": null
+  },
+  {
+   "t": 27600.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 27600.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 27601.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 27601.1,
+   "type": "type",
+   "text": "\\bhz",
+   "paste_source": null
+  },
+  {
+   "t": 27601.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 27601.9,
+   "type": "type",
+   "text": "\\bshapes slow\n    final float slow",
+   "paste_source": null
+  },
+  {
+   "t": 27607.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 27607.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 27607.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 27607.6,
+   "type": "type",
+   "text": "\\bSLRATE = 1.05;",
+   "paste_source": null
+  },
+  {
+   "t": 27615.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 27615.5,
+   "type": "type",
+   "text": "\\bSLRATE",
+   "paste_source": null
+  },
+  {
+   "t": 27618.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 27618.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 27618.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 27618.6,
+   "type": "type",
+   "text": "\\bSLRATE",
+   "paste_source": null
+  },
+  {
+   "t": 27621.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 27621.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 27621.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 27621.8,
+   "type": "type",
+   "text": "\\bSLRATE",
+   "paste_source": null
+  },
+  {
+   "t": 27633.0,
+   "type": "cut",
+   "text": "vy = (vy * -1)/SLRATE;",
+   "paste_source": null
+  },
+  {
+   "t": 27635.0,
+   "type": "paste",
+   "text": "vy = (vy * -1)/SLRATE;",
+   "paste_source": "same_machine"
+  },
+  {
+   "t": 27639.6,
+   "type": "paste",
+   "text": "vy = (vy * -1)/SLRATE;",
+   "paste_source": "same_machine"
+  },
+  {
+   "t": 27640.6,
+   "type": "type",
+   "text": "\\bx",
+   "paste_source": null
+  },
+  {
+   "t": 27643.0,
+   "type": "type",
+   "text": "\\bx",
+   "paste_source": null
+  },
+  {
+   "t": 27646.0,
+   "type": "paste",
+   "text": "vy = (vy * -1)/SLRATE;",
+   "paste_source": "same_machine"
+  },
+  {
+   "t": 27647.0,
+   "type": "type",
+   "text": "\\bx",
+   "paste_source": null
+  },
+  {
+   "t": 27648.6,
+   "type": "type",
+   "text": "\\bx",
+   "paste_source": null
+  },
+  {
+   "t": 27719.9,
+   "type": "type",
+   "text": "velocity",
+   "paste_source": null
+  },
+  {
+   "t": 27733.9,
+   "type": "type",
+   "text": ". SLRATE / SO",
+   "paste_source": null
+  },
+  {
+   "t": 27736.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 27737.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 27741.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 27741.4,
+   "type": "type",
+   "text": "\\b- ",
+   "paste_source": null
+  },
+  {
+   "t": 27745.2,
+   "type": "type",
+   "text": "size / s",
+   "paste_source": null
+  },
+  {
+   "t": 27746.6,
+   "type": "type",
+   "text": "\\bSLOW)",
+   "paste_source": null
+  },
+  {
+   "t": 27749.2,
+   "type": "type",
+   "text": "(",
+   "paste_source": null
+  },
+  {
+   "t": 27750.6,
+   "type": "type",
+   "text": " must be ",
+   "paste_source": null
+  },
+  {
+   "t": 27757.8,
+   "type": "type",
+   "text": "over 1, other",
+   "paste_source": null
+  },
+  {
+   "t": 27761.8,
+   "type": "type",
+   "text": "a vlaue",
+   "paste_source": null
+  },
+  {
+   "t": 27762.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 27762.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 27763.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 27763.1,
+   "type": "type",
+   "text": "\\balue over 1, otherwise ",
+   "paste_source": null
+  },
+  {
+   "t": 27785.2,
+   "type": "type",
+   "text": "shapes will speed up instead of slowing down.",
+   "paste_source": null
+  },
+  {
+   "t": 27826.0,
+   "type": "type",
+   "text": "\n            vx = vx / SLRATE;",
+   "paste_source": null
+  },
+  {
+   "t": 27834.3,
+   "type": "cut",
+   "text": "vx = vx / SLRATE;",
+   "paste_source": null
+  },
+  {
+   "t": 27835.7,
+   "type": "type",
+   "text": "\n            ",
+   "paste_source": null
+  },
+  {
+   "t": 27835.9,
+   "type": "paste",
+   "text": "vx = vx / SLRATE;",
+   "paste_source": "same_machine"
+  },
+  {
+   "t": 27838.6,
+   "type": "type",
+   "text": "\n            ",
+   "paste_source": null
+  },
+  {
+   "t": 27838.8,
+   "type": "paste",
+   "text": "vx = vx / SLRATE;",
+   "paste_source": "same_machine"
+  },
+  {
+   "t": 27840.4,
+   "type": "type",
+   "text": "\\by",
+   "paste_source": null
+  },
+  {
+   "t": 27842.3,
+   "type": "type",
+   "text": "\\by",
+   "paste_source": null
+  },
+  {
+   "t": 27845.0,
+   "type": "type",
+   "text": "\n            ",
+   "paste_source": null
+  },
+  {
+   "t": 27845.2,
+   "type": "paste",
+   "text": "vx = vx / SLRATE;",
+   "paste_source": "same_machine"
+  },
+  {
+   "t": 27846.9,
+   "type": "type",
+   "text": "\\by",
+   "paste_source": null
+  },
+  {
+   "t": 27847.9,
+   "type": "type",
+   "text": "\\by",
+   "paste_source": null
+  },
+  {
+   "t": 27972.6,
+   "type": "type",
+   "text": "SLRATE",
+   "paste_source": null
+  },
+  {
+   "t": 27975.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 27975.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 27975.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 28168.4,
+   "type": "type",
+   "text": "1\n        //there seems to eb a bug with this that causes the ",
+   "paste_source": null
+  },
+  {
+   "t": 28179.6,
+   "type": "type",
+   "text": "i can",
+   "paste_source": null
+  },
+  {
+   "t": 28180.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 28180.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 28180.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 28180.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 28180.7,
+   "type": "type",
+   "text": "\\bI can't figure ao",
+   "paste_source": null
+  },
+  {
+   "t": 28182.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 28182.7,
+   "type": "type",
+   "text": "\\bout a more elegant way to ",
+   "paste_source": null
+  },
+  {
+   "t": 28187.3,
+   "type": "type",
+   "text": "prevent the shapes from stopping without also ",
+   "paste_source": null
+  },
+  {
+   "t": 28204.1,
+   "type": "cut",
+   "text": "vy = vy * SLRATE;",
+   "paste_source": null
+  },
+  {
+   "t": 28205.2,
+   "type": "type",
+   "text": "\n            ",
+   "paste_source": null
+  },
+  {
+   "t": 28205.4,
+   "type": "paste",
+   "text": "vy = vy * SLRATE;",
+   "paste_source": "same_machine"
+  },
+  {
+   "t": 28371.3,
+   "type": "type",
+   "text": "messing up their trajectory slightly",
+   "paste_source": null
+  },
+  {
+   "t": 28659.5,
+   "type": "type",
+   "text": "completely ",
+   "paste_source": null
+  },
+  {
+   "t": 28663.1,
+   "type": "type",
+   "text": "\n        // ",
+   "paste_source": null
+  },
+  {
+   "t": 28663.9,
+   "type": "type",
+   "text": "\\b ",
+   "paste_source": null
+  },
+  {
+   "t": 28664.5,
+   "type": "type",
+   "text": "\\bI mean I'm sure I could but ",
+   "paste_source": null
+  },
+  {
+   "t": 28670.2,
+   "type": "type",
+   "text": "I don't want to right ",
+   "paste_source": null
+  },
+  {
+   "t": 28675.9,
+   "type": "type",
+   "text": "\\bit'll be a hack job and I'm sure there's ",
+   "paste_source": null
+  },
+  {
+   "t": 28682.3,
+   "type": "type",
+   "text": "a reallyn",
+   "paste_source": null
+  },
+  {
+   "t": 28684.6,
+   "type": "type",
+   "text": "\\b nice way to do it that '",
+   "paste_source": null
+  },
+  {
+   "t": 28687.5,
+   "type": "type",
+   "text": "\\bI'm n",
+   "paste_source": null
+  },
+  {
+   "t": 28688.5,
+   "type": "type",
+   "text": "\\bjust not seeing",
+   "paste_source": null
+  },
+  {
+   "t": 28776.8,
+   "type": "type",
+   "text": "abstract to ",
+   "paste_source": null
+  },
+  {
+   "t": 28802.7,
+   "type": "other",
+   "text": "    //initial generation function\n    abstract void gen();",
+   "paste_source": null
+  },
+  {
+   "t": 28802.7,
+   "type": "other",
+   "text": "",
+   "paste_source": null
+  },
+  {
+   "t": 28803.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 28806.4,
+   "type": "type",
+   "text": "\n    ",
+   "paste_source": null
+  },
+  {
+   "t": 28807.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 28807.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 28807.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 28807.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 28807.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 28809.2,
+   "type": "type",
+   "text": "\n    \n    ",
+   "paste_source": null
+  },
+  {
+   "t": 28809.7,
+   "type": "paste",
+   "text": "    //initial generation function\n    abstract void gen();",
+   "paste_source": "same_machine"
+  },
+  {
+   "t": 28811.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 28812.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 28812.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 28812.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 28814.2,
+   "type": "type",
+   "text": "oublic",
+   "paste_source": null
+  },
+  {
+   "t": 28815.8,
+   "type": "type",
+   "text": "public",
+   "paste_source": null
+  },
+  {
+   "t": 28817.8,
+   "type": "type",
+   "text": "\\b {\n        \n        ",
+   "paste_source": null
+  },
+  {
+   "t": 28818.8,
+   "type": "type",
+   "text": "    }",
+   "paste_source": null
+  },
+  {
+   "t": 28821.6,
+   "type": "type",
+   "text": "posx = mou",
+   "paste_source": null
+  },
+  {
+   "t": 28823.7,
+   "type": "type",
+   "text": "\\buseX;\n        posy = mouseY;",
+   "paste_source": null
+  },
+  {
+   "t": 28843.8,
+   "type": "type",
+   "text": "\n        this.updraw();",
+   "paste_source": null
+  },
+  {
+   "t": 28855.7,
+   "type": "type",
+   "text": "\n    */",
+   "paste_source": null
+  },
+  {
+   "t": 28858.4,
+   "type": "type",
+   "text": "\n    ",
+   "paste_source": null
+  },
+  {
+   "t": 28859.7,
+   "type": "type",
+   "text": "/*",
+   "paste_source": null
+  },
+  {
+   "t": 28899.9,
+   "type": "type",
+   "text": "\\\\\b[2891-3014]",
+   "paste_source": null
+  },
+  {
+   "t": 28900.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 28906.5,
+   "type": "type",
+   "text": "\\\\\b[2989-3098]",
+   "paste_source": null
+  },
+  {
+   "t": 28907.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 28913.7,
+   "type": "type",
+   "text": "\\\\\b[3289-3497]",
+   "paste_source": null
+  },
+  {
+   "t": 28914.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 28923.3,
+   "type": "other",
+   "text": "    //draw shape after updating\n    abstract void updraw();",
+   "paste_source": null
+  },
+  {
+   "t": 28923.3,
+   "type": "other",
+   "text": "",
+   "paste_source": null
+  },
+  {
+   "t": 28923.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 28926.5,
+   "type": "type",
+   "text": "\n    \n    ",
+   "paste_source": null
+  },
+  {
+   "t": 28927.0,
+   "type": "paste",
+   "text": "    //draw shape after updating\n    abstract void updraw();",
+   "paste_source": "same_machine"
+  },
+  {
+   "t": 28928.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 28928.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 28928.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 28929.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 28931.2,
+   "type": "type",
+   "text": "\n    //must ",
+   "paste_source": null
+  },
+  {
+   "t": 28933.4,
+   "type": "type",
+   "text": "each c",
+   "paste_source": null
+  },
+  {
+   "t": 28934.2,
+   "type": "type",
+   "text": "\\bshape much implement this ",
+   "paste_source": null
+  },
+  {
+   "t": 28948.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 28956.1,
+   "type": "type",
+   "text": "\\\\\b[1391-1467]",
+   "paste_source": null
+  },
+  {
+   "t": 28968.2,
+   "type": "other",
+   "text": "    //draw shape\n    //each shape much implement this \n    abstract void updraw();",
+   "paste_source": null
+  },
+  {
+   "t": 28968.2,
+   "type": "other",
+   "text": "",
+   "paste_source": null
+  },
+  {
+   "t": 28968.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 28968.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 28969.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 28969.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 28969.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 28969.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 28974.9,
+   "type": "type",
+   "text": "\n    \n    ",
+   "paste_source": null
+  },
+  {
+   "t": 28975.3,
+   "type": "paste",
+   "text": "    //draw shape\n    //each shape much implement this \n    abstract void updraw();",
+   "paste_source": "own"
+  },
+  {
+   "t": 28977.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 28977.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 28977.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 28978.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 28990.2,
+   "type": "type",
+   "text": "s the",
+   "paste_source": null
+  },
+  {
+   "t": 28995.2,
+   "type": "type",
+   "text": "abstract method to ",
+   "paste_source": null
+  },
+  {
+   "t": 28997.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 29013.8,
+   "type": "type",
+   "text": "more ",
+   "paste_source": null
+  },
+  {
+   "t": 29016.4,
+   "type": "type",
+   "text": "slightly ",
+   "paste_source": null
+  },
+  {
+   "t": 29020.5,
+   "type": "type",
+   "text": "\\b positions",
+   "paste_source": null
+  },
+  {
+   "t": 29047.1,
+   "type": "type",
+   "text": "\\\\\b[2505-2513]",
+   "paste_source": null
+  },
+  {
+   "t": 29047.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 29115.3,
+   "type": "type",
+   "text": "\\b2",
+   "paste_source": null
+  },
+  {
+   "t": 29119.8,
+   "type": "type",
+   "text": "0, ",
+   "paste_source": null
+  },
+  {
+   "t": 29199.4,
+   "type": "type",
+   "text": "to 0",
+   "paste_source": null
+  },
+  {
+   "t": 29293.6,
+   "type": "type",
+   "text": "\\\\\b[2485-2620]",
+   "paste_source": null
+  },
+  {
+   "t": 29293.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 29295.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 29295.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 29295.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 29296.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 29296.2,
+   "type": "type",
+   "text": "\\b  ",
+   "paste_source": null
+  },
+  {
+   "t": 29296.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 29296.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 29297.0,
+   "type": "type",
+   "text": "\\bn ",
+   "paste_source": null
+  },
+  {
+   "t": 29297.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 29297.8,
+   "type": "type",
+   "text": "\\ban ",
+   "paste_source": null
+  },
+  {
+   "t": 29299.7,
+   "type": "type",
+   "text": ", I'm sure there's a simple answer I'm not seeing",
+   "paste_source": null
+  },
+  {
+   "t": 29317.6,
+   "type": "type",
+   "text": "offeredt ",
+   "paste_source": null
+  },
+  {
+   "t": 29319.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 29319.2,
+   "type": "type",
+   "text": "\\b this code to classmates)",
+   "paste_source": null
+  },
+  {
+   "t": 29328.9,
+   "type": "type",
+   "text": " Otherwise I did it on my own.",
+   "paste_source": null
+  },
+  {
+   "t": 29334.1,
+   "type": "type",
+   "text": "\\b so it could hopefully still be useful in the plagiarism detection, however I'm not sure if anyone will use it since it's last minute)",
+   "paste_source": null
+  },
+  {
+   "t": 29354.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 29354.4,
+   "type": "type",
+   "text": "\\b research)",
+   "paste_source": null
+  },
+  {
+   "t": 29393.5,
+   "type": "type",
+   "text": "\\\\\b[1719-1725]",
+   "paste_source": null
+  },
+  {
+   "t": 29394.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 109826.7,
+   "type": "type",
+   "text": " ",
+   "paste_source": null
+  },
+  {
+   "t": 109829.5,
+   "type": "type",
+   "text": "but the effect is negligible ",
+   "paste_source": null
+  },
+  {
+   "t": 109832.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 109845.0,
+   "type": "type",
+   "text": " implementation of the abstract",
+   "paste_source": null
+  }
+ ]
+}

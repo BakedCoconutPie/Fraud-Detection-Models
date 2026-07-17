@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>PasteTrace Cheating Detector</title>
+<style>
+  body { font-family: system-ui, sans-serif; max-width: 900px; margin: 40px auto; padding: 0 16px; color: #222; }
+  h1 { font-size: 1.4rem; }
+  h2 { font-size: 1.1rem; margin-top: 40px; border-top: 1px solid #ddd; padding-top: 24px; }
+  textarea { width: 100%; height: 220px; font-family: monospace; font-size: 0.85rem; box-sizing: border-box; }
+  select, button, input[type=file] { font-size: 1rem; padding: 6px 10px; margin-top: 8px; }
+  button { cursor: pointer; }
+  #result { margin-top: 20px; padding: 16px; border-radius: 8px; display: none; }
+  #result.cheating { background: #fdecec; border: 1px solid #e57373; }
+  #result.normal { background: #eaf7ea; border: 1px solid #81c784; }
+  .bar-bg { background: #ddd; border-radius: 6px; height: 14px; overflow: hidden; margin-top: 6px; }
+  .bar-fill { height: 100%; background: #e57373; }
+  .row { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+  .reason { margin-top: 8px; font-size: 0.9rem; color: #444; }
+  table { width: 100%; border-collapse: collapse; margin-top: 16px; font-size: 0.85rem; }
+  th, td { border: 1px solid #ddd; padding: 6px 8px; text-align: left; vertical-align: top; }
+  th { background: #f5f5f5; }
+  tr.cheating td.verdict { color: #c62828; font-weight: bold; }
+  tr.normal td.verdict { color: #2e7d32; font-weight: bold; }
+</style>
+</head>
+<body>
+  <h1>PasteTrace Cheating Detector</h1>
+  <p>Paste Processing (.pde) source code or upload a file/folder, choose a model, and get a cheating probability with an explanation.</p>
+
+  <textarea id="code" placeholder="Paste student source code here..."></textarea>
+
+  <div class="row">
+    <input type="file" id="file" accept=".pde,.txt,.java" />
+    <select id="model">
+      <option value="svm">TF-IDF + SVM</option>
+      <option value="bilstm">BiLSTM</option>
+      <option value="codebert">CodeBERT</option>
+    </select>
+    <button id="predict">Predict</button>
+  </div>
+
+  <div id="result"></div>
+
+  <h2>Chấm hàng loạt theo thư mục (ví dụ: chọn thư mục "111" hoặc "211")</h2>
+  <p>Chọn thư mục case study chứa các thư mục con là từng sinh viên (A, B, C, ...). Mỗi sinh viên có thể có nhiều file .pde lồng nhau, hệ thống sẽ tự gộp lại.</p>
+
+  <div class="row">
+    <input type="file" id="folder" webkitdirectory directory multiple />
+    <select id="folderModel">
+      <option value="svm">TF-IDF + SVM</option>
+      <option value="bilstm">BiLSTM</option>
+      <option value="codebert">CodeBERT</option>
+    </select>
+    <button id="predictFolder">Chấm cả thư mục</button>
+  </div>
+
+  <div id="folderStatus"></div>
+  <table id="folderTable" style="display:none">
+    <thead>
+      <tr><th>Case/Student</th><th>Kết quả</th><th>Xác suất gian lận</th><th>Giải thích</th></tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script>
+    const API_BASE = "http://127.0.0.1:8000";
+    const fileInput = document.getElementById("file");
+    const codeArea = document.getElementById("code");
+
+    fileInput.addEventListener("change", async () => {
+      const f = fileInput.files[0];
+      if (f) codeArea.value = await f.text();
+    });
+
+    document.getElementById("predict").addEventListener("click", async () => {
+      const model = document.getElementById("model").value;
+      const code = codeArea.value;
+      const result = document.getElementById("result");
+      result.style.display = "block";
+      result.className = "";
+      result.innerHTML = "Predicting...";
+
+      try {
+        const res = await fetch(`${API_BASE}/predict/${model}`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ code })
+        });
+        const data = await res.json();
+        const pct = (data.cheating_probability * 100).toFixed(1);
+        result.className = data.label === 1 ? "cheating" : "normal";
+        result.innerHTML = `
+          <strong>${data.label_name}</strong> — cheating probability: ${pct}%
+          <div class="bar-bg"><div class="bar-fill" style="width:${pct}%"></div></div>
+          <div class="reason">${data.explanation || ""}</div>
+        `;
+      } catch (e) {
+        result.innerHTML = "Error: " + e;
+      }
+    });
+
+    document.getElementById("predictFolder").addEventListener("click", async () => {
+      const folderInput = document.getElementById("folder");
+      const model = document.getElementById("folderModel").value;
+      const status = document.getElementById("folderStatus");
+      const table = document.getElementById("folderTable");
+      const tbody = table.querySelector("tbody");
+      tbody.innerHTML = "";
+      table.style.display = "none";
+
+      const files = Array.from(folderInput.files || []).filter(f => f.name.toLowerCase().endsWith(".pde"));
+      if (files.length === 0) {
+        status.textContent = "Chưa chọn thư mục hoặc không tìm thấy file .pde nào.";
+        return;
+      }
+
+      status.textContent = `Đang chấm ${files.length} file .pde...`;
+
+      const formData = new FormData();
+      for (const f of files) {
+        formData.append("files", f, f.webkitRelativePath || f.name);
+      }
+
+      try {
+        const res = await fetch(`${API_BASE}/predict-folder/${model}`, {
+          method: "POST",
+          body: formData
+        });
+        const data = await res.json();
+        status.textContent = `Đã chấm ${data.length} sinh viên.`;
+        table.style.display = "table";
+
+        for (const row of data) {
+          const tr = document.createElement("tr");
+          tr.className = row.label === 1 ? "cheating" : "normal";
+          const pct = (row.cheating_probability * 100).toFixed(1);
+          tr.innerHTML = `
+            <td>${row.group}</td>
+            <td class="verdict">${row.label_name}</td>
+            <td>${pct}%</td>
+            <td>${row.explanation}</td>
+          `;
+          tbody.appendChild(tr);
+        }
+      } catch (e) {
+        status.textContent = "Error: " + e;
+      }
+    });
+  </script>
+</body>
+</html>

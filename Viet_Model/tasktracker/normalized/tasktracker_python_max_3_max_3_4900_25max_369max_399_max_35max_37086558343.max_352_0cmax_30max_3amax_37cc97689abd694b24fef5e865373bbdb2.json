@@ -1,0 +1,63 @@
+{
+  "session_id": "tasktracker_python_max_3_max_3_4900_25max_369max_399_max_35max_37086558343.max_352_0cmax_30max_3amax_37cc97689abd694b24fef5e865373bbdb2",
+  "source": "tasktracker_sigcse2021",
+  "metadata": {
+    "language": "python",
+    "task": "max_3",
+    "task_status": "SOLVED",
+    "final_score": 0.0,
+    "weak_label": 0,
+    "label_reason": "large code insertion",
+    "source_file": "data\\raw\\tasktracker\\extracted\\data_google_drive_anonymized (SIGSCE 2020)\\python\\max_3\\max_3_4900_25max_369max_399_max_35max_37086558343.max_352_0cmax_30max_3amax_37cc97689abd694b24fef5e865373bbdb2.csv"
+  },
+  "events": [
+    {
+      "t": 3.187,
+      "type": "paste",
+      "text": "v1 = int(input())\nv2 = int(input())\nv3 = int(input())\nv4 = v1\nif v2 > v1:\n    v4 = v2\n    if v3 > v2:\n        v4 = v3\nif v3 > v1:\n    v4 = v3\n    print(v4)",
+      "paste_source": "unknown"
+    },
+    {
+      "t": 3.577,
+      "type": "cut",
+      "text": ")",
+      "paste_source": null
+    },
+    {
+      "t": 37.935,
+      "type": "type",
+      "text": ")",
+      "paste_source": null
+    },
+    {
+      "t": 37.935,
+      "type": "cut",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 40.513,
+      "type": "cut",
+      "text": "   ",
+      "paste_source": null
+    },
+    {
+      "t": 41.778,
+      "type": "type",
+      "text": "1",
+      "paste_source": null
+    },
+    {
+      "t": 82.917,
+      "type": "cut",
+      "text": "1",
+      "paste_source": null
+    },
+    {
+      "t": 223.674,
+      "type": "cut",
+      "text": "v1 = int(input())\nv2 = int(input())\nv3 = int(input())\nv4 = v1\nif v2 > v1:\n    v4 = v2\n    if v3 > v2:\n        v4 = v3\nif v3 > v1:\n    v4 = v3\nprint(v4)",
+      "paste_source": null
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "session_id": "tasktracker_kotlin_pies_pies_167343_1231650868_1470634919851.924_86eb98d7043486ba9d061f7af8a7449cc74d9568",
+  "source": "tasktracker_sigcse2021",
+  "metadata": {
+    "language": "kotlin",
+    "task": "pies",
+    "task_status": "",
+    "final_score": 0.0,
+    "weak_label": 0,
+    "label_reason": "low-risk trace",
+    "source_file": "data\\raw\\tasktracker\\extracted\\data_google_drive_anonymized (SIGSCE 2020)\\kotlin\\pies\\pies_167343_1231650868_1470634919851.924_86eb98d7043486ba9d061f7af8a7449cc74d9568.csv"
+  },
+  "events": [
+    {
+      "t": 48.002,
+      "type": "cut",
+      "text": "package kotlin_tasks\n\nimport java.util.*\n\nfun main() {\n    with(Scanner(System.`in`)) {\n        val main_l1_f1_v1 = nextInt()\n        val main_l1_f1_v2 = nextInt()\n        val main_l1_f1_v3 = nextInt()\n\n        println(\"${main_l1_f1_v1 * main_l1_f1_v3 + main_l1_f1_v2 * main_l1_f1_v3 / 100} ${main_l1_f1_v2 * main_l1_f1_v3 % 100}\")\n    }\n}",
+      "paste_source": null
+    }
+  ]
+}

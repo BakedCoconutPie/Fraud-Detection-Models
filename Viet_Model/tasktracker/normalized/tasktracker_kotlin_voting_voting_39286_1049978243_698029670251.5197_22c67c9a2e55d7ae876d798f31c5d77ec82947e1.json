@@ -1,0 +1,1089 @@
+{
+  "session_id": "tasktracker_kotlin_voting_voting_39286_1049978243_698029670251.5197_22c67c9a2e55d7ae876d798f31c5d77ec82947e1",
+  "source": "tasktracker_sigcse2021",
+  "metadata": {
+    "language": "kotlin",
+    "task": "voting",
+    "task_status": "SOLVED",
+    "final_score": 0.0,
+    "weak_label": 0,
+    "label_reason": "low-risk trace",
+    "source_file": "data\\raw\\tasktracker\\extracted\\data_google_drive_anonymized (SIGSCE 2020)\\kotlin\\voting\\voting_39286_1049978243_698029670251.5197_22c67c9a2e55d7ae876d798f31c5d77ec82947e1.csv"
+  },
+  "events": [
+    {
+      "t": 0.002,
+      "type": "cut",
+      "text": "main_v1",
+      "paste_source": null
+    },
+    {
+      "t": 1.471,
+      "type": "type",
+      "text": "main_v1",
+      "paste_source": null
+    },
+    {
+      "t": 1.478,
+      "type": "type",
+      "text": "    \n",
+      "paste_source": null
+    },
+    {
+      "t": 5.339,
+      "type": "type",
+      "text": "var main_v2 = readLine()!!.toInt()",
+      "paste_source": null
+    },
+    {
+      "t": 5.343,
+      "type": "type",
+      "text": "    \n",
+      "paste_source": null
+    },
+    {
+      "t": 8.708,
+      "type": "type",
+      "text": "var main_v3 = readLine()!!.toInt()",
+      "paste_source": null
+    },
+    {
+      "t": 8.71,
+      "type": "cut",
+      "text": "main_v2",
+      "paste_source": null
+    },
+    {
+      "t": 11.22,
+      "type": "type",
+      "text": "main_v2",
+      "paste_source": null
+    },
+    {
+      "t": 11.223,
+      "type": "cut",
+      "text": "main_v3",
+      "paste_source": null
+    },
+    {
+      "t": 12.293,
+      "type": "type",
+      "text": "main_v3",
+      "paste_source": null
+    },
+    {
+      "t": 12.297,
+      "type": "type",
+      "text": "    \n",
+      "paste_source": null
+    },
+    {
+      "t": 15.555,
+      "type": "type",
+      "text": "i",
+      "paste_source": null
+    },
+    {
+      "t": 15.835,
+      "type": "type",
+      "text": "f",
+      "paste_source": null
+    },
+    {
+      "t": 15.839,
+      "type": "type",
+      "text": "(",
+      "paste_source": null
+    },
+    {
+      "t": 19.078,
+      "type": "type",
+      "text": ")",
+      "paste_source": null
+    },
+    {
+      "t": 19.307,
+      "type": "type",
+      "text": "main_v1",
+      "paste_source": null
+    },
+    {
+      "t": 19.864,
+      "type": "type",
+      "text": "+",
+      "paste_source": null
+    },
+    {
+      "t": 20.204,
+      "type": "type",
+      "text": "main_v2",
+      "paste_source": null
+    },
+    {
+      "t": 20.36,
+      "type": "type",
+      "text": "+",
+      "paste_source": null
+    },
+    {
+      "t": 22.735,
+      "type": "type",
+      "text": "main_v3",
+      "paste_source": null
+    },
+    {
+      "t": 24.767,
+      "type": "type",
+      "text": ">",
+      "paste_source": null
+    },
+    {
+      "t": 25.169,
+      "type": "type",
+      "text": "=",
+      "paste_source": null
+    },
+    {
+      "t": 26.625,
+      "type": "type",
+      "text": "2",
+      "paste_source": null
+    },
+    {
+      "t": 26.916,
+      "type": "type",
+      "text": "{",
+      "paste_source": null
+    },
+    {
+      "t": 26.917,
+      "type": "type",
+      "text": "\n}",
+      "paste_source": null
+    },
+    {
+      "t": 26.921,
+      "type": "type",
+      "text": "\n",
+      "paste_source": null
+    },
+    {
+      "t": 26.922,
+      "type": "type",
+      "text": "    ",
+      "paste_source": null
+    },
+    {
+      "t": 26.923,
+      "type": "cut",
+      "text": "\n",
+      "paste_source": null
+    },
+    {
+      "t": 26.926,
+      "type": "type",
+      "text": "\n    ",
+      "paste_source": null
+    },
+    {
+      "t": 28.45,
+      "type": "type",
+      "text": "    ",
+      "paste_source": null
+    },
+    {
+      "t": 28.539,
+      "type": "type",
+      "text": "p",
+      "paste_source": null
+    },
+    {
+      "t": 28.649,
+      "type": "type",
+      "text": "r",
+      "paste_source": null
+    },
+    {
+      "t": 28.761,
+      "type": "type",
+      "text": "i",
+      "paste_source": null
+    },
+    {
+      "t": 28.906,
+      "type": "type",
+      "text": "n",
+      "paste_source": null
+    },
+    {
+      "t": 29.158,
+      "type": "type",
+      "text": "t",
+      "paste_source": null
+    },
+    {
+      "t": 29.932,
+      "type": "type",
+      "text": "l",
+      "paste_source": null
+    },
+    {
+      "t": 29.938,
+      "type": "type",
+      "text": "n",
+      "paste_source": null
+    },
+    {
+      "t": 29.957,
+      "type": "type",
+      "text": "kotlin.io.",
+      "paste_source": null
+    },
+    {
+      "t": 29.957,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 29.959,
+      "type": "cut",
+      "text": "kotlin.io.",
+      "paste_source": null
+    },
+    {
+      "t": 29.96,
+      "type": "cut",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 31.851,
+      "type": "type",
+      "text": "()",
+      "paste_source": null
+    },
+    {
+      "t": 33.189,
+      "type": "type",
+      "text": "1",
+      "paste_source": null
+    },
+    {
+      "t": 33.655,
+      "type": "type",
+      "text": ";",
+      "paste_source": null
+    },
+    {
+      "t": 34.703,
+      "type": "cut",
+      "text": ";",
+      "paste_source": null
+    },
+    {
+      "t": 34.83,
+      "type": "type",
+      "text": "e",
+      "paste_source": null
+    },
+    {
+      "t": 34.911,
+      "type": "type",
+      "text": "l",
+      "paste_source": null
+    },
+    {
+      "t": 35.005,
+      "type": "type",
+      "text": "s",
+      "paste_source": null
+    },
+    {
+      "t": 35.338,
+      "type": "type",
+      "text": "e",
+      "paste_source": null
+    },
+    {
+      "t": 35.676,
+      "type": "type",
+      "text": "{",
+      "paste_source": null
+    },
+    {
+      "t": 35.677,
+      "type": "type",
+      "text": "\n}",
+      "paste_source": null
+    },
+    {
+      "t": 35.681,
+      "type": "type",
+      "text": "\n",
+      "paste_source": null
+    },
+    {
+      "t": 35.682,
+      "type": "type",
+      "text": "    ",
+      "paste_source": null
+    },
+    {
+      "t": 35.683,
+      "type": "cut",
+      "text": "\n",
+      "paste_source": null
+    },
+    {
+      "t": 35.686,
+      "type": "type",
+      "text": "\n    ",
+      "paste_source": null
+    },
+    {
+      "t": 36.784,
+      "type": "type",
+      "text": "    ",
+      "paste_source": null
+    },
+    {
+      "t": 36.9,
+      "type": "type",
+      "text": "p",
+      "paste_source": null
+    },
+    {
+      "t": 37.039,
+      "type": "type",
+      "text": "r",
+      "paste_source": null
+    },
+    {
+      "t": 37.095,
+      "type": "type",
+      "text": "i",
+      "paste_source": null
+    },
+    {
+      "t": 37.246,
+      "type": "type",
+      "text": "n",
+      "paste_source": null
+    },
+    {
+      "t": 38.334,
+      "type": "type",
+      "text": "t",
+      "paste_source": null
+    },
+    {
+      "t": 38.64,
+      "type": "type",
+      "text": "l",
+      "paste_source": null
+    },
+    {
+      "t": 38.986,
+      "type": "type",
+      "text": "n",
+      "paste_source": null
+    },
+    {
+      "t": 39.016,
+      "type": "type",
+      "text": "kotlin.io.",
+      "paste_source": null
+    },
+    {
+      "t": 39.016,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 39.018,
+      "type": "cut",
+      "text": "kotlin.io.",
+      "paste_source": null
+    },
+    {
+      "t": 39.02,
+      "type": "cut",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 40.289,
+      "type": "type",
+      "text": "()",
+      "paste_source": null
+    },
+    {
+      "t": 73.084,
+      "type": "type",
+      "text": "0",
+      "paste_source": null
+    },
+    {
+      "t": 73.086,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 73.087,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 73.088,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 73.089,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 73.089,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 73.09,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 73.091,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 73.091,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 73.092,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 137.03,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 137.037,
+      "type": "type",
+      "text": "\n",
+      "paste_source": null
+    },
+    {
+      "t": 146.353,
+      "type": "type",
+      "text": "    ",
+      "paste_source": null
+    },
+    {
+      "t": 146.467,
+      "type": "type",
+      "text": "v",
+      "paste_source": null
+    },
+    {
+      "t": 146.566,
+      "type": "type",
+      "text": "a",
+      "paste_source": null
+    },
+    {
+      "t": 146.893,
+      "type": "cut",
+      "text": "\n    va",
+      "paste_source": null
+    },
+    {
+      "t": 146.893,
+      "type": "cut",
+      "text": " main_v1 = readLine()!!.toInt()",
+      "paste_source": null
+    },
+    {
+      "t": 146.893,
+      "type": "cut",
+      "text": "if",
+      "paste_source": null
+    },
+    {
+      "t": 146.893,
+      "type": "type",
+      "text": "var",
+      "paste_source": null
+    },
+    {
+      "t": 146.893,
+      "type": "cut",
+      "text": "(",
+      "paste_source": null
+    },
+    {
+      "t": 146.893,
+      "type": "cut",
+      "text": "1",
+      "paste_source": null
+    },
+    {
+      "t": 146.893,
+      "type": "type",
+      "text": "4",
+      "paste_source": null
+    },
+    {
+      "t": 146.893,
+      "type": "cut",
+      "text": "+",
+      "paste_source": null
+    },
+    {
+      "t": 146.893,
+      "type": "type",
+      "text": "=",
+      "paste_source": null
+    },
+    {
+      "t": 146.893,
+      "type": "type",
+      "text": "readLine()!!.toInt()\n    if (",
+      "paste_source": null
+    },
+    {
+      "t": 146.893,
+      "type": "type",
+      "text": " + main_v4",
+      "paste_source": null
+    },
+    {
+      "t": 148.276,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 148.398,
+      "type": "type",
+      "text": "main_v1",
+      "paste_source": null
+    },
+    {
+      "t": 149.289,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 149.371,
+      "type": "type",
+      "text": "=",
+      "paste_source": null
+    },
+    {
+      "t": 150.751,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 150.808,
+      "type": "type",
+      "text": "r",
+      "paste_source": null
+    },
+    {
+      "t": 151.053,
+      "type": "type",
+      "text": "e",
+      "paste_source": null
+    },
+    {
+      "t": 151.263,
+      "type": "type",
+      "text": "a",
+      "paste_source": null
+    },
+    {
+      "t": 151.628,
+      "type": "type",
+      "text": "d",
+      "paste_source": null
+    },
+    {
+      "t": 151.636,
+      "type": "type",
+      "text": "Line",
+      "paste_source": null
+    },
+    {
+      "t": 151.651,
+      "type": "type",
+      "text": "kotlin.io.",
+      "paste_source": null
+    },
+    {
+      "t": 151.651,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 151.653,
+      "type": "cut",
+      "text": "kotlin.io.",
+      "paste_source": null
+    },
+    {
+      "t": 151.656,
+      "type": "cut",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 152.456,
+      "type": "type",
+      "text": "()",
+      "paste_source": null
+    },
+    {
+      "t": 152.462,
+      "type": "type",
+      "text": "\n    ",
+      "paste_source": null
+    },
+    {
+      "t": 153.836,
+      "type": "type",
+      "text": "v",
+      "paste_source": null
+    },
+    {
+      "t": 153.89,
+      "type": "type",
+      "text": "a",
+      "paste_source": null
+    },
+    {
+      "t": 154.085,
+      "type": "cut",
+      "text": "\n    va",
+      "paste_source": null
+    },
+    {
+      "t": 154.085,
+      "type": "cut",
+      "text": " main_v2 = readLine()!!.toInt()",
+      "paste_source": null
+    },
+    {
+      "t": 154.085,
+      "type": "cut",
+      "text": "if",
+      "paste_source": null
+    },
+    {
+      "t": 154.085,
+      "type": "type",
+      "text": "var",
+      "paste_source": null
+    },
+    {
+      "t": 154.085,
+      "type": "cut",
+      "text": "(",
+      "paste_source": null
+    },
+    {
+      "t": 154.085,
+      "type": "cut",
+      "text": "2",
+      "paste_source": null
+    },
+    {
+      "t": 154.085,
+      "type": "type",
+      "text": "5",
+      "paste_source": null
+    },
+    {
+      "t": 154.085,
+      "type": "cut",
+      "text": "+",
+      "paste_source": null
+    },
+    {
+      "t": 154.085,
+      "type": "type",
+      "text": "=",
+      "paste_source": null
+    },
+    {
+      "t": 154.085,
+      "type": "type",
+      "text": "readLine()!!.toInt()\n    if (",
+      "paste_source": null
+    },
+    {
+      "t": 154.085,
+      "type": "type",
+      "text": " + main_v5",
+      "paste_source": null
+    },
+    {
+      "t": 154.322,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 154.476,
+      "type": "type",
+      "text": "main_v2",
+      "paste_source": null
+    },
+    {
+      "t": 154.997,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 155.131,
+      "type": "type",
+      "text": "=",
+      "paste_source": null
+    },
+    {
+      "t": 157.039,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 157.309,
+      "type": "type",
+      "text": "s",
+      "paste_source": null
+    },
+    {
+      "t": 157.507,
+      "type": "type",
+      "text": "t",
+      "paste_source": null
+    },
+    {
+      "t": 158.183,
+      "type": "cut",
+      "text": "st",
+      "paste_source": null
+    },
+    {
+      "t": 158.183,
+      "type": "type",
+      "text": "main_v1",
+      "paste_source": null
+    },
+    {
+      "t": 160.152,
+      "type": "type",
+      "text": ".",
+      "paste_source": null
+    },
+    {
+      "t": 160.25,
+      "type": "type",
+      "text": "s",
+      "paste_source": null
+    },
+    {
+      "t": 160.631,
+      "type": "type",
+      "text": "p",
+      "paste_source": null
+    },
+    {
+      "t": 161.243,
+      "type": "type",
+      "text": "l",
+      "paste_source": null
+    },
+    {
+      "t": 161.251,
+      "type": "type",
+      "text": "it",
+      "paste_source": null
+    },
+    {
+      "t": 162.185,
+      "type": "type",
+      "text": "()",
+      "paste_source": null
+    },
+    {
+      "t": 162.19,
+      "type": "type",
+      "text": "\")\n    var a = readLine()!!.toInt(",
+      "paste_source": null
+    },
+    {
+      "t": 162.19,
+      "type": "cut",
+      "text": "var main_v5 = readLine()!!.toInt()\n    ",
+      "paste_source": null
+    },
+    {
+      "t": 162.19,
+      "type": "type",
+      "text": "a + ",
+      "paste_source": null
+    },
+    {
+      "t": 162.19,
+      "type": "cut",
+      "text": " + main_v5",
+      "paste_source": null
+    },
+    {
+      "t": 162.701,
+      "type": "cut",
+      "text": ")\n    var a = readLine()!!.toInt(",
+      "paste_source": null
+    },
+    {
+      "t": 162.701,
+      "type": "type",
+      "text": "\"",
+      "paste_source": null
+    },
+    {
+      "t": 162.701,
+      "type": "type",
+      "text": "var main_v5 = readLine()!!.toInt()\n    ",
+      "paste_source": null
+    },
+    {
+      "t": 162.701,
+      "type": "cut",
+      "text": "a + ",
+      "paste_source": null
+    },
+    {
+      "t": 162.701,
+      "type": "type",
+      "text": " + main_v5",
+      "paste_source": null
+    },
+    {
+      "t": 171.23,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 171.409,
+      "type": "type",
+      "text": "!",
+      "paste_source": null
+    },
+    {
+      "t": 174.826,
+      "type": "type",
+      "text": "!",
+      "paste_source": null
+    },
+    {
+      "t": 174.832,
+      "type": "type",
+      "text": "\n    ",
+      "paste_source": null
+    },
+    {
+      "t": 180.235,
+      "type": "cut",
+      "text": "    ",
+      "paste_source": null
+    },
+    {
+      "t": 180.236,
+      "type": "cut",
+      "text": "\n",
+      "paste_source": null
+    },
+    {
+      "t": 186.158,
+      "type": "cut",
+      "text": "readLine()!!.toInt()",
+      "paste_source": null
+    },
+    {
+      "t": 186.303,
+      "type": "type",
+      "text": "main_v2",
+      "paste_source": null
+    },
+    {
+      "t": 186.304,
+      "type": "type",
+      "text": "[",
+      "paste_source": null
+    },
+    {
+      "t": 186.485,
+      "type": "type",
+      "text": "]",
+      "paste_source": null
+    },
+    {
+      "t": 187.217,
+      "type": "type",
+      "text": "0",
+      "paste_source": null
+    },
+    {
+      "t": 188.448,
+      "type": "type",
+      "text": ".",
+      "paste_source": null
+    },
+    {
+      "t": 188.52,
+      "type": "type",
+      "text": "t",
+      "paste_source": null
+    },
+    {
+      "t": 189.642,
+      "type": "type",
+      "text": "o",
+      "paste_source": null
+    },
+    {
+      "t": 190.046,
+      "type": "type",
+      "text": "O",
+      "paste_source": null
+    },
+    {
+      "t": 190.291,
+      "type": "cut",
+      "text": "O",
+      "paste_source": null
+    },
+    {
+      "t": 192.683,
+      "type": "type",
+      "text": "I",
+      "paste_source": null
+    },
+    {
+      "t": 192.693,
+      "type": "type",
+      "text": "nt",
+      "paste_source": null
+    },
+    {
+      "t": 200.326,
+      "type": "type",
+      "text": "()",
+      "paste_source": null
+    },
+    {
+      "t": 203.338,
+      "type": "cut",
+      "text": "readLine()!!.toInt()",
+      "paste_source": null
+    },
+    {
+      "t": 204.17,
+      "type": "cut",
+      "text": "re",
+      "paste_source": null
+    },
+    {
+      "t": 204.17,
+      "type": "type",
+      "text": "m",
+      "paste_source": null
+    },
+    {
+      "t": 204.17,
+      "type": "cut",
+      "text": "dL",
+      "paste_source": null
+    },
+    {
+      "t": 204.17,
+      "type": "cut",
+      "text": "e()!!",
+      "paste_source": null
+    },
+    {
+      "t": 204.17,
+      "type": "type",
+      "text": "_v2[0]",
+      "paste_source": null
+    },
+    {
+      "t": 205.957,
+      "type": "type",
+      "text": "main_v2[0].toInt()",
+      "paste_source": null
+    },
+    {
+      "t": 205.958,
+      "type": "cut",
+      "text": "0",
+      "paste_source": null
+    },
+    {
+      "t": 206.717,
+      "type": "type",
+      "text": "1",
+      "paste_source": null
+    },
+    {
+      "t": 206.801,
+      "type": "cut",
+      "text": "0",
+      "paste_source": null
+    },
+    {
+      "t": 256.793,
+      "type": "type",
+      "text": "2",
+      "paste_source": null
+    },
+    {
+      "t": 256.796,
+      "type": "cut",
+      "text": "    var main_v1 = readLine()!!\n    var main_v2 = main_v1.split(\" \")\n    var main_v3 = main_v2[0].toInt()\n    var main_v4 = main_v2[1].toInt()\n    var main_v5 = main_v2[2].toInt()\n    if (main_v3 + main_v4 + main_v5 >= 2) {\n        println(1)\n    ",
+      "paste_source": null
+    },
+    {
+      "t": 256.796,
+      "type": "cut",
+      "text": " else {\n        println(0)\n    }\n}",
+      "paste_source": null
+    }
+  ]
+}

@@ -1,0 +1,153 @@
+{
+  "session_id": "tasktracker_java_max_3_max_3_46086_1109732621_1202658003874.5593_ca1fd0395e652920b1735544eeb8630bcbe43625",
+  "source": "tasktracker_sigcse2021",
+  "metadata": {
+    "language": "java",
+    "task": "max_3",
+    "task_status": "",
+    "final_score": 0.2708333333333333,
+    "weak_label": 0,
+    "label_reason": "large code insertion",
+    "source_file": "data\\raw\\tasktracker\\extracted\\data_google_drive_anonymized (SIGSCE 2020)\\java\\max_3\\max_3_46086_1109732621_1202658003874.5593_ca1fd0395e652920b1735544eeb8630bcbe43625.csv"
+  },
+  "events": [
+    {
+      "t": 0.317,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 1.27,
+      "type": "type",
+      "text": "\n",
+      "paste_source": null
+    },
+    {
+      "t": 1.27,
+      "type": "type",
+      "text": "       main_v5",
+      "paste_source": null
+    },
+    {
+      "t": 2.162,
+      "type": "cut",
+      "text": "\n",
+      "paste_source": null
+    },
+    {
+      "t": 2.162,
+      "type": "cut",
+      "text": "       main_v5",
+      "paste_source": null
+    },
+    {
+      "t": 2.162,
+      "type": "type",
+      "text": "el",
+      "paste_source": null
+    },
+    {
+      "t": 2.224,
+      "type": "type",
+      "text": "s",
+      "paste_source": null
+    },
+    {
+      "t": 2.885,
+      "type": "type",
+      "text": "e",
+      "paste_source": null
+    },
+    {
+      "t": 3.68,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 4.183,
+      "type": "type",
+      "text": "{",
+      "paste_source": null
+    },
+    {
+      "t": 4.187,
+      "type": "type",
+      "text": "}\n",
+      "paste_source": null
+    },
+    {
+      "t": 4.317,
+      "type": "type",
+      "text": "\n",
+      "paste_source": null
+    },
+    {
+      "t": 4.322,
+      "type": "type",
+      "text": "        ",
+      "paste_source": null
+    },
+    {
+      "t": 4.326,
+      "type": "cut",
+      "text": "\n",
+      "paste_source": null
+    },
+    {
+      "t": 4.375,
+      "type": "type",
+      "text": "\n        ",
+      "paste_source": null
+    },
+    {
+      "t": 12.84,
+      "type": "type",
+      "text": "    ",
+      "paste_source": null
+    },
+    {
+      "t": 17.674,
+      "type": "paste",
+      "text": "if ((main_v2 - main_v3)<=0){\n                System.out.println(main_v3);\n            } else {\n                System.out.println(main_v2);\n            }",
+      "paste_source": "unknown"
+    },
+    {
+      "t": 17.932,
+      "type": "cut",
+      "text": "main_v2 ",
+      "paste_source": null
+    },
+    {
+      "t": 17.932,
+      "type": "cut",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 26.904,
+      "type": "type",
+      "text": "main_v1 ",
+      "paste_source": null
+    },
+    {
+      "t": 26.904,
+      "type": "type",
+      "text": " ",
+      "paste_source": null
+    },
+    {
+      "t": 28.638,
+      "type": "cut",
+      "text": "main_v2",
+      "paste_source": null
+    },
+    {
+      "t": 138.443,
+      "type": "type",
+      "text": "main_v1",
+      "paste_source": null
+    }
+  ]
+}

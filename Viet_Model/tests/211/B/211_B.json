@@ -1,0 +1,253 @@
+{
+ "session_id": "211/B",
+ "source": "pastetrace_sp2023",
+ "label": 1,
+ "events": [
+  {
+   "t": 0.0,
+   "type": "paste",
+   "text": "void setup(){\n            //setup code here   \n        }\n\n        void draw(){\n             //draw code here   \n        }",
+   "paste_source": "external"
+  },
+  {
+   "t": 11.1,
+   "type": "type",
+   "text": "voud",
+   "paste_source": null
+  },
+  {
+   "t": 12.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 12.2,
+   "type": "type",
+   "text": "\\bid setup()\n{\n    ",
+   "paste_source": null
+  },
+  {
+   "t": 19.3,
+   "type": "type",
+   "text": "\n    ",
+   "paste_source": null
+  },
+  {
+   "t": 19.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 19.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 20.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 20.6,
+   "type": "type",
+   "text": "\\b\\\\b[20-20]}\n\nvoid draw()",
+   "paste_source": null
+  },
+  {
+   "t": 27.8,
+   "type": "type",
+   "text": "\n{\n    \n    ",
+   "paste_source": null
+  },
+  {
+   "t": 30.0,
+   "type": "type",
+   "text": "\\\\b[42-46]}",
+   "paste_source": null
+  },
+  {
+   "t": 163.2,
+   "type": "type",
+   "text": "sie",
+   "paste_source": null
+  },
+  {
+   "t": 163.8,
+   "type": "type",
+   "text": "\\bze(500,500);",
+   "paste_source": null
+  },
+  {
+   "t": 189.0,
+   "type": "type",
+   "text": "a",
+   "paste_source": null
+  },
+  {
+   "t": 189.4,
+   "type": "type",
+   "text": "\\bbackground(255,0,0",
+   "paste_source": null
+  },
+  {
+   "t": 194.9,
+   "type": "type",
+   "text": "\\b255);",
+   "paste_source": null
+  },
+  {
+   "t": 207.6,
+   "type": "type",
+   "text": "\\b255",
+   "paste_source": null
+  },
+  {
+   "t": 229.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 229.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 229.7,
+   "type": "type",
+   "text": "\\b178",
+   "paste_source": null
+  },
+  {
+   "t": 234.4,
+   "type": "type",
+   "text": "\\b5",
+   "paste_source": null
+  },
+  {
+   "t": 236.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 236.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 236.9,
+   "type": "type",
+   "text": "\\b255",
+   "paste_source": null
+  },
+  {
+   "t": 239.4,
+   "type": "type",
+   "text": "\n    ",
+   "paste_source": null
+  },
+  {
+   "t": 240.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 240.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 240.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 241.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 957.5,
+   "type": "paste",
+   "text": " size(800, 800);\n  background(0);\n  noStroke();\n  colorMode(HSB, 1);",
+   "paste_source": "external"
+  },
+  {
+   "t": 985.4,
+   "type": "type",
+   "text": "\n\n",
+   "paste_source": null
+  },
+  {
+   "t": 985.8,
+   "type": "paste",
+   "text": "void keyPressed() {\n  if (key == ' ') {\n    redraw();\n  }\n}",
+   "paste_source": "external"
+  },
+  {
+   "t": 993.1,
+   "type": "paste",
+   "text": "void draw() {\n  float zoom = 1.5;\n  int maxIterations = 100;\n  loadPixels();\n  for (int x = 0; x < width; x++) {\n    for (int y = 0; y < height; y++) {\n      float a = map(x, 0, width, -zoom, zoom);\n      float b = map(y, 0, height, -zoom, zoom);\n      float ca = a;\n      float cb = b;\n      int n = 0;\n      while (n < maxIterations) {\n        float aa = a * a - b * b;\n        float bb = 2 * a * b;\n        a = aa + ca;\n        b = bb + cb;\n        if (abs(a + b) > 16) {\n          break;\n        }\n        n++;\n      }\n      if (n == maxIterations) {\n        pixels[x + y * width] = color(0);\n      } else {\n        float hu = map(n, 0, maxIterations, 0, 1);\n        hu = sqrt(hu);\n        pixels[x + y * width] = color(hu, 1, 1);\n      }\n    }\n  }\n  updatePixels();\n}",
+   "paste_source": "external"
+  },
+  {
+   "t": 1082.3,
+   "type": "paste",
+   "text": "float minVal = -2.5;\nfloat maxVal = 2.5;\nfloat range = maxVal - minVal;\n\nvoid setup() {\n  size(800, 800);\n  colorMode(HSB, 1);\n  noStroke();\n}\n\nvoid draw() {\n  loadPixels();\n\n  for (int x = 0; x < width; x++) {\n    for (int y = 0; y < height; y++) {\n      float a = map(x, 0, width, minVal, maxVal);\n      float b = map(y, 0, height, minVal, maxVal);\n      float ca = a;\n      float cb = b;\n      int n = 0;\n\n      while (n < 100) {\n        float aa = a * a - b * b;\n        float bb = 2 * a * b;\n        a = aa + ca;\n        b = bb + cb;\n        if (a * a + b * b > 16) {\n          break;\n        }\n        n++;\n      }\n\n      if (n == 100) {\n        pixels[x + y * width] = color(0, 0, 0);\n      } else {\n        float hue = map(n, 0, 100, 0, 1);\n        pixels[x + y * width] = color(hue, 1, 1);\n      }\n    }\n  }\n\n  updatePixels();\n}",
+   "paste_source": "external"
+  },
+  {
+   "t": 1105.6,
+   "type": "type",
+   "text": "\n  draw)_",
+   "paste_source": null
+  },
+  {
+   "t": 1107.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1107.6,
+   "type": "type",
+   "text": "\\b();",
+   "paste_source": null
+  },
+  {
+   "t": 1138.9,
+   "type": "type",
+   "text": "\\\\b[143-150]",
+   "paste_source": null
+  },
+  {
+   "t": 1538.5,
+   "type": "paste",
+   "text": "/**\n *  Mandelbrot set with hardcoded (start) zoom value using naive successive refinements.\n *\n *  Possible optimizations:\n *   . the topright corner of every block is already done and\n *     does not need to be recalculated.\n *\n *  Left click:the zoom is multiplied by zoomMult and the fractal is redrawn.\n *  Right click:reset the zoom.\n */\n\nint pixSize = 500;\nfloat rmin=-2,\n            imin=-1.3,\n            side=2.6;\nfloat rmax=rmin+side,\n            imax=imin+side;\n\nfloat init_rmin = rmin;\nfloat init_imin = imin;\nfloat init_side = side;\n\nint maxIter = 1500;\nint logmax = (int)Math.ceil(log(maxIter));\n\nfloat zoom,\n            lastzoom=0,\n            init_zoom;\nfloat zoomMult = 3;\n\nint[\n                \n            ]blocksizes ={\n                16,\n                8,\n                4,\n                2,\n                1\n            };\nint b=0,\n            bsize = blocksizes[\n                b\n            ];\nboolean done = false;\n\nvoid settings(){\n                \n\n  size( pixSize,\n                pixSize );\n\n            }\n\nvoid setup(){\n                \n\n  colorMode( HSB,\n                logmax,\n                255,\n                255 );\n\n  zoom = width/(rmax-rmin);\n  init_zoom = zoom;\n  if (height/(imax-imin)>zoom){\n                    \n    zoom = height/(imax-imin);\n\n                }\n  noStroke();\n\n            }\n\nint mandel(int x,\n            int y){\n                \n  float zr,\n                zi,\n                cr,\n                ci,\n                zrtmp;\n  int it;\n\n  ci = zi = imin+y/zoom;\n  cr = zr = rmin+x/zoom;\n\n  for ( it=0; it<maxIter && (zr*zr+zi*zi<4f); it++ ){\n                    \n    zrtmp = zr*zr-zi*zi + cr;\n    zi = 2*zr*zi + ci;\n    zr = zrtmp;\n\n                }\n  \n  return it;\n\n            }\n\nvoid draw(){\n                \n\n  loadPixels();\n\n  if ( lastzoom == zoom && done ) return;\n  println(lastzoom+\",\"+zoom+\",\"+bsize);\n\n  background(0);\n  int start = millis();\n\n  for ( int j=0; j<height; j+=bsize ) {\n\n    for ( int i=0; i<width; i+=bsize ) {\n\n      int it = mandel(i,j);\n      color col = (it==maxIter)? color(0): color( log(it), 255, 255 );\n\n      if (bsize == 1) {\n        pixels[j*width+i] = col;\n      } else {\n        fill(col);\n        rect(i, j, i+bsize, j+bsize);\n      }\n    }\n  }\n\n  if ( b>=blocksizes.length) {\n    updatePixels();\n    b=0;\n    done = true;\n  } else bsize = blocksizes[b++];\n\n  int end = millis();\n  println( (end-start)+ \" msec (\" + \n    (pixSize*pixSize*1000/(end-start)) + \" pixels/sec)\" );\n\n  lastzoom = zoom;\n}\n\nvoid mousePressed() {\n\n  if ( mouseButton == LEFT ) {\n    float pressR, pressI;\n    pressR = rmin + mouseX/zoom;\n    pressI = imin + mouseY/zoom;\n    println( \"Zoom requested at (\"+pressR+\" + \" + pressI + \"i )\" );\n\n    zoom*= zoomMult;\n    float rspread = width/zoom;\n    float ispread = height/zoom;\n\n    rmin = pressR-rspread/2;\n    rmax = rmin + rspread;\n\n    imin = pressI-ispread/2;\n    imax = imin + ispread;\n    b = 0;\n    bsize = blocksizes[0];\n    done = false;\n  } else {\n\n    // Reset\n    zoom = init_zoom;\n    rmin = init_rmin;\n    imin = init_imin;\n\n    b = 0;\n    bsize = blocksizes[0];\n    done = false;\n  }\n}",
+   "paste_source": "external"
+  },
+  {
+   "t": 1591.2,
+   "type": "paste",
+   "text": "/**\n *  Mandelbrot set with hardcoded (start) zoom value using naive successive refinements.\n *\n *  Possible optimizations:\n *   . the topright corner of every block is already done and\n *     does not need to be recalculated.\n *\n *  Left click: the zoom is multiplied by zoomMult and the fractal is redrawn.\n *  Right click: reset the zoom.\n */\n\nint pixSize = 500;\nfloat rmin=-2, imin=-1.3, side=2.6;\nfloat rmax=rmin+side, imax=imin+side;\n\nfloat init_rmin = rmin;\nfloat init_imin = imin;\nfloat init_side = side;\n\nint maxIter = 1500;\nint logmax = (int)Math.ceil(log(maxIter));\n\nfloat zoom, lastzoom=0, init_zoom;\nfloat zoomMult = 3;\n\nint[] blocksizes = { 16, 8, 4, 2, 1 };\nint b=0, bsize = blocksizes[b];\nboolean done = false;\n\nvoid settings() {\n\n  size( pixSize, pixSize );\n}\n\nvoid setup() {\n\n  colorMode( HSB, logmax, 255, 255 );\n\n  zoom = width/(rmax-rmin);\n  init_zoom = zoom;\n  if (height/(imax-imin)>zoom) {\n    zoom = height/(imax-imin);\n  }\n  noStroke();\n}\n\nint mandel(int x, int y) {\n  float zr, zi, cr, ci, zrtmp;\n  int it;\n\n  ci = zi = imin+y/zoom;\n  cr = zr = rmin+x/zoom;\n\n  for ( it=0; it<maxIter && (zr*zr+zi*zi<4f); it++ ) {\n    zrtmp = zr*zr-zi*zi + cr;\n    zi = 2*zr*zi + ci;\n    zr = zrtmp;\n  }\n  \n  return it;\n}\n\nvoid draw() {\n\n  loadPixels();\n\n  if ( lastzoom == zoom && done ) return;\n  println(lastzoom+\",\"+zoom+\",\"+bsize);\n\n  background(0);\n  int start = millis();\n\n  for ( int j=0; j<height; j+=bsize ) {\n\n    for ( int i=0; i<width; i+=bsize ) {\n\n      int it = mandel(i,j);\n      color col = (it==maxIter)? color(0): color( log(it), 255, 255 );\n\n      if (bsize == 1) {\n        pixels[j*width+i] = col;\n      } else {\n        fill(col);\n        rect(i, j, i+bsize, j+bsize);\n      }\n    }\n  }\n\n  if ( b>=blocksizes.length) {\n    updatePixels();\n    b=0;\n    done = true;\n  } else bsize = blocksizes[b++];\n\n  int end = millis();\n  println( (end-start)+ \" msec (\" + \n    (pixSize*pixSize*1000/(end-start)) + \" pixels/sec)\" );\n\n  lastzoom = zoom;\n}\n\nvoid mousePressed() {\n\n  if ( mouseButton == LEFT ) {\n    float pressR, pressI;\n    pressR = rmin + mouseX/zoom;\n    pressI = imin + mouseY/zoom;\n    println( \"Zoom requested at (\"+pressR+\" + \" + pressI + \"i )\" );\n\n    zoom*= zoomMult;\n    float rspread = width/zoom;\n    float ispread = height/zoom;\n\n    rmin = pressR-rspread/2;\n    rmax = rmin + rspread;\n\n    imin = pressI-ispread/2;\n    imax = imin + ispread;\n    b = 0;\n    bsize = blocksizes[0];\n    done = false;\n  } else {\n\n    // Reset\n    zoom = init_zoom;\n    rmin = init_rmin;\n    imin = init_imin;\n\n    b = 0;\n    bsize = blocksizes[0];\n    done = false;\n  }\n}",
+   "paste_source": "external"
+  },
+  {
+   "t": 1618.3,
+   "type": "paste",
+   "text": "/**\n *  Mandelbrot set with hardcoded (start) zoom value using naive successive refinements.\n *\n *  Possible optimizations:\n *   . the topright corner of every block is already done and\n *     does not need to be recalculated.\n *\n *  Left click: the zoom is multiplied by zoomMult and the fractal is redrawn.\n *  Right click: reset the zoom.\n */\n\nint pixSize = 500;\nfloat rmin=-2, imin=-1.3, side=2.6;\nfloat rmax=rmin+side, imax=imin+side;\n\nfloat init_rmin = rmin;\nfloat init_imin = imin;\nfloat init_side = side;\n\nint maxIter = 1500;\nint logmax = (int)Math.ceil(log(maxIter));\n\nfloat zoom, lastzoom=0, init_zoom;\nfloat zoomMult = 3;\n\nint[] blocksizes = { 16, 8, 4, 2, 1 };\nint b=0, bsize = blocksizes[b];\nboolean done = false;\n\nvoid settings() {\n\n  size( pixSize, pixSize );\n}\n\nvoid setup() {\n\n  colorMode( HSB, logmax, 180, 1000 );\n\n  zoom = width/(rmax-rmin);\n  init_zoom = zoom;\n  if (height/(imax-imin)>zoom) {\n    zoom = height/(imax-imin);\n  }\n  noStroke();\n}\n\nvoid draw() {\n\n  loadPixels();\n\n  if ( lastzoom == zoom && done ) return;\n  println(lastzoom+\",\"+zoom+\",\"+bsize);\n\n  background(0, 0, -1);\n  int start = millis();\n\n  float zr, zi, cr, ci, zrtmp;\n\n  int it;\n\n  for ( int j=0; j<height; j+=bsize ) {\n\n    for ( int i=0; i<width; i+=bsize ) {\n\n      ci = zi = imin+j/zoom;\n      cr = zr = rmin+i/zoom;\n      if (zr*zr+zi*zi>4f) continue;\n\n      for ( it=0; it<maxIter; it++ ) {\n        zrtmp = zr*zr-zi*zi + cr;\n        zi = 2*zr*zi + ci;\n        zr = zrtmp;\n\n        if (zr*zr+zi*zi>4f) break;\n      }\n\n      color col;\n      if (it==maxIter) col = color(0, 0, -1);\n      else {\n\n        float rad = sqrt(zr*zr+zi*zi);\n        float alfa = acos(zr/rad)*180f/PI;\n\n        int angle = (int)(Math.round(alfa));\n        int rad1000 = (int)(1000f*rad)-2000;\n        int logit = Math.round(log(it));\n\n        col = color( logit, angle, rad1000 );\n      }\n\n      if (bsize == 1) {\n        pixels[j*width+i] = col;\n      } else {\n        fill(col);\n        rect(i, j, i+bsize, j+bsize);\n      }\n    }\n  }\n\n  if ( b>=blocksizes.length) {\n    updatePixels();\n    b=0;\n    done = true;\n  } else bsize = blocksizes[b++];\n\n  //saveFrame( \"BuddhaImg_iter-###.tif\" );\n\n  int end = millis();\n  println( (end-start)+ \" msec (\" + \n    (pixSize*pixSize*1000/(end-start)) + \" pixels/sec)\" );\n\n  lastzoom = zoom;\n}\n\nvoid mousePressed() {\n\n  if ( mouseButton == LEFT ) {\n    float pressR, pressI;\n    pressR = rmin + mouseX/zoom;\n    pressI = imin + mouseY/zoom;\n    println( \"Zoom requested at (\"+pressR+\" + \" + pressI + \"i )\" );\n\n    zoom*= zoomMult;\n    float rspread = width/zoom;\n    float ispread = height/zoom;\n\n    rmin = pressR-rspread/2;\n    rmax = rmin + rspread;\n\n    imin = pressI-ispread/2;\n    imax = imin + ispread;\n    b = 0;\n    bsize = blocksizes[0];\n    done = false;\n  } else {\n\n    // Reset\n    zoom = init_zoom;\n    rmin = init_rmin;\n    imin = init_imin;\n\n    b = 0;\n    bsize = blocksizes[0];\n    done = false;\n  }\n}",
+   "paste_source": "external"
+  }
+ ]
+}

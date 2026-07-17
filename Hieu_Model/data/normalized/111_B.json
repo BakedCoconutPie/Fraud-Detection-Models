@@ -1,0 +1,3529 @@
+{
+ "session_id": "111/B",
+ "source": "pastetrace_sp2023",
+ "label": 0,
+ "events": [
+  {
+   "t": 0.0,
+   "type": "type",
+   "text": "public void",
+   "paste_source": null
+  },
+  {
+   "t": 3.7,
+   "type": "type",
+   "text": "class Shape {\n    \n    \n    \n    ",
+   "paste_source": null
+  },
+  {
+   "t": 11.9,
+   "type": "type",
+   "text": "\\\\\b[36-40]}",
+   "paste_source": null
+  },
+  {
+   "t": 15.7,
+   "type": "type",
+   "text": "float x;\n    float y;\n    \n    ",
+   "paste_source": null
+  },
+  {
+   "t": 25.3,
+   "type": "type",
+   "text": "void ",
+   "paste_source": null
+  },
+  {
+   "t": 29.3,
+   "type": "type",
+   "text": "position",
+   "paste_source": null
+  },
+  {
+   "t": 109.4,
+   "type": "type",
+   "text": "\\\\\b[0-6]\\d",
+   "paste_source": null
+  },
+  {
+   "t": 119.1,
+   "type": "type",
+   "text": "Ball",
+   "paste_source": null
+  },
+  {
+   "t": 122.1,
+   "type": "type",
+   "text": "Shape",
+   "paste_source": null
+  },
+  {
+   "t": 123.9,
+   "type": "type",
+   "text": "void",
+   "paste_source": null
+  },
+  {
+   "t": 125.3,
+   "type": "type",
+   "text": "S",
+   "paste_source": null
+  },
+  {
+   "t": 125.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 166.4,
+   "type": "type",
+   "text": "abstract ",
+   "paste_source": null
+  },
+  {
+   "t": 175.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 176.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 176.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 176.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 176.7,
+   "type": "type",
+   "text": "\\bfloat vx;\n    float",
+   "paste_source": null
+  },
+  {
+   "t": 185.5,
+   "type": "type",
+   "text": " vy;\n    \n    ",
+   "paste_source": null
+  },
+  {
+   "t": 189.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 189.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 190.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 190.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 190.5,
+   "type": "type",
+   "text": "\\b\\d\n    ",
+   "paste_source": null
+  },
+  {
+   "t": 195.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 196.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 196.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 196.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 213.7,
+   "type": "type",
+   "text": "abstract",
+   "paste_source": null
+  },
+  {
+   "t": 217.5,
+   "type": "type",
+   "text": " ",
+   "paste_source": null
+  },
+  {
+   "t": 231.1,
+   "type": "type",
+   "text": "draw()",
+   "paste_source": null
+  },
+  {
+   "t": 234.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 234.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 234.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 235.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 235.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 236.0,
+   "type": "type",
+   "text": "\\bsraw",
+   "paste_source": null
+  },
+  {
+   "t": 237.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 238.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 238.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 238.4,
+   "type": "type",
+   "text": "\\bdrawShape();",
+   "paste_source": null
+  },
+  {
+   "t": 243.6,
+   "type": "type",
+   "text": "\n\n\n",
+   "paste_source": null
+  },
+  {
+   "t": 245.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 245.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 246.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 254.8,
+   "type": "type",
+   "text": "class Circle extends Shape {\n    \n    \n    \n    ",
+   "paste_source": null
+  },
+  {
+   "t": 264.5,
+   "type": "type",
+   "text": "\\\\\b[44-48]}",
+   "paste_source": null
+  },
+  {
+   "t": 270.5,
+   "type": "type",
+   "text": "public ",
+   "paste_source": null
+  },
+  {
+   "t": 291.2,
+   "type": "type",
+   "text": "\\\\\b[7-15]",
+   "paste_source": null
+  },
+  {
+   "t": 291.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 292.7,
+   "type": "type",
+   "text": " abstract",
+   "paste_source": null
+  },
+  {
+   "t": 301.2,
+   "type": "type",
+   "text": "\\\\\b[13-21]",
+   "paste_source": null
+  },
+  {
+   "t": 301.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 304.0,
+   "type": "type",
+   "text": " abstract",
+   "paste_source": null
+  },
+  {
+   "t": 321.5,
+   "type": "type",
+   "text": "void ",
+   "paste_source": null
+  },
+  {
+   "t": 325.7,
+   "type": "type",
+   "text": " void",
+   "paste_source": null
+  },
+  {
+   "t": 399.4,
+   "type": "type",
+   "text": "void setup() {\n    \n    \n    \n    ",
+   "paste_source": null
+  },
+  {
+   "t": 405.8,
+   "type": "type",
+   "text": "\\\\\b[30-34]}",
+   "paste_source": null
+  },
+  {
+   "t": 437.3,
+   "type": "paste",
+   "text": "size(640, 360);\n  noStroke();\n\n  // Create an empty ArrayList (will store Ball objects)\n  balls = new ArrayList<Ball>();\n  \n  // Start by adding one element\n  balls.add(new Ball(width/2, 0, ballWidth));",
+   "paste_source": "own"
+  },
+  {
+   "t": 440.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 440.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 440.9,
+   "type": "type",
+   "text": "\\b ",
+   "paste_source": null
+  },
+  {
+   "t": 449.3,
+   "type": "type",
+   "text": "\n\n\n",
+   "paste_source": null
+  },
+  {
+   "t": 451.2,
+   "type": "paste",
+   "text": "ArrayList<Ball> balls;\nint ballWidth = 48;",
+   "paste_source": "external"
+  },
+  {
+   "t": 454.3,
+   "type": "type",
+   "text": "Circle",
+   "paste_source": null
+  },
+  {
+   "t": 459.9,
+   "type": "type",
+   "text": "Circle",
+   "paste_source": null
+  },
+  {
+   "t": 466.4,
+   "type": "type",
+   "text": "Shape",
+   "paste_source": null
+  },
+  {
+   "t": 469.9,
+   "type": "type",
+   "text": "shapes",
+   "paste_source": null
+  },
+  {
+   "t": 472.5,
+   "type": "type",
+   "text": "shapes",
+   "paste_source": null
+  },
+  {
+   "t": 475.6,
+   "type": "type",
+   "text": "Shape",
+   "paste_source": null
+  },
+  {
+   "t": 479.6,
+   "type": "type",
+   "text": "shape",
+   "paste_source": null
+  },
+  {
+   "t": 482.8,
+   "type": "type",
+   "text": "circle",
+   "paste_source": null
+  },
+  {
+   "t": 485.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 485.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 486.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 486.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 486.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 486.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 499.4,
+   "type": "type",
+   "text": "cir",
+   "paste_source": null
+  },
+  {
+   "t": 501.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 501.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 501.6,
+   "type": "type",
+   "text": "\\bCircle",
+   "paste_source": null
+  },
+  {
+   "t": 526.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 526.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 526.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 526.9,
+   "type": "type",
+   "text": "\\bround",
+   "paste_source": null
+  },
+  {
+   "t": 530.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 530.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 530.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 530.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 531.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 534.0,
+   "type": "type",
+   "text": "c",
+   "paste_source": null
+  },
+  {
+   "t": 536.1,
+   "type": "type",
+   "text": "ircles",
+   "paste_source": null
+  },
+  {
+   "t": 546.7,
+   "type": "type",
+   "text": "s",
+   "paste_source": null
+  },
+  {
+   "t": 556.1,
+   "type": "type",
+   "text": "B",
+   "paste_source": null
+  },
+  {
+   "t": 556.6,
+   "type": "type",
+   "text": "\\bCircle",
+   "paste_source": null
+  },
+  {
+   "t": 565.9,
+   "type": "type",
+   "text": "Circle(float ",
+   "paste_source": null
+  },
+  {
+   "t": 576.8,
+   "type": "type",
+   "text": "x",
+   "paste_source": null
+  },
+  {
+   "t": 584.5,
+   "type": "type",
+   "text": ", flaot",
+   "paste_source": null
+  },
+  {
+   "t": 585.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 586.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 586.3,
+   "type": "type",
+   "text": "\\boat y, ",
+   "paste_source": null
+  },
+  {
+   "t": 595.0,
+   "type": "type",
+   "text": "B",
+   "paste_source": null
+  },
+  {
+   "t": 597.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 598.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 602.6,
+   "type": "type",
+   "text": " float b",
+   "paste_source": null
+  },
+  {
+   "t": 608.8,
+   "type": "type",
+   "text": "\\bradius);",
+   "paste_source": null
+  },
+  {
+   "t": 613.0,
+   "type": "type",
+   "text": "\\b {\n        ",
+   "paste_source": null
+  },
+  {
+   "t": 626.8,
+   "type": "type",
+   "text": "x",
+   "paste_source": null
+  },
+  {
+   "t": 627.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 632.5,
+   "type": "type",
+   "text": "Pos",
+   "paste_source": null
+  },
+  {
+   "t": 635.1,
+   "type": "type",
+   "text": "Pos",
+   "paste_source": null
+  },
+  {
+   "t": 636.7,
+   "type": "type",
+   "text": "x = xPos;\n        y = yPOs;",
+   "paste_source": null
+  },
+  {
+   "t": 643.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 643.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 643.9,
+   "type": "type",
+   "text": "\\bos;",
+   "paste_source": null
+  },
+  {
+   "t": 647.4,
+   "type": "type",
+   "text": "float radius;",
+   "paste_source": null
+  },
+  {
+   "t": 659.8,
+   "type": "type",
+   "text": "\n        ",
+   "paste_source": null
+  },
+  {
+   "t": 662.8,
+   "type": "type",
+   "text": "vx = 0;\n        vy = 0;",
+   "paste_source": null
+  },
+  {
+   "t": 673.0,
+   "type": "type",
+   "text": "\n        ",
+   "paste_source": null
+  },
+  {
+   "t": 673.7,
+   "type": "type",
+   "text": "    }",
+   "paste_source": null
+  },
+  {
+   "t": 704.6,
+   "type": "type",
+   "text": "\n    \n    ",
+   "paste_source": null
+  },
+  {
+   "t": 710.8,
+   "type": "type",
+   "text": "void drawShape ",
+   "paste_source": null
+  },
+  {
+   "t": 714.5,
+   "type": "type",
+   "text": "\\b() }",
+   "paste_source": null
+  },
+  {
+   "t": 716.1,
+   "type": "type",
+   "text": "\\b{\n        return;\n        ",
+   "paste_source": null
+  },
+  {
+   "t": 721.3,
+   "type": "type",
+   "text": "    }",
+   "paste_source": null
+  },
+  {
+   "t": 723.9,
+   "type": "type",
+   "text": "circle(",
+   "paste_source": null
+  },
+  {
+   "t": 727.8,
+   "type": "type",
+   "text": "0, 0, ",
+   "paste_source": null
+  },
+  {
+   "t": 731.4,
+   "type": "type",
+   "text": "10)",
+   "paste_source": null
+  },
+  {
+   "t": 758.2,
+   "type": "type",
+   "text": "\n\nvoid draw() {\n    ",
+   "paste_source": null
+  },
+  {
+   "t": 766.2,
+   "type": "type",
+   "text": "background 255",
+   "paste_source": null
+  },
+  {
+   "t": 768.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 768.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 768.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 769.1,
+   "type": "type",
+   "text": "\\b(255);\n    \n    ",
+   "paste_source": null
+  },
+  {
+   "t": 774.3,
+   "type": "type",
+   "text": "\n    \n    \n    ",
+   "paste_source": null
+  },
+  {
+   "t": 775.1,
+   "type": "type",
+   "text": "\\\\\b[340-344]}",
+   "paste_source": null
+  },
+  {
+   "t": 777.1,
+   "type": "type",
+   "text": "\n    ",
+   "paste_source": null
+  },
+  {
+   "t": 809.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 811.4,
+   "type": "type",
+   "text": "x",
+   "paste_source": null
+  },
+  {
+   "t": 813.2,
+   "type": "type",
+   "text": "\\by",
+   "paste_source": null
+  },
+  {
+   "t": 832.2,
+   "type": "type",
+   "text": "circle",
+   "paste_source": null
+  },
+  {
+   "t": 833.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 833.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 833.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 833.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 834.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 834.3,
+   "type": "type",
+   "text": "\\bsha",
+   "paste_source": null
+  },
+  {
+   "t": 835.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 835.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 836.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 840.0,
+   "type": "type",
+   "text": "for ",
+   "paste_source": null
+  },
+  {
+   "t": 842.7,
+   "type": "type",
+   "text": "(int i = ",
+   "paste_source": null
+  },
+  {
+   "t": 847.2,
+   "type": "type",
+   "text": "shapes.siz",
+   "paste_source": null
+  },
+  {
+   "t": 849.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 849.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 849.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 850.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 851.2,
+   "type": "type",
+   "text": "0; ",
+   "paste_source": null
+  },
+  {
+   "t": 860.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 860.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 861.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1010.9,
+   "type": "type",
+   "text": "0)",
+   "paste_source": null
+  },
+  {
+   "t": 1012.6,
+   "type": "type",
+   "text": "\\b; ",
+   "paste_source": null
+  },
+  {
+   "t": 1015.1,
+   "type": "type",
+   "text": "i <- ",
+   "paste_source": null
+  },
+  {
+   "t": 1016.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1017.0,
+   "type": "type",
+   "text": "\\b= shapes.",
+   "paste_source": null
+  },
+  {
+   "t": 1021.5,
+   "type": "type",
+   "text": "size() - 1; i ++",
+   "paste_source": null
+  },
+  {
+   "t": 1026.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1026.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1026.3,
+   "type": "type",
+   "text": "\\b+=) {\n        ",
+   "paste_source": null
+  },
+  {
+   "t": 1059.6,
+   "type": "type",
+   "text": "Shape bal",
+   "paste_source": null
+  },
+  {
+   "t": 1062.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1062.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1062.5,
+   "type": "type",
+   "text": "\\bcircle1 ",
+   "paste_source": null
+  },
+  {
+   "t": 1065.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1065.2,
+   "type": "type",
+   "text": "\\b = ",
+   "paste_source": null
+  },
+  {
+   "t": 1066.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1067.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1067.7,
+   "type": "type",
+   "text": "\\b1 =     ",
+   "paste_source": null
+  },
+  {
+   "t": 1072.2,
+   "type": "type",
+   "text": " = circle",
+   "paste_source": null
+  },
+  {
+   "t": 1076.1,
+   "type": "type",
+   "text": "s",
+   "paste_source": null
+  },
+  {
+   "t": 1077.1,
+   "type": "type",
+   "text": "\\bshapes.get(",
+   "paste_source": null
+  },
+  {
+   "t": 1086.8,
+   "type": "type",
+   "text": "i);",
+   "paste_source": null
+  },
+  {
+   "t": 1092.0,
+   "type": "type",
+   "text": "\n        ",
+   "paste_source": null
+  },
+  {
+   "t": 1092.9,
+   "type": "type",
+   "text": "    }",
+   "paste_source": null
+  },
+  {
+   "t": 1096.8,
+   "type": "type",
+   "text": "\n        circle1.",
+   "paste_source": null
+  },
+  {
+   "t": 1106.1,
+   "type": "type",
+   "text": "drawShape();",
+   "paste_source": null
+  },
+  {
+   "t": 1115.7,
+   "type": "type",
+   "text": "\\b_",
+   "paste_source": null
+  },
+  {
+   "t": 1116.7,
+   "type": "type",
+   "text": "\\b+",
+   "paste_source": null
+  },
+  {
+   "t": 1150.4,
+   "type": "type",
+   "text": "0",
+   "paste_source": null
+  },
+  {
+   "t": 1231.6,
+   "type": "type",
+   "text": "90",
+   "paste_source": null
+  },
+  {
+   "t": 1258.6,
+   "type": "type",
+   "text": "\n    void ",
+   "paste_source": null
+  },
+  {
+   "t": 1263.7,
+   "type": "type",
+   "text": "move() {\n        \n        ",
+   "paste_source": null
+  },
+  {
+   "t": 1267.7,
+   "type": "type",
+   "text": "    }",
+   "paste_source": null
+  },
+  {
+   "t": 1288.7,
+   "type": "type",
+   "text": "y = ",
+   "paste_source": null
+  },
+  {
+   "t": 1292.5,
+   "type": "type",
+   "text": "y + vy;",
+   "paste_source": null
+  },
+  {
+   "t": 1300.7,
+   "type": "type",
+   "text": "\n        vy = 10;",
+   "paste_source": null
+  },
+  {
+   "t": 1333.3,
+   "type": "type",
+   "text": "\n        circle1.move();",
+   "paste_source": null
+  },
+  {
+   "t": 1350.3,
+   "type": "other",
+   "text": "    void move() {\n        vy = 10;\n        y = y + vy;\n    }",
+   "paste_source": null
+  },
+  {
+   "t": 1350.3,
+   "type": "other",
+   "text": "",
+   "paste_source": null
+  },
+  {
+   "t": 1351.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1354.4,
+   "type": "type",
+   "text": "\n    ",
+   "paste_source": null
+  },
+  {
+   "t": 1355.0,
+   "type": "paste",
+   "text": "    void move() {\n        vy = 10;\n        y = y + vy;\n    }",
+   "paste_source": "unknown"
+  },
+  {
+   "t": 1365.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1365.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1365.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1366.2,
+   "type": "type",
+   "text": "\\b  ",
+   "paste_source": null
+  },
+  {
+   "t": 1381.8,
+   "type": "type",
+   "text": "3",
+   "paste_source": null
+  },
+  {
+   "t": 1392.1,
+   "type": "type",
+   "text": "\n          vy = x",
+   "paste_source": null
+  },
+  {
+   "t": 1396.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1397.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1397.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1397.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1397.6,
+   "type": "type",
+   "text": "\\bx = x",
+   "paste_source": null
+  },
+  {
+   "t": 1399.2,
+   "type": "type",
+   "text": "\\b3;",
+   "paste_source": null
+  },
+  {
+   "t": 1403.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1403.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1405.5,
+   "type": "type",
+   "text": "\n        x = x + vx;",
+   "paste_source": null
+  },
+  {
+   "t": 1418.9,
+   "type": "type",
+   "text": "\n        \n        if (x >",
+   "paste_source": null
+  },
+  {
+   "t": 1428.3,
+   "type": "type",
+   "text": " ",
+   "paste_source": null
+  },
+  {
+   "t": 1430.3,
+   "type": "type",
+   "text": "width) {\n            ",
+   "paste_source": null
+  },
+  {
+   "t": 1439.3,
+   "type": "type",
+   "text": "vx = -vs",
+   "paste_source": null
+  },
+  {
+   "t": 1443.6,
+   "type": "type",
+   "text": "\\bx;\n            ",
+   "paste_source": null
+  },
+  {
+   "t": 1446.3,
+   "type": "type",
+   "text": "        }\n        if (y > height) {\n            vy = 0",
+   "paste_source": null
+  },
+  {
+   "t": 1454.9,
+   "type": "type",
+   "text": "\\b-vy;",
+   "paste_source": null
+  },
+  {
+   "t": 1459.5,
+   "type": "type",
+   "text": "\n            ",
+   "paste_source": null
+  },
+  {
+   "t": 1460.1,
+   "type": "type",
+   "text": "        }",
+   "paste_source": null
+  },
+  {
+   "t": 1537.6,
+   "type": "type",
+   "text": " = 3",
+   "paste_source": null
+  },
+  {
+   "t": 1540.7,
+   "type": "type",
+   "text": " = 3",
+   "paste_source": null
+  },
+  {
+   "t": 1543.6,
+   "type": "type",
+   "text": "\\bvx",
+   "paste_source": null
+  },
+  {
+   "t": 1553.6,
+   "type": "type",
+   "text": "\\\\\b[146-178]",
+   "paste_source": null
+  },
+  {
+   "t": 1554.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1570.7,
+   "type": "type",
+   "text": "\n          v",
+   "paste_source": null
+  },
+  {
+   "t": 1572.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1572.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1572.9,
+   "type": "type",
+   "text": "\\bvx = 3;",
+   "paste_source": null
+  },
+  {
+   "t": 1580.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1581.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1581.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1581.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1584.9,
+   "type": "type",
+   "text": "= vx + ",
+   "paste_source": null
+  },
+  {
+   "t": 1588.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1588.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1589.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1589.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1589.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1589.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1589.9,
+   "type": "type",
+   "text": "\\b+= vx;\n        vy += vy;",
+   "paste_source": null
+  },
+  {
+   "t": 1604.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1604.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1604.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1605.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1605.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1605.4,
+   "type": "type",
+   "text": "\\b= vy + vy;",
+   "paste_source": null
+  },
+  {
+   "t": 1615.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1616.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1616.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1616.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1616.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1616.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1616.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1616.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1619.5,
+   "type": "type",
+   "text": "3",
+   "paste_source": null
+  },
+  {
+   "t": 1624.3,
+   "type": "type",
+   "text": "= 3",
+   "paste_source": null
+  },
+  {
+   "t": 1627.2,
+   "type": "type",
+   "text": ";",
+   "paste_source": null
+  },
+  {
+   "t": 1628.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1628.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1629.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1629.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1629.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1633.8,
+   "type": "type",
+   "text": ";",
+   "paste_source": null
+  },
+  {
+   "t": 1643.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1643.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1643.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1643.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1670.9,
+   "type": "type",
+   "text": "\n            x = ",
+   "paste_source": null
+  },
+  {
+   "t": 1677.8,
+   "type": "type",
+   "text": "x + vx;",
+   "paste_source": null
+  },
+  {
+   "t": 1683.0,
+   "type": "type",
+   "text": "\n            y = v",
+   "paste_source": null
+  },
+  {
+   "t": 1684.8,
+   "type": "type",
+   "text": "\\by + vy;",
+   "paste_source": null
+  },
+  {
+   "t": 1821.2,
+   "type": "type",
+   "text": "\\\\\b[138-169]",
+   "paste_source": null
+  },
+  {
+   "t": 1821.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1830.5,
+   "type": "type",
+   "text": "\n    \n      void ",
+   "paste_source": null
+  },
+  {
+   "t": 1838.9,
+   "type": "type",
+   "text": "velocity()",
+   "paste_source": null
+  },
+  {
+   "t": 1853.8,
+   "type": "type",
+   "text": " {\n          ",
+   "paste_source": null
+  },
+  {
+   "t": 1871.2,
+   "type": "type",
+   "text": "float vx",
+   "paste_source": null
+  },
+  {
+   "t": 1874.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1874.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1877.3,
+   "type": "type",
+   "text": "velocityX, float vleoc",
+   "paste_source": null
+  },
+  {
+   "t": 1882.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1882.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1882.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1882.8,
+   "type": "type",
+   "text": "\\belocityY",
+   "paste_source": null
+  },
+  {
+   "t": 1888.8,
+   "type": "type",
+   "text": "vx = velocityX;\n          vy = velocityY;\n          ",
+   "paste_source": null
+  },
+  {
+   "t": 1897.6,
+   "type": "type",
+   "text": "      }",
+   "paste_source": null
+  },
+  {
+   "t": 1914.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1914.5,
+   "type": "type",
+   "text": "\\bshapes.",
+   "paste_source": null
+  },
+  {
+   "t": 1917.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1917.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1917.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1917.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1918.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1918.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1919.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1920.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1920.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1920.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1948.7,
+   "type": "type",
+   "text": "m ",
+   "paste_source": null
+  },
+  {
+   "t": 1949.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1949.3,
+   "type": "type",
+   "text": "\\b, ",
+   "paste_source": null
+  },
+  {
+   "t": 1952.5,
+   "type": "type",
+   "text": "vx",
+   "paste_source": null
+  },
+  {
+   "t": 1953.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1953.7,
+   "type": "type",
+   "text": "\\b3, 3",
+   "paste_source": null
+  },
+  {
+   "t": 1966.1,
+   "type": "type",
+   "text": ", float v",
+   "paste_source": null
+  },
+  {
+   "t": 1970.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1971.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1972.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1972.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1972.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1972.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1973.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1973.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1974.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 1976.3,
+   "type": "type",
+   "text": "\\b3",
+   "paste_source": null
+  },
+  {
+   "t": 1977.7,
+   "type": "type",
+   "text": "\\b3",
+   "paste_source": null
+  },
+  {
+   "t": 1982.7,
+   "type": "type",
+   "text": "\\\\\b[268-274]",
+   "paste_source": null
+  },
+  {
+   "t": 1998.9,
+   "type": "type",
+   "text": "|| (x < width)",
+   "paste_source": null
+  },
+  {
+   "t": 2008.6,
+   "type": "type",
+   "text": "(",
+   "paste_source": null
+  },
+  {
+   "t": 2010.7,
+   "type": "type",
+   "text": "_",
+   "paste_source": null
+  },
+  {
+   "t": 2011.4,
+   "type": "type",
+   "text": "\\b) ",
+   "paste_source": null
+  },
+  {
+   "t": 2015.4,
+   "type": "type",
+   "text": "(",
+   "paste_source": null
+  },
+  {
+   "t": 2017.0,
+   "type": "type",
+   "text": " }}",
+   "paste_source": null
+  },
+  {
+   "t": 2019.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 2019.2,
+   "type": "type",
+   "text": "\\b|| )",
+   "paste_source": null
+  },
+  {
+   "t": 2021.4,
+   "type": "type",
+   "text": "\\b(y >",
+   "paste_source": null
+  },
+  {
+   "t": 2025.6,
+   "type": "type",
+   "text": "\\b< height))",
+   "paste_source": null
+  },
+  {
+   "t": 2055.8,
+   "type": "type",
+   "text": "0",
+   "paste_source": null
+  },
+  {
+   "t": 2057.9,
+   "type": "type",
+   "text": "0",
+   "paste_source": null
+  },
+  {
+   "t": 2076.3,
+   "type": "type",
+   "text": "\\brandom(",
+   "paste_source": null
+  },
+  {
+   "t": 2080.4,
+   "type": "type",
+   "text": "10",
+   "paste_source": null
+  },
+  {
+   "t": 2081.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 2081.7,
+   "type": "type",
+   "text": "\\b5)",
+   "paste_source": null
+  },
+  {
+   "t": 2084.2,
+   "type": "type",
+   "text": "\\brandom(5)",
+   "paste_source": null
+  },
+  {
+   "t": 2104.6,
+   "type": "type",
+   "text": "\n\nvoid mosu",
+   "paste_source": null
+  },
+  {
+   "t": 2107.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 2107.2,
+   "type": "type",
+   "text": "\\buseClick",
+   "paste_source": null
+  },
+  {
+   "t": 2110.3,
+   "type": "type",
+   "text": "mousePressed() {",
+   "paste_source": null
+  },
+  {
+   "t": 2118.4,
+   "type": "type",
+   "text": "\n    \n    shapes.add(new ",
+   "paste_source": null
+  },
+  {
+   "t": 2126.7,
+   "type": "type",
+   "text": "Circle(",
+   "paste_source": null
+  },
+  {
+   "t": 2139.7,
+   "type": "type",
+   "text": "positionX = ne",
+   "paste_source": null
+  },
+  {
+   "t": 2142.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 2142.8,
+   "type": "type",
+   "text": "\\brn",
+   "paste_source": null
+  },
+  {
+   "t": 2143.4,
+   "type": "type",
+   "text": "\\bandom(",
+   "paste_source": null
+  },
+  {
+   "t": 2147.3,
+   "type": "type",
+   "text": "Width);\n    positionY = random(Height)",
+   "paste_source": null
+  },
+  {
+   "t": 2155.4,
+   "type": "type",
+   "text": "\\b);",
+   "paste_source": null
+  },
+  {
+   "t": 2158.4,
+   "type": "type",
+   "text": "\\bw",
+   "paste_source": null
+  },
+  {
+   "t": 2159.6,
+   "type": "type",
+   "text": "\\bh",
+   "paste_source": null
+  },
+  {
+   "t": 2163.0,
+   "type": "type",
+   "text": "positionX",
+   "paste_source": null
+  },
+  {
+   "t": 2169.7,
+   "type": "type",
+   "text": "\\dx",
+   "paste_source": null
+  },
+  {
+   "t": 2171.7,
+   "type": "type",
+   "text": "y",
+   "paste_source": null
+  },
+  {
+   "t": 2173.9,
+   "type": "type",
+   "text": "x, y, ",
+   "paste_source": null
+  },
+  {
+   "t": 2178.3,
+   "type": "type",
+   "text": "ballWidth);)",
+   "paste_source": null
+  },
+  {
+   "t": 2182.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 2182.6,
+   "type": "type",
+   "text": "\\b);",
+   "paste_source": null
+  },
+  {
+   "t": 2185.3,
+   "type": "type",
+   "text": "\n    \n    ",
+   "paste_source": null
+  },
+  {
+   "t": 2186.3,
+   "type": "type",
+   "text": "\\\\\b[604-608]}",
+   "paste_source": null
+  },
+  {
+   "t": 2194.3,
+   "type": "type",
+   "text": "Pos",
+   "paste_source": null
+  },
+  {
+   "t": 2196.9,
+   "type": "type",
+   "text": "Pos",
+   "paste_source": null
+  },
+  {
+   "t": 2199.3,
+   "type": "type",
+   "text": "Pos",
+   "paste_source": null
+  },
+  {
+   "t": 2202.4,
+   "type": "type",
+   "text": "Pos",
+   "paste_source": null
+  },
+  {
+   "t": 2209.9,
+   "type": "type",
+   "text": "int ",
+   "paste_source": null
+  },
+  {
+   "t": 2212.6,
+   "type": "type",
+   "text": "int ",
+   "paste_source": null
+  },
+  {
+   "t": 2214.6,
+   "type": "type",
+   "text": "float",
+   "paste_source": null
+  },
+  {
+   "t": 2216.6,
+   "type": "type",
+   "text": "float",
+   "paste_source": null
+  },
+  {
+   "t": 2228.7,
+   "type": "type",
+   "text": "\\b3, 7",
+   "paste_source": null
+  },
+  {
+   "t": 2232.4,
+   "type": "type",
+   "text": "\\b3, 7",
+   "paste_source": null
+  },
+  {
+   "t": 2255.8,
+   "type": "type",
+   "text": "\n    \n    ",
+   "paste_source": null
+  },
+  {
+   "t": 2300.4,
+   "type": "type",
+   "text": "\n    ccl",
+   "paste_source": null
+  },
+  {
+   "t": 2302.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 2302.9,
+   "type": "type",
+   "text": "\\bolor ",
+   "paste_source": null
+  },
+  {
+   "t": 2306.4,
+   "type": "type",
+   "text": "c",
+   "paste_source": null
+  },
+  {
+   "t": 2306.9,
+   "type": "type",
+   "text": "\\bC",
+   "paste_source": null
+  },
+  {
+   "t": 2308.0,
+   "type": "type",
+   "text": "\\bcolorof",
+   "paste_source": null
+  },
+  {
+   "t": 2310.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 2311.1,
+   "type": "type",
+   "text": "\\bOfShape;\n    ",
+   "paste_source": null
+  },
+  {
+   "t": 2322.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 2322.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 2322.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 2322.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 2323.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 2326.5,
+   "type": "type",
+   "text": "\n        colorof",
+   "paste_source": null
+  },
+  {
+   "t": 2329.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 2329.4,
+   "type": "type",
+   "text": "\\bOfShape = random",
+   "paste_source": null
+  },
+  {
+   "t": 2334.5,
+   "type": "type",
+   "text": "color(random",
+   "paste_source": null
+  },
+  {
+   "t": 2607.0,
+   "type": "type",
+   "text": "(255), random(255), random(255));",
+   "paste_source": null
+  },
+  {
+   "t": 2633.6,
+   "type": "type",
+   "text": "\n        fill(colorOfShape);",
+   "paste_source": null
+  },
+  {
+   "t": 2668.0,
+   "type": "type",
+   "text": "\\b2",
+   "paste_source": null
+  },
+  {
+   "t": 2670.0,
+   "type": "type",
+   "text": "\\b2",
+   "paste_source": null
+  },
+  {
+   "t": 2780.2,
+   "type": "cut",
+   "text": "class Circle extends Shape {\n    float radius;\n    \n    Circle(float xPos, float yPos, float radius) {\n        x = xPos;\n        y = yPos;\n        vx = random(2, 7);\n        vy = random(2, 7);\n        colorOfShape = color(random(255), random(255), random(255));\n    }\n    \n    void drawShape() {\n        fill(colorOfShape);\n        circle(x, y, 10);\n    }\n}",
+   "paste_source": null
+  },
+  {
+   "t": 2782.9,
+   "type": "paste",
+   "text": "class Circle extends Shape {\n    float radius;\n    \n    Circle(float xPos, float yPos, float radius) {\n        x = xPos;\n        y = yPos;\n        vx = random(2, 7);\n        vy = random(2, 7);\n        colorOfShape = color(random(255), random(255), random(255));\n    }\n    \n    void drawShape() {\n        fill(colorOfShape);\n        circle(x, y, 10);\n    }\n}",
+   "paste_source": "own"
+  },
+  {
+   "t": 2784.9,
+   "type": "type",
+   "text": "Square",
+   "paste_source": null
+  },
+  {
+   "t": 2793.3,
+   "type": "type",
+   "text": "Square",
+   "paste_source": null
+  },
+  {
+   "t": 2838.6,
+   "type": "type",
+   "text": "l",
+   "paste_source": null
+  },
+  {
+   "t": 2840.4,
+   "type": "type",
+   "text": "\\bside",
+   "paste_source": null
+  },
+  {
+   "t": 2844.6,
+   "type": "type",
+   "text": "side",
+   "paste_source": null
+  },
+  {
+   "t": 2868.6,
+   "type": "type",
+   "text": "\\\\\b[87-99]",
+   "paste_source": null
+  },
+  {
+   "t": 2869.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 2870.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 2874.1,
+   "type": "type",
+   "text": "\n        radius  ",
+   "paste_source": null
+  },
+  {
+   "t": 2877.0,
+   "type": "type",
+   "text": "\\b- ",
+   "paste_source": null
+  },
+  {
+   "t": 2882.5,
+   "type": "type",
+   "text": "= random(30);",
+   "paste_source": null
+  },
+  {
+   "t": 2888.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 2888.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 2888.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 2889.1,
+   "type": "type",
+   "text": "\\bheight",
+   "paste_source": null
+  },
+  {
+   "t": 2892.9,
+   "type": "type",
+   "text": " * 10",
+   "paste_source": null
+  },
+  {
+   "t": 2897.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 2897.3,
+   "type": "type",
+   "text": "\\b.1);",
+   "paste_source": null
+  },
+  {
+   "t": 2904.5,
+   "type": "type",
+   "text": "f",
+   "paste_source": null
+  },
+  {
+   "t": 2904.9,
+   "type": "type",
+   "text": "\\bradius",
+   "paste_source": null
+  },
+  {
+   "t": 2914.7,
+   "type": "type",
+   "text": "\\\\\b[259-268]",
+   "paste_source": null
+  },
+  {
+   "t": 2915.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 2915.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 2920.9,
+   "type": "type",
+   "text": "=",
+   "paste_source": null
+  },
+  {
+   "t": 2921.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 2921.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 2921.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 2940.3,
+   "type": "type",
+   "text": "height, ",
+   "paste_source": null
+  },
+  {
+   "t": 2941.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 2941.9,
+   "type": "type",
+   "text": "\\b * .05",
+   "paste_source": null
+  },
+  {
+   "t": 2947.2,
+   "type": "type",
+   "text": ", ",
+   "paste_source": null
+  },
+  {
+   "t": 2963.2,
+   "type": "type",
+   "text": "\n        side = random(height * 0.1);",
+   "paste_source": null
+  },
+  {
+   "t": 2975.4,
+   "type": "type",
+   "text": "side",
+   "paste_source": null
+  },
+  {
+   "t": 2977.8,
+   "type": "type",
+   "text": "square",
+   "paste_source": null
+  },
+  {
+   "t": 2986.1,
+   "type": "type",
+   "text": "\n    shapes.add(new Square(xPos, yPos));",
+   "paste_source": null
+  },
+  {
+   "t": 3007.4,
+   "type": "type",
+   "text": "\\\\\b[85-95]",
+   "paste_source": null
+  },
+  {
+   "t": 3007.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3007.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3028.2,
+   "type": "type",
+   "text": "\n    ",
+   "paste_source": null
+  },
+  {
+   "t": 3032.4,
+   "type": "type",
+   "text": "fla",
+   "paste_source": null
+  },
+  {
+   "t": 3033.1,
+   "type": "type",
+   "text": "\\boat shapeType = rando",
+   "paste_source": null
+  },
+  {
+   "t": 3039.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3039.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3039.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3039.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3040.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3042.1,
+   "type": "type",
+   "text": "int",
+   "paste_source": null
+  },
+  {
+   "t": 3045.2,
+   "type": "type",
+   "text": "int ",
+   "paste_source": null
+  },
+  {
+   "t": 3045.9,
+   "type": "type",
+   "text": "\\b(random(",
+   "paste_source": null
+  },
+  {
+   "t": 3058.3,
+   "type": "type",
+   "text": "3",
+   "paste_source": null
+  },
+  {
+   "t": 3059.4,
+   "type": "type",
+   "text": "\\b2);",
+   "paste_source": null
+  },
+  {
+   "t": 3063.1,
+   "type": "type",
+   "text": "\\b);",
+   "paste_source": null
+  },
+  {
+   "t": 3068.0,
+   "type": "type",
+   "text": "swith",
+   "paste_source": null
+  },
+  {
+   "t": 3069.1,
+   "type": "type",
+   "text": "\\bch ",
+   "paste_source": null
+  },
+  {
+   "t": 3072.2,
+   "type": "type",
+   "text": "S",
+   "paste_source": null
+  },
+  {
+   "t": 3072.6,
+   "type": "type",
+   "text": "\\b(shapet",
+   "paste_source": null
+  },
+  {
+   "t": 3075.2,
+   "type": "type",
+   "text": "\\bTyep",
+   "paste_source": null
+  },
+  {
+   "t": 3076.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3076.5,
+   "type": "type",
+   "text": "\\bpe) {\n        case 0:",
+   "paste_source": null
+  },
+  {
+   "t": 3082.8,
+   "type": "type",
+   "text": "\n    break;\n    ",
+   "paste_source": null
+  },
+  {
+   "t": 3088.3,
+   "type": "type",
+   "text": "    case 1:\n    ",
+   "paste_source": null
+  },
+  {
+   "t": 3091.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3091.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3091.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3092.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3092.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3093.8,
+   "type": "type",
+   "text": "\n    break;",
+   "paste_source": null
+  },
+  {
+   "t": 3096.7,
+   "type": "type",
+   "text": "        ",
+   "paste_source": null
+  },
+  {
+   "t": 3097.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3098.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3100.4,
+   "type": "type",
+   "text": "        ",
+   "paste_source": null
+  },
+  {
+   "t": 3102.3,
+   "type": "type",
+   "text": "        ",
+   "paste_source": null
+  },
+  {
+   "t": 3104.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3105.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3105.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3105.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3106.0,
+   "type": "type",
+   "text": "\\b\\d\\db",
+   "paste_source": null
+  },
+  {
+   "t": 3109.4,
+   "type": "type",
+   "text": "            ",
+   "paste_source": null
+  },
+  {
+   "t": 3113.8,
+   "type": "type",
+   "text": "        ",
+   "paste_source": null
+  },
+  {
+   "t": 3115.2,
+   "type": "type",
+   "text": "        ",
+   "paste_source": null
+  },
+  {
+   "t": 3125.8,
+   "type": "type",
+   "text": "    }",
+   "paste_source": null
+  },
+  {
+   "t": 3153.6,
+   "type": "type",
+   "text": "\\b3",
+   "paste_source": null
+  },
+  {
+   "t": 3155.5,
+   "type": "type",
+   "text": "\n    \n    ",
+   "paste_source": null
+  },
+  {
+   "t": 3156.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3156.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3156.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3156.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3156.7,
+   "type": "type",
+   "text": "\\bprint(shapeType);",
+   "paste_source": null
+  },
+  {
+   "t": 3187.8,
+   "type": "type",
+   "text": "\n        case 2: \n            shapes.add(new Triangle(xPos, yPos));\n",
+   "paste_source": null
+  },
+  {
+   "t": 3206.2,
+   "type": "type",
+   "text": "                ",
+   "paste_source": null
+  },
+  {
+   "t": 3207.3,
+   "type": "type",
+   "text": "\\bbreak;",
+   "paste_source": null
+  },
+  {
+   "t": 3218.9,
+   "type": "cut",
+   "text": "class Square extends Shape {\n    float side;\n    \n    Square(float xPos, float yPos) {\n        side = random(height * 0.1);\n        x = xPos;\n        y = yPos;\n        vx = random(2, 7);\n        vy = random(2, 7);\n        colorOfShape = color(random(255), random(255), random(255));\n    }\n    \n    void drawShape() {\n        fill(colorOfShape);\n        square(x, y, side);\n    }\n}",
+   "paste_source": null
+  },
+  {
+   "t": 3220.4,
+   "type": "paste",
+   "text": "class Square extends Shape {\n    float side;\n    \n    Square(float xPos, float yPos) {\n        side = random(height * 0.1);\n        x = xPos;\n        y = yPos;\n        vx = random(2, 7);\n        vy = random(2, 7);\n        colorOfShape = color(random(255), random(255), random(255));\n    }\n    \n    void drawShape() {\n        fill(colorOfShape);\n        square(x, y, side);\n    }\n}",
+   "paste_source": "own"
+  },
+  {
+   "t": 3222.2,
+   "type": "type",
+   "text": "Triangle",
+   "paste_source": null
+  },
+  {
+   "t": 3226.7,
+   "type": "type",
+   "text": "Triangle",
+   "paste_source": null
+  },
+  {
+   "t": 3274.6,
+   "type": "type",
+   "text": "scale",
+   "paste_source": null
+  },
+  {
+   "t": 3282.0,
+   "type": "type",
+   "text": "scale",
+   "paste_source": null
+  },
+  {
+   "t": 3288.5,
+   "type": "type",
+   "text": "0, 3",
+   "paste_source": null
+  },
+  {
+   "t": 3301.2,
+   "type": "type",
+   "text": "\\\\\b[364-368]",
+   "paste_source": null
+  },
+  {
+   "t": 3302.8,
+   "type": "type",
+   "text": "tra",
+   "paste_source": null
+  },
+  {
+   "t": 3303.9,
+   "type": "type",
+   "text": "\\biangle",
+   "paste_source": null
+  },
+  {
+   "t": 3307.7,
+   "type": "type",
+   "text": "x + s",
+   "paste_source": null
+  },
+  {
+   "t": 3309.7,
+   "type": "type",
+   "text": "\\bscale, y, ",
+   "paste_source": null
+  },
+  {
+   "t": 3348.5,
+   "type": "type",
+   "text": "x + 0.5*scale, y + 0.5 ",
+   "paste_source": null
+  },
+  {
+   "t": 3356.9,
+   "type": "type",
+   "text": "\\b*scale",
+   "paste_source": null
+  },
+  {
+   "t": 3370.9,
+   "type": "type",
+   "text": "\\b10",
+   "paste_source": null
+  },
+  {
+   "t": 3374.6,
+   "type": "type",
+   "text": "\\b40",
+   "paste_source": null
+  },
+  {
+   "t": 3435.8,
+   "type": "type",
+   "text": "\\b-",
+   "paste_source": null
+  },
+  {
+   "t": 3551.0,
+   "type": "type",
+   "text": "m",
+   "paste_source": null
+  },
+  {
+   "t": 3551.4,
+   "type": "type",
+   "text": "\\bx",
+   "paste_source": null
+  },
+  {
+   "t": 3552.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3569.9,
+   "type": "type",
+   "text": "mouseX",
+   "paste_source": null
+  },
+  {
+   "t": 3573.4,
+   "type": "type",
+   "text": "mouseY",
+   "paste_source": null
+  },
+  {
+   "t": 3586.6,
+   "type": "type",
+   "text": "\\b255",
+   "paste_source": null
+  },
+  {
+   "t": 3672.8,
+   "type": "type",
+   "text": "\\\\\b[95-151]",
+   "paste_source": null
+  },
+  {
+   "t": 3673.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3676.9,
+   "type": "type",
+   "text": "\\\\\b[133-203]",
+   "paste_source": null
+  },
+  {
+   "t": 3677.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3702.7,
+   "type": "type",
+   "text": "\\b-7",
+   "paste_source": null
+  },
+  {
+   "t": 3707.6,
+   "type": "type",
+   "text": "\\b-7",
+   "paste_source": null
+  },
+  {
+   "t": 3716.3,
+   "type": "type",
+   "text": "\\b-7",
+   "paste_source": null
+  },
+  {
+   "t": 3718.5,
+   "type": "type",
+   "text": "\\b-7",
+   "paste_source": null
+  },
+  {
+   "t": 3722.2,
+   "type": "type",
+   "text": "\\b-7",
+   "paste_source": null
+  },
+  {
+   "t": 3724.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3726.5,
+   "type": "type",
+   "text": "-7",
+   "paste_source": null
+  },
+  {
+   "t": 3891.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3891.6,
+   "type": "type",
+   "text": "\\b50",
+   "paste_source": null
+  },
+  {
+   "t": 3895.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3895.9,
+   "type": "type",
+   "text": "\\b90",
+   "paste_source": null
+  },
+  {
+   "t": 3949.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3949.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 3952.5,
+   "type": "type",
+   "text": "\\b.2",
+   "paste_source": null
+  },
+  {
+   "t": 3956.7,
+   "type": "type",
+   "text": "\\b3",
+   "paste_source": null
+  },
+  {
+   "t": 3988.1,
+   "type": "type",
+   "text": "\\b3",
+   "paste_source": null
+  },
+  {
+   "t": 3989.4,
+   "type": "type",
+   "text": "\\b3",
+   "paste_source": null
+  },
+  {
+   "t": 3991.2,
+   "type": "type",
+   "text": "\\b3",
+   "paste_source": null
+  },
+  {
+   "t": 3992.8,
+   "type": "type",
+   "text": "\\b3",
+   "paste_source": null
+  },
+  {
+   "t": 4011.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4013.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4013.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4014.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4014.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4014.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4014.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4014.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4015.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4015.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4015.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4016.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4025.8,
+   "type": "type",
+   "text": "3",
+   "paste_source": null
+  },
+  {
+   "t": 4027.4,
+   "type": "type",
+   "text": "\\b20",
+   "paste_source": null
+  },
+  {
+   "t": 4033.6,
+   "type": "type",
+   "text": "15,\\d\\d 30",
+   "paste_source": null
+  },
+  {
+   "t": 4147.3,
+   "type": "type",
+   "text": "15",
+   "paste_source": null
+  },
+  {
+   "t": 4148.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4148.9,
+   "type": "type",
+   "text": "\\b30",
+   "paste_source": null
+  },
+  {
+   "t": 4174.6,
+   "type": "type",
+   "text": "\\b10",
+   "paste_source": null
+  },
+  {
+   "t": 4178.5,
+   "type": "type",
+   "text": "\\b10",
+   "paste_source": null
+  },
+  {
+   "t": 4180.4,
+   "type": "type",
+   "text": "\\b10",
+   "paste_source": null
+  },
+  {
+   "t": 4182.9,
+   "type": "type",
+   "text": "=1=",
+   "paste_source": null
+  },
+  {
+   "t": 4183.7,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4183.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4184.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4184.4,
+   "type": "type",
+   "text": "\\b10",
+   "paste_source": null
+  },
+  {
+   "t": 4313.2,
+   "type": "type",
+   "text": "shape1",
+   "paste_source": null
+  },
+  {
+   "t": 4317.3,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4317.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4318.0,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4318.2,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4318.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4318.5,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4318.7,
+   "type": "type",
+   "text": "\\bshape1",
+   "paste_source": null
+  },
+  {
+   "t": 4321.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4321.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4321.8,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4321.9,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4322.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4322.4,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4322.7,
+   "type": "type",
+   "text": "\\bshape1",
+   "paste_source": null
+  },
+  {
+   "t": 4384.3,
+   "type": "type",
+   "text": "\\b1",
+   "paste_source": null
+  },
+  {
+   "t": 4430.0,
+   "type": "type",
+   "text": "45",
+   "paste_source": null
+  },
+  {
+   "t": 4436.8,
+   "type": "type",
+   "text": "45",
+   "paste_source": null
+  },
+  {
+   "t": 4442.0,
+   "type": "type",
+   "text": "45",
+   "paste_source": null
+  },
+  {
+   "t": 4443.1,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  },
+  {
+   "t": 4443.3,
+   "type": "type",
+   "text": "\\b15",
+   "paste_source": null
+  },
+  {
+   "t": 4448.3,
+   "type": "type",
+   "text": "45",
+   "paste_source": null
+  },
+  {
+   "t": 4631.3,
+   "type": "type",
+   "text": "\\\\\b[403-424]",
+   "paste_source": null
+  },
+  {
+   "t": 4631.6,
+   "type": "type",
+   "text": "\\b",
+   "paste_source": null
+  }
+ ]
+}
